@@ -1,0 +1,16 @@
+{
+  "id": "account-class",
+  "version": "account-class-1",
+  "groups": [
+    {
+      "id": "revenue",
+      "label": "Revenue",
+      "description": "Spending that does not create an asset — salaries, interest, subsidies, grants, running costs. Consumed in the year it is spent."
+    },
+    {
+      "id": "capital",
+      "label": "Capital",
+      "description": "Spending that creates or acquires an asset, or repays debt — buildings, equipment, loans to states, shares in a company."
+    }
+  ]
+}

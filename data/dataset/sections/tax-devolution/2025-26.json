@@ -1,0 +1,32 @@
+{
+  "section": "tax-devolution",
+  "period": "2025-26",
+  "status": "revised-estimate",
+  "perimeter": "outside-union-spending",
+  "root": {
+    "amount": {
+      "value": 1392971,
+      "unit": "crore-rupees"
+    },
+    "cite": [
+      {
+        "sourceId": "mof-2025-26-budget-at-a-glance",
+        "locator": "Budget at a Glance, Transfer of Resources to States and Union Territories with Legislature, row I: Devolution of States share in taxes, Revised Estimates 2025-26 column"
+      }
+    ]
+  },
+  "facts": [],
+  "trees": [
+    {
+      "of": "@root",
+      "axis": "recipient",
+      "derivedBy": {
+        "method": "finance-commission-shares",
+        "using": {
+          "awardId": "fifteenth-finance-commission"
+        }
+      }
+    }
+  ],
+  "notes": "2025-26 is the final year of the Fifteenth Finance Commission's award, so the same horizontal shares apply as in every year since 2021-22. The total is a revised estimate: what states were actually devolved in 2025-26 is not published until the 2027-28 Budget."
+}

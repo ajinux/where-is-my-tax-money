@@ -1,0 +1,14 @@
+{
+  "_comment": "Colour per purpose group. The comp assigned one vibrant oklch hue per category at matched lightness and chroma, so they sit together on the cream ground; those values are carried over here, re-keyed from the comp's invented ids to the dataset's real ones. Terracotta (--color-accent) is deliberately absent: it is reserved for the state-devolution row. Administrative tones are generated in build-data.mjs instead, because 56 ministries is too many to hand-author and the same matched-L/C rule produces them.",
+  "interest-and-debt-service": "oklch(0.62 0.13 130)",
+  "defence-and-security": "oklch(0.60 0.14 55)",
+  "transport-housing-and-infrastructure": "oklch(0.60 0.13 250)",
+  "agriculture-and-rural-development": "oklch(0.64 0.14 110)",
+  "health-and-social-protection": "oklch(0.60 0.14 340)",
+  "states-territories-and-transfers": "oklch(0.62 0.15 25)",
+  "government-and-public-administration": "oklch(0.58 0.11 300)",
+  "energy-industry-and-the-economy": "oklch(0.62 0.13 170)",
+  "education-skills-and-research": "oklch(0.66 0.14 85)",
+  "culture-media-and-sport": "oklch(0.62 0.12 200)",
+  "environment-and-climate": "oklch(0.60 0.13 145)"
+}

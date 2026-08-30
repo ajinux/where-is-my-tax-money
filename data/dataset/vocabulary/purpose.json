@@ -1,0 +1,61 @@
+{
+  "id": "purpose",
+  "version": "purpose-taxonomy-1",
+  "groups": [
+    {
+      "id": "agriculture-and-rural-development",
+      "label": "Agriculture and rural development",
+      "description": "Farming, irrigation, fisheries, food processing, and programmes aimed at rural livelihoods."
+    },
+    {
+      "id": "culture-media-and-sport",
+      "label": "Culture, media and sport",
+      "description": "Arts and heritage, broadcasting and information, tourism, youth affairs and sport."
+    },
+    {
+      "id": "defence-and-security",
+      "label": "Defence and security",
+      "description": "The armed forces, defence pensions and production, home affairs, police and border management."
+    },
+    {
+      "id": "education-skills-and-research",
+      "label": "Education, skills and research",
+      "description": "School and higher education, skill development, and scientific and industrial research."
+    },
+    {
+      "id": "energy-industry-and-the-economy",
+      "label": "Energy, industry and the economy",
+      "description": "Power, petroleum, coal, mines, heavy industry, commerce, corporate affairs and financial services."
+    },
+    {
+      "id": "environment-and-climate",
+      "label": "Environment and climate",
+      "description": "Environment, forests and climate change, earth sciences, and new and renewable energy."
+    },
+    {
+      "id": "government-and-public-administration",
+      "label": "Government and public administration",
+      "description": "The central machinery of government: the legislature, judiciary, tax administration, external affairs and general services."
+    },
+    {
+      "id": "health-and-social-protection",
+      "label": "Health and social protection",
+      "description": "Health and family welfare, pharmaceuticals, women and child development, social justice and tribal affairs."
+    },
+    {
+      "id": "interest-and-debt-service",
+      "label": "Interest and debt service",
+      "description": "Interest payments and the servicing of public debt from previous borrowing. It is usually the second largest thing the union spends on, and it is a legally committed charge rather than a discretionary programme."
+    },
+    {
+      "id": "states-territories-and-transfers",
+      "label": "Grants to states and union territories",
+      "description": "Union grants to state governments and the budgets of the union territories — Finance Commission grants, special assistance and territory administration. Not the states’ constitutional share of taxes, which is deducted earlier and sits outside this budget."
+    },
+    {
+      "id": "transport-housing-and-infrastructure",
+      "label": "Transport, housing and infrastructure",
+      "description": "Railways, roads, ports, civil aviation, telecommunications, housing and urban development."
+    }
+  ]
+}

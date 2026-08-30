@@ -1,0 +1,308 @@
+{
+  "awards": [
+    {
+      "id": "fifteenth-finance-commission-2020-21",
+      "label": "Fifteenth Finance Commission (report for 2020-21)",
+      "divisiblePoolPercent": 41,
+      "sourceId": "xvfc-2020-21-report",
+      "notes": "The Fifteenth Finance Commission issued two awards, and this is the first: a single-year report for 2020-21, separate from the 2021-26 report the other years use. Its horizontal shares are its own and differ from the later award's in every state — Andhra Pradesh 4.111 against 4.047, for instance. The vertical share is 41 per cent, which the Commission arrived at by holding the Fourteenth Commission's 42 per cent and cutting one percentage point because the reorganisation of Jammu and Kashmir moved an estimated 0.85 per cent of the pool to a union territory (para 1.17). This is why 2020-21 is not a Fourteenth Finance Commission year: that award ended with 2019-20, and 42 per cent appears here only as the level being adjusted.",
+      "fromPeriod": "2020-21",
+      "toPeriod": "2020-21",
+      "sourceLocator": "Table 3.4: Inter se Shares of States",
+      "shares": [
+        {
+          "id": "andhra-pradesh",
+          "label": "Andhra Pradesh",
+          "sharePercent": 4.111
+        },
+        {
+          "id": "arunachal-pradesh",
+          "label": "Arunachal Pradesh",
+          "sharePercent": 1.76
+        },
+        {
+          "id": "assam",
+          "label": "Assam",
+          "sharePercent": 3.131
+        },
+        {
+          "id": "bihar",
+          "label": "Bihar",
+          "sharePercent": 10.061
+        },
+        {
+          "id": "chhattisgarh",
+          "label": "Chhattisgarh",
+          "sharePercent": 3.418
+        },
+        {
+          "id": "goa",
+          "label": "Goa",
+          "sharePercent": 0.386
+        },
+        {
+          "id": "gujarat",
+          "label": "Gujarat",
+          "sharePercent": 3.398
+        },
+        {
+          "id": "haryana",
+          "label": "Haryana",
+          "sharePercent": 1.082
+        },
+        {
+          "id": "himachal-pradesh",
+          "label": "Himachal Pradesh",
+          "sharePercent": 0.799
+        },
+        {
+          "id": "jharkhand",
+          "label": "Jharkhand",
+          "sharePercent": 3.313
+        },
+        {
+          "id": "karnataka",
+          "label": "Karnataka",
+          "sharePercent": 3.646
+        },
+        {
+          "id": "kerala",
+          "label": "Kerala",
+          "sharePercent": 1.943
+        },
+        {
+          "id": "madhya-pradesh",
+          "label": "Madhya Pradesh",
+          "sharePercent": 7.886
+        },
+        {
+          "id": "maharashtra",
+          "label": "Maharashtra",
+          "sharePercent": 6.135
+        },
+        {
+          "id": "manipur",
+          "label": "Manipur",
+          "sharePercent": 0.718
+        },
+        {
+          "id": "meghalaya",
+          "label": "Meghalaya",
+          "sharePercent": 0.765
+        },
+        {
+          "id": "mizoram",
+          "label": "Mizoram",
+          "sharePercent": 0.506
+        },
+        {
+          "id": "nagaland",
+          "label": "Nagaland",
+          "sharePercent": 0.573
+        },
+        {
+          "id": "odisha",
+          "label": "Odisha",
+          "sharePercent": 4.629
+        },
+        {
+          "id": "punjab",
+          "label": "Punjab",
+          "sharePercent": 1.788
+        },
+        {
+          "id": "rajasthan",
+          "label": "Rajasthan",
+          "sharePercent": 5.979
+        },
+        {
+          "id": "sikkim",
+          "label": "Sikkim",
+          "sharePercent": 0.388
+        },
+        {
+          "id": "tamil-nadu",
+          "label": "Tamil Nadu",
+          "sharePercent": 4.189
+        },
+        {
+          "id": "telangana",
+          "label": "Telangana",
+          "sharePercent": 2.133
+        },
+        {
+          "id": "tripura",
+          "label": "Tripura",
+          "sharePercent": 0.709
+        },
+        {
+          "id": "uttar-pradesh",
+          "label": "Uttar Pradesh",
+          "sharePercent": 17.931
+        },
+        {
+          "id": "uttarakhand",
+          "label": "Uttarakhand",
+          "sharePercent": 1.104
+        },
+        {
+          "id": "west-bengal",
+          "label": "West Bengal",
+          "sharePercent": 7.519
+        }
+      ]
+    },
+    {
+      "id": "fifteenth-finance-commission",
+      "label": "Fifteenth Finance Commission",
+      "divisiblePoolPercent": 41,
+      "sourceId": "xvfc-main-report",
+      "notes": "Horizontal shares are fixed for the whole award period, so they apply to every year from 2021-22 to 2025-26. They are cited to the Commission's own report, which is where they are decided — Table 6.5, 28 states summing to exactly 100. This used to cite the Ministry of Finance's restatement in the Receipts Budget 2025-26, Annex-4, chosen because its text layer rendered all 28 rows where the 2022-23 and 2024-25 editions corrupt the Madhya Pradesh and Maharashtra rows. That was an extraction convenience standing in for a provenance claim, and it made four actual-final years cite a budget-estimate document from a year none of them are: the shares were right, the citation was not. Annex-4 remains a useful cross-check — the 2022-23 and 2024-25 editions agree with Table 6.5 exactly — but the award is the source.",
+      "shares": [
+        {
+          "id": "andhra-pradesh",
+          "label": "Andhra Pradesh",
+          "sharePercent": 4.047
+        },
+        {
+          "id": "arunachal-pradesh",
+          "label": "Arunachal Pradesh",
+          "sharePercent": 1.757
+        },
+        {
+          "id": "assam",
+          "label": "Assam",
+          "sharePercent": 3.128
+        },
+        {
+          "id": "bihar",
+          "label": "Bihar",
+          "sharePercent": 10.058
+        },
+        {
+          "id": "chhattisgarh",
+          "label": "Chhattisgarh",
+          "sharePercent": 3.407
+        },
+        {
+          "id": "goa",
+          "label": "Goa",
+          "sharePercent": 0.386
+        },
+        {
+          "id": "gujarat",
+          "label": "Gujarat",
+          "sharePercent": 3.478
+        },
+        {
+          "id": "haryana",
+          "label": "Haryana",
+          "sharePercent": 1.093
+        },
+        {
+          "id": "himachal-pradesh",
+          "label": "Himachal Pradesh",
+          "sharePercent": 0.83
+        },
+        {
+          "id": "jharkhand",
+          "label": "Jharkhand",
+          "sharePercent": 3.307
+        },
+        {
+          "id": "karnataka",
+          "label": "Karnataka",
+          "sharePercent": 3.647
+        },
+        {
+          "id": "kerala",
+          "label": "Kerala",
+          "sharePercent": 1.925
+        },
+        {
+          "id": "madhya-pradesh",
+          "label": "Madhya Pradesh",
+          "sharePercent": 7.85
+        },
+        {
+          "id": "maharashtra",
+          "label": "Maharashtra",
+          "sharePercent": 6.317
+        },
+        {
+          "id": "manipur",
+          "label": "Manipur",
+          "sharePercent": 0.716
+        },
+        {
+          "id": "meghalaya",
+          "label": "Meghalaya",
+          "sharePercent": 0.767
+        },
+        {
+          "id": "mizoram",
+          "label": "Mizoram",
+          "sharePercent": 0.5
+        },
+        {
+          "id": "nagaland",
+          "label": "Nagaland",
+          "sharePercent": 0.569
+        },
+        {
+          "id": "odisha",
+          "label": "Odisha",
+          "sharePercent": 4.528
+        },
+        {
+          "id": "punjab",
+          "label": "Punjab",
+          "sharePercent": 1.807
+        },
+        {
+          "id": "rajasthan",
+          "label": "Rajasthan",
+          "sharePercent": 6.026
+        },
+        {
+          "id": "sikkim",
+          "label": "Sikkim",
+          "sharePercent": 0.388
+        },
+        {
+          "id": "tamil-nadu",
+          "label": "Tamil Nadu",
+          "sharePercent": 4.079
+        },
+        {
+          "id": "telangana",
+          "label": "Telangana",
+          "sharePercent": 2.102
+        },
+        {
+          "id": "tripura",
+          "label": "Tripura",
+          "sharePercent": 0.708
+        },
+        {
+          "id": "uttar-pradesh",
+          "label": "Uttar Pradesh",
+          "sharePercent": 17.939
+        },
+        {
+          "id": "uttarakhand",
+          "label": "Uttarakhand",
+          "sharePercent": 1.118
+        },
+        {
+          "id": "west-bengal",
+          "label": "West Bengal",
+          "sharePercent": 7.523
+        }
+      ],
+      "fromPeriod": "2021-22",
+      "toPeriod": "2025-26",
+      "sourceLocator": "Table 6.5: Inter se Shares of States"
+    }
+  ]
+}

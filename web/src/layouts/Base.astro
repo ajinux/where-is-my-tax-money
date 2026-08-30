@@ -1,0 +1,310 @@
+---
+// The document shell. Every page on the site goes through here, which is the
+// point: the head used to live inline in index.astro because there was only one
+// page, and a second page would have meant a second hand-maintained copy of
+// fifteen meta tags.
+//
+// The site's origin is read from `Astro.site` (astro.config.mjs) and nowhere
+// else. index.astro used to hard-code the canonical URL as a string literal
+// beside the config that already knew it.
+
+import "../styles/organic.css";
+
+// Self-hosted, replacing the render-blocking Google Fonts stylesheet that cost
+// two extra DNS+TLS round trips before the heading could paint, the worst
+// single delay on the mid-range Android over mobile data this is built for.
+//
+// The `<weight>.css` entry points, not the per-subset ones: these carry both the
+// latin and latin-ext faces WITH `unicode-range`, so the browser fetches only
+// the subsets a page actually uses. Importing `latin-ext-400.css` directly would
+// omit the range, and the later @font-face would then override the latin one
+// wholesale rather than complementing it.
+//
+// latin-ext is not optional here. The rupee sign U+20B9 lives in it (the range
+// covers U+20AD-20C0), so dropping it falls every ₹ on the site back to
+// system-ui.
+import "@fontsource/caprasimo/400.css";
+import "@fontsource/figtree/400.css";
+import "@fontsource/figtree/600.css";
+import "@fontsource/figtree/700.css";
+
+import { SITE_NAME } from "../lib/site";
+
+export interface Props {
+  title: string;
+  description: string;
+  /** Absolute site path, with a trailing slash: "/", "/method/", "/where/x/". */
+  path: string;
+  /** Site-absolute path to the share card. */
+  ogImage?: string;
+  ogImageAlt?: string;
+  noindex?: boolean;
+  /** schema.org objects, serialised into one ld+json block each. */
+  jsonLd?: Record<string, unknown>[];
+}
+
+const {
+  title,
+  description,
+  path,
+  ogImage = "/og/default.png",
+  ogImageAlt = "Where is my tax money, every rupee of union government spending, to scale.",
+  noindex = false,
+  jsonLd = [],
+} = Astro.props;
+
+// Astro.site is guaranteed by astro.config.mjs; the fallback keeps a stray
+// `astro dev --site=""` from emitting a relative canonical, which is worse than
+// a wrong one because nothing flags it.
+const origin = Astro.site ?? new URL("https://whereismytaxmoney.com");
+const canonical = new URL(path, origin).href;
+const cardUrl = new URL(ogImage, origin).href;
+
+/**
+ * Trim a description to what a search result actually shows.
+ *
+ * Google renders roughly 155-160 characters and rewrites the rest anyway, and
+ * these are assembled from dataset prose whose length nobody controls, a line
+ * item's summary can run to 200 characters on its own. Cutting on a word
+ * boundary here means no page has to remember to do it, and no page gets a
+ * description that ends mid-word.
+ */
+function clampText(text: string, limit = 158): string {
+  const clean = text.replace(/\s+/g, " ").trim();
+  if (clean.length <= limit) return clean;
+  const cut = clean.slice(0, limit);
+  const boundary = cut.lastIndexOf(" ");
+  return `${(boundary > limit * 0.6 ? cut.slice(0, boundary) : cut).replace(/[.,;:,-]+$/, "")}…`;
+}
+
+const metaDescription = clampText(description);
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={metaDescription} />
+    <link rel="canonical" href={canonical} />
+    <meta
+      name="robots"
+      content={noindex ? "noindex,follow" : "index,follow,max-image-preview:large"}
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={metaDescription} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:image" content={cardUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={ogImageAlt} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={metaDescription} />
+    <meta name="twitter:image" content={cardUrl} />
+    <meta name="twitter:image:alt" content={ogImageAlt} />
+
+    <meta name="theme-color" content="#f5ead8" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/og/apple-touch-icon.png" />
+    <link rel="sitemap" href="/sitemap.xml" />
+
+    {
+      jsonLd.map((block) => (
+        <script is:inline type="application/ld+json" set:html={JSON.stringify(block)} />
+      ))
+    }
+
+    <style is:global>
+      /* Cream, matching the panel. The comp framed a 1120px cream sheet on a
+         sand ground, which is invisible at the 430px it was drawn at and reads
+         as a large empty border on a desktop. The panel and its max-width are
+         unchanged, only the colour behind it, so the gutters read as ordinary
+         margins. This also covers iOS overscroll, which exposes the body. */
+      body { margin: 0; background: var(--color-bg); }
+      * { -webkit-tap-highlight-color: transparent; }
+      a { color: var(--color-accent-700); }
+      a:hover { color: var(--color-accent-600); }
+      input:focus-visible,
+      button:focus-visible,
+      a:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+
+      /* The comp expressed these as style-hover attributes, which the design
+         runtime applies. Real CSS does the same job without a per-element
+         listener, and keeps hover off touch devices where it would stick. */
+      @media (hover: hover) {
+        [data-row-copy] { opacity: 0.4; transition: opacity .15s ease; }
+        [data-row]:hover [data-row-copy],
+        [data-row-copy]:focus-visible,
+        [data-row-copy]:hover { opacity: 1; }
+
+        /* `!important` is load-bearing here, not laziness.
+
+           The design arrives as inline styles, that is how the comp is authored,
+           and the port keeps it that way so a component's look stays readable in
+           one place. Inline styles beat class selectors at any specificity, so
+           `.chip:hover { background: ... }` against an element carrying
+           `style="background: none"` simply never applied. Every hover rule below
+           was dead until this was added.
+
+           The convention that results: inline declares the resting state, and
+           these rules declare interaction states. */
+        .btn-cta:hover:not(:disabled) { background: var(--color-accent-600) !important; }
+        .btn-cta:active:not(:disabled) { background: var(--color-accent-700) !important; }
+        .chip:hover { background: var(--color-neutral-200) !important; }
+        .link-btn:hover { color: var(--color-accent-600) !important; }
+        .row-open:hover { background: var(--color-neutral-200) !important; }
+        .year-pick:hover { color: var(--color-accent-700) !important; }
+
+        /* The nested rows own their rounded box, so the hover goes on the
+           container rather than on an inner button, otherwise it paints a square
+           over the curved corners. Rows already tinted by a shared link are not
+           given this class, so their highlight survives the pointer. */
+        .row-nested:hover { background: var(--color-neutral-200) !important; }
+      }
+
+
+      /* A row someone was linked to. It is already scrolled into view and already
+         ringed by an inline style; this plays the ring loud once and lets it
+         settle, so the eye lands on the right row rather than searching for it.
+
+         No `!important` here, unlike the hover rules above. Animations sit above
+         author-normal declarations in the cascade, including inline ones, so
+         the keyframes override the inline ring while running and hand it back
+         when they finish. The global prefers-reduced-motion block collapses this
+         to nothing, which is safe by construction: the pulse only decorates a
+         resting state that already stands on its own. */
+      @keyframes row-found {
+        from { box-shadow: inset 0 0 0 3px var(--color-accent); }
+        to   { box-shadow: inset 0 0 0 2px var(--color-accent-300); }
+      }
+      .row-focus { animation: row-found 1.4s ease-out 1; }
+
+      /* The result screen: summary, the list of line items, and the share button.
+         One column on a phone, two above 760px, roughly where the old auto-fit
+         grid collapsed, but stated explicitly so the reorder happens at exactly
+         the same width the columns do.
+
+         The button is last in the DOM, so in one column it falls after every line
+         item: you decide to share once you have seen where the money went. In two
+         columns grid-template-areas lifts it back under the summary.
+
+         `grid-template-rows: auto 1fr` is load-bearing. The list spans both rows
+         and is far taller than the summary, 56 ministries, and with auto rows
+         the browser splits that excess evenly between them, which pushes the
+         button hundreds of pixels below the summary it belongs to. Pinning row 1
+         to its content and giving row 2 the remainder keeps the button where the
+         design put it. */
+      .result-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      .result-share { margin-top: 24px; }
+
+      @media (min-width: 760px) {
+        .result-grid {
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: auto 1fr;
+          grid-template-areas:
+            "summary list"
+            "share   list";
+          gap: 0 clamp(0px, 4vw, 56px);
+          align-items: start;
+        }
+        .result-summary { grid-area: summary; }
+        .result-list { grid-area: list; }
+        .result-share { grid-area: share; margin-top: 20px; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after {
+          animation-duration: 0.01ms !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+
+      /* --- the reference pages -------------------------------------------
+         Everything above styles the app, which is one React island authored in
+         inline styles. The pages under /where, /ministry, /demand, /state and
+         /year are plain server-rendered documents with no island in them at all,
+         so they are styled the ordinary way, from here. */
+      .doc { width: 100%; max-width: 760px; margin-inline: auto; padding: 0 clamp(22px, 4vw, 48px) 56px; }
+      .doc-wide { max-width: 1000px; }
+      .doc h1 { margin: 26px 0 0; font-size: clamp(32px, 4vw, 46px); line-height: 1.06; letter-spacing: -0.02em; text-wrap: pretty; }
+      .doc h2 { margin: 40px 0 0; font-size: clamp(22px, 2.2vw, 27px); line-height: 1.15; letter-spacing: -0.01em; text-wrap: pretty; }
+      .doc h3 { margin: 26px 0 0; font-size: 17px; line-height: 1.25; }
+      .doc p { margin: 12px 0 0; font-size: 15px; line-height: 1.6; color: var(--color-neutral-800); text-wrap: pretty; }
+      .doc .lede { font-size: clamp(16px, 1.4vw, 18px); color: var(--color-neutral-800); }
+      .doc ul { margin: 12px 0 0; padding-left: 20px; font-size: 15px; line-height: 1.6; color: var(--color-neutral-800); }
+      .doc li { margin-top: 7px; text-wrap: pretty; }
+      .doc small { font-size: 12.5px; color: var(--color-neutral-700); }
+
+      /* Breadcrumbs, and the "back to" trail at the top of every reference page. */
+      .crumbs { margin: 18px 0 0; font-size: 13px; color: var(--color-neutral-700); display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; }
+      .crumbs a { text-decoration: none; }
+      .crumbs a:hover { text-decoration: underline; }
+
+      /* A figure and the year it belongs to. The dataset's own rule is that a
+         title is a publication year and a figure is a data year, and they differ
+         so the period is printed beside every number rather than assumed. */
+      .figure { font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px, 3.4vw, 40px); line-height: 1.05; letter-spacing: -0.02em; margin: 0; }
+
+      .card { background: var(--color-surface); border-radius: var(--radius-lg); padding: 18px 20px; margin-top: 18px; }
+
+      table.figures { width: 100%; border-collapse: collapse; margin-top: 14px; font-size: 14px; }
+      table.figures caption { text-align: left; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-neutral-700); padding-bottom: 8px; }
+      /* Column spacing goes on the left of every cell after the first, not on the
+         right of each cell. Putting it on the right meant a right-aligned figure
+         cancelled its own gap (`.num` cleared padding-right so the last column
+         would sit flush with the table edge), and any `.num` column followed by
+         another column ran straight into it: "₹40,77,772 croreRevised estimate". */
+      table.figures th, table.figures td { text-align: left; padding: 9px 0; border-bottom: 1px solid var(--color-divider); vertical-align: baseline; }
+      table.figures th + th, table.figures td + td { padding-left: 20px; }
+      table.figures th { font-weight: 600; color: var(--color-neutral-800); }
+      table.figures td.num, table.figures th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+      /* Wide content scrolls inside its own box; the page body never does. */
+      .scroll-x { overflow-x: auto; }
+
+      .rows { list-style: none; margin: 16px 0 0; padding: 0; }
+      .rows li { border-bottom: 1px solid var(--color-divider); }
+      .rows a { display: flex; gap: 14px; align-items: baseline; justify-content: space-between; padding: 13px 0; text-decoration: none; color: var(--color-text); }
+      .rows a:hover { color: var(--color-accent-700); }
+      .rows .name { font-weight: 600; font-size: 15px; }
+      .rows .blurb { display: block; font-weight: 400; font-size: 13px; line-height: 1.45; color: var(--color-neutral-700); margin-top: 3px; }
+      .rows .amt { font-size: 14px; font-variant-numeric: tabular-nums; white-space: nowrap; color: var(--color-neutral-800); }
+
+      .bar { height: 8px; border-radius: 999px; background: var(--color-neutral-300); overflow: hidden; margin-top: 8px; }
+      .bar span { display: block; height: 100%; border-radius: 999px; }
+
+      .cite { margin-top: 10px; font-size: 12.5px; line-height: 1.5; color: var(--color-neutral-700); }
+      .cite a { color: var(--color-neutral-800); }
+
+      .cta { display: inline-block; margin-top: 22px; border-radius: 999px; background: var(--color-accent); color: var(--color-bg); font-size: 16px; font-weight: 700; padding: 15px 26px; text-decoration: none; }
+      .cta:hover { background: var(--color-accent-600); color: var(--color-bg); }
+    </style>
+  </head>
+  <body>
+    <slot />
+
+    {/* GoatCounter. `path` is pinned to the pathname so the query string never
+        reaches the pageview: the app carries its whole state there, which would
+        otherwise put one row per amount in the dashboard and make the top-pages
+        report useless. Anything worth measuring about a visit goes in as an
+        event instead, from src/lib/analytics.ts. count.js skips localhost on its
+        own, so development does not pollute the figures. */}
+    <script is:inline>
+      window.goatcounter = { path: () => location.pathname };
+    </script>
+    <script
+      is:inline
+      data-goatcounter="https://ajithkumar.goatcounter.com/count"
+      async
+      src="https://gc.zgo.at/count.js"></script>
+  </body>
+</html>

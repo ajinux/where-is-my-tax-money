@@ -1,0 +1,52 @@
+---
+import Page from "../../layouts/Page.astro";
+import { entities } from "../../lib/entities";
+import { formatCrore } from "../../lib/format";
+
+const years = entities.years;
+const title = "India's union budget, year by year";
+const description =
+  `Union government spending, tax receipts and devolution to states for every year from ` +
+  `${years[years.length - 1].label} to ${years[0].label}, each figure cited to the Ministry of ` +
+  `Finance document it was read from.`;
+---
+
+<Page
+  title={title}
+  description={description}
+  path="/year/"
+  wide
+  crumbs={[{ label: "Home", href: "/" }, { label: "By year" }]}
+>
+  <h1>Year by year</h1>
+  <p class="lede">
+    Each year is read from its own source documents, and that is not redundancy: an Expenditure
+    Profile's actuals column reports the year that ended two years earlier, so {years[years.length - 1].label}
+    comes from a different Budget's papers than {years[0].label} does.
+  </p>
+  <div class="scroll-x">
+    <table class="figures">
+      <thead>
+        <tr>
+          <th scope="col">Year</th>
+          <th scope="col" class="num">Union spending</th>
+          <th scope="col" class="num">To the states</th>
+          <th scope="col" class="num">Gross tax</th>
+          <th scope="col">Basis</th>
+        </tr>
+      </thead>
+      <tbody>
+        {years.map((year) => (
+          <tr>
+            <th scope="row"><a href={`/year/${year.id}/`}>{year.label}</a></th>
+            <td class="num">{formatCrore(year.unionTotal)}</td>
+            <td class="num">{formatCrore(year.devolutionTotal)}</td>
+            <td class="num">{formatCrore(year.grossTax)}</td>
+            <td><small>{year.tag}</small></td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <a class="cta" href="/">Work out your own share</a>
+</Page>

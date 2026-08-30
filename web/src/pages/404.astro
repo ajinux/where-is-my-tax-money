@@ -1,0 +1,36 @@
+---
+// GitHub Pages serves dist/404.html for any path it cannot match, so this
+// replaces GitHub's generic page with one that can get a reader back.
+
+import Page from "../layouts/Page.astro";
+import { entities } from "../lib/entities";
+
+const topPurposes = entities.purposes.slice(0, 6);
+---
+
+<Page
+  title="Page not found"
+  description="That page does not exist on whereismytaxmoney.com."
+  path="/404.html"
+  noindex
+>
+  <h1>That page is not here</h1>
+  <p class="lede">
+    The address may have changed, or the line item may not exist in the years this site covers
+    ({entities.years[entities.years.length - 1].label} to {entities.years[0].label}).
+  </p>
+
+  <h2>Try one of these</h2>
+  <ul>
+    <li><a href="/">Work out where your own income tax went</a></li>
+    <li><a href="/method/">How the calculation works</a></li>
+    <li><a href="/sources/">Every document the figures come from</a></li>
+  </ul>
+
+  <h2>The big categories</h2>
+  <ul>
+    {topPurposes.map((purpose) => (
+      <li><a href={`/where/${purpose.slug}/`}>{purpose.label}</a></li>
+    ))}
+  </ul>
+</Page>

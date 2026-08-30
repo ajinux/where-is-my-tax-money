@@ -1,0 +1,179 @@
+---
+// /year/<period>/, the whole budget for one financial year.
+//
+// Four separate published totals meet on this page and they must not be added
+// together: union expenditure, the states' share of central taxes, gross tax
+// receipts, and the earmarked cess. Three of them sit outside the union spending
+// perimeter, which the dataset declares explicitly rather than leaving to prose.
+// The page keeps them in separate sections for the same reason.
+
+import Page from "../../layouts/Page.astro";
+import RowList from "../../components/doc/RowList.astro";
+import { entities, amountIn } from "../../lib/entities";
+import { formatCrore, formatCroreShort } from "../../lib/format";
+import { purposePath, ministryPath, statePath } from "../../lib/routes";
+
+export function getStaticPaths() {
+  return entities.years.map((year) => ({
+    params: { period: year.id },
+    props: { year },
+  }));
+}
+
+const { year } = Astro.props;
+
+const purposes = entities.purposes
+  .filter((p) => p.amounts[year.id] != null)
+  .sort((a, b) => amountIn(b, year.id) - amountIn(a, year.id));
+const ministries = entities.ministries
+  .filter((m) => m.amounts[year.id] != null)
+  .sort((a, b) => amountIn(b, year.id) - amountIn(a, year.id));
+const states = entities.states
+  .filter((s) => s.amounts[year.id] != null)
+  .sort((a, b) => amountIn(b, year.id) - amountIn(a, year.id));
+const cess = entities.cess.filter((c) => c.amounts[year.id] != null);
+
+const settled = year.status === "actual-final";
+
+const title = `India's union budget ${year.label}: where every rupee went`;
+const description =
+  `The union government spent ${formatCrore(year.unionTotal)} in ${year.label}, devolved ` +
+  `${formatCrore(year.devolutionTotal)} to the states, and collected ` +
+  `${formatCrore(year.grossTax)} in gross tax. Broken down by purpose and by ministry, ` +
+  `every figure cited to its Ministry of Finance source.`;
+---
+
+<Page
+  title={title}
+  description={description}
+  path={`/year/${year.id}/`}
+  ogImage={`/og/year-${year.id}.png`}
+  ogImageAlt={`India's union budget for ${year.label}, to scale.`}
+  wide
+  crumbs={[{ label: "Home", href: "/" }, { label: "By year", href: "/year/" }, { label: year.label }]}
+>
+  <h1>The union budget, {year.label}</h1>
+  <p class="lede">
+    {
+      settled
+        ? "These are actuals, what was really spent, published after the year closed."
+        : "These are revised estimates, not actuals. The year is not yet settled, and the figures will be republished when the next Budget carries its actuals."
+    }
+  </p>
+
+  <div class="card">
+    <p class="figure">{formatCrore(year.unionTotal)}</p>
+    <p style="margin-top:6px">
+      total union government expenditure in {year.label}. <small>{year.tag}.</small>
+    </p>
+  </div>
+
+  <h2>What it paid for</h2>
+  <RowList
+    showBars
+    items={purposes.map((purpose) => ({
+      href: purposePath(purpose.slug),
+      name: purpose.label,
+      blurb: purpose.description,
+      amountRupees: amountIn(purpose, year.id),
+      tone: purpose.tone,
+    }))}
+  />
+
+  <h2>Who spent it</h2>
+  <p>
+    The same money, grouped by ministry rather than by purpose. Both lists cover exactly the same
+    rupees and both sum to the total above, checked at build time, not asserted.
+  </p>
+  <RowList
+    showBars
+    items={ministries.slice(0, 20).map((ministry) => ({
+      href: ministryPath(ministry.slug),
+      name: ministry.label,
+      blurb: ministry.description,
+      amountRupees: amountIn(ministry, year.id),
+      tone: ministry.tone,
+    }))}
+  />
+  {
+    ministries.length > 20 && (
+      <p>
+        <a href="/ministry/">All {ministries.length} ministries →</a>
+      </p>
+    )
+  }
+
+  <h2>Before any of that: what the states received</h2>
+  <p>
+    {formatCrore(year.devolutionTotal)} went to the states as their constitutional share of
+    central taxes, at the {year.divisiblePoolPercent}% rate
+    {year.awardLabel ? ` the ${year.awardLabel} sets` : ""}. This is deducted from receipts before
+    the union spends anything, so it is not part of the total above and must never be added to it.
+  </p>
+  <RowList
+    items={states.slice(0, 10).map((state) => ({
+      href: statePath(state.slug),
+      name: state.label,
+      amountRupees: amountIn(state, year.id),
+    }))}
+  />
+  <p><a href="/state/">All {states.length} states →</a></p>
+
+  <h2>What was collected</h2>
+  <div class="scroll-x">
+    <table class="figures">
+      <tbody>
+        <tr>
+          <th scope="row">Gross tax revenue</th>
+          <td class="num">{formatCrore(year.grossTax)}</td>
+        </tr>
+        {year.divisiblePool != null && (
+          <tr>
+            <th scope="row">Of that, the divisible pool</th>
+            <td class="num">{formatCrore(year.divisiblePool)}</td>
+          </tr>
+        )}
+        {year.nonShareable != null && (
+          <tr>
+            <th scope="row">Not shareable with states</th>
+            <td class="num">{formatCrore(year.nonShareable)}</td>
+          </tr>
+        )}
+      </tbody>
+    </table>
+  </div>
+
+  {
+    cess.length > 0 && (
+      <>
+        <h2>The health and education cess</h2>
+        <p>
+          {formatCrore(year.cessTotal)} of cess was credited to earmarked reserve funds. Unlike
+          ordinary tax it cannot pay for anything else, the funds may finance only the schemes
+          they carry.
+        </p>
+        <RowList
+          items={cess.map((fund) => ({
+            name: fund.label,
+            blurb: fund.summary,
+            amountRupees: amountIn(fund, year.id),
+          }))}
+        />
+      </>
+    )
+  }
+
+  <h2>Other years</h2>
+  <ul>
+    {entities.years
+      .filter((other) => other.id !== year.id)
+      .map((other) => (
+        <li>
+          <a href={`/year/${other.id}/`}>The union budget, {other.label}</a>{" "}
+          <small>{formatCroreShort(other.unionTotal)} · {other.tag.toLowerCase()}</small>
+        </li>
+      ))}
+  </ul>
+
+  <a class="cta" href="/">Work out your own share of {year.label}</a>
+</Page>

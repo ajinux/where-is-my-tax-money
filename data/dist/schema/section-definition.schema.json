@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SectionDefinition",
+  "description": "A section's period-invariant identity: its own label and description,\nand each fact id's label, written once for every period that carries it.\nOne file per section directory, discovered the same way period files\nare.",
+  "$defs": {
+    "SectionDefinitionLine": {
+      "properties": {
+        "label": {
+          "minLength": 1,
+          "title": "Label",
+          "type": "string"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "pattern": "^https://\\S+$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Url"
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        }
+      },
+      "required": [
+        "label"
+      ],
+      "title": "SectionDefinitionLine",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "section": {
+      "title": "Section",
+      "type": "string"
+    },
+    "label": {
+      "minLength": 1,
+      "title": "Label",
+      "type": "string"
+    },
+    "description": {
+      "minLength": 1,
+      "title": "Description",
+      "type": "string"
+    },
+    "lines": {
+      "additionalProperties": {
+        "$ref": "#/$defs/SectionDefinitionLine"
+      },
+      "title": "Lines",
+      "type": "object"
+    }
+  },
+  "required": [
+    "section",
+    "label",
+    "description"
+  ],
+  "type": "object"
+}

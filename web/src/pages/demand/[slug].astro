@@ -1,0 +1,150 @@
+---
+// /demand/<slug>/, one budget line, across every year the dataset covers.
+//
+// The 102 richest pages on the site. Each carries a human-written summary naming
+// the actual schemes the line funds, the figure for every year, the revenue and
+// capital columns, and a citation to the Ministry of Finance document and column
+// each figure was read from. Fifteen of them also carry a full itemised
+// paragraph; those cover roughly four-fifths of union spending.
+//
+// The slug is built from the label rather than the id, because `demand-39`
+// identifies the line correctly and tells a reader nothing. Labels are safe to
+// build URLs on here: the dataset's `label-drift` rule compares every period of a
+// section and refuses to build if one of them wanders.
+
+import Page from "../../layouts/Page.astro";
+import YearTable from "../../components/doc/YearTable.astro";
+import RowList from "../../components/doc/RowList.astro";
+import Citations from "../../components/doc/Citations.astro";
+import { entities, purposeById, ministryById, amountIn, newestPeriodOf } from "../../lib/entities";
+import { formatCrore } from "../../lib/format";
+import { purposePath, ministryPath } from "../../lib/routes";
+
+export function getStaticPaths() {
+  return entities.lines.map((line) => ({
+    params: { slug: line.slug },
+    props: { line },
+  }));
+}
+
+const { line } = Astro.props;
+
+// Not every line appears in every year, a demand can be created or wound up,
+// so the headline figure is the newest year this one actually has.
+const period = newestPeriodOf(line);
+const year = entities.years.find((y) => y.id === period) ?? entities.years[0];
+const amount = amountIn(line, period);
+const share = year.unionTotal ? (amount / year.unionTotal) * 100 : 0;
+
+const purpose = line.purposeId ? purposeById.get(line.purposeId) : undefined;
+const ministry = line.ministryId ? ministryById.get(line.ministryId) : undefined;
+const parts = line.parts[period] ?? [];
+const split = line.split[period];
+
+const title = `${line.label}: budget and spending, ${year.label}`;
+const description =
+  `${line.label} accounted for ${formatCrore(amount)} of union government spending in ` +
+  `${year.label}. ${line.summary ?? ""}`.trim();
+---
+
+<Page
+  title={title}
+  description={description}
+  path={`/demand/${line.slug}/`}
+  ogImage={purpose ? `/og/where-${purpose.slug}.png` : "/og/default.png"}
+  ogImageAlt={`${line.label} in India's union budget.`}
+  crumbs={[
+    { label: "Home", href: "/" },
+    ...(purpose ? [{ label: purpose.label, href: purposePath(purpose.slug) }] : []),
+    { label: line.label },
+  ]}
+>
+  <h1>{line.label}</h1>
+  {line.summary && <p class="lede">{line.summary}</p>}
+
+  <div class="card">
+    <p class="figure">{formatCrore(amount)}</p>
+    <p style="margin-top:6px">
+      in <a href={`/year/${year.id}/`}>{year.label}</a>, {share.toFixed(2)}% of all union
+      government spending. <small>{year.tag}.</small>
+    </p>
+    {
+      split && (
+        <p style="margin-top:10px">
+          <small>
+            {split.revenue != null && <>Revenue {formatCrore(split.revenue)}</>}
+            {split.revenue != null && split.capital != null && " · "}
+            {split.capital != null && <>Capital {formatCrore(split.capital)}</>}
+            {split.capital != null && split.capital < 0 && (
+              <>
+                {" "}, a negative capital column is not an error. Statement 3 publishes capital
+                spending net of recoveries, and a body whose recoveries exceed its outlay nets
+                out below zero.
+              </>
+            )}
+          </small>
+        </p>
+      )
+    }
+  </div>
+
+  {
+    line.spentOn && (
+      <>
+        <h2>What the money actually buys</h2>
+        <p>{line.spentOn}</p>
+      </>
+    )
+  }
+
+  {
+    parts.length > 0 && (
+      <>
+        <h2>How it breaks down</h2>
+        <p>
+          The parts a published document names, in {year.label}. They sum to the total above
+          exactly. That is the rule the whole dataset is built on, and a total and its parts
+          almost always come from different documents, so their agreement is corroboration rather
+          than arithmetic performed on itself.
+        </p>
+        <RowList
+          showBars
+          items={parts.map((part) => ({
+            name: part.label,
+            blurb: part.summary,
+            amountRupees: part.amountRupees,
+            tone: purpose?.tone,
+          }))}
+        />
+      </>
+    )
+  }
+
+  <h2>Every year on record</h2>
+  <YearTable amounts={line.amounts} split={line.split} caption={`${line.label}, by year`} />
+
+  <h2>Where this sits in the budget</h2>
+  <ul>
+    {purpose && (
+      <li>
+        Counted under <a href={purposePath(purpose.slug)}>{purpose.label}</a>, what the money
+        paid for.
+      </li>
+    )}
+    {ministry && (
+      <li>
+        Spent by <a href={ministryPath(ministry.slug)}>{ministry.label}</a>, who spent it.
+        {ministry.url && <> <a href={ministry.url} rel="noopener nofollow">Official site</a>.</>}
+      </li>
+    )}
+  </ul>
+
+  <Citations byPeriod={line.cites} />
+
+  <h2>Your share of it</h2>
+  <p>
+    Put in what you paid in income tax and the same proportion of your own money is applied to
+    this line.
+  </p>
+  <a class="cta" href="/">Work out your own share</a>
+</Page>

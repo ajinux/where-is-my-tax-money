@@ -1,0 +1,35 @@
+{
+  "name": "wimtm-web",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.3.0"
+  },
+  "scripts": {
+    "data": "node scripts/build-data.mjs && node scripts/build-og.mjs",
+    "dev": "npm run data && astro dev",
+    "build": "npm run data && astro check && astro build",
+    "preview": "astro preview",
+    "test": "tsx --test tests/*.test.ts tests/*.test.tsx",
+    "check": "astro check",
+    "fixtures": "python3 scripts/gen-fixtures.py"
+  },
+  "dependencies": {
+    "@astrojs/react": "^4.2.0",
+    "astro": "^5.3.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@fontsource/caprasimo": "^5.3.0",
+    "@fontsource/figtree": "^5.3.0",
+    "@resvg/resvg-js": "^2.6.2",
+    "@types/node": "^26.2.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "satori": "^0.33.4",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}

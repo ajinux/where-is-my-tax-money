@@ -1,0 +1,6 @@
+{
+  "section": "tax-devolution",
+  "label": "States' share of central taxes",
+  "description": "The states' constitutional share of union tax collections, devolved unconditionally. Deducted from receipts before the union spends anything, so it sits outside the expenditure perimeter entirely.",
+  "lines": {}
+}

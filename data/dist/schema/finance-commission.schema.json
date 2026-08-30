@@ -1,0 +1,132 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FinanceCommission",
+  "description": "A Finance Commission's horizontal devolution shares — the input to the\n`finance-commission-shares` generator. Only percentages are authored; the\nper-state rupee amounts are derived at build time from a published\ntotal.",
+  "$defs": {
+    "Award": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "label": {
+          "minLength": 1,
+          "title": "Label",
+          "type": "string"
+        },
+        "fromPeriod": {
+          "title": "Fromperiod",
+          "type": "string"
+        },
+        "toPeriod": {
+          "title": "Toperiod",
+          "type": "string"
+        },
+        "divisiblePoolPercent": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0.0,
+              "maximum": 100.0,
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            }
+          ],
+          "title": "Divisiblepoolpercent"
+        },
+        "sourceId": {
+          "title": "Sourceid",
+          "type": "string"
+        },
+        "sourceLocator": {
+          "minLength": 1,
+          "title": "Sourcelocator",
+          "type": "string"
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        },
+        "shares": {
+          "items": {
+            "$ref": "#/$defs/Share"
+          },
+          "minItems": 1,
+          "title": "Shares",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "label",
+        "fromPeriod",
+        "toPeriod",
+        "divisiblePoolPercent",
+        "sourceId",
+        "sourceLocator",
+        "shares"
+      ],
+      "title": "Award",
+      "type": "object"
+    },
+    "Share": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "label": {
+          "minLength": 1,
+          "title": "Label",
+          "type": "string"
+        },
+        "sharePercent": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0.0,
+              "maximum": 100.0,
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            }
+          ],
+          "title": "Sharepercent"
+        }
+      },
+      "required": [
+        "id",
+        "label",
+        "sharePercent"
+      ],
+      "title": "Share",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "awards": {
+      "items": {
+        "$ref": "#/$defs/Award"
+      },
+      "minItems": 1,
+      "title": "Awards",
+      "type": "array"
+    }
+  },
+  "required": [
+    "awards"
+  ],
+  "type": "object"
+}

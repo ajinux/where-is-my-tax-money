@@ -1,0 +1,79 @@
+{
+  "section": "cess-earmark",
+  "label": "Health and Education Cess",
+  "description": "The 4% Health and Education Cess is earmarked: its proceeds are credited to reserve funds in the Public Account and may finance only the schemes those funds carry. Unlike ordinary tax, it cannot pay for anything else.",
+  "lines": {
+    "ayushman-bharat-pmjay": {
+      "label": "Ayushman Bharat - Pradhan Mantri Jan Aarogya Yojana"
+    },
+    "grants-to-central-universities": {
+      "label": "Grants to Central Universities"
+    },
+    "health-infrastructure-maintenance": {
+      "label": "Infrastructure maintenance"
+    },
+    "human-resources-for-health": {
+      "label": "Human Resources for Health and Medical Education"
+    },
+    "indian-institutes-of-technology": {
+      "label": "Indian Institutes of Technology"
+    },
+    "interest-subsidy-guarantee-funds": {
+      "label": "Interest subsidy and contribution for guarantee funds"
+    },
+    "kendriya-vidyalaya-sangathan": {
+      "label": "Kendriya Vidyalaya Sangathan (KVS)"
+    },
+    "madhyamik-uchchatar-shiksha-kosh": {
+      "label": "Madhyamik and Uchchatar Shiksha Kosh"
+    },
+    "national-institutes-of-technology": {
+      "label": "National Institutes of Technology and Indian Institute of Engineering Science and Technology"
+    },
+    "national-means-cum-merit-scholarship": {
+      "label": "National Means cum Merit Scholarship Scheme"
+    },
+    "national-rural-health-mission": {
+      "label": "National Health Mission"
+    },
+    "navodaya-vidyalaya-samiti": {
+      "label": "Navodaya Vidyalaya Samiti (NVS)"
+    },
+    "pm-poshan": {
+      "label": "Pradhan Mantri Poshan Shakti Nirman (PM-POSHAN)"
+    },
+    "pm-usha": {
+      "label": "Pradhan Mantri Uchchatar Shiksha Abhiyan (PM-USHA)"
+    },
+    "pm-usp-yojana": {
+      "label": "PM Uchchatar Shiksha Protsahan (PM-USP) Yojana"
+    },
+    "pradhan-mantri-swasthya-suraksha-nidhi": {
+      "label": "Pradhan Mantri Swasthya Suraksha Nidhi"
+    },
+    "prarambhik-shiksha-kosh": {
+      "label": "Prarambhik Shiksha Kosh"
+    },
+    "rch-health-system-strengthening": {
+      "label": "Flexible Pool for RCH and Health System Strengthening, National Health Programme and National Urban Health Mission"
+    },
+    "samagra-shiksha": {
+      "label": "Samagra Shiksha"
+    },
+    "samagra-shiksha-secondary": {
+      "label": "Samagra Shiksha (secondary and higher)"
+    },
+    "scholarship-for-college-students": {
+      "label": "Scholarships for college and university students"
+    },
+    "skill-india-programme": {
+      "label": "Skill India Programme"
+    },
+    "teachers-and-teaching": {
+      "label": "Teachers and teaching"
+    },
+    "university-grants-commission": {
+      "label": "University Grants Commission (UGC)"
+    }
+  }
+}

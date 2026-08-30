@@ -1,0 +1,44 @@
+{
+  "version": "axes-1",
+  "axes": [
+    {
+      "id": "purpose",
+      "label": "What it paid for",
+      "description": "The purpose the money served, using a shared category vocabulary.",
+      "kind": "partition",
+      "groups": "purpose"
+    },
+    {
+      "id": "administrative",
+      "label": "Who spent it",
+      "description": "The ministry or department that spent the money.",
+      "kind": "partition",
+      "groups": "administrative"
+    },
+    {
+      "id": "destination",
+      "label": "Where it went",
+      "description": "The parts a published total breaks into, where a document names them.",
+      "kind": "partition"
+    },
+    {
+      "id": "recipient",
+      "label": "Which state received it",
+      "description": "The states that received the money, where the split is published and reconciles.",
+      "kind": "partition"
+    },
+    {
+      "id": "shareability",
+      "label": "Shared with states or not",
+      "description": "Whether tax collected enters the divisible pool states take a share of.",
+      "kind": "partition"
+    },
+    {
+      "id": "account-class",
+      "label": "Revenue or capital",
+      "description": "Whether spending creates an asset. The same money, classified — not a destination.",
+      "kind": "classification",
+      "groups": "account-class"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+---
+import Page from "../../layouts/Page.astro";
+import RowList from "../../components/doc/RowList.astro";
+import { entities, amountIn } from "../../lib/entities";
+import { formatCrore } from "../../lib/format";
+import { purposePath } from "../../lib/routes";
+
+const newest = entities.years[0];
+const purposes = entities.purposes;
+const title = `What India's union budget pays for, ${newest.label}`;
+const description =
+  `All ${purposes.length} categories of union government spending in ${newest.label}, ` +
+  `totalling ${formatCrore(newest.unionTotal)}, from interest on past borrowing to defence, ` +
+  `health, education and transport.`;
+---
+
+<Page
+  title={title}
+  description={description}
+  path="/where/"
+  crumbs={[{ label: "Home", href: "/" }, { label: "What it paid for" }]}
+>
+  <h1>What the union budget pays for</h1>
+  <p class="lede">
+    Every rupee the union government spent in {newest.label}, {formatCrore(newest.unionTotal)},
+    sorted into {purposes.length} categories by what it paid for. Each category is the sum of the
+    budget lines inside it; nothing here carries a total of its own.
+  </p>
+  <RowList
+    showBars
+    items={purposes.map((purpose) => ({
+      href: purposePath(purpose.slug),
+      name: purpose.label,
+      blurb: purpose.description,
+      amountRupees: amountIn(purpose, newest.id),
+      tone: purpose.tone,
+    }))}
+  />
+  <h2>The same money, another way</h2>
+  <p>
+    <a href="/ministry/">By the ministry that spent it</a> · <a href="/year/">Year by year</a> ·
+    <a href="/demand/">Every budget line</a>
+  </p>
+  <a class="cta" href="/">Work out your own share</a>
+</Page>

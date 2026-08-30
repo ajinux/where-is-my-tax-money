@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SourcesManifest",
+  "description": "Source documents and their checksums.",
+  "$defs": {
+    "Source": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "publisher": {
+          "minLength": 1,
+          "title": "Publisher",
+          "type": "string"
+        },
+        "documentTitle": {
+          "minLength": 1,
+          "title": "Documenttitle",
+          "type": "string"
+        },
+        "canonicalUrl": {
+          "pattern": "^https://\\S+$",
+          "title": "Canonicalurl",
+          "type": "string"
+        },
+        "period": {
+          "title": "Period",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "actual-final",
+            "actual-provisional",
+            "revised-estimate",
+            "budget-estimate"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "documentKind": {
+          "enum": [
+            "accounts",
+            "budget-document",
+            "award"
+          ],
+          "title": "Documentkind",
+          "type": "string"
+        },
+        "unit": {
+          "enum": [
+            "rupees",
+            "lakh-rupees",
+            "crore-rupees"
+          ],
+          "title": "Unit",
+          "type": "string"
+        },
+        "retrievedAt": {
+          "title": "Retrievedat",
+          "type": "string"
+        },
+        "file": {
+          "pattern": "^[A-Za-z0-9._-]+$",
+          "title": "File",
+          "type": "string"
+        },
+        "checksumSha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Checksumsha256",
+          "type": "string"
+        },
+        "verification": {
+          "default": "checksum",
+          "enum": [
+            "checksum",
+            "unstable"
+          ],
+          "title": "Verification",
+          "type": "string"
+        },
+        "verificationNote": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Verificationnote"
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        }
+      },
+      "required": [
+        "id",
+        "publisher",
+        "documentTitle",
+        "canonicalUrl",
+        "period",
+        "status",
+        "documentKind",
+        "unit",
+        "retrievedAt",
+        "file",
+        "checksumSha256"
+      ],
+      "title": "Source",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "sources": {
+      "items": {
+        "$ref": "#/$defs/Source"
+      },
+      "minItems": 1,
+      "title": "Sources",
+      "type": "array"
+    }
+  },
+  "required": [
+    "sources"
+  ],
+  "type": "object"
+}

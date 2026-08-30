@@ -1,0 +1,314 @@
+{
+  "id": "administrative",
+  "version": "administrative-vocabulary-2",
+  "notes": "Ministry groupings are read from each demand's own Notes on Demands, which prints the ministry as the heading above the demand number. The structure is the one the 2026-27 Budget publishes, applied to every period so a demand keeps one place across years; a machinery-of-government change that moved a demand between ministries in an earlier year is not reflected. Descriptions list the departments each ministry contains rather than characterising it. Official websites are recorded only where the site named itself as that body — its own page title, or its full name in the page — so a missing url means unverified, not absent. Nothing here is written from recollection: a plausible-looking domain that does not corroborate is dropped.",
+  "groups": [
+    {
+      "id": "agriculture-and-farmers-welfare",
+      "label": "Ministry of Agriculture and Farmers Welfare",
+      "description": "Department of Agriculture and Farmers Welfare; Department of Agricultural Research and Education.",
+      "url": "https://agriwelfare.gov.in"
+    },
+    {
+      "id": "atomic-energy",
+      "label": "Department of Atomic Energy",
+      "description": "Atomic Energy.",
+      "url": "https://dae.gov.in"
+    },
+    {
+      "id": "ayush",
+      "label": "Ministry of AYUSH",
+      "description": "Ministry of Ayush."
+    },
+    {
+      "id": "chemicals-and-fertilisers",
+      "label": "Ministry of Chemicals and Fertilisers",
+      "description": "Department of Chemicals and Petrochemicals; Department of Fertilisers; Department of Pharmaceuticals.",
+      "url": "https://chemicals.gov.in"
+    },
+    {
+      "id": "civil-aviation",
+      "label": "Ministry of Civil Aviation",
+      "description": "Ministry of Civil Aviation.",
+      "url": "https://civilaviation.gov.in"
+    },
+    {
+      "id": "coal",
+      "label": "Ministry of Coal",
+      "description": "Ministry of Coal.",
+      "url": "https://coal.gov.in"
+    },
+    {
+      "id": "commerce-and-industry",
+      "label": "Ministry of Commerce and Industry",
+      "description": "Department of Commerce; Department for Promotion of Industry and Internal Trade."
+    },
+    {
+      "id": "communications",
+      "label": "Ministry of Communications",
+      "description": "Department of Posts; Department of Telecommunications."
+    },
+    {
+      "id": "consumer-affairs-food-and-public-distribution",
+      "label": "Ministry of Consumer Affairs, Food and Public Distribution",
+      "description": "Department of Consumer Affairs; Department of Food and Public Distribution."
+    },
+    {
+      "id": "cooperation",
+      "label": "Ministry of Cooperation",
+      "description": "Ministry of Cooperation."
+    },
+    {
+      "id": "corporate-affairs",
+      "label": "Ministry of Corporate Affairs",
+      "description": "Ministry of Corporate Affairs."
+    },
+    {
+      "id": "culture",
+      "label": "Ministry of Culture",
+      "description": "Ministry of Culture.",
+      "url": "https://culture.gov.in"
+    },
+    {
+      "id": "defence",
+      "label": "Ministry of Defence",
+      "description": "Ministry of Defence (Civil); Defence Services (Revenue); Capital Outlay on Defence Services; Defence Pensions.",
+      "url": "https://mod.gov.in"
+    },
+    {
+      "id": "development-of-north-eastern-region",
+      "label": "Ministry of Development of North Eastern Region",
+      "description": "Ministry of Development of North Eastern Region."
+    },
+    {
+      "id": "earth-sciences",
+      "label": "Ministry of Earth Sciences",
+      "description": "Ministry of Earth Sciences."
+    },
+    {
+      "id": "education",
+      "label": "Ministry of Education",
+      "description": "Department of School Education and Literacy; Department of Higher Education."
+    },
+    {
+      "id": "electronics-and-information-technology",
+      "label": "Ministry of Electronics and Information Technology",
+      "description": "Ministry of Electronics and Information Technology."
+    },
+    {
+      "id": "environment-forests-and-climate-change",
+      "label": "Ministry of Environment, Forests and Climate Change",
+      "description": "Ministry of Environment, Forests and Climate Change.",
+      "url": "https://moef.gov.in"
+    },
+    {
+      "id": "external-affairs",
+      "label": "Ministry of External Affairs",
+      "description": "Ministry of External Affairs.",
+      "url": "https://mea.gov.in"
+    },
+    {
+      "id": "finance",
+      "label": "Ministry of Finance",
+      "description": "Department of Economic Affairs; Department of Expenditure; Department of Financial Services; Department of Public Enterprises; Department of Investment and Public Asset Management (DIPAM); Department of Revenue; Direct Taxes; Indirect Taxes; Indian Audit and Accounts Department; Interest Payments; Repayment of Debt; Pensions; Transfers to States."
+    },
+    {
+      "id": "fisheries-animal-husbandry-and-dairying",
+      "label": "Ministry of Fisheries, Animal Husbandry and Dairying",
+      "description": "Department of Fisheries; Department of Animal Husbandry and Dairying.",
+      "url": "https://dahd.gov.in"
+    },
+    {
+      "id": "food-processing-industries",
+      "label": "Ministry of Food Processing Industries",
+      "description": "Ministry of Food Processing Industries.",
+      "url": "https://mofpi.gov.in"
+    },
+    {
+      "id": "health-and-family-welfare",
+      "label": "Ministry of Health and Family Welfare",
+      "description": "Department of Health and Family Welfare; Department of Health Research."
+    },
+    {
+      "id": "heavy-industries",
+      "label": "Ministry of Heavy Industries",
+      "description": "Ministry of Heavy Industries.",
+      "url": "https://heavyindustries.gov.in"
+    },
+    {
+      "id": "home-affairs",
+      "label": "Ministry of Home Affairs",
+      "description": "Ministry of Home Affairs; Cabinet; Police; Andaman and Nicobar Islands; Chandigarh; Dadra and Nagar Haveli and Daman and Diu; Ladakh; Lakshadweep; Transfers to Delhi; Transfers to Jammu and Kashmir; Transfers to Puducherry.",
+      "url": "https://www.mha.gov.in"
+    },
+    {
+      "id": "housing-and-urban-affairs",
+      "label": "Ministry of Housing and Urban Affairs",
+      "description": "Ministry of Housing and Urban Affairs."
+    },
+    {
+      "id": "information-and-broadcasting",
+      "label": "Ministry of Information and Broadcasting",
+      "description": "Ministry of Information and Broadcasting.",
+      "url": "https://mib.gov.in"
+    },
+    {
+      "id": "jal-shakti",
+      "label": "Ministry of Jal Shakti",
+      "description": "Department of Water Resources, River Development and Ganga; Department of Drinking Water and Sanitation."
+    },
+    {
+      "id": "labour-and-employment",
+      "label": "Ministry of Labour and Employment",
+      "description": "Ministry of Labour and Employment."
+    },
+    {
+      "id": "law-and-justice",
+      "label": "Ministry of Law and Justice",
+      "description": "Law and Justice; Election Commission; Supreme Court of India."
+    },
+    {
+      "id": "micro-small-and-medium-enterprises",
+      "label": "Ministry of Micro, Small and Medium Enterprises",
+      "description": "Ministry of Micro, Small and Medium Enterprises."
+    },
+    {
+      "id": "mines",
+      "label": "Ministry of Mines",
+      "description": "Ministry of Mines."
+    },
+    {
+      "id": "minority-affairs",
+      "label": "Ministry of Minority Affairs",
+      "description": "Ministry of Minority Affairs.",
+      "url": "https://minorityaffairs.gov.in"
+    },
+    {
+      "id": "new-and-renewable-energy",
+      "label": "Ministry of New and Renewable Energy",
+      "description": "Ministry of New and Renewable Energy."
+    },
+    {
+      "id": "panchayati-raj",
+      "label": "Ministry of Panchayati Raj",
+      "description": "Ministry of Panchayati Raj.",
+      "url": "https://panchayat.gov.in"
+    },
+    {
+      "id": "parliamentary-affairs",
+      "label": "Ministry of Parliamentary Affairs",
+      "description": "Ministry of Parliamentary Affairs."
+    },
+    {
+      "id": "personnel-public-grievances-and-pensions",
+      "label": "Ministry of Personnel, Public Grievances and Pensions",
+      "description": "Ministry of Personnel, Public Grievances and Pensions; Central Vigilance Commission.",
+      "url": "https://dopt.gov.in"
+    },
+    {
+      "id": "petroleum-and-natural-gas",
+      "label": "Ministry of Petroleum and Natural Gas",
+      "description": "Ministry of Petroleum and Natural Gas."
+    },
+    {
+      "id": "planning",
+      "label": "Ministry of Planning",
+      "description": "Ministry of Planning.",
+      "url": "https://www.niti.gov.in"
+    },
+    {
+      "id": "ports-shipping-and-waterways",
+      "label": "Ministry of Ports, Shipping and Waterways",
+      "description": "Ministry of Ports, Shipping and Waterways.",
+      "url": "https://shipmin.gov.in"
+    },
+    {
+      "id": "power",
+      "label": "Ministry of Power",
+      "description": "Ministry of Power."
+    },
+    {
+      "id": "president-parliament-and-upsc",
+      "label": "The President, Parliament, Union Public Service Commission and the Secretariat of the Vice President",
+      "description": "Staff, Household and Allowances of the President; Lok Sabha; Rajya Sabha; Secretariat of the Vice-President; Union Public Service Commission."
+    },
+    {
+      "id": "railways",
+      "label": "Ministry of Railways",
+      "description": "Ministry of Railways.",
+      "url": "https://indianrailways.gov.in"
+    },
+    {
+      "id": "road-transport-and-highways",
+      "label": "Ministry of Road Transport and Highways",
+      "description": "Ministry of Road Transport and Highways.",
+      "url": "https://morth.nic.in"
+    },
+    {
+      "id": "rural-development",
+      "label": "Ministry of Rural Development",
+      "description": "Department of Rural Development; Department of Land Resources."
+    },
+    {
+      "id": "science-and-technology",
+      "label": "Ministry of Science and Technology",
+      "description": "Department of Science and Technology; Department of Biotechnology; Department of Scientific and Industrial Research.",
+      "url": "https://dst.gov.in"
+    },
+    {
+      "id": "skill-development-and-entrepreneurship",
+      "label": "Ministry of Skill Development and Entrepreneurship",
+      "description": "Ministry of Skill Development and Entrepreneurship."
+    },
+    {
+      "id": "social-justice-and-empowerment",
+      "label": "Ministry of Social Justice and Empowerment",
+      "description": "Department of Social Justice and Empowerment; Department of Empowerment of Persons with Disabilities.",
+      "url": "https://socialjustice.gov.in"
+    },
+    {
+      "id": "space",
+      "label": "Department of Space",
+      "description": "Department of Space.",
+      "url": "https://www.isro.gov.in"
+    },
+    {
+      "id": "statistics-and-programme-implementation",
+      "label": "Ministry of Statistics and Programme Implementation",
+      "description": "Ministry of Statistics and Programme Implementation.",
+      "url": "https://mospi.gov.in"
+    },
+    {
+      "id": "steel",
+      "label": "Ministry of Steel",
+      "description": "Ministry of Steel.",
+      "url": "https://steel.gov.in"
+    },
+    {
+      "id": "textiles",
+      "label": "Ministry of Textiles",
+      "description": "Ministry of Textiles."
+    },
+    {
+      "id": "tourism",
+      "label": "Ministry of Tourism",
+      "description": "Ministry of Tourism."
+    },
+    {
+      "id": "tribal-affairs",
+      "label": "Ministry of Tribal Affairs",
+      "description": "Ministry of Tribal Affairs."
+    },
+    {
+      "id": "women-and-child-development",
+      "label": "Ministry of Women and Child Development",
+      "description": "Ministry of Women and Child Development.",
+      "url": "https://wcd.gov.in"
+    },
+    {
+      "id": "youth-affairs-and-sports",
+      "label": "Ministry of Youth Affairs and Sports",
+      "description": "Ministry of Youth Affairs and Sports."
+    }
+  ]
+}

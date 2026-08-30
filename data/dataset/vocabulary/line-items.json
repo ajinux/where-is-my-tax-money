@@ -1,0 +1,1376 @@
+{
+  "id": "line-items",
+  "version": "line-items-6",
+  "notes": "What each budget head is, and for the largest of them what it is actually spent on. A budget head is named for accountants — 'Capital Outlay on Defence Services' tells a taxpayer nothing, and a demand's own description says only that it is a demand. `summary` is one short line: what this body does, enough to tell it from its neighbours. It is uncited, because it describes a remit rather than asserting a figure. `spentOn` is the longer itemised account with published amounts, so it must be cited; amounts quoted are the Actual 2024-25 column of the cited Notes on Demands. House style is in CONTRIBUTING.md — describe the mechanism, never appraise it.",
+  "items": [
+    {
+      "id": "demand-1",
+      "summary": "PM-Kisan cash transfers, crop insurance under Fasal Bima, and the interest subsidy that makes crop loans cheap.",
+      "spentOn": "Half of it is cash paid straight to farmers: ₹66,121 crore under PM-Kisan. Most of the rest lowers the cost of credit and insurance: ₹24,600 crore to agricultural lending institutions, ₹17,812 crore covering the interest banks forgo on concessional crop loans, and ₹14,473 crore towards crop insurance premiums.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-1-notes",
+          "locator": "Demand No. 1, PM-Kisan / Agricultural Financial Institutions / MISS / PM Fasal Bima Yojana, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-2",
+      "summary": "The ICAR network — agricultural universities, crop and animal science institutes, and farm research stations.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-2-notes",
+          "locator": "Demand No. 2, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-3",
+      "summary": "Nuclear power stations run by NPCIL, plus the atomic research establishments behind them.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-3-notes",
+          "locator": "Demand No. 3, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-4",
+      "summary": "The National AYUSH Mission and the ayurveda, yoga, unani, siddha and homoeopathy institutes — AIIA, the research councils.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-4-notes",
+          "locator": "Demand No. 4, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-5",
+      "summary": "The chemicals and petrochemicals industry: HIL India, the petrochemicals technology institutes, and plastics parks.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-5-notes",
+          "locator": "Demand No. 5, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-6",
+      "summary": "Urea and nutrient-based fertiliser subsidy, paid to manufacturers and importers so fertiliser sells below cost.",
+      "spentOn": "Paid to fertiliser manufacturers and importers rather than to farmers directly: ₹1,03,320 crore to domestic urea producers, ₹21,000 crore to urea importers, and ₹52,810 crore for phosphatic and potassic fertilisers. The payment covers the gap between what the fertiliser costs to make or import and the controlled price farmers pay for it.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-6-notes",
+          "locator": "Demand No. 6, items 2.01, 2.04, 3.01 and 3.04 with their explanatory notes, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-7",
+      "summary": "Jan Aushadhi generic medicine stores, the NIPER pharmacy institutes, and pharmaceutical production incentives.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-7-notes",
+          "locator": "Demand No. 7, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-8",
+      "summary": "Airports Authority of India, the UDAN regional connectivity scheme, the DGCA, and Air India's residual debt.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-8-notes",
+          "locator": "Demand No. 8, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-9",
+      "summary": "Coal India and NLC India, plus mine safety and coal conservation work.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-9-notes",
+          "locator": "Demand No. 9, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-10",
+      "summary": "Export promotion: the interest equalisation scheme for exporters, duty drawback, and the tea, coffee, rubber and spices boards.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-10-notes",
+          "locator": "Demand No. 10, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-11",
+      "summary": "Startup Fund of Funds, industrial corridors, the patent and trademark offices, and GST refunds to industry.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-11-notes",
+          "locator": "Demand No. 11, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-12",
+      "summary": "India Post — the post office network, its staff and pensions, IT modernisation, and India Post Payments Bank.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-12-notes",
+          "locator": "Demand No. 12, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-13",
+      "summary": "Capital for BSNL and MTNL, telecom pensions, C-DOT research, and rural connectivity through the USO Fund.",
+      "spentOn": "Mostly capital put into state-owned telecom companies: ₹72,514 crore to BSNL and ₹1,196 crore to MTNL. A further ₹18,500 crore goes to the Universal Service Obligation Fund, which pays operators to run networks in places they would not otherwise serve.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-13-notes",
+          "locator": "Demand No. 13, Bharat Sanchar Nigam Limited / Mahanagar Telephone Nigam / Universal Service Obligation Fund, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-14",
+      "summary": "The Price Stabilisation Fund that buys and releases onions and pulses, consumer courts, and weights and measures.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-14-notes",
+          "locator": "Demand No. 14, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-15",
+      "summary": "Free foodgrain under PMGKAY, and the Food Corporation of India that buys, stores and moves the grain.",
+      "spentOn": "Almost the whole demand — ₹1,99,500 crore of ₹2,07,706 crore — is PMGKAY, the free foodgrain scheme. The money is the gap between what the Food Corporation of India pays to buy and store grain and what it is then handed out for; ₹75,495 crore of it goes to the Corporation itself.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-15-notes",
+          "locator": "Demand No. 15, Pradhan Mantri Garib Kalyan Anna Yojana and Food Corporation of India, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-16",
+      "summary": "Computerising village credit societies, cooperative training institutes, and the cooperative sugar and dairy sector.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-16-notes",
+          "locator": "Demand No. 16, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-17",
+      "summary": "Company registration and filings, the Competition Commission, the audit regulator NFRA, and the PM Internship Scheme.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-17-notes",
+          "locator": "Demand No. 17, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-18",
+      "summary": "The Archaeological Survey of India, national museums, the akademies for art and letters, and heritage conservation.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-18-notes",
+          "locator": "Demand No. 18, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-19",
+      "summary": "The Coast Guard, Border Roads Organisation, defence estates and the ministry's civilian secretariat — not the armed forces themselves.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-19-notes",
+          "locator": "Demand No. 19, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-20",
+      "summary": "Pay, rations, fuel, spares and maintenance for the Army, Navy and Air Force, and DRDO's running costs.",
+      "spentOn": "Running the armed forces rather than equipping them: pay, rations, fuel, spares and maintenance. The Army takes ₹1,98,026 crore of it, the Air Force ₹49,332 crore and the Navy ₹32,735 crore. Buying aircraft, ships and vehicles is a separate demand, and so are pensions.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-20-notes",
+          "locator": "Demand No. 20, Defence Services - Army / Navy / Air Force / R&D, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-21",
+      "summary": "Aircraft and aero engines, warships, submarines, vehicles and ordnance — the capital half of the defence budget.",
+      "spentOn": "Equipment, not people: ₹52,205 crore on other equipment, ₹44,365 crore on aircraft and aero engines, ₹25,567 crore on the naval fleet, ₹14,097 crore on research and development and ₹5,619 crore on naval dockyards. Salaries sit in Defence Services (Revenue) and pensions in Defence Pensions.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-21-notes",
+          "locator": "Demand No. 21, Aircraft and Aero Engines / Naval Fleet / Other Equipments / R&D, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-22",
+      "summary": "Pensions for retired armed forces personnel and their families, including the one-rank-one-pension revisions.",
+      "spentOn": "Pensions and retirement benefits for former armed forces personnel and their families. At ₹1,57,654 crore this is almost exactly the size of the entire defence equipment budget — for every rupee spent on new aircraft, ships and vehicles, close to another rupee goes to those who have already served.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-22-notes",
+          "locator": "Demand No. 22, Pensions and other Retirement Benefits, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-23",
+      "summary": "North Eastern Council schemes, and industrial and enterprise development directed at the eight north-eastern states.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-23-notes",
+          "locator": "Demand No. 23, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-24",
+      "summary": "Monsoon and weather forecasting, ocean research including the Deep Ocean Mission, and the supercomputers behind them.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-24-notes",
+          "locator": "Demand No. 24, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-25",
+      "summary": "Samagra Shiksha, PM POSHAN mid-day meals, PM SHRI model schools, Kendriya and Navodaya Vidyalayas.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-25-notes",
+          "locator": "Demand No. 25, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-26",
+      "summary": "The IITs, NITs, IIMs and central universities, the UGC, and student scholarship and loan interest schemes.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-26-notes",
+          "locator": "Demand No. 26, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-27",
+      "summary": "Semiconductor and electronics manufacturing incentives, Aadhaar's UIDAI, Digital India, and the National Informatics Centre.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-27-notes",
+          "locator": "Demand No. 27, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-28",
+      "summary": "Forest and wildlife protection, Project Tiger and Project Elephant, pollution control boards, and climate change work.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-28-notes",
+          "locator": "Demand No. 28, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-29",
+      "summary": "Embassies and consulates, aid to Bhutan, Nepal, Afghanistan and Africa, and India's dues to the UN and its agencies.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-29-notes",
+          "locator": "Demand No. 29, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-30",
+      "summary": "The budget-making arm of the finance ministry, plus lines of credit to other countries and the SWAMIH stalled-housing fund.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-30-notes",
+          "locator": "Demand No. 30, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-31",
+      "summary": "The controller of other ministries' spending: pay commission work, financial rules, and government accounting institutes.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-31-notes",
+          "locator": "Demand No. 31, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-32",
+      "summary": "Recapitalising public sector banks and insurers, the RuPay and BHIM incentive, and pension schemes like PM Vaya Vandana.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-32-notes",
+          "locator": "Demand No. 32, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-33",
+      "summary": "Oversight of state-owned companies and their performance monitoring.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-33-notes",
+          "locator": "Demand No. 33, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-34",
+      "summary": "Selling government stakes in public sector companies, and managing what is left of them.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-34-notes",
+          "locator": "Demand No. 34, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-35",
+      "summary": "Passes GST compensation to states, and runs the GST network, Enforcement Directorate and narcotics control.",
+      "spentOn": "Despite the name, ₹1,44,007 crore of this — around 94% — is not tax administration at all but grants handed onward to state governments. Only what is left over runs the departments that collected the tax in the first place.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-35-notes",
+          "locator": "Demand No. 35, Grants-in-aid to State Governments, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-36",
+      "summary": "The income tax department — collecting income tax, corporation tax and securities transaction tax.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-36-notes",
+          "locator": "Demand No. 36, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-37",
+      "summary": "Customs and GST collection, plus export incentive payouts under RoDTEP and RoSCTL.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-37-notes",
+          "locator": "Demand No. 37, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-38",
+      "summary": "The CAG's audit staff, who check how every other line in this budget was actually spent.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-38-notes",
+          "locator": "Demand No. 38, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-39",
+      "summary": "Interest on money the government has already borrowed, including ₹34,162 crore owed to foreign lenders.",
+      "spentOn": "Interest on money borrowed by previous governments, ₹34,162 crore of it owed to foreign lenders. It is the carrying cost of past borrowing rather than a purchase of anything this year; repaying the principal is a separate transaction elsewhere in the accounts. This is the single largest line in the budget, bigger than everything spent on defence.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-39-notes",
+          "locator": "Demand No. 39, Interest Payments and Interest on External Debt, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-40",
+      "summary": "Repaying the principal on money previously borrowed — distinct from Interest Payments, which is the cost of carrying it.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-40-notes",
+          "locator": "Demand No. 40, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-41",
+      "summary": "Pensions for retired central government civilian employees — not soldiers or railway staff, who have their own lines.",
+      "spentOn": "Pensions and retirement benefits for retired central government civilian employees. Retired soldiers and railway staff are not in here — they are paid from separate lines, and defence pensions alone come to ₹1,57,654 crore, well over this.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-41-notes",
+          "locator": "Demand No. 41, Pensions and other Retirement Benefits, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-42",
+      "summary": "50-year interest-free capital loans to states, Finance Commission grants, and disaster relief — on top of their tax share.",
+      "spentOn": "Not the states' constitutional share of central taxes — that is deducted before the union spends anything and does not appear in this budget at all. This is what the union grants on top, and half of it is a conditional loan: ₹1,49,484 crore of 50-year interest-free lending that a state only draws by qualifying for it.",
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-demand-42-notes",
+          "locator": "Demand No. 42, items 9 to 16 and Finance Commission Grants, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-43",
+      "summary": "Pradhan Mantri Matsya Sampada Yojana, fishing harbours, aquaculture, and the fisheries institutes.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-43-notes",
+          "locator": "Demand No. 43, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-44",
+      "summary": "Livestock disease control and vaccination, Rashtriya Gokul Mission for indigenous cattle, and dairy development.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-44-notes",
+          "locator": "Demand No. 44, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-45",
+      "summary": "PM Formalisation of Micro Food Processing, food parks and cold chains, and processing production incentives.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-45-notes",
+          "locator": "Demand No. 45, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-46",
+      "summary": "AIIMS hospitals, the National Health Mission, Ayushman Bharat insurance, and CGHS treatment for retired officials.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-46-notes",
+          "locator": "Demand No. 46, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-47",
+      "summary": "The Indian Council of Medical Research and its laboratories, and the Ayushman Bharat health research infrastructure.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-47-notes",
+          "locator": "Demand No. 47, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-48",
+      "summary": "Electric vehicle incentives under FAME and PM E-DRIVE, and public engineering firms like BHEL.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-48-notes",
+          "locator": "Demand No. 48, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-49",
+      "summary": "Disaster relief and the NDRF, freedom fighters' pensions, the census, and migrant rehabilitation — the security forces are separate lines.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-49-notes",
+          "locator": "Demand No. 49, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-50",
+      "summary": "The Prime Minister's Office, the Cabinet Secretariat, the Council of Ministers and the National Security Council.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-50-notes",
+          "locator": "Demand No. 50, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-51",
+      "summary": "CRPF, BSF, CISF, ITBP, Assam Rifles, the Intelligence Bureau, and Delhi and J&K police — not the state police forces.",
+      "spentOn": "The central armed police forces, not the state police you deal with day to day: CRPF ₹34,021 crore, BSF ₹27,939 crore, CISF ₹15,380 crore, ITBP ₹9,337 crore and Assam Rifles ₹7,977 crore. Delhi Police, ₹12,133 crore, is here because the union runs it directly rather than a state government.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-51-notes",
+          "locator": "Demand No. 51, items 1.01 to 1.06 and Delhi Police, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-52",
+      "summary": "Running the Andaman and Nicobar Islands, a union territory with no legislature of its own.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-52-notes",
+          "locator": "Demand No. 52, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-53",
+      "summary": "Running Chandigarh, a union territory with no legislature of its own.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-53-notes",
+          "locator": "Demand No. 53, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-54",
+      "summary": "Running Dadra and Nagar Haveli and Daman and Diu, a union territory with no legislature of its own.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-54-notes",
+          "locator": "Demand No. 54, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-55",
+      "summary": "Running Ladakh, a union territory with no legislature of its own, including its tribal area programmes.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-55-notes",
+          "locator": "Demand No. 55, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-56",
+      "summary": "Running Lakshadweep, a union territory with no legislature of its own.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-56-notes",
+          "locator": "Demand No. 56, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-57",
+      "summary": "Central assistance to Delhi, which has an elected government but not a state's taxing powers.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-57-notes",
+          "locator": "Demand No. 57, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-58",
+      "summary": "Central assistance to Jammu and Kashmir, which has its own legislature but is funded as a union territory.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-58-notes",
+          "locator": "Demand No. 58, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-59",
+      "summary": "Central assistance to Puducherry, which has its own legislature but is funded as a union territory.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-59-notes",
+          "locator": "Demand No. 59, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-60",
+      "summary": "Metro rail projects, urban housing under PMAY-Urban, AMRUT water supply, and the Smart Cities Mission.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-60-notes",
+          "locator": "Demand No. 60, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-61",
+      "summary": "Doordarshan and All India Radio, government publicity and film certification, and the animation and gaming centre.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-61-notes",
+          "locator": "Demand No. 61, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-62",
+      "summary": "Dams and canal irrigation, the Polavaram project, Har Khet Ko Pani, and the Namami Gange river clean-up.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-62-notes",
+          "locator": "Demand No. 62, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-63",
+      "summary": "Jal Jeevan Mission piped water to rural homes, and Swachh Bharat rural sanitation.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-63-notes",
+          "locator": "Demand No. 63, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-64",
+      "summary": "The employees' pension and state insurance schemes, the Shram Yogi Maandhan pension for informal workers, and mine safety.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-64-notes",
+          "locator": "Demand No. 64, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-65",
+      "summary": "Running elections, the district courts, e-Courts digitisation, legal aid, and the tax tribunals.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-65-notes",
+          "locator": "Demand No. 65, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-66",
+      "summary": "The Election Commission itself — the body that conducts national and state elections.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-66-notes",
+          "locator": "Demand No. 66, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-67",
+      "summary": "The Supreme Court: its judges, registry and building.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-67-notes",
+          "locator": "Demand No. 67, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-68",
+      "summary": "PM Vishwakarma for traditional artisans, the employment generation programme, and MSME credit guarantees.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-68-notes",
+          "locator": "Demand No. 68, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-69",
+      "summary": "The Geological Survey of India, and public mining companies — NALCO, Hindustan Copper, mineral exploration.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-69-notes",
+          "locator": "Demand No. 69, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-70",
+      "summary": "PM Jan Vikas Karyakram in minority-concentration districts, scholarships, and the minorities development finance corporation.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-70-notes",
+          "locator": "Demand No. 70, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-71",
+      "summary": "Solar and wind capacity through IREDA and SECI, the Green Energy Corridor, and rooftop solar.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-71-notes",
+          "locator": "Demand No. 71, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-72",
+      "summary": "Rashtriya Gram Swaraj Abhiyan to train and equip village councils, and SVAMITVA property cards for rural land.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-72-notes",
+          "locator": "Demand No. 72, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-73",
+      "summary": "Managing government business in Parliament, and the eVidhan digital legislature system.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-73-notes",
+          "locator": "Demand No. 73, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-74",
+      "summary": "Recruiting, training and pensioning central government staff, and the CBI and vigilance machinery.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-74-notes",
+          "locator": "Demand No. 74, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-75",
+      "summary": "The Central Vigilance Commission — the anti-corruption watchdog over central government officials.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-75-notes",
+          "locator": "Demand No. 75, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-76",
+      "summary": "LPG subsidy including Ujjwala connections, the strategic oil reserve, and public oil companies ONGC, IOC and BPCL.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-76-notes",
+          "locator": "Demand No. 76, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-77",
+      "summary": "NITI Aayog, the Atal Innovation Mission, and support to states on planning and development.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-77-notes",
+          "locator": "Demand No. 77, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-78",
+      "summary": "Major ports — Jawaharlal Nehru, Paradip, Deendayal — inland waterways, lighthouses and coastal shipping.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-78-notes",
+          "locator": "Demand No. 78, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-79",
+      "summary": "Power Grid, NTPC, NHPC and SJVN, transmission networks, and electricity distribution reform.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-79-notes",
+          "locator": "Demand No. 79, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-80",
+      "summary": "The President's staff, household and allowances, and the upkeep of Rashtrapati Bhavan.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-80-notes",
+          "locator": "Demand No. 80, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-81",
+      "summary": "The Lok Sabha: members' salaries and allowances, the secretariat, and the chamber itself.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-81-notes",
+          "locator": "Demand No. 81, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-82",
+      "summary": "The Rajya Sabha: members' salaries and allowances, the secretariat, and the chamber itself.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-82-notes",
+          "locator": "Demand No. 82, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-83",
+      "summary": "The Vice-President's office, staff and residence.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-83-notes",
+          "locator": "Demand No. 83, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-84",
+      "summary": "The UPSC — the civil services examination and the other recruitment tests it conducts.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-84-notes",
+          "locator": "Demand No. 84, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-85",
+      "summary": "New railway lines, doubling, track renewal, coaches and locomotives, and the Railway Safety Fund.",
+      "spentOn": "Overwhelmingly construction and equipment rather than the cost of running trains: ₹47,827 crore on coaches and locomotives, ₹45,000 crore transferred into the Railway Safety Fund, ₹33,363 crore laying new lines, ₹32,791 crore doubling existing ones and ₹23,433 crore renewing worn track.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-85-notes",
+          "locator": "Demand No. 85, Rolling Stock / Railway Safety Fund / New Lines / Doubling / Track Renewals, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-86",
+      "summary": "National highways: building, widening and maintaining them, mostly through the NHAI.",
+      "spentOn": "Building and widening roads: ₹2,85,332 crore of it is capital works rather than upkeep. ₹1,68,602 crore of it goes to the National Highways Authority of India, which builds and maintains the national highway network.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-86-notes",
+          "locator": "Demand No. 86, Capital Outlay on Roads and Bridges and National Highway Authority, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-87",
+      "summary": "MGNREGA rural job guarantee wages, PMAY-Gramin rural housing, rural roads, and old-age and widow pensions.",
+      "spentOn": "Half of it — ₹85,834 crore — is MGNREGA, paid as wages for days of work rural households asked for under the job guarantee, so the amount follows demand rather than a fixed allocation. Then ₹32,327 crore builds houses under PMAY-Gramin, ₹14,705 crore funds the rural livelihoods mission, and ₹9,652 crore is social assistance: old-age, widow and disability pensions.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-87-notes",
+          "locator": "Demand No. 87, MGNREGA / PMAY-G / DAY-NRLM / National Social Assistance Programme, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-88",
+      "summary": "Digitising land records and titles, and watershed development on rain-fed land.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-88-notes",
+          "locator": "Demand No. 88, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-89",
+      "summary": "Research grants through the Science and Engineering Research Board, the interdisciplinary cyber-physical mission, and Survey of India.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-89-notes",
+          "locator": "Demand No. 89, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-90",
+      "summary": "Biotechnology research institutes, vaccine and genome research, and industry research assistance through BIRAC.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-90-notes",
+          "locator": "Demand No. 90, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-91",
+      "summary": "The CSIR network of national laboratories and its industrial research.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-91-notes",
+          "locator": "Demand No. 91, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-92",
+      "summary": "Skill India training, apprenticeships, and the industrial training institutes.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-92-notes",
+          "locator": "Demand No. 92, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-93",
+      "summary": "Post-matric scholarships for scheduled caste students, backward class welfare, and schemes for the elderly and drug-dependent.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-93-notes",
+          "locator": "Demand No. 93, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-94",
+      "summary": "Assistive devices for people with disabilities, the national disability institutes, and rehabilitation grants.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-94-notes",
+          "locator": "Demand No. 94, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-95",
+      "summary": "ISRO — satellites, launch vehicles, space applications, and the commercial arm NewSpace India.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-95-notes",
+          "locator": "Demand No. 95, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-96",
+      "summary": "The MPLAD scheme giving each MP funds for local works, the census and surveys, and national accounts statistics.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-96-notes",
+          "locator": "Demand No. 96, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-97",
+      "summary": "Public steel companies — RINL, SAIL and NMDC — and loans to the iron and steel industry.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-97-notes",
+          "locator": "Demand No. 97, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-98",
+      "summary": "Handlooms, handicrafts, silk through the Central Silk Board, jute, and textile machinery upgradation.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-98-notes",
+          "locator": "Demand No. 98, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-99",
+      "summary": "Tourism promotion and publicity, the Swadesh Darshan and PRASHAD pilgrimage circuits, and hospitality training.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-99-notes",
+          "locator": "Demand No. 99, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-100",
+      "summary": "Eklavya model residential schools for tribal children, tribal scholarships, and Article 275(1) grants to states.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-100-notes",
+          "locator": "Demand No. 100, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-101",
+      "summary": "Saksham Anganwadi and POSHAN 2.0 child nutrition, and schemes for women's safety, adoption and child protection.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-101-notes",
+          "locator": "Demand No. 101, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "demand-102",
+      "summary": "Khelo India, the Sports Authority of India, athlete training, and the Nehru Yuva Kendra youth network.",
+      "cite": [
+        {
+          "sourceId": "mof-demand-102-notes",
+          "locator": "Demand No. 102, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "samagra-shiksha",
+      "summary": "Department of School Education and Literacy — financed from Prarambhik Shiksha Kosh.",
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15",
+          "locator": "Statement 15, I. Prarambhik Shiksha Kosh, Sr. No. 2, RE 2025-26 amount met"
+        }
+      ]
+    },
+    {
+      "id": "pm-poshan",
+      "summary": "Department of School Education and Literacy — financed from Prarambhik Shiksha Kosh.",
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15",
+          "locator": "Statement 15, I. Prarambhik Shiksha Kosh, Sr. No. 1, RE 2025-26 amount met"
+        }
+      ]
+    },
+    {
+      "id": "prarambhik-shiksha-kosh",
+      "summary": "Elementary education. The oldest of the three funds, carried over from the primary education cess that preceded the current levy.",
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15",
+          "locator": "Statement 15, Prarambhik Shiksha Kosh, Total, RE 2025-26"
+        }
+      ]
+    },
+    {
+      "id": "grants-to-central-universities",
+      "summary": "Department of Higher Education — financed from Madhyamik and Uchchatar Shiksha Kosh.",
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15",
+          "locator": "Statement 15, D. Madhayamik and Uchchatar Shiksha Kosh, Sr. No. 4, RE 2025-26 amount met"
+        }
+      ]
+    },
+    {
+      "id": "national-institutes-of-technology",
+      "summary": "Department of Higher Education — financed from Madhyamik and Uchchatar Shiksha Kosh.",
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15",
+          "locator": "Statement 15, D. Madhayamik and Uchchatar Shiksha Kosh, Sr. No. 8, RE 2025-26 amount met"
+        }
+      ]
+    },
+    {
+      "id": "kendriya-vidyalaya-sangathan",
+      "summary": "Department of School Education and Literacy — financed from Madhyamik and Uchchatar Shiksha Kosh.",
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15",
+          "locator": "Statement 15, D. Madhayamik and Uchchatar Shiksha Kosh, Sr. No. 2, RE 2025-26 amount met"
+        }
+      ]
+    },
+    {
+      "id": "navodaya-vidyalaya-samiti",
+      "summary": "Department of School Education and Literacy — financed from Madhyamik and Uchchatar Shiksha Kosh.",
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15",
+          "locator": "Statement 15, D. Madhayamik and Uchchatar Shiksha Kosh, Sr. No. 3, RE 2025-26 amount met"
+        }
+      ]
+    },
+    {
+      "id": "indian-institutes-of-technology",
+      "summary": "Department of Higher Education — financed from Madhyamik and Uchchatar Shiksha Kosh.",
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15",
+          "locator": "Statement 15, D. Madhayamik and Uchchatar Shiksha Kosh, Sr. No. 5, RE 2025-26 amount met"
+        }
+      ]
+    },
+    {
+      "id": "university-grants-commission",
+      "summary": "Department of Higher Education — financed from Madhyamik and Uchchatar Shiksha Kosh.",
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15",
+          "locator": "Statement 15, D. Madhayamik and Uchchatar Shiksha Kosh, Sr. No. 6, RE 2025-26 amount met"
+        }
+      ]
+    },
+    {
+      "id": "skill-india-programme",
+      "summary": "Ministry of Skill Development and Entrepreneurship — financed from Madhyamik and Uchchatar Shiksha Kosh.",
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15",
+          "locator": "Statement 15, D. Madhayamik and Uchchatar Shiksha Kosh, Sr. No. 10, RE 2025-26 amount met"
+        }
+      ]
+    },
+    {
+      "id": "pm-usp-yojana",
+      "summary": "Department of Higher Education — financed from Madhyamik and Uchchatar Shiksha Kosh.",
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15",
+          "locator": "Statement 15, D. Madhayamik and Uchchatar Shiksha Kosh, Sr. No. 7, RE 2025-26 amount met"
+        }
+      ]
+    },
+    {
+      "id": "national-means-cum-merit-scholarship",
+      "summary": "Department of School Education and Literacy — financed from Madhyamik and Uchchatar Shiksha Kosh.",
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15",
+          "locator": "Statement 15, D. Madhayamik and Uchchatar Shiksha Kosh, Sr. No. 1, RE 2025-26 amount met"
+        }
+      ]
+    },
+    {
+      "id": "pm-usha",
+      "summary": "Department of Higher Education — financed from Madhyamik and Uchchatar Shiksha Kosh.",
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15",
+          "locator": "Statement 15, D. Madhayamik and Uchchatar Shiksha Kosh, Sr. No. 9, RE 2025-26 amount met"
+        }
+      ]
+    },
+    {
+      "id": "madhyamik-uchchatar-shiksha-kosh",
+      "summary": "Secondary and higher education, including the central universities, the IITs and the NITs.",
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15",
+          "locator": "Statement 15, Madhyamik and Uchchatar Shiksha Kosh, Total, RE 2025-26"
+        }
+      ]
+    },
+    {
+      "id": "rch-health-system-strengthening",
+      "summary": "Department of Health and Family Welfare — financed from Pradhan Mantri Swasthya Suraksha Nidhi.",
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15",
+          "locator": "Statement 15, K. Pradhan Mantri Swasthya Suraksha Nidhi, Sr. No. 1, RE 2025-26 amount met"
+        }
+      ]
+    },
+    {
+      "id": "ayushman-bharat-pmjay",
+      "summary": "Department of Health and Family Welfare — financed from Pradhan Mantri Swasthya Suraksha Nidhi.",
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15",
+          "locator": "Statement 15, K. Pradhan Mantri Swasthya Suraksha Nidhi, Sr. No. 4, RE 2025-26 amount met"
+        }
+      ]
+    },
+    {
+      "id": "health-infrastructure-maintenance",
+      "summary": "Department of Health and Family Welfare — financed from Pradhan Mantri Swasthya Suraksha Nidhi.",
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15",
+          "locator": "Statement 15, K. Pradhan Mantri Swasthya Suraksha Nidhi, Sr. No. 2, RE 2025-26 amount met"
+        }
+      ]
+    },
+    {
+      "id": "human-resources-for-health",
+      "summary": "Department of Health and Family Welfare — financed from Pradhan Mantri Swasthya Suraksha Nidhi.",
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15",
+          "locator": "Statement 15, K. Pradhan Mantri Swasthya Suraksha Nidhi, Sr. No. 3, RE 2025-26 amount met"
+        }
+      ]
+    },
+    {
+      "id": "pradhan-mantri-swasthya-suraksha-nidhi",
+      "summary": "Health. Created in 2021 to receive the health portion of the cess, which until then had no fund of its own.",
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15",
+          "locator": "Statement 15, Pradhan Mantri Swasthya Suraksha Nidhi, Total, RE 2025-26"
+        }
+      ]
+    },
+    {
+      "id": "capital-investment-loans",
+      "summary": "Fifty-year interest-free loans to states for capital investment.",
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-demand-42-notes",
+          "locator": "Demand No. 42, item 11, Actual 2024-25 Capital column"
+        }
+      ]
+    },
+    {
+      "id": "local-body-grants",
+      "summary": "Fifteenth Finance Commission grants to rural and urban local bodies — panchayats and municipalities — passed on by the states.",
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-demand-42-notes",
+          "locator": "Demand No. 42, item 2, Total-Grants for Local Bodies, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "revenue-deficit-grants",
+      "summary": "Fifteenth Finance Commission grants closing the gap between a state's assessed revenue needs and its own resources after devolution — paid only to states still found in deficit.",
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-demand-42-notes",
+          "locator": "Demand No. 42, item 5, Actual 2024-25"
+        },
+        {
+          "sourceId": "xvfc-main-report",
+          "locator": "Table 10.4: Grants-in-aid for Revenue Deficit, 2024-25 column"
+        }
+      ]
+    },
+    {
+      "id": "state-disaster-response",
+      "summary": "Fifteenth Finance Commission grants to the State Disaster Response Fund, for financing disaster relief.",
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-demand-42-notes",
+          "locator": "Demand No. 42, item 3, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "state-disaster-mitigation",
+      "summary": "Fifteenth Finance Commission grants to the State Disaster Mitigation Fund, for disaster prevention and preparedness.",
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-demand-42-notes",
+          "locator": "Demand No. 42, item 4, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "health-sector-grants",
+      "summary": "Fifteenth Finance Commission grants for the health sector, allocated under the Commission's health formula.",
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-demand-42-notes",
+          "locator": "Demand No. 42, item 6, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "eap-loans",
+      "summary": "External assistance passed to states as a loan, on the same terms the union received it from the donor — the loan component of Externally Aided Projects.",
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-demand-42-notes",
+          "locator": "Demand No. 42, item 13, Actual 2024-25 Capital column, net"
+        }
+      ]
+    },
+    {
+      "id": "eap-grants",
+      "summary": "External assistance passed to states as a grant — the grant component of Externally Aided Projects, on the same back-to-back terms as the loan component.",
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-demand-42-notes",
+          "locator": "Demand No. 42, item 12, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "special-assistance",
+      "summary": "Discretionary assistance for committed liabilities without their own budget provision, and other need-based support to states.",
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-demand-42-notes",
+          "locator": "Demand No. 42, item 9, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "ndrf-assistance",
+      "summary": "Released to a state after a notified disaster, against assessed need — assistance from the National Disaster Response and Mitigation Funds.",
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-demand-42-notes",
+          "locator": "Demand No. 42, item 15, Actual 2024-25, net"
+        }
+      ]
+    },
+    {
+      "id": "ndrf-transfer",
+      "summary": "The union's own top-up to the National Disaster Response and Mitigation Funds, beyond what the National Calamity Contingent Duty raises.",
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-demand-42-notes",
+          "locator": "Demand No. 42, item 14, Actual 2024-25, net"
+        }
+      ]
+    },
+    {
+      "id": "public-health-infrastructure",
+      "summary": "Grants to states for public health infrastructure, met in full from a cess fund rather than from general revenue.",
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-demand-42-notes",
+          "locator": "Demand No. 42, item 1, Revised 2025-26, net"
+        }
+      ]
+    },
+    {
+      "id": "shared-municipal-services",
+      "summary": "A Finance Commission grant under Article 275(1) of the Constitution, for municipal services shared between local bodies.",
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-demand-42-notes",
+          "locator": "Demand No. 42, item 8, Revised 2025-26"
+        }
+      ]
+    },
+    {
+      "id": "covid-vaccination-support",
+      "summary": "A token provision of one lakh rupees: the head carries the same amount in the 2025-26 budget estimate, the 2025-26 revised estimate and the 2026-27 budget estimate, and nothing in the 2024-25 actuals.",
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-demand-42-notes",
+          "locator": "Demand No. 42, item 10, Revised 2025-26"
+        }
+      ]
+    }
+  ]
+}

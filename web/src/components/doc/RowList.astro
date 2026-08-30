@@ -1,0 +1,57 @@
+---
+// A list of things that add up to the thing above it: the demands inside a
+// purpose, the departments inside a ministry, the states sharing a pool.
+
+import { formatCroreShort } from "../../lib/format";
+
+export interface Props {
+  items: {
+    href?: string;
+    name: string;
+    blurb?: string | null;
+    amountRupees: number;
+    tone?: string | null;
+  }[];
+  /** Widest bar in the list, for the proportional rule under each row. */
+  showBars?: boolean;
+}
+
+const { items, showBars = false } = Astro.props;
+const widest = items.reduce((max, item) => Math.max(max, item.amountRupees), 0);
+---
+
+<ul class="rows">
+  {
+    items.map((item) => {
+      const body = (
+        <>
+          <span>
+            <span class="name">{item.name}</span>
+            {item.blurb && <span class="blurb">{item.blurb}</span>}
+            {showBars && widest > 0 && (
+              <span class="bar" style="max-width:320px">
+                <span
+                  style={`width:${Math.max((item.amountRupees / widest) * 100, 1.5)}%;background:${
+                    item.tone ?? "var(--color-accent-500)"
+                  }`}
+                />
+              </span>
+            )}
+          </span>
+          <span class="amt">{formatCroreShort(item.amountRupees)}</span>
+        </>
+      );
+      return (
+        <li>
+          {item.href ? (
+            <a href={item.href}>{body}</a>
+          ) : (
+            <div style="display:flex;gap:14px;align-items:baseline;justify-content:space-between;padding:13px 0">
+              {body}
+            </div>
+          )}
+        </li>
+      );
+    })
+  }
+</ul>

@@ -1,0 +1,40 @@
+---
+import Page from "../../layouts/Page.astro";
+import RowList from "../../components/doc/RowList.astro";
+import { entities, amountIn } from "../../lib/entities";
+import { formatCrore } from "../../lib/format";
+import { linePath } from "../../lib/routes";
+
+const newest = entities.years[0];
+const lines = entities.lines;
+const described = lines.filter((line) => line.spentOn).length;
+const title = `Every line in India's union budget, ${newest.label}`;
+const description =
+  `All ${lines.length} demands for grants in the union budget for ${newest.label}, each with ` +
+  `what it funds and the Ministry of Finance document its figure was read from.`;
+---
+
+<Page
+  title={title}
+  description={description}
+  path="/demand/"
+  wide
+  crumbs={[{ label: "Home", href: "/" }, { label: "Every budget line" }]}
+>
+  <h1>Every line in the budget</h1>
+  <p class="lede">
+    The {lines.length} demands for grants that make up {formatCrore(newest.unionTotal)} of union
+    spending in {newest.label}. Each one names the schemes it funds, and {described} of them carry
+    a full itemised breakdown of where the money went.
+  </p>
+  <RowList
+    showBars
+    items={lines.map((line) => ({
+      href: linePath(line.slug),
+      name: line.label,
+      blurb: line.summary,
+      amountRupees: amountIn(line, newest.id),
+    }))}
+  />
+  <a class="cta" href="/">Work out your own share</a>
+</Page>

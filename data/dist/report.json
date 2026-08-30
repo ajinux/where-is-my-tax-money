@@ -1,0 +1,348 @@
+{
+  "datasetVersion": "2026.08.22",
+  "sourceCount": 136,
+  "sections": [
+    {
+      "section": "cess-earmark",
+      "period": "2020-21",
+      "status": "revised-estimate",
+      "perimeter": "financing",
+      "label": "Health and Education Cess",
+      "totalRupees": 755671200000,
+      "totalIsPublished": false,
+      "factCount": 16,
+      "describedCount": 12,
+      "axes": [
+        "destination"
+      ]
+    },
+    {
+      "section": "cess-earmark",
+      "period": "2021-22",
+      "status": "revised-estimate",
+      "perimeter": "financing",
+      "label": "Health and Education Cess",
+      "totalRupees": 814987200000,
+      "totalIsPublished": false,
+      "factCount": 19,
+      "describedCount": 14,
+      "axes": [
+        "destination"
+      ]
+    },
+    {
+      "section": "cess-earmark",
+      "period": "2022-23",
+      "status": "revised-estimate",
+      "perimeter": "financing",
+      "label": "Health and Education Cess",
+      "totalRupees": 828923700000,
+      "totalIsPublished": false,
+      "factCount": 20,
+      "describedCount": 17,
+      "axes": [
+        "destination"
+      ]
+    },
+    {
+      "section": "cess-earmark",
+      "period": "2023-24",
+      "status": "revised-estimate",
+      "perimeter": "financing",
+      "label": "Health and Education Cess",
+      "totalRupees": 616032000000,
+      "totalIsPublished": false,
+      "factCount": 18,
+      "describedCount": 17,
+      "axes": [
+        "destination"
+      ]
+    },
+    {
+      "section": "cess-earmark",
+      "period": "2024-25",
+      "status": "revised-estimate",
+      "perimeter": "financing",
+      "label": "Health and Education Cess",
+      "totalRupees": 871987300000,
+      "totalIsPublished": false,
+      "factCount": 19,
+      "describedCount": 18,
+      "axes": [
+        "destination"
+      ]
+    },
+    {
+      "section": "cess-earmark",
+      "period": "2025-26",
+      "status": "revised-estimate",
+      "perimeter": "financing",
+      "label": "Health and Education Cess",
+      "totalRupees": 1082718800000,
+      "totalIsPublished": false,
+      "factCount": 19,
+      "describedCount": 19,
+      "axes": [
+        "destination"
+      ]
+    },
+    {
+      "section": "tax-devolution",
+      "period": "2020-21",
+      "status": "actual-final",
+      "perimeter": "outside-union-spending",
+      "label": "States' share of central taxes",
+      "totalRupees": 5949970000000,
+      "totalIsPublished": true,
+      "factCount": 28,
+      "describedCount": 0,
+      "axes": [
+        "recipient"
+      ]
+    },
+    {
+      "section": "tax-devolution",
+      "period": "2021-22",
+      "status": "actual-final",
+      "perimeter": "outside-union-spending",
+      "label": "States' share of central taxes",
+      "totalRupees": 8983920000000,
+      "totalIsPublished": true,
+      "factCount": 28,
+      "describedCount": 0,
+      "axes": [
+        "recipient"
+      ]
+    },
+    {
+      "section": "tax-devolution",
+      "period": "2022-23",
+      "status": "actual-final",
+      "perimeter": "outside-union-spending",
+      "label": "States' share of central taxes",
+      "totalRupees": 9484060000000,
+      "totalIsPublished": true,
+      "factCount": 28,
+      "describedCount": 0,
+      "axes": [
+        "recipient"
+      ]
+    },
+    {
+      "section": "tax-devolution",
+      "period": "2023-24",
+      "status": "actual-final",
+      "perimeter": "outside-union-spending",
+      "label": "States' share of central taxes",
+      "totalRupees": 11294940000000,
+      "totalIsPublished": true,
+      "factCount": 28,
+      "describedCount": 0,
+      "axes": [
+        "recipient"
+      ]
+    },
+    {
+      "section": "tax-devolution",
+      "period": "2024-25",
+      "status": "actual-final",
+      "perimeter": "outside-union-spending",
+      "label": "States' share of central taxes",
+      "totalRupees": 12868850000000,
+      "totalIsPublished": true,
+      "factCount": 28,
+      "describedCount": 0,
+      "axes": [
+        "recipient"
+      ]
+    },
+    {
+      "section": "tax-devolution",
+      "period": "2025-26",
+      "status": "revised-estimate",
+      "perimeter": "outside-union-spending",
+      "label": "States' share of central taxes",
+      "totalRupees": 13929710000000,
+      "totalIsPublished": true,
+      "factCount": 28,
+      "describedCount": 0,
+      "axes": [
+        "recipient"
+      ]
+    },
+    {
+      "section": "tax-receipts",
+      "period": "2020-21",
+      "status": "actual-final",
+      "perimeter": "receipts",
+      "label": "Gross tax revenue",
+      "totalRupees": 20271040000000,
+      "totalIsPublished": true,
+      "factCount": 2,
+      "describedCount": 0,
+      "axes": [
+        "shareability"
+      ]
+    },
+    {
+      "section": "tax-receipts",
+      "period": "2021-22",
+      "status": "actual-final",
+      "perimeter": "receipts",
+      "label": "Gross tax revenue",
+      "totalRupees": 27093150000000,
+      "totalIsPublished": true,
+      "factCount": 2,
+      "describedCount": 0,
+      "axes": [
+        "shareability"
+      ]
+    },
+    {
+      "section": "tax-receipts",
+      "period": "2022-23",
+      "status": "actual-final",
+      "perimeter": "receipts",
+      "label": "Gross tax revenue",
+      "totalRupees": 30541920000000,
+      "totalIsPublished": true,
+      "factCount": 2,
+      "describedCount": 0,
+      "axes": [
+        "shareability"
+      ]
+    },
+    {
+      "section": "tax-receipts",
+      "period": "2023-24",
+      "status": "actual-final",
+      "perimeter": "receipts",
+      "label": "Gross tax revenue",
+      "totalRupees": 34655190000000,
+      "totalIsPublished": true,
+      "factCount": 2,
+      "describedCount": 0,
+      "axes": [
+        "shareability"
+      ]
+    },
+    {
+      "section": "tax-receipts",
+      "period": "2024-25",
+      "status": "actual-final",
+      "perimeter": "receipts",
+      "label": "Gross tax revenue",
+      "totalRupees": 37963820000000,
+      "totalIsPublished": true,
+      "factCount": 2,
+      "describedCount": 0,
+      "axes": [
+        "shareability"
+      ]
+    },
+    {
+      "section": "tax-receipts",
+      "period": "2025-26",
+      "status": "revised-estimate",
+      "perimeter": "receipts",
+      "label": "Gross tax revenue",
+      "totalRupees": 40777720000000,
+      "totalIsPublished": true,
+      "factCount": 2,
+      "describedCount": 0,
+      "axes": [
+        "shareability"
+      ]
+    },
+    {
+      "section": "union-expenditure",
+      "period": "2020-21",
+      "status": "actual-final",
+      "perimeter": "union-spending",
+      "label": "Total Union Government expenditure",
+      "totalRupees": 35098363800000,
+      "totalIsPublished": true,
+      "factCount": 101,
+      "describedCount": 101,
+      "axes": [
+        "purpose",
+        "administrative"
+      ]
+    },
+    {
+      "section": "union-expenditure",
+      "period": "2021-22",
+      "status": "actual-final",
+      "perimeter": "union-spending",
+      "label": "Total Union Government expenditure",
+      "totalRupees": 37938006300000,
+      "totalIsPublished": true,
+      "factCount": 102,
+      "describedCount": 102,
+      "axes": [
+        "purpose",
+        "administrative"
+      ]
+    },
+    {
+      "section": "union-expenditure",
+      "period": "2022-23",
+      "status": "actual-final",
+      "perimeter": "union-spending",
+      "label": "Total Union Government expenditure",
+      "totalRupees": 41931572300000,
+      "totalIsPublished": true,
+      "factCount": 102,
+      "describedCount": 102,
+      "axes": [
+        "purpose",
+        "administrative"
+      ]
+    },
+    {
+      "section": "union-expenditure",
+      "period": "2023-24",
+      "status": "actual-final",
+      "perimeter": "union-spending",
+      "label": "Total Union Government expenditure",
+      "totalRupees": 44434472300000,
+      "totalIsPublished": true,
+      "factCount": 101,
+      "describedCount": 101,
+      "axes": [
+        "purpose",
+        "administrative"
+      ]
+    },
+    {
+      "section": "union-expenditure",
+      "period": "2024-25",
+      "status": "actual-final",
+      "perimeter": "union-spending",
+      "label": "Total Union Government expenditure",
+      "totalRupees": 46528674000000,
+      "totalIsPublished": true,
+      "factCount": 121,
+      "describedCount": 112,
+      "axes": [
+        "purpose",
+        "administrative"
+      ]
+    },
+    {
+      "section": "union-expenditure",
+      "period": "2025-26",
+      "status": "revised-estimate",
+      "perimeter": "union-spending",
+      "label": "Total Union Government expenditure",
+      "totalRupees": 49648417400000,
+      "totalIsPublished": true,
+      "factCount": 120,
+      "describedCount": 114,
+      "axes": [
+        "purpose",
+        "administrative"
+      ]
+    }
+  ]
+}

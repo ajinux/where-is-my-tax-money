@@ -1,0 +1,66 @@
+---
+// Where each year's figure was read from.
+//
+// Not decoration. The dataset's standing rule is that a figure and the total it
+// belongs to come from different documents, so their agreement is corroboration
+// rather than arithmetic performed on ourselves, and that argument is worth
+// nothing to a reader who cannot see which document. Every page that prints a
+// number prints this underneath it.
+
+import { citationsFor, entities, type Cite } from "../../lib/entities";
+
+export interface Props {
+  /** Citations keyed by period, as the dataset records them. */
+  byPeriod: Record<string, Cite[]>;
+  heading?: string;
+}
+
+const { byPeriod, heading = "Where these figures come from" } = Astro.props;
+
+const rows = entities.years
+  .filter((year) => byPeriod[year.id]?.length)
+  .map((year) => ({ year, entries: citationsFor(byPeriod[year.id]) }))
+  .filter((row) => row.entries.length > 0);
+---
+
+{
+  rows.length > 0 && (
+    <>
+      <h2>{heading}</h2>
+      <ul class="rows" style="list-style:none">
+        {rows.map(({ year, entries }) =>
+          entries.map(({ cite, source }) => (
+            <li style="padding:12px 0">
+              <div class="name">
+                {year.label}
+                <span style="font-weight:400;color:var(--color-neutral-700)"> · {cite.locator}</span>
+              </div>
+              <div class="cite" style="margin-top:5px">
+                <a href={source.canonicalUrl} rel="noopener nofollow">
+                  {source.documentTitle}
+                </a>{" "}
+                {source.publisher}
+                {source.checksumSha256 && (
+                  <>
+                    <br />
+                    <span style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px">
+                      SHA-256 {source.checksumSha256.slice(0, 16)}…
+                    </span>
+                  </>
+                )}
+              </div>
+            </li>
+          ))
+        )}
+      </ul>
+      <p>
+        <small>
+          A document's title is its <em>publication</em> year, which is usually not the year of
+          the figures inside it: an Expenditure Profile reports actuals for the year that ended
+          two years earlier. The year printed beside each citation is the year the money was
+          spent.
+        </small>
+      </p>
+    </>
+  )
+}

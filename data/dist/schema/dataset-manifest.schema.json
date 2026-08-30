@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DatasetManifest",
+  "description": "The dataset index. It no longer lists which periods exist: sections\nare discovered on disk.",
+  "$defs": {
+    "RevisionNote": {
+      "properties": {
+        "version": {
+          "minLength": 1,
+          "title": "Version",
+          "type": "string"
+        },
+        "date": {
+          "title": "Date",
+          "type": "string"
+        },
+        "summary": {
+          "minLength": 1,
+          "title": "Summary",
+          "type": "string"
+        },
+        "affectedIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Affectedids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "version",
+        "date",
+        "summary",
+        "affectedIds"
+      ],
+      "title": "RevisionNote",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "schemaVersion": {
+      "const": 3,
+      "title": "Schemaversion",
+      "type": "integer"
+    },
+    "datasetVersion": {
+      "pattern": "^\\d{4}\\.\\d{2}\\.\\d{2}(?:\\.\\d+)?$",
+      "title": "Datasetversion",
+      "type": "string"
+    },
+    "vocabularyVersions": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Vocabularyversions",
+      "type": "object"
+    },
+    "revisionNotes": {
+      "items": {
+        "$ref": "#/$defs/RevisionNote"
+      },
+      "title": "Revisionnotes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "datasetVersion",
+    "vocabularyVersions",
+    "revisionNotes"
+  ],
+  "type": "object"
+}

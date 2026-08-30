@@ -1,0 +1,4832 @@
+{
+  "section": "union-expenditure",
+  "period": "2025-26",
+  "status": "revised-estimate",
+  "perimeter": "union-spending",
+  "root": {
+    "amount": {
+      "value": 4964841.74,
+      "unit": "crore-rupees"
+    },
+    "cite": [
+      {
+        "sourceId": "mof-2025-26-statement-1",
+        "locator": "Statement 1, total expenditure, Revised Estimates 2025-26 column"
+      }
+    ]
+  },
+  "facts": [
+    {
+      "id": "demand-1",
+      "amount": {
+        "value": 123089.3,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 1, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-2",
+      "amount": {
+        "value": 10280.83,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 2, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-3",
+      "amount": {
+        "value": 24411.47,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 3, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-4",
+      "amount": {
+        "value": 3671.82,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 4, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-5",
+      "amount": {
+        "value": 185.57,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 5, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-6",
+      "amount": {
+        "value": 186630.63,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 6, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-7",
+      "amount": {
+        "value": 4369.7,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 7, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-8",
+      "amount": {
+        "value": 2055.49,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 8, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-9",
+      "amount": {
+        "value": 490.96,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 9, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-10",
+      "amount": {
+        "value": 6606.02,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 10, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-11",
+      "amount": {
+        "value": 8616.15,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 11, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-12",
+      "amount": {
+        "value": 26369.98,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 12, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-13",
+      "amount": {
+        "value": 53398.17,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 13, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-14",
+      "amount": {
+        "value": 3361.82,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 14, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-15",
+      "amount": {
+        "value": 235047.65,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 15, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-16",
+      "amount": {
+        "value": 981.31,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 16, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-17",
+      "amount": {
+        "value": 8919.43,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 17, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-18",
+      "amount": {
+        "value": 3550.09,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 18, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-19",
+      "amount": {
+        "value": 27101.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 19, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-20",
+      "amount": {
+        "value": 349770.06,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 20, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-21",
+      "amount": {
+        "value": 186454.2,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 21, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-22",
+      "amount": {
+        "value": 169186.5,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 22, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-23",
+      "amount": {
+        "value": 4479.2,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 23, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-24",
+      "amount": {
+        "value": 3380.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 24, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-25",
+      "amount": {
+        "value": 70567.14,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 25, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-26",
+      "amount": {
+        "value": 51381.67,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 26, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-27",
+      "amount": {
+        "value": 20232.95,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 27, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-28",
+      "amount": {
+        "value": 3481.61,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 28, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-29",
+      "amount": {
+        "value": 21742.74,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 29, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-30",
+      "amount": {
+        "value": 130644.87,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 30, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-31",
+      "amount": {
+        "value": 510.87,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 31, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-32",
+      "amount": {
+        "value": 3696.63,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 32, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-33",
+      "amount": {
+        "value": 27.26,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 33, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-34",
+      "amount": {
+        "value": 33.71,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 34, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-35",
+      "amount": {
+        "value": 20313.73,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 35, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-36",
+      "amount": {
+        "value": 12730.08,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 36, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-37",
+      "amount": {
+        "value": 41496.22,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 37, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-38",
+      "amount": {
+        "value": 6685.09,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 38, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-39",
+      "amount": {
+        "value": 1274338.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 39, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-41",
+      "amount": {
+        "value": 91906.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 41, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "capital-investment-loans",
+      "amount": {
+        "value": 150000.0,
+        "unit": "crore-rupees"
+      },
+      "basis": "Discretionary and conditional. Part is allocated in proportion to each state's share of central taxes; the rest is tied to specific reforms and projects, so a state draws it only by qualifying. This is the largest single item and the least formula-bound.",
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-demand-42-notes",
+          "locator": "Demand No. 42, item 11, Revised 2025-26 Capital column"
+        }
+      ]
+    },
+    {
+      "id": "local-body-grants",
+      "amount": {
+        "value": 80337.0,
+        "unit": "crore-rupees"
+      },
+      "basis": "Fifteenth Finance Commission award. Divided between states largely by population and area, then onward to individual panchayats and municipalities by the state. No year-by-year union discretion.",
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-demand-42-notes",
+          "locator": "Demand No. 42, item 2, Total-Grants for Local Bodies, Revised 2025-26"
+        }
+      ]
+    },
+    {
+      "id": "health-sector-grants",
+      "amount": {
+        "value": 25171.0,
+        "unit": "crore-rupees"
+      },
+      "basis": "Fifteenth Finance Commission award. Allocated by the Commission's health-sector formula.",
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-demand-42-notes",
+          "locator": "Demand No. 42, item 6, Revised 2025-26"
+        }
+      ]
+    },
+    {
+      "id": "eap-loans",
+      "amount": {
+        "value": 24953.29,
+        "unit": "crore-rupees"
+      },
+      "basis": "Follows the projects themselves. External assistance is passed to a state on the same terms the union received it from the donor — so it goes wherever the funded project is, not by any formula. North-eastern and Himalayan states are outside this back-to-back arrangement.",
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-demand-42-notes",
+          "locator": "Demand No. 42, item 13, Revised 2025-26 Capital column, net"
+        }
+      ]
+    },
+    {
+      "id": "state-disaster-response",
+      "amount": {
+        "value": 24257.0,
+        "unit": "crore-rupees"
+      },
+      "basis": "Fifteenth Finance Commission award. State-wise amounts fixed from each state's past disaster expenditure and its exposure to risk.",
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-demand-42-notes",
+          "locator": "Demand No. 42, item 3, Revised 2025-26"
+        }
+      ]
+    },
+    {
+      "id": "revenue-deficit-grants-nagaland",
+      "amount": {
+        "value": 3647,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-demand-42-notes",
+          "locator": "Demand No. 42, item 5, Revised 2025-26"
+        },
+        {
+          "sourceId": "xvfc-main-report",
+          "locator": "Table 10.4: Grants-in-aid for Revenue Deficit, 2025-26 column"
+        }
+      ]
+    },
+    {
+      "id": "revenue-deficit-grants-himachal-pradesh",
+      "amount": {
+        "value": 3257,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-demand-42-notes",
+          "locator": "Demand No. 42, item 5, Revised 2025-26"
+        },
+        {
+          "sourceId": "xvfc-main-report",
+          "locator": "Table 10.4: Grants-in-aid for Revenue Deficit, 2025-26 column"
+        }
+      ]
+    },
+    {
+      "id": "revenue-deficit-grants-tripura",
+      "amount": {
+        "value": 2959,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-demand-42-notes",
+          "locator": "Demand No. 42, item 5, Revised 2025-26"
+        },
+        {
+          "sourceId": "xvfc-main-report",
+          "locator": "Table 10.4: Grants-in-aid for Revenue Deficit, 2025-26 column"
+        }
+      ]
+    },
+    {
+      "id": "revenue-deficit-grants-uttarakhand",
+      "amount": {
+        "value": 2099,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-demand-42-notes",
+          "locator": "Demand No. 42, item 5, Revised 2025-26"
+        },
+        {
+          "sourceId": "xvfc-main-report",
+          "locator": "Table 10.4: Grants-in-aid for Revenue Deficit, 2025-26 column"
+        }
+      ]
+    },
+    {
+      "id": "revenue-deficit-grants-manipur",
+      "amount": {
+        "value": 1157,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-demand-42-notes",
+          "locator": "Demand No. 42, item 5, Revised 2025-26"
+        },
+        {
+          "sourceId": "xvfc-main-report",
+          "locator": "Table 10.4: Grants-in-aid for Revenue Deficit, 2025-26 column"
+        }
+      ]
+    },
+    {
+      "id": "revenue-deficit-grants-mizoram",
+      "amount": {
+        "value": 586,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-demand-42-notes",
+          "locator": "Demand No. 42, item 5, Revised 2025-26"
+        },
+        {
+          "sourceId": "xvfc-main-report",
+          "locator": "Table 10.4: Grants-in-aid for Revenue Deficit, 2025-26 column"
+        }
+      ]
+    },
+    {
+      "id": "revenue-deficit-grants",
+      "amount": {
+        "value": 13705.0,
+        "unit": "crore-rupees"
+      },
+      "basis": "Fifteenth Finance Commission award. Paid only to the states the Commission assessed as still in deficit after devolution — a named and shrinking list, which is why most states receive nothing under this head.",
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-demand-42-notes",
+          "locator": "Demand No. 42, item 5, Revised 2025-26"
+        },
+        {
+          "sourceId": "xvfc-main-report",
+          "locator": "Table 10.4: Grants-in-aid for Revenue Deficit, 2025-26 column"
+        }
+      ],
+      "notes": "2025-26 is the last year of the Fifteenth Finance Commission's award, and the qualifying list is at its shortest: six states, down from seventeen in 2021-22. Punjab, West Bengal and Meghalaya drew this grant in 2024-25 and draw nothing in 2025-26. The grant exists to close an assessed revenue gap remaining after devolution, so a state leaves the list once the Commission judged that gap closed."
+    },
+    {
+      "id": "eap-grants",
+      "amount": {
+        "value": 12957.0,
+        "unit": "crore-rupees"
+      },
+      "basis": "Follows the projects themselves, as with the loan component — determined by which state hosts the donor-funded project.",
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-demand-42-notes",
+          "locator": "Demand No. 42, item 12, Revised 2025-26"
+        }
+      ]
+    },
+    {
+      "id": "special-assistance",
+      "amount": {
+        "value": 10000.0,
+        "unit": "crore-rupees"
+      },
+      "basis": "Discretionary. The demand describes it as covering committed liabilities without provision and other need-based assistance, so it is decided case by case rather than by any published rule.",
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-demand-42-notes",
+          "locator": "Demand No. 42, item 9, Revised 2025-26"
+        }
+      ]
+    },
+    {
+      "id": "state-disaster-mitigation",
+      "amount": {
+        "value": 9258.0,
+        "unit": "crore-rupees"
+      },
+      "basis": "Fifteenth Finance Commission award. State-wise amounts fixed in the award, as for the response fund.",
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-demand-42-notes",
+          "locator": "Demand No. 42, item 4, Revised 2025-26"
+        }
+      ]
+    },
+    {
+      "id": "ndrf-assistance",
+      "amount": {
+        "value": 4920.0,
+        "unit": "crore-rupees"
+      },
+      "basis": "Event-driven. Released to a state after a notified disaster, against assessed need, so it depends on what happened that year rather than on any share.",
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-demand-42-notes",
+          "locator": "Demand No. 42, item 15, Revised 2025-26, net"
+        }
+      ]
+    },
+    {
+      "id": "public-health-infrastructure",
+      "amount": {
+        "value": 699.0,
+        "unit": "crore-rupees"
+      },
+      "basis": "Financed from the Health Security Cess Fund, not general revenue: the demand shows the provision and an equal amount met from that fund in the same block. Nil in the 2024-25 actuals.",
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-demand-42-notes",
+          "locator": "Demand No. 42, item 1, Revised 2025-26, net"
+        }
+      ]
+    },
+    {
+      "id": "shared-municipal-services",
+      "amount": {
+        "value": 225.0,
+        "unit": "crore-rupees"
+      },
+      "basis": "The demand states no allocation rule for this head. It carries no 2024-25 actual; 2025-26 is its first substantive figure.",
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-demand-42-notes",
+          "locator": "Demand No. 42, item 8, Revised 2025-26"
+        }
+      ]
+    },
+    {
+      "id": "covid-vaccination-support",
+      "amount": {
+        "value": 0.01,
+        "unit": "crore-rupees"
+      },
+      "basis": "A token provision of one lakh rupees. The head carries the same amount in the 2025-26 budget estimate, the 2025-26 revised estimate and the 2026-27 budget estimate, and nothing in the 2024-25 actuals.",
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-demand-42-notes",
+          "locator": "Demand No. 42, item 10, Revised 2025-26"
+        }
+      ]
+    },
+    {
+      "id": "demand-42",
+      "amount": {
+        "value": 356482.3,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 42, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-43",
+      "amount": {
+        "value": 1732.95,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 43, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-44",
+      "amount": {
+        "value": 5302.83,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 44, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-45",
+      "amount": {
+        "value": 3571.57,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 45, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-46",
+      "amount": {
+        "value": 92925.86,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 46, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-47",
+      "amount": {
+        "value": 3927.64,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 47, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-48",
+      "amount": {
+        "value": 5293.85,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 48, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-49",
+      "amount": {
+        "value": 7480.15,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 49, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-50",
+      "amount": {
+        "value": 978.2,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 50, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-51",
+      "amount": {
+        "value": 162283.39,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 51, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-52",
+      "amount": {
+        "value": 7387.89,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 52, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-53",
+      "amount": {
+        "value": 5556.42,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 53, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-54",
+      "amount": {
+        "value": 2740.64,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 54, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-55",
+      "amount": {
+        "value": 7377.43,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 55, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-56",
+      "amount": {
+        "value": 1581.1,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 56, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-57",
+      "amount": {
+        "value": 1242.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 57, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-58",
+      "amount": {
+        "value": 41340.22,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 58, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-59",
+      "amount": {
+        "value": 3517.88,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 59, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-60",
+      "amount": {
+        "value": 57203.78,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 60, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-61",
+      "amount": {
+        "value": 6103.02,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 61, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-62",
+      "amount": {
+        "value": 18405.74,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 62, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-63",
+      "amount": {
+        "value": 23031.08,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 63, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-64",
+      "amount": {
+        "value": 12688.05,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 64, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-65",
+      "amount": {
+        "value": 5189.87,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 65, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-66",
+      "amount": {
+        "value": 373.29,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 66, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-67",
+      "amount": {
+        "value": 633.13,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 67, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-68",
+      "amount": {
+        "value": 12095.98,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 68, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-69",
+      "amount": {
+        "value": 3165.14,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 69, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-70",
+      "amount": {
+        "value": 2160.45,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 70, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-71",
+      "amount": {
+        "value": 25301.22,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 71, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-72",
+      "amount": {
+        "value": 965.96,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 72, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-73",
+      "amount": {
+        "value": 66.31,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 73, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-74",
+      "amount": {
+        "value": 2525.07,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 74, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-75",
+      "amount": {
+        "value": 50.66,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 75, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-76",
+      "amount": {
+        "value": 29800.34,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 76, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-77",
+      "amount": {
+        "value": 848.24,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 77, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-78",
+      "amount": {
+        "value": 2899.11,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 78, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-79",
+      "amount": {
+        "value": 21587.66,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 79, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-80",
+      "amount": {
+        "value": 141.83,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 80, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-81",
+      "amount": {
+        "value": 923.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 81, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-82",
+      "amount": {
+        "value": 481.33,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 82, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-83",
+      "amount": {
+        "value": 12.14,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 83, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-84",
+      "amount": {
+        "value": 432.89,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 84, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-85",
+      "amount": {
+        "value": 255466.32,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 85, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-86",
+      "amount": {
+        "value": 287141.87,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 86, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-87",
+      "amount": {
+        "value": 186995.61,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 87, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-88",
+      "amount": {
+        "value": 1757.4,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 88, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-89",
+      "amount": {
+        "value": 11921.58,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 89, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-90",
+      "amount": {
+        "value": 2830.45,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 90, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-91",
+      "amount": {
+        "value": 6433.16,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 91, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-92",
+      "amount": {
+        "value": 2703.54,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 92, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-93",
+      "amount": {
+        "value": 11402.74,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 93, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-94",
+      "amount": {
+        "value": 1291.6,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 94, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-95",
+      "amount": {
+        "value": 12448.6,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 95, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-96",
+      "amount": {
+        "value": 5551.29,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 96, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-97",
+      "amount": {
+        "value": 3272.44,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 97, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-98",
+      "amount": {
+        "value": 5766.68,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 98, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-99",
+      "amount": {
+        "value": 1310.3,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 99, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-100",
+      "amount": {
+        "value": 10824.18,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 100, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-101",
+      "amount": {
+        "value": 24373.91,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 101, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-102",
+      "amount": {
+        "value": 3346.54,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 102, Revised Estimates 2025-26, Total column"
+        }
+      ]
+    }
+  ],
+  "trees": [
+    {
+      "of": "revenue-deficit-grants",
+      "axis": "recipient",
+      "children": [
+        "revenue-deficit-grants-nagaland",
+        "revenue-deficit-grants-himachal-pradesh",
+        "revenue-deficit-grants-tripura",
+        "revenue-deficit-grants-uttarakhand",
+        "revenue-deficit-grants-manipur",
+        "revenue-deficit-grants-mizoram"
+      ]
+    },
+    {
+      "of": "demand-42",
+      "axis": "destination",
+      "children": [
+        "capital-investment-loans",
+        "local-body-grants",
+        "health-sector-grants",
+        "eap-loans",
+        "state-disaster-response",
+        "revenue-deficit-grants",
+        "eap-grants",
+        "special-assistance",
+        "state-disaster-mitigation",
+        "ndrf-assistance",
+        "public-health-infrastructure",
+        "shared-municipal-services",
+        "covid-vaccination-support"
+      ],
+      "notes": "ndrf-transfer carried a 2024-25 actual but nets to nil in the 2025-26 revised estimate, so it is absent here. public-health-infrastructure, shared-municipal-services and covid-vaccination-support are the reverse: nil in 2024-25, present in 2025-26."
+    },
+    {
+      "of": "@root",
+      "axis": "purpose",
+      "children": [
+        {
+          "group": "agriculture-and-rural-development",
+          "children": [
+            "demand-1",
+            "demand-16",
+            "demand-43",
+            "demand-44",
+            "demand-6",
+            "demand-87",
+            "demand-88"
+          ]
+        },
+        {
+          "group": "culture-media-and-sport",
+          "children": [
+            "demand-18",
+            "demand-61",
+            "demand-99"
+          ]
+        },
+        {
+          "group": "defence-and-security",
+          "children": [
+            "demand-19",
+            "demand-20",
+            "demand-21",
+            "demand-22",
+            "demand-49",
+            "demand-51"
+          ]
+        },
+        {
+          "group": "education-skills-and-research",
+          "children": [
+            "demand-2",
+            "demand-24",
+            "demand-25",
+            "demand-26",
+            "demand-89",
+            "demand-90",
+            "demand-91",
+            "demand-92",
+            "demand-95",
+            "demand-96"
+          ]
+        },
+        {
+          "group": "energy-industry-and-the-economy",
+          "children": [
+            "demand-10",
+            "demand-11",
+            "demand-27",
+            "demand-3",
+            "demand-30",
+            "demand-32",
+            "demand-33",
+            "demand-34",
+            "demand-48",
+            "demand-5",
+            "demand-68",
+            "demand-69",
+            "demand-7",
+            "demand-71",
+            "demand-76",
+            "demand-79",
+            "demand-9",
+            "demand-97",
+            "demand-98"
+          ]
+        },
+        {
+          "group": "environment-and-climate",
+          "children": [
+            "demand-28"
+          ]
+        },
+        {
+          "group": "government-and-public-administration",
+          "children": [
+            "demand-12",
+            "demand-17",
+            "demand-29",
+            "demand-31",
+            "demand-35",
+            "demand-36",
+            "demand-37",
+            "demand-38",
+            "demand-45",
+            "demand-50",
+            "demand-63",
+            "demand-64",
+            "demand-65",
+            "demand-66",
+            "demand-67",
+            "demand-72",
+            "demand-73",
+            "demand-75",
+            "demand-77",
+            "demand-80",
+            "demand-81",
+            "demand-82",
+            "demand-83",
+            "demand-84"
+          ]
+        },
+        {
+          "group": "health-and-social-protection",
+          "children": [
+            "demand-100",
+            "demand-101",
+            "demand-14",
+            "demand-15",
+            "demand-4",
+            "demand-41",
+            "demand-46",
+            "demand-47",
+            "demand-70",
+            "demand-74",
+            "demand-93",
+            "demand-94"
+          ]
+        },
+        {
+          "group": "interest-and-debt-service",
+          "children": [
+            "demand-39"
+          ]
+        },
+        {
+          "group": "states-territories-and-transfers",
+          "children": [
+            "demand-23",
+            "demand-42",
+            "demand-52",
+            "demand-53",
+            "demand-54",
+            "demand-55",
+            "demand-56",
+            "demand-57",
+            "demand-58",
+            "demand-59"
+          ]
+        },
+        {
+          "group": "transport-housing-and-infrastructure",
+          "children": [
+            "demand-102",
+            "demand-13",
+            "demand-60",
+            "demand-62",
+            "demand-78",
+            "demand-8",
+            "demand-85",
+            "demand-86"
+          ]
+        }
+      ]
+    },
+    {
+      "of": "@root",
+      "axis": "administrative",
+      "children": [
+        {
+          "group": "agriculture-and-farmers-welfare",
+          "children": [
+            "demand-1",
+            "demand-2"
+          ]
+        },
+        {
+          "group": "atomic-energy",
+          "children": [
+            "demand-3"
+          ]
+        },
+        {
+          "group": "ayush",
+          "children": [
+            "demand-4"
+          ]
+        },
+        {
+          "group": "chemicals-and-fertilisers",
+          "children": [
+            "demand-5",
+            "demand-6",
+            "demand-7"
+          ]
+        },
+        {
+          "group": "civil-aviation",
+          "children": [
+            "demand-8"
+          ]
+        },
+        {
+          "group": "coal",
+          "children": [
+            "demand-9"
+          ]
+        },
+        {
+          "group": "commerce-and-industry",
+          "children": [
+            "demand-10",
+            "demand-11"
+          ]
+        },
+        {
+          "group": "communications",
+          "children": [
+            "demand-12",
+            "demand-13"
+          ]
+        },
+        {
+          "group": "consumer-affairs-food-and-public-distribution",
+          "children": [
+            "demand-14",
+            "demand-15"
+          ]
+        },
+        {
+          "group": "cooperation",
+          "children": [
+            "demand-16"
+          ]
+        },
+        {
+          "group": "corporate-affairs",
+          "children": [
+            "demand-17"
+          ]
+        },
+        {
+          "group": "culture",
+          "children": [
+            "demand-18"
+          ]
+        },
+        {
+          "group": "defence",
+          "children": [
+            "demand-19",
+            "demand-20",
+            "demand-21",
+            "demand-22"
+          ]
+        },
+        {
+          "group": "development-of-north-eastern-region",
+          "children": [
+            "demand-23"
+          ]
+        },
+        {
+          "group": "earth-sciences",
+          "children": [
+            "demand-24"
+          ]
+        },
+        {
+          "group": "education",
+          "children": [
+            "demand-25",
+            "demand-26"
+          ]
+        },
+        {
+          "group": "electronics-and-information-technology",
+          "children": [
+            "demand-27"
+          ]
+        },
+        {
+          "group": "environment-forests-and-climate-change",
+          "children": [
+            "demand-28"
+          ]
+        },
+        {
+          "group": "external-affairs",
+          "children": [
+            "demand-29"
+          ]
+        },
+        {
+          "group": "finance",
+          "children": [
+            "demand-30",
+            "demand-31",
+            "demand-32",
+            "demand-33",
+            "demand-34",
+            "demand-35",
+            "demand-36",
+            "demand-37",
+            "demand-38",
+            "demand-39",
+            "demand-41",
+            "demand-42"
+          ]
+        },
+        {
+          "group": "fisheries-animal-husbandry-and-dairying",
+          "children": [
+            "demand-43",
+            "demand-44"
+          ]
+        },
+        {
+          "group": "food-processing-industries",
+          "children": [
+            "demand-45"
+          ]
+        },
+        {
+          "group": "health-and-family-welfare",
+          "children": [
+            "demand-46",
+            "demand-47"
+          ]
+        },
+        {
+          "group": "heavy-industries",
+          "children": [
+            "demand-48"
+          ]
+        },
+        {
+          "group": "home-affairs",
+          "children": [
+            "demand-49",
+            "demand-50",
+            "demand-51",
+            "demand-52",
+            "demand-53",
+            "demand-54",
+            "demand-55",
+            "demand-56",
+            "demand-57",
+            "demand-58",
+            "demand-59"
+          ]
+        },
+        {
+          "group": "housing-and-urban-affairs",
+          "children": [
+            "demand-60"
+          ]
+        },
+        {
+          "group": "information-and-broadcasting",
+          "children": [
+            "demand-61"
+          ]
+        },
+        {
+          "group": "jal-shakti",
+          "children": [
+            "demand-62",
+            "demand-63"
+          ]
+        },
+        {
+          "group": "labour-and-employment",
+          "children": [
+            "demand-64"
+          ]
+        },
+        {
+          "group": "law-and-justice",
+          "children": [
+            "demand-65",
+            "demand-66",
+            "demand-67"
+          ]
+        },
+        {
+          "group": "micro-small-and-medium-enterprises",
+          "children": [
+            "demand-68"
+          ]
+        },
+        {
+          "group": "mines",
+          "children": [
+            "demand-69"
+          ]
+        },
+        {
+          "group": "minority-affairs",
+          "children": [
+            "demand-70"
+          ]
+        },
+        {
+          "group": "new-and-renewable-energy",
+          "children": [
+            "demand-71"
+          ]
+        },
+        {
+          "group": "panchayati-raj",
+          "children": [
+            "demand-72"
+          ]
+        },
+        {
+          "group": "parliamentary-affairs",
+          "children": [
+            "demand-73"
+          ]
+        },
+        {
+          "group": "personnel-public-grievances-and-pensions",
+          "children": [
+            "demand-74",
+            "demand-75"
+          ]
+        },
+        {
+          "group": "petroleum-and-natural-gas",
+          "children": [
+            "demand-76"
+          ]
+        },
+        {
+          "group": "planning",
+          "children": [
+            "demand-77"
+          ]
+        },
+        {
+          "group": "ports-shipping-and-waterways",
+          "children": [
+            "demand-78"
+          ]
+        },
+        {
+          "group": "power",
+          "children": [
+            "demand-79"
+          ]
+        },
+        {
+          "group": "president-parliament-and-upsc",
+          "children": [
+            "demand-80",
+            "demand-81",
+            "demand-82",
+            "demand-83",
+            "demand-84"
+          ]
+        },
+        {
+          "group": "railways",
+          "children": [
+            "demand-85"
+          ]
+        },
+        {
+          "group": "road-transport-and-highways",
+          "children": [
+            "demand-86"
+          ]
+        },
+        {
+          "group": "rural-development",
+          "children": [
+            "demand-87",
+            "demand-88"
+          ]
+        },
+        {
+          "group": "science-and-technology",
+          "children": [
+            "demand-89",
+            "demand-90",
+            "demand-91"
+          ]
+        },
+        {
+          "group": "skill-development-and-entrepreneurship",
+          "children": [
+            "demand-92"
+          ]
+        },
+        {
+          "group": "social-justice-and-empowerment",
+          "children": [
+            "demand-93",
+            "demand-94"
+          ]
+        },
+        {
+          "group": "space",
+          "children": [
+            "demand-95"
+          ]
+        },
+        {
+          "group": "statistics-and-programme-implementation",
+          "children": [
+            "demand-96"
+          ]
+        },
+        {
+          "group": "steel",
+          "children": [
+            "demand-97"
+          ]
+        },
+        {
+          "group": "textiles",
+          "children": [
+            "demand-98"
+          ]
+        },
+        {
+          "group": "tourism",
+          "children": [
+            "demand-99"
+          ]
+        },
+        {
+          "group": "tribal-affairs",
+          "children": [
+            "demand-100"
+          ]
+        },
+        {
+          "group": "women-and-child-development",
+          "children": [
+            "demand-101"
+          ]
+        },
+        {
+          "group": "youth-affairs-and-sports",
+          "children": [
+            "demand-102"
+          ]
+        }
+      ]
+    },
+    {
+      "of": "demand-1",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 123003.13,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 86.17,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 1, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-2",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 10278.34,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 2.49,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 2, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-3",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 12349.65,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 12061.82,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 3, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-4",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 3618.47,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 53.35,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 4, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-5",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 184.37,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 1.2,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 5, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-6",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 186612.35,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 18.28,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 6, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-7",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 4368.2,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 1.5,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 7, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-8",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 2014.48,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 41.01,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 8, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-9",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 488.76,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 2.2,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 9, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-10",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 6556.54,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 49.48,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 10, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-11",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 4114.8,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 4501.35,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 11, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-12",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 25323.87,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 1046.11,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 12, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-13",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 29482.37,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 23915.8,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 13, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-14",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 3283.27,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 78.55,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 14, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-15",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 235024.93,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 22.72,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 15, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-16",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 979.18,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 2.13,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 16, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-17",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 8833.06,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 86.37,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 17, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-18",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 3357.64,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 192.45,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 18, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-19",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 16137.85,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 10963.15,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 19, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-20",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 349770.06,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 0,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 20, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-21",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 0,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 186454.2,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 21, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-22",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 169186.5,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 0,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 22, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-23",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 1411.79,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 3067.41,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 23, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-24",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 2901.65,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 478.35,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 24, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-25",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 70566.34,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 0.8,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 25, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-26",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 51371.4,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 10.27,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 26, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-27",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 19846.32,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 386.63,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 27, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-28",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 3307.22,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 174.39,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 28, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-29",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 20745.86,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 996.88,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 29, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-30",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 59845.19,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 70799.68,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 30, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-31",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 449.16,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 61.71,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 31, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-32",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 3641.84,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 54.79,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 32, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-33",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 26.69,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 0.57,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 33, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-34",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 33.11,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 0.6,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 34, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-35",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 19740.85,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 572.88,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 35, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-36",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 10665.52,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 2064.56,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 36, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-37",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 38905.94,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 2590.28,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 37, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-38",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 6146.0,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 539.09,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 38, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-39",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 1274338.0,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 0,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 39, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-41",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 91906.0,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 0,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 41, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-42",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 181529.01,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 174953.29,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 42, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-43",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 1723.13,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 9.82,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 43, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-44",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 4650.44,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 652.39,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 44, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-45",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 3569.23,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 2.34,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 45, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-46",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 90488.04,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 2437.82,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 46, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-47",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 3926.17,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 1.47,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 47, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-48",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 4791.27,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 502.58,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 48, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-49",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 7199.71,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 280.44,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 49, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-50",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 803.02,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 175.18,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 50, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-51",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 146262.78,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 16020.61,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 51, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-52",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 6918.88,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 469.01,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 52, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-53",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 5296.33,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 260.09,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 53, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-54",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 1670.64,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 1070.0,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 54, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-55",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 5029.7,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 2347.73,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 55, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-56",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 1314.39,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 266.71,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 56, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-57",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 967.01,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 274.99,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 57, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-58",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 41340.22,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 0,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 58, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-59",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 3517.87,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 0.01,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 59, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-60",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 24225.93,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 32977.85,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 60, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-61",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 6038.34,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 64.68,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 61, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-62",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 17948.66,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 457.08,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 62, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-63",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 23029.88,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 1.2,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 63, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-64",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 12659.41,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 28.64,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 64, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-65",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 4371.62,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 818.25,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 65, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-66",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 358.79,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 14.5,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 66, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-67",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 565.63,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 67.5,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 67, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-68",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 11180.32,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 915.66,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 68, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-69",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 2991.2,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 173.94,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 69, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-70",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 2157.98,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 2.47,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 70, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-71",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 25299.02,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 2.2,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 71, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-72",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 951.15,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 14.81,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 72, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-73",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 58.6,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 7.71,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 73, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-74",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 2373.84,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 151.23,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 74, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-75",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 49.04,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 1.62,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 75, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-76",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 28393.21,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 1407.13,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 76, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-77",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 826.67,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 21.57,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 77, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-78",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 1700.13,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 1198.98,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 78, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-79",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 21004.15,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 583.51,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 79, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-80",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 125.63,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 16.2,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 80, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-81",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 893.05,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 29.95,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 81, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-82",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 467.05,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 14.28,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 82, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-83",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 11.98,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 0.16,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 83, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-84",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 411.25,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 21.64,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 84, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-85",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 3466.32,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 252000.0,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 85, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-86",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 15090.41,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 272051.46,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 86, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-87",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 186991.37,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 4.24,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 87, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-88",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 1756.39,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 1.01,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 88, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-89",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 8838.52,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 3083.06,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 89, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-90",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 2830.45,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 0,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 90, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-91",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 6430.27,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 2.89,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 91, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-92",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 2637.54,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 66.0,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 92, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-93",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 11394.46,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 8.28,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 93, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-94",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 1290.4,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 1.2,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 94, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-95",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 7138.73,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 5309.87,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 95, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-96",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 5492.25,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 59.04,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 96, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-97",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 252.66,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 3019.78,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 97, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-98",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 5748.14,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 18.54,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 98, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-99",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 1304.17,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 6.13,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 99, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-100",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 10805.53,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 18.65,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 100, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-101",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 24368.65,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 5.26,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 101, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-102",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 3343.43,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 3.11,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2025-26-statement-3",
+          "locator": "Statement 3, Demand No. 102, Revised Estimates 2025-26, Revenue and Capital columns"
+        }
+      ]
+    }
+  ],
+  "notes": "Revised estimates, not actuals. The Expenditure Profile reports a year's actuals two budgets later, so 2025-26 actuals are not published until the 2027-28 Budget; this year is read from the Revised Estimates 2025-26 columns of the same 2026-27 documents that supply 2024-25's actuals, and should be replaced when the actuals appear."
+}

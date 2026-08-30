@@ -1,0 +1,32 @@
+{
+  "section": "tax-devolution",
+  "period": "2020-21",
+  "status": "actual-final",
+  "perimeter": "outside-union-spending",
+  "root": {
+    "amount": {
+      "value": 594997,
+      "unit": "crore-rupees"
+    },
+    "cite": [
+      {
+        "sourceId": "mof-2020-21-budget-at-a-glance",
+        "locator": "Budget at a Glance, Transfer of Resources to States and Union Territories with Legislature, row I: Devolution of States share in taxes, Actuals 2020-21 column"
+      }
+    ]
+  },
+  "facts": [],
+  "trees": [
+    {
+      "of": "@root",
+      "axis": "recipient",
+      "derivedBy": {
+        "method": "finance-commission-shares",
+        "using": {
+          "awardId": "fifteenth-finance-commission-2020-21"
+        }
+      }
+    }
+  ],
+  "notes": "The Fifteenth Finance Commission made two awards and 2020-21 falls under the first of them — its own single-year report, with horizontal shares that differ from the 2021-26 award in every state. Both awards devolve 41 per cent of the divisible pool."
+}

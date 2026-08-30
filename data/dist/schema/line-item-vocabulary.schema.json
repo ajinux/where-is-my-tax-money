@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LineItemVocabulary",
+  "description": "What each budget head is actually spent on, keyed by fact id and\nwritten once, not per period.",
+  "$defs": {
+    "Citation": {
+      "description": "Which document a figure came from, and where inside it.",
+      "properties": {
+        "sourceId": {
+          "title": "Sourceid",
+          "type": "string"
+        },
+        "locator": {
+          "minLength": 1,
+          "title": "Locator",
+          "type": "string"
+        }
+      },
+      "required": [
+        "sourceId",
+        "locator"
+      ],
+      "title": "Citation",
+      "type": "object"
+    },
+    "LineItem": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "summary": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Summary"
+        },
+        "spentOn": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Spenton"
+        },
+        "cite": {
+          "items": {
+            "$ref": "#/$defs/Citation"
+          },
+          "minItems": 1,
+          "title": "Cite",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "cite"
+      ],
+      "title": "LineItem",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "id": {
+      "const": "line-items",
+      "title": "Id",
+      "type": "string"
+    },
+    "version": {
+      "minLength": 1,
+      "title": "Version",
+      "type": "string"
+    },
+    "items": {
+      "items": {
+        "$ref": "#/$defs/LineItem"
+      },
+      "minItems": 1,
+      "title": "Items",
+      "type": "array"
+    },
+    "notes": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Notes"
+    }
+  },
+  "required": [
+    "id",
+    "version",
+    "items"
+  ],
+  "type": "object"
+}

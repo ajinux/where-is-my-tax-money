@@ -1,0 +1,31 @@
+{
+  "section": "tax-devolution",
+  "period": "2021-22",
+  "status": "actual-final",
+  "perimeter": "outside-union-spending",
+  "root": {
+    "amount": {
+      "value": 898392,
+      "unit": "crore-rupees"
+    },
+    "cite": [
+      {
+        "sourceId": "mof-2021-22-budget-at-a-glance",
+        "locator": "Budget at a Glance, Transfer of Resources to States and Union Territories with Legislature, row I: Devolution of States share in taxes, Actuals 2021-22 column"
+      }
+    ]
+  },
+  "facts": [],
+  "trees": [
+    {
+      "of": "@root",
+      "axis": "recipient",
+      "derivedBy": {
+        "method": "finance-commission-shares",
+        "using": {
+          "awardId": "fifteenth-finance-commission"
+        }
+      }
+    }
+  ]
+}

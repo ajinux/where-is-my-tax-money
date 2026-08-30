@@ -1,0 +1,397 @@
+{
+  "section": "union-expenditure",
+  "label": "Total Union Government expenditure",
+  "description": "Everything the Union Government of India spent.",
+  "lines": {
+    "capital-investment-loans": {
+      "label": "Special Assistance as Loan to States for Capital Investment"
+    },
+    "covid-vaccination-support": {
+      "label": "Support for COVID-19 Vaccination"
+    },
+    "eap-grants": {
+      "label": "Externally aided projects — grants"
+    },
+    "eap-loans": {
+      "label": "Externally aided projects — back-to-back loans"
+    },
+    "health-sector-grants": {
+      "label": "Grants for the health sector"
+    },
+    "local-body-grants": {
+      "label": "Grants for local bodies"
+    },
+    "ndrf-assistance": {
+      "label": "Assistance to states from the National Disaster Response and Mitigation Funds"
+    },
+    "ndrf-transfer": {
+      "label": "Transfer to the National Disaster Response and Mitigation Funds"
+    },
+    "public-health-infrastructure": {
+      "label": "Assistance to States for Public Health Infrastructure"
+    },
+    "revenue-deficit-grants": {
+      "label": "Post-devolution revenue deficit grants"
+    },
+    "revenue-deficit-grants-himachal-pradesh": {
+      "label": "Himachal Pradesh"
+    },
+    "revenue-deficit-grants-manipur": {
+      "label": "Manipur"
+    },
+    "revenue-deficit-grants-meghalaya": {
+      "label": "Meghalaya"
+    },
+    "revenue-deficit-grants-mizoram": {
+      "label": "Mizoram"
+    },
+    "revenue-deficit-grants-nagaland": {
+      "label": "Nagaland"
+    },
+    "revenue-deficit-grants-punjab": {
+      "label": "Punjab"
+    },
+    "revenue-deficit-grants-tripura": {
+      "label": "Tripura"
+    },
+    "revenue-deficit-grants-uttarakhand": {
+      "label": "Uttarakhand"
+    },
+    "revenue-deficit-grants-west-bengal": {
+      "label": "West Bengal"
+    },
+    "shared-municipal-services": {
+      "label": "Grants for shared Municipal Services"
+    },
+    "special-assistance": {
+      "label": "Special assistance"
+    },
+    "state-disaster-mitigation": {
+      "label": "State Disaster Mitigation Fund"
+    },
+    "state-disaster-response": {
+      "label": "State Disaster Response Fund"
+    },
+    "demand-1": {
+      "label": "Department of Agriculture and Farmers Welfare"
+    },
+    "demand-10": {
+      "label": "Department of Commerce"
+    },
+    "demand-100": {
+      "label": "Ministry of Tribal Affairs"
+    },
+    "demand-101": {
+      "label": "Ministry of Women and Child Development",
+      "url": "https://wcd.gov.in"
+    },
+    "demand-102": {
+      "label": "Ministry of Youth Affairs and Sports"
+    },
+    "demand-11": {
+      "label": "Department for Promotion of Industry and Internal Trade"
+    },
+    "demand-12": {
+      "label": "Department of Posts"
+    },
+    "demand-13": {
+      "label": "Department of Telecommunications"
+    },
+    "demand-14": {
+      "label": "Department of Consumer Affairs"
+    },
+    "demand-15": {
+      "label": "Department of Food and Public Distribution"
+    },
+    "demand-16": {
+      "label": "Ministry of Cooperation"
+    },
+    "demand-17": {
+      "label": "Ministry of Corporate Affairs"
+    },
+    "demand-18": {
+      "label": "Ministry of Culture",
+      "url": "https://culture.gov.in"
+    },
+    "demand-19": {
+      "label": "Ministry of Defence (Civil)"
+    },
+    "demand-2": {
+      "label": "Department of Agricultural Research and Education"
+    },
+    "demand-20": {
+      "label": "Defence Services (Revenue)"
+    },
+    "demand-21": {
+      "label": "Capital Outlay on Defence Services"
+    },
+    "demand-22": {
+      "label": "Defence Pensions"
+    },
+    "demand-23": {
+      "label": "Ministry of Development of North Eastern Region"
+    },
+    "demand-24": {
+      "label": "Ministry of Earth Sciences"
+    },
+    "demand-25": {
+      "label": "Department of School Education and Literacy"
+    },
+    "demand-26": {
+      "label": "Department of Higher Education"
+    },
+    "demand-27": {
+      "label": "Ministry of Electronics and Information Technology"
+    },
+    "demand-28": {
+      "label": "Ministry of Environment, Forests and Climate Change"
+    },
+    "demand-29": {
+      "label": "Ministry of External Affairs"
+    },
+    "demand-3": {
+      "label": "Atomic Energy"
+    },
+    "demand-30": {
+      "label": "Department of Economic Affairs"
+    },
+    "demand-31": {
+      "label": "Department of Expenditure"
+    },
+    "demand-32": {
+      "label": "Department of Financial Services",
+      "url": "https://financialservices.gov.in"
+    },
+    "demand-33": {
+      "label": "Department of Public Enterprises"
+    },
+    "demand-34": {
+      "label": "Department of Investment and Public Asset Management (DIPAM)"
+    },
+    "demand-35": {
+      "label": "Department of Revenue"
+    },
+    "demand-36": {
+      "label": "Direct Taxes"
+    },
+    "demand-37": {
+      "label": "Indirect Taxes"
+    },
+    "demand-38": {
+      "label": "Indian Audit and Accounts Department"
+    },
+    "demand-39": {
+      "label": "Interest Payments"
+    },
+    "demand-4": {
+      "label": "Ministry of Ayush"
+    },
+    "demand-40": {
+      "label": "Repayment of Debt"
+    },
+    "demand-41": {
+      "label": "Pensions"
+    },
+    "demand-42": {
+      "label": "Transfers to States"
+    },
+    "demand-43": {
+      "label": "Department of Fisheries"
+    },
+    "demand-44": {
+      "label": "Department of Animal Husbandry and Dairying"
+    },
+    "demand-45": {
+      "label": "Ministry of Food Processing Industries"
+    },
+    "demand-46": {
+      "label": "Department of Health and Family Welfare"
+    },
+    "demand-47": {
+      "label": "Department of Health Research"
+    },
+    "demand-48": {
+      "label": "Ministry of Heavy Industries",
+      "url": "https://heavyindustries.gov.in"
+    },
+    "demand-49": {
+      "label": "Ministry of Home Affairs"
+    },
+    "demand-5": {
+      "label": "Department of Chemicals and Petrochemicals",
+      "url": "https://chemicals.gov.in"
+    },
+    "demand-50": {
+      "label": "Cabinet"
+    },
+    "demand-51": {
+      "label": "Police"
+    },
+    "demand-52": {
+      "label": "Andaman and Nicobar Islands",
+      "url": "https://andaman.nic.in"
+    },
+    "demand-53": {
+      "label": "Chandigarh"
+    },
+    "demand-54": {
+      "label": "Dadra and Nagar Haveli and Daman and Diu"
+    },
+    "demand-55": {
+      "label": "Ladakh",
+      "url": "https://ladakh.gov.in"
+    },
+    "demand-56": {
+      "label": "Lakshadweep",
+      "url": "https://lakshadweep.gov.in"
+    },
+    "demand-57": {
+      "label": "Transfers to Delhi"
+    },
+    "demand-58": {
+      "label": "Transfers to Jammu and Kashmir"
+    },
+    "demand-59": {
+      "label": "Transfers to Puducherry"
+    },
+    "demand-6": {
+      "label": "Department of Fertilisers"
+    },
+    "demand-60": {
+      "label": "Ministry of Housing and Urban Affairs"
+    },
+    "demand-61": {
+      "label": "Ministry of Information and Broadcasting"
+    },
+    "demand-62": {
+      "label": "Department of Water Resources, River Development and Ganga"
+    },
+    "demand-63": {
+      "label": "Department of Drinking Water and Sanitation"
+    },
+    "demand-64": {
+      "label": "Ministry of Labour and Employment"
+    },
+    "demand-65": {
+      "label": "Law and Justice"
+    },
+    "demand-66": {
+      "label": "Election Commission"
+    },
+    "demand-67": {
+      "label": "Supreme Court of India",
+      "url": "https://www.supremecourt.gov.in"
+    },
+    "demand-68": {
+      "label": "Ministry of Micro, Small and Medium Enterprises"
+    },
+    "demand-69": {
+      "label": "Ministry of Mines"
+    },
+    "demand-7": {
+      "label": "Department of Pharmaceuticals"
+    },
+    "demand-70": {
+      "label": "Ministry of Minority Affairs",
+      "url": "https://minorityaffairs.gov.in"
+    },
+    "demand-71": {
+      "label": "Ministry of New and Renewable Energy"
+    },
+    "demand-72": {
+      "label": "Ministry of Panchayati Raj"
+    },
+    "demand-73": {
+      "label": "Ministry of Parliamentary Affairs"
+    },
+    "demand-74": {
+      "label": "Ministry of Personnel, Public Grievances and Pensions"
+    },
+    "demand-75": {
+      "label": "Central Vigilance Commission"
+    },
+    "demand-76": {
+      "label": "Ministry of Petroleum and Natural Gas"
+    },
+    "demand-77": {
+      "label": "Ministry of Planning"
+    },
+    "demand-78": {
+      "label": "Ministry of Ports, Shipping and Waterways"
+    },
+    "demand-79": {
+      "label": "Ministry of Power"
+    },
+    "demand-8": {
+      "label": "Ministry of Civil Aviation",
+      "url": "https://civilaviation.gov.in"
+    },
+    "demand-80": {
+      "label": "Staff, Household and Allowances of the President"
+    },
+    "demand-81": {
+      "label": "Lok Sabha"
+    },
+    "demand-82": {
+      "label": "Rajya Sabha"
+    },
+    "demand-83": {
+      "label": "Secretariat of the Vice-President"
+    },
+    "demand-84": {
+      "label": "Union Public Service Commission",
+      "url": "https://upsc.gov.in"
+    },
+    "demand-85": {
+      "label": "Ministry of Railways"
+    },
+    "demand-86": {
+      "label": "Ministry of Road Transport and Highways"
+    },
+    "demand-87": {
+      "label": "Department of Rural Development"
+    },
+    "demand-88": {
+      "label": "Department of Land Resources"
+    },
+    "demand-89": {
+      "label": "Department of Science and Technology"
+    },
+    "demand-9": {
+      "label": "Ministry of Coal",
+      "url": "https://coal.gov.in"
+    },
+    "demand-90": {
+      "label": "Department of Biotechnology"
+    },
+    "demand-91": {
+      "label": "Department of Scientific and Industrial Research"
+    },
+    "demand-92": {
+      "label": "Ministry of Skill Development and Entrepreneurship"
+    },
+    "demand-93": {
+      "label": "Department of Social Justice and Empowerment",
+      "url": "https://socialjustice.gov.in"
+    },
+    "demand-94": {
+      "label": "Department of Empowerment of Persons with Disabilities"
+    },
+    "demand-95": {
+      "label": "Department of Space"
+    },
+    "demand-96": {
+      "label": "Ministry of Statistics and Programme Implementation"
+    },
+    "demand-97": {
+      "label": "Ministry of Steel",
+      "url": "https://steel.gov.in"
+    },
+    "demand-98": {
+      "label": "Ministry of Textiles"
+    },
+    "demand-99": {
+      "label": "Ministry of Tourism"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "section": "tax-devolution",
+  "period": "2024-25",
+  "status": "actual-final",
+  "perimeter": "outside-union-spending",
+  "root": {
+    "amount": {
+      "value": 1286885,
+      "unit": "crore-rupees"
+    },
+    "cite": [
+      {
+        "sourceId": "mof-2024-25-budget-at-a-glance",
+        "locator": "Budget at a Glance, Transfer of Resources to States and Union Territories with Legislature, row I: Devolution of States share in taxes, Actuals 2024-25 column"
+      }
+    ]
+  },
+  "facts": [],
+  "trees": [
+    {
+      "of": "@root",
+      "axis": "recipient",
+      "derivedBy": {
+        "method": "finance-commission-shares",
+        "using": {
+          "awardId": "fifteenth-finance-commission"
+        }
+      }
+    }
+  ]
+}

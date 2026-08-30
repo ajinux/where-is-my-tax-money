@@ -1,0 +1,33 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+
+# Python — the repo's only toolchain now.
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# The built artifact is COMMITTED, deliberately: consumers (prototype/, and
+# the frontend to come) read data/dist/dataset.v3.json without running the
+# build, and tests/test_verification_gate.py asserts the committed copy is what
+# the pipeline currently produces. A bare `dist/` rule used to sit here from the
+# npm era and would have excluded it the moment this repo got version control —
+# silently turning that test into a skip.
+!data/dist/
+
+# Raw government source documents are fetched, never committed — 92 MB of
+# government PDFs. `uv run wimtm-data sources-fetch` downloads them and
+# verifies every checksum against data/dataset/sources.json.
+data/.cache/
+
+graphify-out/
+
+# Scratch space left over from the PDF extraction that built this dataset.
+tmp/
+
+# Machine-local Claude Code permission grants — not shared state.
+.claude/settings.local.json

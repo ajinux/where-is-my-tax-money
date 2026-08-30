@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 100 100" fill="none" role="img" aria-label="whereismytaxmoney.com">
+  <title>whereismytaxmoney.com</title>
+  <!-- The brand mark: a rupee sign whose downstroke splits into three, for money
+       that leaves in several directions at once. Geometry is LogoMarkLarge from
+       web/src/components/Logo.tsx, with the design tokens resolved to hex so it
+       renders outside the app: accent-500, bg, accent-2-400. -->
+  <circle cx="50" cy="50" r="50" fill="#d67f48"/>
+  <g stroke="#f5ead8" stroke-width="7" stroke-linecap="round" fill="none">
+    <path d="M34 27h32"/>
+    <path d="M34 40h32"/>
+    <path d="M60 27c0 11-9 13-19 13"/>
+    <path d="M42 40 L34 56"/>
+    <path d="M42 40 L50 56"/>
+    <path d="M42 40 L66 56"/>
+  </g>
+  <circle cx="34" cy="63" r="5.5" fill="#f5ead8"/>
+  <circle cx="50" cy="63" r="5.5" fill="#f5ead8"/>
+  <circle cx="66" cy="63" r="5.5" fill="#f5ead8"/>
+  <circle cx="42" cy="79" r="4" fill="#aebf92"/>
+  <circle cx="58" cy="79" r="4" fill="#aebf92"/>
+</svg>

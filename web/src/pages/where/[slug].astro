@@ -1,0 +1,120 @@
+---
+// /where/<purpose>/, one of the eleven things the union budget is spent on.
+//
+// The category descriptions are authored in the dataset's own vocabulary, not
+// written here: a page that paraphrased them would drift from the figures it sits
+// beside the first time either changed.
+
+import Page from "../../layouts/Page.astro";
+import YearTable from "../../components/doc/YearTable.astro";
+import RowList from "../../components/doc/RowList.astro";
+import { entities, linesOf, amountIn } from "../../lib/entities";
+import { formatCrore, formatCroreShort } from "../../lib/format";
+import { linePath, ministryPath } from "../../lib/routes";
+
+export function getStaticPaths() {
+  return entities.purposes.map((purpose) => ({
+    params: { slug: purpose.slug },
+    props: { purpose },
+  }));
+}
+
+const { purpose } = Astro.props;
+const newest = entities.years[0];
+const amount = amountIn(purpose, newest.id);
+const share = newest.unionTotal ? (amount / newest.unionTotal) * 100 : 0;
+const lines = linesOf(purpose.lineIds);
+
+// The ministries that spend inside this category. Read from the lines rather
+// than asserted: the same demand carries both a purpose and a ministry, which is
+// the whole reason the two lenses can be guaranteed to cover the same money.
+const ministries = [
+  ...new Map(
+    lines
+      .map((line) => entities.ministries.find((m) => m.id === line.ministryId))
+      .filter((m): m is NonNullable<typeof m> => Boolean(m))
+      .map((m) => [m.id, m])
+  ).values(),
+];
+
+const title = `${purpose.label}: India's union budget spending, ${newest.label}`;
+const description =
+  `The union government spent ${formatCrore(amount)} on ${purpose.label.toLowerCase()} in ` +
+  `${newest.label}, ${share.toFixed(1)}% of all its spending. ` +
+  (purpose.description ?? "");
+---
+
+<Page
+  title={title}
+  description={description}
+  path={`/where/${purpose.slug}/`}
+  ogImage={`/og/where-${purpose.slug}.png`}
+  ogImageAlt={`${purpose.label} as a share of India's union budget.`}
+  crumbs={[
+    { label: "Home", href: "/" },
+    { label: "What it paid for", href: "/where/" },
+    { label: purpose.label },
+  ]}
+>
+  <h1>{purpose.label}</h1>
+  {purpose.description && <p class="lede">{purpose.description}</p>}
+
+  <div class="card">
+    <p class="figure">{formatCrore(amount)}</p>
+    <p style="margin-top:6px">
+      spent in <a href={`/year/${newest.id}/`}>{newest.label}</a>, {share.toFixed(1)}% of all
+      union government spending that year. <small>{newest.tag}.</small>
+    </p>
+    <div class="bar">
+      <span style={`width:${Math.max(share, 1)}%;background:${purpose.tone ?? "var(--color-accent-500)"}`}></span>
+    </div>
+  </div>
+
+  <h2>Every year on record</h2>
+  <YearTable amounts={purpose.amounts} shareOfUnion caption={`${purpose.label}, by year`} />
+
+  <h2>What is inside it</h2>
+  <p>
+    {lines.length} budget {lines.length === 1 ? "line" : "lines"} make up this category. A group
+    carries no figure of its own anywhere in this dataset: the total above is the sum of these,
+    and each of them cites the document it was read from.
+  </p>
+  <RowList
+    showBars
+    items={lines.map((line) => ({
+      href: linePath(line.slug),
+      name: line.label,
+      blurb: line.summary,
+      amountRupees: amountIn(line, newest.id),
+      tone: purpose.tone,
+    }))}
+  />
+
+  {
+    ministries.length > 0 && (
+      <>
+        <h2>Who spends it</h2>
+        <p>
+          The same money, grouped by the ministry that spent it rather than by what it paid for.
+          Both views cover exactly the same rupees, that they agree is checked at build time,
+          not assumed.
+        </p>
+        <ul>
+          {ministries.map((ministry) => (
+            <li>
+              <a href={ministryPath(ministry.slug)}>{ministry.label}</a>{" "}
+              <small>{formatCroreShort(amountIn(ministry, newest.id))} in total</small>
+            </li>
+          ))}
+        </ul>
+      </>
+    )
+  }
+
+  <h2>Your share of it</h2>
+  <p>
+    These are national totals. Put in what you paid in income tax and the same proportions are
+    applied to your own figure.
+  </p>
+  <a class="cta" href="/">Work out your own share</a>
+</Page>

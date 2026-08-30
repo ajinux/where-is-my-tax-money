@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.astro/
+public/data/
+src/data/summary.json
+src/data/entities.json
+public/og/

@@ -1,0 +1,687 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ResolvedDataset",
+  "description": "The built artifact in dist/.",
+  "$defs": {
+    "Citation": {
+      "description": "Which document a figure came from, and where inside it.",
+      "properties": {
+        "sourceId": {
+          "title": "Sourceid",
+          "type": "string"
+        },
+        "locator": {
+          "minLength": 1,
+          "title": "Locator",
+          "type": "string"
+        }
+      },
+      "required": [
+        "sourceId",
+        "locator"
+      ],
+      "title": "Citation",
+      "type": "object"
+    },
+    "ClassificationPartResolved": {
+      "properties": {
+        "localId": {
+          "minLength": 1,
+          "title": "Localid",
+          "type": "string"
+        },
+        "label": {
+          "minLength": 1,
+          "title": "Label",
+          "type": "string"
+        },
+        "amountRupees": {
+          "title": "Amountrupees",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "localId",
+        "label",
+        "amountRupees"
+      ],
+      "title": "ClassificationPartResolved",
+      "type": "object"
+    },
+    "ClassificationSplit": {
+      "description": "Splits of a node's money by an attribute rather than a destination —\nrevenue versus capital. Deliberately not children: they are not places\nthe money went.",
+      "properties": {
+        "axis": {
+          "minLength": 1,
+          "title": "Axis",
+          "type": "string"
+        },
+        "cite": {
+          "items": {
+            "$ref": "#/$defs/Citation"
+          },
+          "minItems": 1,
+          "title": "Cite",
+          "type": "array"
+        },
+        "parts": {
+          "items": {
+            "$ref": "#/$defs/ClassificationPartResolved"
+          },
+          "title": "Parts",
+          "type": "array"
+        }
+      },
+      "required": [
+        "axis",
+        "cite",
+        "parts"
+      ],
+      "title": "ClassificationSplit",
+      "type": "object"
+    },
+    "DerivedNote": {
+      "description": "Present when the amount was computed rather than read from a\ndocument. A consumer showing it should say so.",
+      "properties": {
+        "method": {
+          "minLength": 1,
+          "title": "Method",
+          "type": "string"
+        },
+        "description": {
+          "minLength": 1,
+          "title": "Description",
+          "type": "string"
+        },
+        "sharePercent": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sharepercent"
+        },
+        "parameters": {
+          "anyOf": [
+            {
+              "additionalProperties": {
+                "type": "string"
+              },
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Parameters"
+        }
+      },
+      "required": [
+        "method",
+        "description"
+      ],
+      "title": "DerivedNote",
+      "type": "object"
+    },
+    "ResolvedAxis": {
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "label": {
+          "minLength": 1,
+          "title": "Label",
+          "type": "string"
+        },
+        "description": {
+          "minLength": 1,
+          "title": "Description",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "partition",
+            "classification"
+          ],
+          "title": "Kind",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "label",
+        "description",
+        "kind"
+      ],
+      "title": "ResolvedAxis",
+      "type": "object"
+    },
+    "ResolvedNode": {
+      "description": "A node in a resolved tree. Amounts are integer rupees. A group's\namount is summed from its descendants; a fact's amount is published and\nalready checked against whatever decomposes it.",
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "parentId": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Parentid"
+        },
+        "section": {
+          "minLength": 1,
+          "title": "Section",
+          "type": "string"
+        },
+        "period": {
+          "title": "Period",
+          "type": "string"
+        },
+        "lens": {
+          "minLength": 1,
+          "title": "Lens",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "group",
+            "fact"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "label": {
+          "minLength": 1,
+          "title": "Label",
+          "type": "string"
+        },
+        "description": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Description"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "pattern": "^https://\\S+$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Url"
+        },
+        "depth": {
+          "minimum": 0,
+          "title": "Depth",
+          "type": "integer"
+        },
+        "childIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Childids",
+          "type": "array"
+        },
+        "childAxis": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Childaxis"
+        },
+        "amountRupees": {
+          "minimum": 0,
+          "title": "Amountrupees",
+          "type": "integer"
+        },
+        "localId": {
+          "minLength": 1,
+          "title": "Localid",
+          "type": "string"
+        },
+        "sourceIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Sourceids",
+          "type": "array"
+        },
+        "cite": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/Citation"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cite"
+        },
+        "basis": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Basis"
+        },
+        "summary": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Summary"
+        },
+        "spentOn": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Spenton"
+        },
+        "derived": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/DerivedNote"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "classifications": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/ClassificationSplit"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Classifications"
+        }
+      },
+      "required": [
+        "id",
+        "parentId",
+        "section",
+        "period",
+        "lens",
+        "kind",
+        "label",
+        "depth",
+        "childIds",
+        "amountRupees",
+        "localId",
+        "sourceIds"
+      ],
+      "title": "ResolvedNode",
+      "type": "object"
+    },
+    "ResolvedSection": {
+      "description": "One period of one section, resolved.",
+      "properties": {
+        "section": {
+          "minLength": 1,
+          "title": "Section",
+          "type": "string"
+        },
+        "period": {
+          "title": "Period",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "actual-final",
+            "actual-provisional",
+            "revised-estimate",
+            "budget-estimate"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "perimeter": {
+          "enum": [
+            "union-spending",
+            "outside-union-spending",
+            "financing",
+            "receipts"
+          ],
+          "title": "Perimeter",
+          "type": "string"
+        },
+        "perimeterOf": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Perimeterof"
+        },
+        "label": {
+          "minLength": 1,
+          "title": "Label",
+          "type": "string"
+        },
+        "description": {
+          "minLength": 1,
+          "title": "Description",
+          "type": "string"
+        },
+        "totalRupees": {
+          "minimum": 0,
+          "title": "Totalrupees",
+          "type": "integer"
+        },
+        "totalIsPublished": {
+          "title": "Totalispublished",
+          "type": "boolean"
+        },
+        "rootIds": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Rootids",
+          "type": "object"
+        },
+        "nodes": {
+          "additionalProperties": {
+            "$ref": "#/$defs/ResolvedNode"
+          },
+          "title": "Nodes",
+          "type": "object"
+        },
+        "factCount": {
+          "minimum": 0,
+          "title": "Factcount",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "section",
+        "period",
+        "status",
+        "perimeter",
+        "label",
+        "description",
+        "totalRupees",
+        "totalIsPublished",
+        "rootIds",
+        "nodes",
+        "factCount"
+      ],
+      "title": "ResolvedSection",
+      "type": "object"
+    },
+    "RevisionNote": {
+      "properties": {
+        "version": {
+          "minLength": 1,
+          "title": "Version",
+          "type": "string"
+        },
+        "date": {
+          "title": "Date",
+          "type": "string"
+        },
+        "summary": {
+          "minLength": 1,
+          "title": "Summary",
+          "type": "string"
+        },
+        "affectedIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Affectedids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "version",
+        "date",
+        "summary",
+        "affectedIds"
+      ],
+      "title": "RevisionNote",
+      "type": "object"
+    },
+    "Source": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "publisher": {
+          "minLength": 1,
+          "title": "Publisher",
+          "type": "string"
+        },
+        "documentTitle": {
+          "minLength": 1,
+          "title": "Documenttitle",
+          "type": "string"
+        },
+        "canonicalUrl": {
+          "pattern": "^https://\\S+$",
+          "title": "Canonicalurl",
+          "type": "string"
+        },
+        "period": {
+          "title": "Period",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "actual-final",
+            "actual-provisional",
+            "revised-estimate",
+            "budget-estimate"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "documentKind": {
+          "enum": [
+            "accounts",
+            "budget-document",
+            "award"
+          ],
+          "title": "Documentkind",
+          "type": "string"
+        },
+        "unit": {
+          "enum": [
+            "rupees",
+            "lakh-rupees",
+            "crore-rupees"
+          ],
+          "title": "Unit",
+          "type": "string"
+        },
+        "retrievedAt": {
+          "title": "Retrievedat",
+          "type": "string"
+        },
+        "file": {
+          "pattern": "^[A-Za-z0-9._-]+$",
+          "title": "File",
+          "type": "string"
+        },
+        "checksumSha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Checksumsha256",
+          "type": "string"
+        },
+        "verification": {
+          "default": "checksum",
+          "enum": [
+            "checksum",
+            "unstable"
+          ],
+          "title": "Verification",
+          "type": "string"
+        },
+        "verificationNote": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Verificationnote"
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        }
+      },
+      "required": [
+        "id",
+        "publisher",
+        "documentTitle",
+        "canonicalUrl",
+        "period",
+        "status",
+        "documentKind",
+        "unit",
+        "retrievedAt",
+        "file",
+        "checksumSha256"
+      ],
+      "title": "Source",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "schemaVersion": {
+      "const": 3,
+      "title": "Schemaversion",
+      "type": "integer"
+    },
+    "datasetVersion": {
+      "minLength": 1,
+      "title": "Datasetversion",
+      "type": "string"
+    },
+    "builtAt": {
+      "title": "Builtat",
+      "type": "string"
+    },
+    "sections": {
+      "items": {
+        "$ref": "#/$defs/ResolvedSection"
+      },
+      "title": "Sections",
+      "type": "array"
+    },
+    "axes": {
+      "items": {
+        "$ref": "#/$defs/ResolvedAxis"
+      },
+      "title": "Axes",
+      "type": "array"
+    },
+    "sources": {
+      "items": {
+        "$ref": "#/$defs/Source"
+      },
+      "title": "Sources",
+      "type": "array"
+    },
+    "revisionNotes": {
+      "items": {
+        "$ref": "#/$defs/RevisionNote"
+      },
+      "title": "Revisionnotes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "datasetVersion",
+    "builtAt",
+    "sections",
+    "axes",
+    "sources",
+    "revisionNotes"
+  ],
+  "type": "object"
+}

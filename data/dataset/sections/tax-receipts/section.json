@@ -1,0 +1,6 @@
+{
+  "section": "tax-receipts",
+  "label": "Gross tax revenue",
+  "description": "Everything the union collected in tax, before anything is devolved to states or spent.",
+  "lines": {}
+}

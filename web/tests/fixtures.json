@@ -1,0 +1,8348 @@
+{
+ "apportion": [
+  {
+   "why": "even split, no remainder",
+   "total": 99,
+   "weights": [
+    1,
+    1,
+    1
+   ],
+   "expected": [
+    33,
+    33,
+    33
+   ]
+  },
+  {
+   "why": "remainder goes to the largest fractional claim",
+   "total": 100,
+   "weights": [
+    1,
+    1,
+    1
+   ],
+   "expected": [
+    34,
+    33,
+    33
+   ]
+  },
+  {
+   "why": "exact tie breaks by index",
+   "total": 10,
+   "weights": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "expected": [
+    3,
+    3,
+    2,
+    2
+   ]
+  },
+  {
+   "why": "one weight takes everything",
+   "total": 12345,
+   "weights": [
+    7,
+    0,
+    0
+   ],
+   "expected": [
+    12345,
+    0,
+    0
+   ]
+  },
+  {
+   "why": "a realistic tax across the 11 purpose groups",
+   "total": 120000,
+   "weights": [
+    12743380000000,
+    9022753000000,
+    6799170200000,
+    5064900300000,
+    4834187400000,
+    4317050800000,
+    3055986000000,
+    1891556900000,
+    1774982600000,
+    109634100000,
+    34816100000
+   ],
+   "expected": [
+    30801,
+    21808,
+    16434,
+    12242,
+    11684,
+    10434,
+    7386,
+    4572,
+    4290,
+    265,
+    84
+   ]
+  },
+  {
+   "why": "the same across all 56 ministries",
+   "total": 120000,
+   "weights": [
+    19388647600000,
+    7325117600000,
+    2871418700000,
+    2554663200000,
+    2414853200000,
+    2384094700000,
+    1911859000000,
+    1887530100000,
+    1333701300000,
+    1219488100000,
+    968535000000,
+    797681500000,
+    572037800000,
+    414368200000,
+    298003400000,
+    253012200000,
+    244114700000,
+    243739100000,
+    217427400000,
+    215876600000,
+    211851900000,
+    202329500000,
+    152221700000,
+    126943400000,
+    126880500000,
+    124486000000,
+    120959800000,
+    108241800000,
+    89194300000,
+    70357800000,
+    61962900000,
+    61030200000,
+    57666800000,
+    55512900000,
+    52938500000,
+    44792000000,
+    36718200000,
+    35715700000,
+    35500900000,
+    34816100000,
+    33800000000,
+    33465400000,
+    32724400000,
+    31651400000,
+    28991100000,
+    27035400000,
+    25757300000,
+    21604500000,
+    20554900000,
+    19911900000,
+    13103000000,
+    9813100000,
+    9659600000,
+    8482400000,
+    4909600000,
+    663100000
+   ],
+   "expected": [
+    46862,
+    17705,
+    6940,
+    6175,
+    5837,
+    5762,
+    4621,
+    4562,
+    3224,
+    2947,
+    2341,
+    1928,
+    1383,
+    1002,
+    720,
+    612,
+    590,
+    589,
+    525,
+    522,
+    512,
+    489,
+    368,
+    307,
+    307,
+    301,
+    292,
+    262,
+    216,
+    170,
+    150,
+    147,
+    139,
+    134,
+    128,
+    108,
+    89,
+    86,
+    86,
+    84,
+    82,
+    81,
+    79,
+    76,
+    70,
+    65,
+    62,
+    52,
+    50,
+    48,
+    32,
+    24,
+    23,
+    20,
+    12,
+    2
+   ]
+  },
+  {
+   "why": "small tax, many heads: most parts land on zero",
+   "total": 57,
+   "weights": [
+    19388647600000,
+    7325117600000,
+    2871418700000,
+    2554663200000,
+    2414853200000,
+    2384094700000,
+    1911859000000,
+    1887530100000,
+    1333701300000,
+    1219488100000,
+    968535000000,
+    797681500000,
+    572037800000,
+    414368200000,
+    298003400000,
+    253012200000,
+    244114700000,
+    243739100000,
+    217427400000,
+    215876600000,
+    211851900000,
+    202329500000,
+    152221700000,
+    126943400000,
+    126880500000,
+    124486000000,
+    120959800000,
+    108241800000,
+    89194300000,
+    70357800000,
+    61962900000,
+    61030200000,
+    57666800000,
+    55512900000,
+    52938500000,
+    44792000000,
+    36718200000,
+    35715700000,
+    35500900000,
+    34816100000,
+    33800000000,
+    33465400000,
+    32724400000,
+    31651400000,
+    28991100000,
+    27035400000,
+    25757300000,
+    21604500000,
+    20554900000,
+    19911900000,
+    13103000000,
+    9813100000,
+    9659600000,
+    8482400000,
+    4909600000,
+    663100000
+   ],
+   "expected": [
+    22,
+    9,
+    4,
+    3,
+    3,
+    3,
+    2,
+    2,
+    2,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "why": "national magnitudes \u2014 total*weight is ~2.5e27, far past Number.MAX_SAFE_INTEGER",
+   "total": 12743380000000,
+   "weights": [
+    12743380000000,
+    1
+   ],
+   "expected": [
+    12743379999999,
+    1
+   ]
+  },
+  {
+   "why": "whole union budget split across every ministry",
+   "total": 49648417400000,
+   "weights": [
+    19388647600000,
+    7325117600000,
+    2871418700000,
+    2554663200000,
+    2414853200000,
+    2384094700000,
+    1911859000000,
+    1887530100000,
+    1333701300000,
+    1219488100000,
+    968535000000,
+    797681500000,
+    572037800000,
+    414368200000,
+    298003400000,
+    253012200000,
+    244114700000,
+    243739100000,
+    217427400000,
+    215876600000,
+    211851900000,
+    202329500000,
+    152221700000,
+    126943400000,
+    126880500000,
+    124486000000,
+    120959800000,
+    108241800000,
+    89194300000,
+    70357800000,
+    61962900000,
+    61030200000,
+    57666800000,
+    55512900000,
+    52938500000,
+    44792000000,
+    36718200000,
+    35715700000,
+    35500900000,
+    34816100000,
+    33800000000,
+    33465400000,
+    32724400000,
+    31651400000,
+    28991100000,
+    27035400000,
+    25757300000,
+    21604500000,
+    20554900000,
+    19911900000,
+    13103000000,
+    9813100000,
+    9659600000,
+    8482400000,
+    4909600000,
+    663100000
+   ],
+   "expected": [
+    19388647600000,
+    7325117600000,
+    2871418700000,
+    2554663200000,
+    2414853200000,
+    2384094700000,
+    1911859000000,
+    1887530100000,
+    1333701300000,
+    1219488100000,
+    968535000000,
+    797681500000,
+    572037800000,
+    414368200000,
+    298003400000,
+    253012200000,
+    244114700000,
+    243739100000,
+    217427400000,
+    215876600000,
+    211851900000,
+    202329500000,
+    152221700000,
+    126943400000,
+    126880500000,
+    124486000000,
+    120959800000,
+    108241800000,
+    89194300000,
+    70357800000,
+    61962900000,
+    61030200000,
+    57666800000,
+    55512900000,
+    52938500000,
+    44792000000,
+    36718200000,
+    35715700000,
+    35500900000,
+    34816100000,
+    33800000000,
+    33465400000,
+    32724400000,
+    31651400000,
+    28991100000,
+    27035400000,
+    25757300000,
+    21604500000,
+    20554900000,
+    19911900000,
+    13103000000,
+    9813100000,
+    9659600000,
+    8482400000,
+    4909600000,
+    663100000
+   ]
+  }
+ ],
+ "tax": [
+  {
+   "paid": 25000,
+   "surcharge": 0.0,
+   "decompose": {
+    "base": 24038,
+    "surcharge": 0,
+    "cess": 962
+   },
+   "route": {
+    "base": 24038,
+    "surcharge": 0,
+    "cess": 962,
+    "shareable": 24038,
+    "non_shareable": 962,
+    "to_states": 9856,
+    "to_cess": 962,
+    "to_union": 14182,
+    "effective_state_percent": 39.424
+   }
+  },
+  {
+   "paid": 25000,
+   "surcharge": 0.1,
+   "decompose": {
+    "base": 21853,
+    "surcharge": 2185,
+    "cess": 962
+   },
+   "route": {
+    "base": 21853,
+    "surcharge": 2185,
+    "cess": 962,
+    "shareable": 21853,
+    "non_shareable": 3147,
+    "to_states": 8960,
+    "to_cess": 962,
+    "to_union": 15078,
+    "effective_state_percent": 35.84
+   }
+  },
+  {
+   "paid": 25000,
+   "surcharge": 0.15,
+   "decompose": {
+    "base": 20903,
+    "surcharge": 3135,
+    "cess": 962
+   },
+   "route": {
+    "base": 20903,
+    "surcharge": 3135,
+    "cess": 962,
+    "shareable": 20903,
+    "non_shareable": 4097,
+    "to_states": 8570,
+    "to_cess": 962,
+    "to_union": 15468,
+    "effective_state_percent": 34.28
+   }
+  },
+  {
+   "paid": 25000,
+   "surcharge": 0.25,
+   "decompose": {
+    "base": 19231,
+    "surcharge": 4808,
+    "cess": 961
+   },
+   "route": {
+    "base": 19231,
+    "surcharge": 4808,
+    "cess": 961,
+    "shareable": 19231,
+    "non_shareable": 5769,
+    "to_states": 7885,
+    "to_cess": 961,
+    "to_union": 16154,
+    "effective_state_percent": 31.54
+   }
+  },
+  {
+   "paid": 25000,
+   "surcharge": 0.37,
+   "decompose": {
+    "base": 17546,
+    "surcharge": 6492,
+    "cess": 962
+   },
+   "route": {
+    "base": 17546,
+    "surcharge": 6492,
+    "cess": 962,
+    "shareable": 17546,
+    "non_shareable": 7454,
+    "to_states": 7194,
+    "to_cess": 962,
+    "to_union": 16844,
+    "effective_state_percent": 28.776
+   }
+  },
+  {
+   "paid": 57,
+   "surcharge": 0.0,
+   "decompose": {
+    "base": 55,
+    "surcharge": 0,
+    "cess": 2
+   },
+   "route": {
+    "base": 55,
+    "surcharge": 0,
+    "cess": 2,
+    "shareable": 55,
+    "non_shareable": 2,
+    "to_states": 23,
+    "to_cess": 2,
+    "to_union": 32,
+    "effective_state_percent": 40.35087719298246
+   }
+  },
+  {
+   "paid": 57,
+   "surcharge": 0.1,
+   "decompose": {
+    "base": 50,
+    "surcharge": 5,
+    "cess": 2
+   },
+   "route": {
+    "base": 50,
+    "surcharge": 5,
+    "cess": 2,
+    "shareable": 50,
+    "non_shareable": 7,
+    "to_states": 20,
+    "to_cess": 2,
+    "to_union": 35,
+    "effective_state_percent": 35.08771929824562
+   }
+  },
+  {
+   "paid": 57,
+   "surcharge": 0.15,
+   "decompose": {
+    "base": 48,
+    "surcharge": 7,
+    "cess": 2
+   },
+   "route": {
+    "base": 48,
+    "surcharge": 7,
+    "cess": 2,
+    "shareable": 48,
+    "non_shareable": 9,
+    "to_states": 20,
+    "to_cess": 2,
+    "to_union": 35,
+    "effective_state_percent": 35.08771929824562
+   }
+  },
+  {
+   "paid": 57,
+   "surcharge": 0.25,
+   "decompose": {
+    "base": 44,
+    "surcharge": 11,
+    "cess": 2
+   },
+   "route": {
+    "base": 44,
+    "surcharge": 11,
+    "cess": 2,
+    "shareable": 44,
+    "non_shareable": 13,
+    "to_states": 18,
+    "to_cess": 2,
+    "to_union": 37,
+    "effective_state_percent": 31.57894736842105
+   }
+  },
+  {
+   "paid": 57,
+   "surcharge": 0.37,
+   "decompose": {
+    "base": 40,
+    "surcharge": 15,
+    "cess": 2
+   },
+   "route": {
+    "base": 40,
+    "surcharge": 15,
+    "cess": 2,
+    "shareable": 40,
+    "non_shareable": 17,
+    "to_states": 16,
+    "to_cess": 2,
+    "to_union": 39,
+    "effective_state_percent": 28.07017543859649
+   }
+  },
+  {
+   "paid": 120000,
+   "surcharge": 0.0,
+   "decompose": {
+    "base": 115385,
+    "surcharge": 0,
+    "cess": 4615
+   },
+   "route": {
+    "base": 115385,
+    "surcharge": 0,
+    "cess": 4615,
+    "shareable": 115385,
+    "non_shareable": 4615,
+    "to_states": 47308,
+    "to_cess": 4615,
+    "to_union": 68077,
+    "effective_state_percent": 39.42333333333333
+   }
+  },
+  {
+   "paid": 120000,
+   "surcharge": 0.1,
+   "decompose": {
+    "base": 104895,
+    "surcharge": 10490,
+    "cess": 4615
+   },
+   "route": {
+    "base": 104895,
+    "surcharge": 10490,
+    "cess": 4615,
+    "shareable": 104895,
+    "non_shareable": 15105,
+    "to_states": 43007,
+    "to_cess": 4615,
+    "to_union": 72378,
+    "effective_state_percent": 35.839166666666664
+   }
+  },
+  {
+   "paid": 120000,
+   "surcharge": 0.15,
+   "decompose": {
+    "base": 100334,
+    "surcharge": 15050,
+    "cess": 4616
+   },
+   "route": {
+    "base": 100334,
+    "surcharge": 15050,
+    "cess": 4616,
+    "shareable": 100334,
+    "non_shareable": 19666,
+    "to_states": 41137,
+    "to_cess": 4616,
+    "to_union": 74247,
+    "effective_state_percent": 34.280833333333334
+   }
+  },
+  {
+   "paid": 120000,
+   "surcharge": 0.25,
+   "decompose": {
+    "base": 92308,
+    "surcharge": 23077,
+    "cess": 4615
+   },
+   "route": {
+    "base": 92308,
+    "surcharge": 23077,
+    "cess": 4615,
+    "shareable": 92308,
+    "non_shareable": 27692,
+    "to_states": 37846,
+    "to_cess": 4615,
+    "to_union": 77539,
+    "effective_state_percent": 31.538333333333334
+   }
+  },
+  {
+   "paid": 120000,
+   "surcharge": 0.37,
+   "decompose": {
+    "base": 84222,
+    "surcharge": 31162,
+    "cess": 4616
+   },
+   "route": {
+    "base": 84222,
+    "surcharge": 31162,
+    "cess": 4616,
+    "shareable": 84222,
+    "non_shareable": 35778,
+    "to_states": 34531,
+    "to_cess": 4616,
+    "to_union": 80853,
+    "effective_state_percent": 28.775833333333335
+   }
+  },
+  {
+   "paid": 600000,
+   "surcharge": 0.0,
+   "decompose": {
+    "base": 576923,
+    "surcharge": 0,
+    "cess": 23077
+   },
+   "route": {
+    "base": 576923,
+    "surcharge": 0,
+    "cess": 23077,
+    "shareable": 576923,
+    "non_shareable": 23077,
+    "to_states": 236538,
+    "to_cess": 23077,
+    "to_union": 340385,
+    "effective_state_percent": 39.423
+   }
+  },
+  {
+   "paid": 600000,
+   "surcharge": 0.1,
+   "decompose": {
+    "base": 524476,
+    "surcharge": 52448,
+    "cess": 23076
+   },
+   "route": {
+    "base": 524476,
+    "surcharge": 52448,
+    "cess": 23076,
+    "shareable": 524476,
+    "non_shareable": 75524,
+    "to_states": 215035,
+    "to_cess": 23076,
+    "to_union": 361889,
+    "effective_state_percent": 35.839166666666664
+   }
+  },
+  {
+   "paid": 600000,
+   "surcharge": 0.15,
+   "decompose": {
+    "base": 501672,
+    "surcharge": 75251,
+    "cess": 23077
+   },
+   "route": {
+    "base": 501672,
+    "surcharge": 75251,
+    "cess": 23077,
+    "shareable": 501672,
+    "non_shareable": 98328,
+    "to_states": 205686,
+    "to_cess": 23077,
+    "to_union": 371237,
+    "effective_state_percent": 34.281
+   }
+  },
+  {
+   "paid": 600000,
+   "surcharge": 0.25,
+   "decompose": {
+    "base": 461538,
+    "surcharge": 115384,
+    "cess": 23078
+   },
+   "route": {
+    "base": 461538,
+    "surcharge": 115384,
+    "cess": 23078,
+    "shareable": 461538,
+    "non_shareable": 138462,
+    "to_states": 189231,
+    "to_cess": 23078,
+    "to_union": 387691,
+    "effective_state_percent": 31.5385
+   }
+  },
+  {
+   "paid": 600000,
+   "surcharge": 0.37,
+   "decompose": {
+    "base": 421112,
+    "surcharge": 155811,
+    "cess": 23077
+   },
+   "route": {
+    "base": 421112,
+    "surcharge": 155811,
+    "cess": 23077,
+    "shareable": 421112,
+    "non_shareable": 178888,
+    "to_states": 172656,
+    "to_cess": 23077,
+    "to_union": 404267,
+    "effective_state_percent": 28.776
+   }
+  },
+  {
+   "paid": 4675311,
+   "surcharge": 0.0,
+   "decompose": {
+    "base": 4495491,
+    "surcharge": 0,
+    "cess": 179820
+   },
+   "route": {
+    "base": 4495491,
+    "surcharge": 0,
+    "cess": 179820,
+    "shareable": 4495491,
+    "non_shareable": 179820,
+    "to_states": 1843151,
+    "to_cess": 179820,
+    "to_union": 2652340,
+    "effective_state_percent": 39.42306725691617
+   }
+  },
+  {
+   "paid": 4675311,
+   "surcharge": 0.1,
+   "decompose": {
+    "base": 4086810,
+    "surcharge": 408681,
+    "cess": 179820
+   },
+   "route": {
+    "base": 4086810,
+    "surcharge": 408681,
+    "cess": 179820,
+    "shareable": 4086810,
+    "non_shareable": 588501,
+    "to_states": 1675592,
+    "to_cess": 179820,
+    "to_union": 2819899,
+    "effective_state_percent": 35.839155940642236
+   }
+  },
+  {
+   "paid": 4675311,
+   "surcharge": 0.15,
+   "decompose": {
+    "base": 3909123,
+    "surcharge": 586368,
+    "cess": 179820
+   },
+   "route": {
+    "base": 3909123,
+    "surcharge": 586368,
+    "cess": 179820,
+    "shareable": 3909123,
+    "non_shareable": 766188,
+    "to_states": 1602740,
+    "to_cess": 179820,
+    "to_union": 2892751,
+    "effective_state_percent": 34.280928049492324
+   }
+  },
+  {
+   "paid": 4675311,
+   "surcharge": 0.25,
+   "decompose": {
+    "base": 3596393,
+    "surcharge": 899098,
+    "cess": 179820
+   },
+   "route": {
+    "base": 3596393,
+    "surcharge": 899098,
+    "cess": 179820,
+    "shareable": 3596393,
+    "non_shareable": 1078918,
+    "to_states": 1474521,
+    "to_cess": 179820,
+    "to_union": 3020970,
+    "effective_state_percent": 31.538458083323228
+   }
+  },
+  {
+   "paid": 4675311,
+   "surcharge": 0.37,
+   "decompose": {
+    "base": 3281381,
+    "surcharge": 1214111,
+    "cess": 179819
+   },
+   "route": {
+    "base": 3281381,
+    "surcharge": 1214111,
+    "cess": 179819,
+    "shareable": 3281381,
+    "non_shareable": 1393930,
+    "to_states": 1345366,
+    "to_cess": 179819,
+    "to_union": 3150126,
+    "effective_state_percent": 28.77596805859546
+   }
+  }
+ ],
+ "journeys": [
+  {
+   "period": "2020-21",
+   "paid": 120000,
+   "surcharge": 0.0,
+   "toStates": 47308,
+   "toCess": 4615,
+   "toUnion": 68077,
+   "lenses": {
+    "purpose": [
+     {
+      "id": "health-and-social-protection",
+      "yours": 14577
+     },
+     {
+      "id": "interest-and-debt-service",
+      "yours": 13187
+     },
+     {
+      "id": "defence-and-security",
+      "yours": 11272
+     },
+     {
+      "id": "agriculture-and-rural-development",
+      "yours": 8495
+     },
+     {
+      "id": "transport-housing-and-infrastructure",
+      "yours": 6106
+     },
+     {
+      "id": "states-territories-and-transfers",
+      "yours": 5061
+     },
+     {
+      "id": "government-and-public-administration",
+      "yours": 4288
+     },
+     {
+      "id": "energy-industry-and-the-economy",
+      "yours": 2618
+     },
+     {
+      "id": "education-skills-and-research",
+      "yours": 2307
+     },
+     {
+      "id": "culture-media-and-sport",
+      "yours": 128
+     },
+     {
+      "id": "environment-and-climate",
+      "yours": 38
+     }
+    ],
+    "administrative": [
+     {
+      "id": "finance",
+      "yours": 22144
+     },
+     {
+      "id": "consumer-affairs-food-and-public-distribution",
+      "yours": 10994
+     },
+     {
+      "id": "defence",
+      "yours": 9420
+     },
+     {
+      "id": "rural-development",
+      "yours": 3833
+     },
+     {
+      "id": "home-affairs",
+      "yours": 2798
+     },
+     {
+      "id": "chemicals-and-fertilisers",
+      "yours": 2512
+     },
+     {
+      "id": "agriculture-and-farmers-welfare",
+      "yours": 2247
+     },
+     {
+      "id": "railways",
+      "yours": 2175
+     },
+     {
+      "id": "road-transport-and-highways",
+      "yours": 1923
+     },
+     {
+      "id": "education",
+      "yours": 1634
+     },
+     {
+      "id": "health-and-family-welfare",
+      "yours": 1565
+     },
+     {
+      "id": "communications",
+      "yours": 1181
+     },
+     {
+      "id": "housing-and-urban-affairs",
+      "yours": 906
+     },
+     {
+      "id": "petroleum-and-natural-gas",
+      "yours": 818
+     },
+     {
+      "id": "jal-shakti",
+      "yours": 450
+     },
+     {
+      "id": "women-and-child-development",
+      "yours": 373
+     },
+     {
+      "id": "atomic-energy",
+      "yours": 295
+     },
+     {
+      "id": "external-affairs",
+      "yours": 278
+     },
+     {
+      "id": "labour-and-employment",
+      "yours": 251
+     },
+     {
+      "id": "science-and-technology",
+      "yours": 220
+     },
+     {
+      "id": "commerce-and-industry",
+      "yours": 207
+     },
+     {
+      "id": "power",
+      "yours": 205
+     },
+     {
+      "id": "space",
+      "yours": 184
+     },
+     {
+      "id": "social-justice-and-empowerment",
+      "yours": 173
+     },
+     {
+      "id": "tribal-affairs",
+      "yours": 107
+     },
+     {
+      "id": "micro-small-and-medium-enterprises",
+      "yours": 106
+     },
+     {
+      "id": "electronics-and-information-technology",
+      "yours": 105
+     },
+     {
+      "id": "civil-aviation",
+      "yours": 79
+     },
+     {
+      "id": "minority-affairs",
+      "yours": 76
+     },
+     {
+      "id": "information-and-broadcasting",
+      "yours": 65
+     },
+     {
+      "id": "fisheries-animal-husbandry-and-dairying",
+      "yours": 65
+     },
+     {
+      "id": "textiles",
+      "yours": 60
+     },
+     {
+      "id": "new-and-renewable-energy",
+      "yours": 51
+     },
+     {
+      "id": "skill-development-and-entrepreneurship",
+      "yours": 51
+     },
+     {
+      "id": "statistics-and-programme-implementation",
+      "yours": 47
+     },
+     {
+      "id": "culture",
+      "yours": 41
+     },
+     {
+      "id": "ayush",
+      "yours": 41
+     },
+     {
+      "id": "law-and-justice",
+      "yours": 40
+     },
+     {
+      "id": "environment-forests-and-climate-change",
+      "yours": 38
+     },
+     {
+      "id": "development-of-north-eastern-region",
+      "yours": 36
+     },
+     {
+      "id": "youth-affairs-and-sports",
+      "yours": 34
+     },
+     {
+      "id": "personnel-public-grievances-and-pensions",
+      "yours": 32
+     },
+     {
+      "id": "ports-shipping-and-waterways",
+      "yours": 27
+     },
+     {
+      "id": "mines",
+      "yours": 26
+     },
+     {
+      "id": "earth-sciences",
+      "yours": 25
+     },
+     {
+      "id": "president-parliament-and-upsc",
+      "yours": 25
+     },
+     {
+      "id": "food-processing-industries",
+      "yours": 22
+     },
+     {
+      "id": "tourism",
+      "yours": 21
+     },
+     {
+      "id": "heavy-industries",
+      "yours": 17
+     },
+     {
+      "id": "planning",
+      "yours": 15
+     },
+     {
+      "id": "panchayati-raj",
+      "yours": 13
+     },
+     {
+      "id": "corporate-affairs",
+      "yours": 13
+     },
+     {
+      "id": "coal",
+      "yours": 11
+     },
+     {
+      "id": "steel",
+      "yours": 1
+     },
+     {
+      "id": "parliamentary-affairs",
+      "yours": 1
+     },
+     {
+      "id": "cooperation",
+      "yours": 0
+     }
+    ]
+   },
+   "states": [
+    {
+     "id": "uttar-pradesh",
+     "yours": 8483
+    },
+    {
+     "id": "bihar",
+     "yours": 4760
+    },
+    {
+     "id": "madhya-pradesh",
+     "yours": 3731
+    },
+    {
+     "id": "west-bengal",
+     "yours": 3557
+    },
+    {
+     "id": "maharashtra",
+     "yours": 2902
+    },
+    {
+     "id": "rajasthan",
+     "yours": 2828
+    },
+    {
+     "id": "odisha",
+     "yours": 2190
+    },
+    {
+     "id": "tamil-nadu",
+     "yours": 1982
+    },
+    {
+     "id": "andhra-pradesh",
+     "yours": 1945
+    },
+    {
+     "id": "karnataka",
+     "yours": 1725
+    },
+    {
+     "id": "chhattisgarh",
+     "yours": 1617
+    },
+    {
+     "id": "gujarat",
+     "yours": 1607
+    },
+    {
+     "id": "jharkhand",
+     "yours": 1567
+    },
+    {
+     "id": "assam",
+     "yours": 1481
+    },
+    {
+     "id": "telangana",
+     "yours": 1009
+    },
+    {
+     "id": "kerala",
+     "yours": 919
+    },
+    {
+     "id": "punjab",
+     "yours": 846
+    },
+    {
+     "id": "arunachal-pradesh",
+     "yours": 833
+    },
+    {
+     "id": "uttarakhand",
+     "yours": 522
+    },
+    {
+     "id": "haryana",
+     "yours": 512
+    },
+    {
+     "id": "himachal-pradesh",
+     "yours": 378
+    },
+    {
+     "id": "meghalaya",
+     "yours": 362
+    },
+    {
+     "id": "manipur",
+     "yours": 340
+    },
+    {
+     "id": "tripura",
+     "yours": 335
+    },
+    {
+     "id": "nagaland",
+     "yours": 271
+    },
+    {
+     "id": "mizoram",
+     "yours": 239
+    },
+    {
+     "id": "sikkim",
+     "yours": 184
+    },
+    {
+     "id": "goa",
+     "yours": 183
+    }
+   ],
+   "cess": [
+    {
+     "id": "prarambhik-shiksha-kosh",
+     "yours": 2138
+    },
+    {
+     "id": "madhyamik-uchchatar-shiksha-kosh",
+     "yours": 1256
+    },
+    {
+     "id": "pradhan-mantri-swasthya-suraksha-nidhi",
+     "yours": 1221
+    }
+   ]
+  },
+  {
+   "period": "2020-21",
+   "paid": 25000,
+   "surcharge": 0.1,
+   "toStates": 8960,
+   "toCess": 962,
+   "toUnion": 15078,
+   "lenses": {
+    "purpose": [
+     {
+      "id": "health-and-social-protection",
+      "yours": 3229
+     },
+     {
+      "id": "interest-and-debt-service",
+      "yours": 2921
+     },
+     {
+      "id": "defence-and-security",
+      "yours": 2497
+     },
+     {
+      "id": "agriculture-and-rural-development",
+      "yours": 1881
+     },
+     {
+      "id": "transport-housing-and-infrastructure",
+      "yours": 1352
+     },
+     {
+      "id": "states-territories-and-transfers",
+      "yours": 1121
+     },
+     {
+      "id": "government-and-public-administration",
+      "yours": 950
+     },
+     {
+      "id": "energy-industry-and-the-economy",
+      "yours": 580
+     },
+     {
+      "id": "education-skills-and-research",
+      "yours": 511
+     },
+     {
+      "id": "culture-media-and-sport",
+      "yours": 28
+     },
+     {
+      "id": "environment-and-climate",
+      "yours": 8
+     }
+    ],
+    "administrative": [
+     {
+      "id": "finance",
+      "yours": 4904
+     },
+     {
+      "id": "consumer-affairs-food-and-public-distribution",
+      "yours": 2435
+     },
+     {
+      "id": "defence",
+      "yours": 2086
+     },
+     {
+      "id": "rural-development",
+      "yours": 849
+     },
+     {
+      "id": "home-affairs",
+      "yours": 620
+     },
+     {
+      "id": "chemicals-and-fertilisers",
+      "yours": 556
+     },
+     {
+      "id": "agriculture-and-farmers-welfare",
+      "yours": 498
+     },
+     {
+      "id": "railways",
+      "yours": 482
+     },
+     {
+      "id": "road-transport-and-highways",
+      "yours": 426
+     },
+     {
+      "id": "education",
+      "yours": 362
+     },
+     {
+      "id": "health-and-family-welfare",
+      "yours": 347
+     },
+     {
+      "id": "communications",
+      "yours": 262
+     },
+     {
+      "id": "housing-and-urban-affairs",
+      "yours": 201
+     },
+     {
+      "id": "petroleum-and-natural-gas",
+      "yours": 181
+     },
+     {
+      "id": "jal-shakti",
+      "yours": 100
+     },
+     {
+      "id": "women-and-child-development",
+      "yours": 83
+     },
+     {
+      "id": "atomic-energy",
+      "yours": 65
+     },
+     {
+      "id": "external-affairs",
+      "yours": 62
+     },
+     {
+      "id": "labour-and-employment",
+      "yours": 56
+     },
+     {
+      "id": "science-and-technology",
+      "yours": 49
+     },
+     {
+      "id": "commerce-and-industry",
+      "yours": 46
+     },
+     {
+      "id": "power",
+      "yours": 45
+     },
+     {
+      "id": "space",
+      "yours": 41
+     },
+     {
+      "id": "social-justice-and-empowerment",
+      "yours": 38
+     },
+     {
+      "id": "tribal-affairs",
+      "yours": 24
+     },
+     {
+      "id": "micro-small-and-medium-enterprises",
+      "yours": 23
+     },
+     {
+      "id": "electronics-and-information-technology",
+      "yours": 23
+     },
+     {
+      "id": "civil-aviation",
+      "yours": 18
+     },
+     {
+      "id": "minority-affairs",
+      "yours": 17
+     },
+     {
+      "id": "information-and-broadcasting",
+      "yours": 15
+     },
+     {
+      "id": "fisheries-animal-husbandry-and-dairying",
+      "yours": 14
+     },
+     {
+      "id": "textiles",
+      "yours": 13
+     },
+     {
+      "id": "new-and-renewable-energy",
+      "yours": 11
+     },
+     {
+      "id": "skill-development-and-entrepreneurship",
+      "yours": 11
+     },
+     {
+      "id": "statistics-and-programme-implementation",
+      "yours": 10
+     },
+     {
+      "id": "culture",
+      "yours": 9
+     },
+     {
+      "id": "ayush",
+      "yours": 9
+     },
+     {
+      "id": "law-and-justice",
+      "yours": 9
+     },
+     {
+      "id": "environment-forests-and-climate-change",
+      "yours": 8
+     },
+     {
+      "id": "development-of-north-eastern-region",
+      "yours": 8
+     },
+     {
+      "id": "youth-affairs-and-sports",
+      "yours": 8
+     },
+     {
+      "id": "personnel-public-grievances-and-pensions",
+      "yours": 7
+     },
+     {
+      "id": "ports-shipping-and-waterways",
+      "yours": 6
+     },
+     {
+      "id": "mines",
+      "yours": 6
+     },
+     {
+      "id": "earth-sciences",
+      "yours": 5
+     },
+     {
+      "id": "president-parliament-and-upsc",
+      "yours": 5
+     },
+     {
+      "id": "food-processing-industries",
+      "yours": 5
+     },
+     {
+      "id": "tourism",
+      "yours": 5
+     },
+     {
+      "id": "heavy-industries",
+      "yours": 4
+     },
+     {
+      "id": "planning",
+      "yours": 3
+     },
+     {
+      "id": "panchayati-raj",
+      "yours": 3
+     },
+     {
+      "id": "corporate-affairs",
+      "yours": 3
+     },
+     {
+      "id": "coal",
+      "yours": 2
+     },
+     {
+      "id": "steel",
+      "yours": 0
+     },
+     {
+      "id": "parliamentary-affairs",
+      "yours": 0
+     },
+     {
+      "id": "cooperation",
+      "yours": 0
+     }
+    ]
+   },
+   "states": [
+    {
+     "id": "uttar-pradesh",
+     "yours": 1607
+    },
+    {
+     "id": "bihar",
+     "yours": 901
+    },
+    {
+     "id": "madhya-pradesh",
+     "yours": 707
+    },
+    {
+     "id": "west-bengal",
+     "yours": 674
+    },
+    {
+     "id": "maharashtra",
+     "yours": 550
+    },
+    {
+     "id": "rajasthan",
+     "yours": 536
+    },
+    {
+     "id": "odisha",
+     "yours": 415
+    },
+    {
+     "id": "tamil-nadu",
+     "yours": 375
+    },
+    {
+     "id": "andhra-pradesh",
+     "yours": 368
+    },
+    {
+     "id": "karnataka",
+     "yours": 327
+    },
+    {
+     "id": "chhattisgarh",
+     "yours": 306
+    },
+    {
+     "id": "gujarat",
+     "yours": 304
+    },
+    {
+     "id": "jharkhand",
+     "yours": 297
+    },
+    {
+     "id": "assam",
+     "yours": 280
+    },
+    {
+     "id": "telangana",
+     "yours": 191
+    },
+    {
+     "id": "kerala",
+     "yours": 174
+    },
+    {
+     "id": "punjab",
+     "yours": 160
+    },
+    {
+     "id": "arunachal-pradesh",
+     "yours": 158
+    },
+    {
+     "id": "uttarakhand",
+     "yours": 99
+    },
+    {
+     "id": "haryana",
+     "yours": 97
+    },
+    {
+     "id": "himachal-pradesh",
+     "yours": 72
+    },
+    {
+     "id": "meghalaya",
+     "yours": 69
+    },
+    {
+     "id": "manipur",
+     "yours": 64
+    },
+    {
+     "id": "tripura",
+     "yours": 63
+    },
+    {
+     "id": "nagaland",
+     "yours": 51
+    },
+    {
+     "id": "mizoram",
+     "yours": 45
+    },
+    {
+     "id": "sikkim",
+     "yours": 35
+    },
+    {
+     "id": "goa",
+     "yours": 35
+    }
+   ],
+   "cess": [
+    {
+     "id": "prarambhik-shiksha-kosh",
+     "yours": 445
+    },
+    {
+     "id": "madhyamik-uchchatar-shiksha-kosh",
+     "yours": 262
+    },
+    {
+     "id": "pradhan-mantri-swasthya-suraksha-nidhi",
+     "yours": 255
+    }
+   ]
+  },
+  {
+   "period": "2020-21",
+   "paid": 4675311,
+   "surcharge": 0.37,
+   "toStates": 1345366,
+   "toCess": 179819,
+   "toUnion": 3150126,
+   "lenses": {
+    "purpose": [
+     {
+      "id": "health-and-social-protection",
+      "yours": 674524
+     },
+     {
+      "id": "interest-and-debt-service",
+      "yours": 610191
+     },
+     {
+      "id": "defence-and-security",
+      "yours": 521587
+     },
+     {
+      "id": "agriculture-and-rural-development",
+      "yours": 393087
+     },
+     {
+      "id": "transport-housing-and-infrastructure",
+      "yours": 282525
+     },
+     {
+      "id": "states-territories-and-transfers",
+      "yours": 234192
+     },
+     {
+      "id": "government-and-public-administration",
+      "yours": 198444
+     },
+     {
+      "id": "energy-industry-and-the-economy",
+      "yours": 121146
+     },
+     {
+      "id": "education-skills-and-research",
+      "yours": 106734
+     },
+     {
+      "id": "culture-media-and-sport",
+      "yours": 5931
+     },
+     {
+      "id": "environment-and-climate",
+      "yours": 1765
+     }
+    ],
+    "administrative": [
+     {
+      "id": "finance",
+      "yours": 1024646
+     },
+     {
+      "id": "consumer-affairs-food-and-public-distribution",
+      "yours": 508708
+     },
+     {
+      "id": "defence",
+      "yours": 435905
+     },
+     {
+      "id": "rural-development",
+      "yours": 177342
+     },
+     {
+      "id": "home-affairs",
+      "yours": 129473
+     },
+     {
+      "id": "chemicals-and-fertilisers",
+      "yours": 116237
+     },
+     {
+      "id": "agriculture-and-farmers-welfare",
+      "yours": 103956
+     },
+     {
+      "id": "railways",
+      "yours": 100665
+     },
+     {
+      "id": "road-transport-and-highways",
+      "yours": 88997
+     },
+     {
+      "id": "education",
+      "yours": 75588
+     },
+     {
+      "id": "health-and-family-welfare",
+      "yours": 72424
+     },
+     {
+      "id": "communications",
+      "yours": 54661
+     },
+     {
+      "id": "housing-and-urban-affairs",
+      "yours": 41915
+     },
+     {
+      "id": "petroleum-and-natural-gas",
+      "yours": 37866
+     },
+     {
+      "id": "jal-shakti",
+      "yours": 20822
+     },
+     {
+      "id": "women-and-child-development",
+      "yours": 17260
+     },
+     {
+      "id": "atomic-energy",
+      "yours": 13639
+     },
+     {
+      "id": "external-affairs",
+      "yours": 12861
+     },
+     {
+      "id": "labour-and-employment",
+      "yours": 11596
+     },
+     {
+      "id": "science-and-technology",
+      "yours": 10188
+     },
+     {
+      "id": "commerce-and-industry",
+      "yours": 9589
+     },
+     {
+      "id": "power",
+      "yours": 9497
+     },
+     {
+      "id": "space",
+      "yours": 8503
+     },
+     {
+      "id": "social-justice-and-empowerment",
+      "yours": 8004
+     },
+     {
+      "id": "tribal-affairs",
+      "yours": 4931
+     },
+     {
+      "id": "micro-small-and-medium-enterprises",
+      "yours": 4896
+     },
+     {
+      "id": "electronics-and-information-technology",
+      "yours": 4843
+     },
+     {
+      "id": "civil-aviation",
+      "yours": 3670
+     },
+     {
+      "id": "minority-affairs",
+      "yours": 3519
+     },
+     {
+      "id": "information-and-broadcasting",
+      "yours": 3031
+     },
+     {
+      "id": "fisheries-animal-husbandry-and-dairying",
+      "yours": 3003
+     },
+     {
+      "id": "textiles",
+      "yours": 2791
+     },
+     {
+      "id": "new-and-renewable-energy",
+      "yours": 2372
+     },
+     {
+      "id": "skill-development-and-entrepreneurship",
+      "yours": 2356
+     },
+     {
+      "id": "statistics-and-programme-implementation",
+      "yours": 2175
+     },
+     {
+      "id": "culture",
+      "yours": 1916
+     },
+     {
+      "id": "ayush",
+      "yours": 1909
+     },
+     {
+      "id": "law-and-justice",
+      "yours": 1866
+     },
+     {
+      "id": "environment-forests-and-climate-change",
+      "yours": 1765
+     },
+     {
+      "id": "development-of-north-eastern-region",
+      "yours": 1664
+     },
+     {
+      "id": "youth-affairs-and-sports",
+      "yours": 1569
+     },
+     {
+      "id": "personnel-public-grievances-and-pensions",
+      "yours": 1503
+     },
+     {
+      "id": "ports-shipping-and-waterways",
+      "yours": 1245
+     },
+     {
+      "id": "mines",
+      "yours": 1210
+     },
+     {
+      "id": "earth-sciences",
+      "yours": 1144
+     },
+     {
+      "id": "president-parliament-and-upsc",
+      "yours": 1136
+     },
+     {
+      "id": "food-processing-industries",
+      "yours": 1028
+     },
+     {
+      "id": "tourism",
+      "yours": 984
+     },
+     {
+      "id": "heavy-industries",
+      "yours": 778
+     },
+     {
+      "id": "planning",
+      "yours": 672
+     },
+     {
+      "id": "panchayati-raj",
+      "yours": 616
+     },
+     {
+      "id": "corporate-affairs",
+      "yours": 586
+     },
+     {
+      "id": "coal",
+      "yours": 513
+     },
+     {
+      "id": "steel",
+      "yours": 67
+     },
+     {
+      "id": "parliamentary-affairs",
+      "yours": 26
+     },
+     {
+      "id": "cooperation",
+      "yours": 0
+     }
+    ]
+   },
+   "states": [
+    {
+     "id": "uttar-pradesh",
+     "yours": 241238
+    },
+    {
+     "id": "bihar",
+     "yours": 135357
+    },
+    {
+     "id": "madhya-pradesh",
+     "yours": 106096
+    },
+    {
+     "id": "west-bengal",
+     "yours": 101158
+    },
+    {
+     "id": "maharashtra",
+     "yours": 82538
+    },
+    {
+     "id": "rajasthan",
+     "yours": 80439
+    },
+    {
+     "id": "odisha",
+     "yours": 62277
+    },
+    {
+     "id": "tamil-nadu",
+     "yours": 56357
+    },
+    {
+     "id": "andhra-pradesh",
+     "yours": 55308
+    },
+    {
+     "id": "karnataka",
+     "yours": 49052
+    },
+    {
+     "id": "chhattisgarh",
+     "yours": 45985
+    },
+    {
+     "id": "gujarat",
+     "yours": 45716
+    },
+    {
+     "id": "jharkhand",
+     "yours": 44572
+    },
+    {
+     "id": "assam",
+     "yours": 42123
+    },
+    {
+     "id": "telangana",
+     "yours": 28697
+    },
+    {
+     "id": "kerala",
+     "yours": 26140
+    },
+    {
+     "id": "punjab",
+     "yours": 24055
+    },
+    {
+     "id": "arunachal-pradesh",
+     "yours": 23678
+    },
+    {
+     "id": "uttarakhand",
+     "yours": 14853
+    },
+    {
+     "id": "haryana",
+     "yours": 14557
+    },
+    {
+     "id": "himachal-pradesh",
+     "yours": 10749
+    },
+    {
+     "id": "meghalaya",
+     "yours": 10292
+    },
+    {
+     "id": "manipur",
+     "yours": 9660
+    },
+    {
+     "id": "tripura",
+     "yours": 9539
+    },
+    {
+     "id": "nagaland",
+     "yours": 7709
+    },
+    {
+     "id": "mizoram",
+     "yours": 6808
+    },
+    {
+     "id": "sikkim",
+     "yours": 5220
+    },
+    {
+     "id": "goa",
+     "yours": 5193
+    }
+   ],
+   "cess": [
+    {
+     "id": "prarambhik-shiksha-kosh",
+     "yours": 83286
+    },
+    {
+     "id": "madhyamik-uchchatar-shiksha-kosh",
+     "yours": 48941
+    },
+    {
+     "id": "pradhan-mantri-swasthya-suraksha-nidhi",
+     "yours": 47592
+    }
+   ]
+  },
+  {
+   "period": "2021-22",
+   "paid": 120000,
+   "surcharge": 0.0,
+   "toStates": 47308,
+   "toCess": 4615,
+   "toUnion": 68077,
+   "lenses": {
+    "purpose": [
+     {
+      "id": "interest-and-debt-service",
+      "yours": 14454
+     },
+     {
+      "id": "defence-and-security",
+      "yours": 10976
+     },
+     {
+      "id": "health-and-social-protection",
+      "yours": 8980
+     },
+     {
+      "id": "transport-housing-and-infrastructure",
+      "yours": 8799
+     },
+     {
+      "id": "agriculture-and-rural-development",
+      "yours": 7785
+     },
+     {
+      "id": "states-territories-and-transfers",
+      "yours": 5988
+     },
+     {
+      "id": "government-and-public-administration",
+      "yours": 5703
+     },
+     {
+      "id": "energy-industry-and-the-economy",
+      "yours": 3044
+     },
+     {
+      "id": "education-skills-and-research",
+      "yours": 2177
+     },
+     {
+      "id": "culture-media-and-sport",
+      "yours": 127
+     },
+     {
+      "id": "environment-and-climate",
+      "yours": 44
+     }
+    ],
+    "administrative": [
+     {
+      "id": "finance",
+      "yours": 24828
+     },
+     {
+      "id": "defence",
+      "yours": 8984
+     },
+     {
+      "id": "consumer-affairs-food-and-public-distribution",
+      "yours": 5501
+     },
+     {
+      "id": "home-affairs",
+      "yours": 3029
+     },
+     {
+      "id": "rural-development",
+      "yours": 2901
+     },
+     {
+      "id": "chemicals-and-fertilisers",
+      "yours": 2778
+     },
+     {
+      "id": "railways",
+      "yours": 2427
+     },
+     {
+      "id": "road-transport-and-highways",
+      "yours": 2217
+     },
+     {
+      "id": "agriculture-and-farmers-welfare",
+      "yours": 2204
+     },
+     {
+      "id": "housing-and-urban-affairs",
+      "yours": 1917
+     },
+     {
+      "id": "health-and-family-welfare",
+      "yours": 1516
+     },
+     {
+      "id": "jal-shakti",
+      "yours": 1498
+     },
+     {
+      "id": "education",
+      "yours": 1442
+     },
+     {
+      "id": "civil-aviation",
+      "yours": 1291
+     },
+     {
+      "id": "communications",
+      "yours": 925
+     },
+     {
+      "id": "labour-and-employment",
+      "yours": 431
+     },
+     {
+      "id": "atomic-energy",
+      "yours": 406
+     },
+     {
+      "id": "women-and-child-development",
+      "yours": 389
+     },
+     {
+      "id": "power",
+      "yours": 387
+     },
+     {
+      "id": "commerce-and-industry",
+      "yours": 279
+     },
+     {
+      "id": "micro-small-and-medium-enterprises",
+      "yours": 269
+     },
+     {
+      "id": "external-affairs",
+      "yours": 254
+     },
+     {
+      "id": "science-and-technology",
+      "yours": 235
+     },
+     {
+      "id": "space",
+      "yours": 224
+     },
+     {
+      "id": "textiles",
+      "yours": 198
+     },
+     {
+      "id": "social-justice-and-empowerment",
+      "yours": 151
+     },
+     {
+      "id": "electronics-and-information-technology",
+      "yours": 146
+     },
+     {
+      "id": "new-and-renewable-energy",
+      "yours": 118
+     },
+     {
+      "id": "tribal-affairs",
+      "yours": 111
+     },
+     {
+      "id": "petroleum-and-natural-gas",
+      "yours": 103
+     },
+     {
+      "id": "law-and-justice",
+      "yours": 83
+     },
+     {
+      "id": "minority-affairs",
+      "yours": 78
+     },
+     {
+      "id": "mines",
+      "yours": 76
+     },
+     {
+      "id": "fisheries-animal-husbandry-and-dairying",
+      "yours": 71
+     },
+     {
+      "id": "information-and-broadcasting",
+      "yours": 67
+     },
+     {
+      "id": "statistics-and-programme-implementation",
+      "yours": 48
+     },
+     {
+      "id": "development-of-north-eastern-region",
+      "yours": 48
+     },
+     {
+      "id": "culture",
+      "yours": 46
+     },
+     {
+      "id": "environment-forests-and-climate-change",
+      "yours": 44
+     },
+     {
+      "id": "ayush",
+      "yours": 42
+     },
+     {
+      "id": "youth-affairs-and-sports",
+      "yours": 40
+     },
+     {
+      "id": "earth-sciences",
+      "yours": 39
+     },
+     {
+      "id": "skill-development-and-entrepreneurship",
+      "yours": 38
+     },
+     {
+      "id": "personnel-public-grievances-and-pensions",
+      "yours": 34
+     },
+     {
+      "id": "ports-shipping-and-waterways",
+      "yours": 27
+     },
+     {
+      "id": "president-parliament-and-upsc",
+      "yours": 24
+     },
+     {
+      "id": "heavy-industries",
+      "yours": 21
+     },
+     {
+      "id": "food-processing-industries",
+      "yours": 21
+     },
+     {
+      "id": "planning",
+      "yours": 19
+     },
+     {
+      "id": "panchayati-raj",
+      "yours": 15
+     },
+     {
+      "id": "tourism",
+      "yours": 14
+     },
+     {
+      "id": "corporate-affairs",
+      "yours": 11
+     },
+     {
+      "id": "coal",
+      "yours": 10
+     },
+     {
+      "id": "parliamentary-affairs",
+      "yours": 1
+     },
+     {
+      "id": "steel",
+      "yours": 1
+     },
+     {
+      "id": "cooperation",
+      "yours": 0
+     }
+    ]
+   },
+   "states": [
+    {
+     "id": "uttar-pradesh",
+     "yours": 8487
+    },
+    {
+     "id": "bihar",
+     "yours": 4758
+    },
+    {
+     "id": "madhya-pradesh",
+     "yours": 3714
+    },
+    {
+     "id": "west-bengal",
+     "yours": 3559
+    },
+    {
+     "id": "maharashtra",
+     "yours": 2988
+    },
+    {
+     "id": "rajasthan",
+     "yours": 2851
+    },
+    {
+     "id": "odisha",
+     "yours": 2142
+    },
+    {
+     "id": "tamil-nadu",
+     "yours": 1930
+    },
+    {
+     "id": "andhra-pradesh",
+     "yours": 1914
+    },
+    {
+     "id": "karnataka",
+     "yours": 1725
+    },
+    {
+     "id": "gujarat",
+     "yours": 1645
+    },
+    {
+     "id": "chhattisgarh",
+     "yours": 1612
+    },
+    {
+     "id": "jharkhand",
+     "yours": 1564
+    },
+    {
+     "id": "assam",
+     "yours": 1480
+    },
+    {
+     "id": "telangana",
+     "yours": 994
+    },
+    {
+     "id": "kerala",
+     "yours": 911
+    },
+    {
+     "id": "punjab",
+     "yours": 855
+    },
+    {
+     "id": "arunachal-pradesh",
+     "yours": 831
+    },
+    {
+     "id": "uttarakhand",
+     "yours": 529
+    },
+    {
+     "id": "haryana",
+     "yours": 517
+    },
+    {
+     "id": "himachal-pradesh",
+     "yours": 393
+    },
+    {
+     "id": "meghalaya",
+     "yours": 363
+    },
+    {
+     "id": "manipur",
+     "yours": 339
+    },
+    {
+     "id": "tripura",
+     "yours": 335
+    },
+    {
+     "id": "nagaland",
+     "yours": 269
+    },
+    {
+     "id": "mizoram",
+     "yours": 236
+    },
+    {
+     "id": "sikkim",
+     "yours": 184
+    },
+    {
+     "id": "goa",
+     "yours": 183
+    }
+   ],
+   "cess": [
+    {
+     "id": "prarambhik-shiksha-kosh",
+     "yours": 1982
+    },
+    {
+     "id": "madhyamik-uchchatar-shiksha-kosh",
+     "yours": 1416
+    },
+    {
+     "id": "pradhan-mantri-swasthya-suraksha-nidhi",
+     "yours": 1217
+    }
+   ]
+  },
+  {
+   "period": "2021-22",
+   "paid": 25000,
+   "surcharge": 0.1,
+   "toStates": 8960,
+   "toCess": 962,
+   "toUnion": 15078,
+   "lenses": {
+    "purpose": [
+     {
+      "id": "interest-and-debt-service",
+      "yours": 3202
+     },
+     {
+      "id": "defence-and-security",
+      "yours": 2431
+     },
+     {
+      "id": "health-and-social-protection",
+      "yours": 1989
+     },
+     {
+      "id": "transport-housing-and-infrastructure",
+      "yours": 1949
+     },
+     {
+      "id": "agriculture-and-rural-development",
+      "yours": 1724
+     },
+     {
+      "id": "states-territories-and-transfers",
+      "yours": 1326
+     },
+     {
+      "id": "government-and-public-administration",
+      "yours": 1263
+     },
+     {
+      "id": "energy-industry-and-the-economy",
+      "yours": 674
+     },
+     {
+      "id": "education-skills-and-research",
+      "yours": 482
+     },
+     {
+      "id": "culture-media-and-sport",
+      "yours": 28
+     },
+     {
+      "id": "environment-and-climate",
+      "yours": 10
+     }
+    ],
+    "administrative": [
+     {
+      "id": "finance",
+      "yours": 5499
+     },
+     {
+      "id": "defence",
+      "yours": 1990
+     },
+     {
+      "id": "consumer-affairs-food-and-public-distribution",
+      "yours": 1218
+     },
+     {
+      "id": "home-affairs",
+      "yours": 671
+     },
+     {
+      "id": "rural-development",
+      "yours": 642
+     },
+     {
+      "id": "chemicals-and-fertilisers",
+      "yours": 615
+     },
+     {
+      "id": "railways",
+      "yours": 537
+     },
+     {
+      "id": "road-transport-and-highways",
+      "yours": 491
+     },
+     {
+      "id": "agriculture-and-farmers-welfare",
+      "yours": 488
+     },
+     {
+      "id": "housing-and-urban-affairs",
+      "yours": 425
+     },
+     {
+      "id": "health-and-family-welfare",
+      "yours": 336
+     },
+     {
+      "id": "jal-shakti",
+      "yours": 332
+     },
+     {
+      "id": "education",
+      "yours": 319
+     },
+     {
+      "id": "civil-aviation",
+      "yours": 286
+     },
+     {
+      "id": "communications",
+      "yours": 205
+     },
+     {
+      "id": "labour-and-employment",
+      "yours": 95
+     },
+     {
+      "id": "atomic-energy",
+      "yours": 90
+     },
+     {
+      "id": "women-and-child-development",
+      "yours": 86
+     },
+     {
+      "id": "power",
+      "yours": 86
+     },
+     {
+      "id": "commerce-and-industry",
+      "yours": 62
+     },
+     {
+      "id": "micro-small-and-medium-enterprises",
+      "yours": 60
+     },
+     {
+      "id": "external-affairs",
+      "yours": 56
+     },
+     {
+      "id": "science-and-technology",
+      "yours": 52
+     },
+     {
+      "id": "space",
+      "yours": 50
+     },
+     {
+      "id": "textiles",
+      "yours": 44
+     },
+     {
+      "id": "social-justice-and-empowerment",
+      "yours": 34
+     },
+     {
+      "id": "electronics-and-information-technology",
+      "yours": 32
+     },
+     {
+      "id": "new-and-renewable-energy",
+      "yours": 26
+     },
+     {
+      "id": "tribal-affairs",
+      "yours": 25
+     },
+     {
+      "id": "petroleum-and-natural-gas",
+      "yours": 23
+     },
+     {
+      "id": "law-and-justice",
+      "yours": 18
+     },
+     {
+      "id": "minority-affairs",
+      "yours": 17
+     },
+     {
+      "id": "mines",
+      "yours": 17
+     },
+     {
+      "id": "fisheries-animal-husbandry-and-dairying",
+      "yours": 16
+     },
+     {
+      "id": "information-and-broadcasting",
+      "yours": 15
+     },
+     {
+      "id": "statistics-and-programme-implementation",
+      "yours": 11
+     },
+     {
+      "id": "development-of-north-eastern-region",
+      "yours": 11
+     },
+     {
+      "id": "culture",
+      "yours": 10
+     },
+     {
+      "id": "environment-forests-and-climate-change",
+      "yours": 10
+     },
+     {
+      "id": "ayush",
+      "yours": 9
+     },
+     {
+      "id": "youth-affairs-and-sports",
+      "yours": 9
+     },
+     {
+      "id": "earth-sciences",
+      "yours": 9
+     },
+     {
+      "id": "skill-development-and-entrepreneurship",
+      "yours": 8
+     },
+     {
+      "id": "personnel-public-grievances-and-pensions",
+      "yours": 8
+     },
+     {
+      "id": "ports-shipping-and-waterways",
+      "yours": 6
+     },
+     {
+      "id": "president-parliament-and-upsc",
+      "yours": 5
+     },
+     {
+      "id": "heavy-industries",
+      "yours": 5
+     },
+     {
+      "id": "food-processing-industries",
+      "yours": 5
+     },
+     {
+      "id": "planning",
+      "yours": 4
+     },
+     {
+      "id": "panchayati-raj",
+      "yours": 3
+     },
+     {
+      "id": "tourism",
+      "yours": 3
+     },
+     {
+      "id": "corporate-affairs",
+      "yours": 2
+     },
+     {
+      "id": "coal",
+      "yours": 2
+     },
+     {
+      "id": "parliamentary-affairs",
+      "yours": 0
+     },
+     {
+      "id": "steel",
+      "yours": 0
+     },
+     {
+      "id": "cooperation",
+      "yours": 0
+     }
+    ]
+   },
+   "states": [
+    {
+     "id": "uttar-pradesh",
+     "yours": 1607
+    },
+    {
+     "id": "bihar",
+     "yours": 901
+    },
+    {
+     "id": "madhya-pradesh",
+     "yours": 703
+    },
+    {
+     "id": "west-bengal",
+     "yours": 674
+    },
+    {
+     "id": "maharashtra",
+     "yours": 566
+    },
+    {
+     "id": "rajasthan",
+     "yours": 540
+    },
+    {
+     "id": "odisha",
+     "yours": 406
+    },
+    {
+     "id": "tamil-nadu",
+     "yours": 366
+    },
+    {
+     "id": "andhra-pradesh",
+     "yours": 363
+    },
+    {
+     "id": "karnataka",
+     "yours": 327
+    },
+    {
+     "id": "gujarat",
+     "yours": 312
+    },
+    {
+     "id": "chhattisgarh",
+     "yours": 305
+    },
+    {
+     "id": "jharkhand",
+     "yours": 296
+    },
+    {
+     "id": "assam",
+     "yours": 280
+    },
+    {
+     "id": "telangana",
+     "yours": 188
+    },
+    {
+     "id": "kerala",
+     "yours": 173
+    },
+    {
+     "id": "punjab",
+     "yours": 162
+    },
+    {
+     "id": "arunachal-pradesh",
+     "yours": 157
+    },
+    {
+     "id": "uttarakhand",
+     "yours": 100
+    },
+    {
+     "id": "haryana",
+     "yours": 98
+    },
+    {
+     "id": "himachal-pradesh",
+     "yours": 74
+    },
+    {
+     "id": "meghalaya",
+     "yours": 69
+    },
+    {
+     "id": "manipur",
+     "yours": 64
+    },
+    {
+     "id": "tripura",
+     "yours": 63
+    },
+    {
+     "id": "nagaland",
+     "yours": 51
+    },
+    {
+     "id": "mizoram",
+     "yours": 45
+    },
+    {
+     "id": "sikkim",
+     "yours": 35
+    },
+    {
+     "id": "goa",
+     "yours": 35
+    }
+   ],
+   "cess": [
+    {
+     "id": "prarambhik-shiksha-kosh",
+     "yours": 413
+    },
+    {
+     "id": "madhyamik-uchchatar-shiksha-kosh",
+     "yours": 295
+    },
+    {
+     "id": "pradhan-mantri-swasthya-suraksha-nidhi",
+     "yours": 254
+    }
+   ]
+  },
+  {
+   "period": "2021-22",
+   "paid": 4675311,
+   "surcharge": 0.37,
+   "toStates": 1345366,
+   "toCess": 179819,
+   "toUnion": 3150126,
+   "lenses": {
+    "purpose": [
+     {
+      "id": "interest-and-debt-service",
+      "yours": 668834
+     },
+     {
+      "id": "defence-and-security",
+      "yours": 507885
+     },
+     {
+      "id": "health-and-social-protection",
+      "yours": 415551
+     },
+     {
+      "id": "transport-housing-and-infrastructure",
+      "yours": 407149
+     },
+     {
+      "id": "agriculture-and-rural-development",
+      "yours": 360249
+     },
+     {
+      "id": "states-territories-and-transfers",
+      "yours": 277102
+     },
+     {
+      "id": "government-and-public-administration",
+      "yours": 263891
+     },
+     {
+      "id": "energy-industry-and-the-economy",
+      "yours": 140869
+     },
+     {
+      "id": "education-skills-and-research",
+      "yours": 100722
+     },
+     {
+      "id": "culture-media-and-sport",
+      "yours": 5854
+     },
+     {
+      "id": "environment-and-climate",
+      "yours": 2020
+     }
+    ],
+    "administrative": [
+     {
+      "id": "finance",
+      "yours": 1148861
+     },
+     {
+      "id": "defence",
+      "yours": 415733
+     },
+     {
+      "id": "consumer-affairs-food-and-public-distribution",
+      "yours": 254557
+     },
+     {
+      "id": "home-affairs",
+      "yours": 140153
+     },
+     {
+      "id": "rural-development",
+      "yours": 134218
+     },
+     {
+      "id": "chemicals-and-fertilisers",
+      "yours": 128527
+     },
+     {
+      "id": "railways",
+      "yours": 112296
+     },
+     {
+      "id": "road-transport-and-highways",
+      "yours": 102588
+     },
+     {
+      "id": "agriculture-and-farmers-welfare",
+      "yours": 101995
+     },
+     {
+      "id": "housing-and-urban-affairs",
+      "yours": 88713
+     },
+     {
+      "id": "health-and-family-welfare",
+      "yours": 70139
+     },
+     {
+      "id": "jal-shakti",
+      "yours": 69306
+     },
+     {
+      "id": "education",
+      "yours": 66719
+     },
+     {
+      "id": "civil-aviation",
+      "yours": 59716
+     },
+     {
+      "id": "communications",
+      "yours": 42799
+     },
+     {
+      "id": "labour-and-employment",
+      "yours": 19956
+     },
+     {
+      "id": "atomic-energy",
+      "yours": 18777
+     },
+     {
+      "id": "women-and-child-development",
+      "yours": 17981
+     },
+     {
+      "id": "power",
+      "yours": 17931
+     },
+     {
+      "id": "commerce-and-industry",
+      "yours": 12920
+     },
+     {
+      "id": "micro-small-and-medium-enterprises",
+      "yours": 12438
+     },
+     {
+      "id": "external-affairs",
+      "yours": 11746
+     },
+     {
+      "id": "science-and-technology",
+      "yours": 10889
+     },
+     {
+      "id": "space",
+      "yours": 10358
+     },
+     {
+      "id": "textiles",
+      "yours": 9183
+     },
+     {
+      "id": "social-justice-and-empowerment",
+      "yours": 7010
+     },
+     {
+      "id": "electronics-and-information-technology",
+      "yours": 6741
+     },
+     {
+      "id": "new-and-renewable-energy",
+      "yours": 5466
+     },
+     {
+      "id": "tribal-affairs",
+      "yours": 5127
+     },
+     {
+      "id": "petroleum-and-natural-gas",
+      "yours": 4777
+     },
+     {
+      "id": "law-and-justice",
+      "yours": 3837
+     },
+     {
+      "id": "minority-affairs",
+      "yours": 3590
+     },
+     {
+      "id": "mines",
+      "yours": 3519
+     },
+     {
+      "id": "fisheries-animal-husbandry-and-dairying",
+      "yours": 3274
+     },
+     {
+      "id": "information-and-broadcasting",
+      "yours": 3092
+     },
+     {
+      "id": "statistics-and-programme-implementation",
+      "yours": 2233
+     },
+     {
+      "id": "development-of-north-eastern-region",
+      "yours": 2203
+     },
+     {
+      "id": "culture",
+      "yours": 2112
+     },
+     {
+      "id": "environment-forests-and-climate-change",
+      "yours": 2020
+     },
+     {
+      "id": "ayush",
+      "yours": 1959
+     },
+     {
+      "id": "youth-affairs-and-sports",
+      "yours": 1868
+     },
+     {
+      "id": "earth-sciences",
+      "yours": 1814
+     },
+     {
+      "id": "skill-development-and-entrepreneurship",
+      "yours": 1761
+     },
+     {
+      "id": "personnel-public-grievances-and-pensions",
+      "yours": 1587
+     },
+     {
+      "id": "ports-shipping-and-waterways",
+      "yours": 1268
+     },
+     {
+      "id": "president-parliament-and-upsc",
+      "yours": 1124
+     },
+     {
+      "id": "heavy-industries",
+      "yours": 970
+     },
+     {
+      "id": "food-processing-industries",
+      "yours": 952
+     },
+     {
+      "id": "planning",
+      "yours": 884
+     },
+     {
+      "id": "panchayati-raj",
+      "yours": 718
+     },
+     {
+      "id": "tourism",
+      "yours": 649
+     },
+     {
+      "id": "corporate-affairs",
+      "yours": 522
+     },
+     {
+      "id": "coal",
+      "yours": 476
+     },
+     {
+      "id": "parliamentary-affairs",
+      "yours": 41
+     },
+     {
+      "id": "steel",
+      "yours": 33
+     },
+     {
+      "id": "cooperation",
+      "yours": 0
+     }
+    ]
+   },
+   "states": [
+    {
+     "id": "uttar-pradesh",
+     "yours": 241345
+    },
+    {
+     "id": "bihar",
+     "yours": 135317
+    },
+    {
+     "id": "madhya-pradesh",
+     "yours": 105611
+    },
+    {
+     "id": "west-bengal",
+     "yours": 101212
+    },
+    {
+     "id": "maharashtra",
+     "yours": 84987
+    },
+    {
+     "id": "rajasthan",
+     "yours": 81072
+    },
+    {
+     "id": "odisha",
+     "yours": 60918
+    },
+    {
+     "id": "tamil-nadu",
+     "yours": 54877
+    },
+    {
+     "id": "andhra-pradesh",
+     "yours": 54447
+    },
+    {
+     "id": "karnataka",
+     "yours": 49065
+    },
+    {
+     "id": "gujarat",
+     "yours": 46792
+    },
+    {
+     "id": "chhattisgarh",
+     "yours": 45837
+    },
+    {
+     "id": "jharkhand",
+     "yours": 44491
+    },
+    {
+     "id": "assam",
+     "yours": 42083
+    },
+    {
+     "id": "telangana",
+     "yours": 28280
+    },
+    {
+     "id": "kerala",
+     "yours": 25898
+    },
+    {
+     "id": "punjab",
+     "yours": 24311
+    },
+    {
+     "id": "arunachal-pradesh",
+     "yours": 23638
+    },
+    {
+     "id": "uttarakhand",
+     "yours": 15041
+    },
+    {
+     "id": "haryana",
+     "yours": 14705
+    },
+    {
+     "id": "himachal-pradesh",
+     "yours": 11167
+    },
+    {
+     "id": "meghalaya",
+     "yours": 10319
+    },
+    {
+     "id": "manipur",
+     "yours": 9633
+    },
+    {
+     "id": "tripura",
+     "yours": 9525
+    },
+    {
+     "id": "nagaland",
+     "yours": 7655
+    },
+    {
+     "id": "mizoram",
+     "yours": 6727
+    },
+    {
+     "id": "sikkim",
+     "yours": 5220
+    },
+    {
+     "id": "goa",
+     "yours": 5193
+    }
+   ],
+   "cess": [
+    {
+     "id": "prarambhik-shiksha-kosh",
+     "yours": 77224
+    },
+    {
+     "id": "madhyamik-uchchatar-shiksha-kosh",
+     "yours": 55160
+    },
+    {
+     "id": "pradhan-mantri-swasthya-suraksha-nidhi",
+     "yours": 47435
+    }
+   ]
+  },
+  {
+   "period": "2022-23",
+   "paid": 120000,
+   "surcharge": 0.0,
+   "toStates": 47308,
+   "toCess": 4615,
+   "toUnion": 68077,
+   "lenses": {
+    "purpose": [
+     {
+      "id": "interest-and-debt-service",
+      "yours": 15075
+     },
+     {
+      "id": "defence-and-security",
+      "yours": 11251
+     },
+     {
+      "id": "transport-housing-and-infrastructure",
+      "yours": 9762
+     },
+     {
+      "id": "agriculture-and-rural-development",
+      "yours": 8675
+     },
+     {
+      "id": "health-and-social-protection",
+      "yours": 7678
+     },
+     {
+      "id": "states-territories-and-transfers",
+      "yours": 5525
+     },
+     {
+      "id": "government-and-public-administration",
+      "yours": 5517
+     },
+     {
+      "id": "energy-industry-and-the-economy",
+      "yours": 2239
+     },
+     {
+      "id": "education-skills-and-research",
+      "yours": 2187
+     },
+     {
+      "id": "culture-media-and-sport",
+      "yours": 129
+     },
+     {
+      "id": "environment-and-climate",
+      "yours": 39
+     }
+    ],
+    "administrative": [
+     {
+      "id": "finance",
+      "yours": 24259
+     },
+     {
+      "id": "defence",
+      "yours": 9304
+     },
+     {
+      "id": "consumer-affairs-food-and-public-distribution",
+      "yours": 4610
+     },
+     {
+      "id": "chemicals-and-fertilisers",
+      "yours": 4117
+     },
+     {
+      "id": "road-transport-and-highways",
+      "yours": 3525
+     },
+     {
+      "id": "home-affairs",
+      "yours": 3033
+     },
+     {
+      "id": "rural-development",
+      "yours": 2887
+     },
+     {
+      "id": "railways",
+      "yours": 2637
+     },
+     {
+      "id": "communications",
+      "yours": 2289
+     },
+     {
+      "id": "agriculture-and-farmers-welfare",
+      "yours": 1758
+     },
+     {
+      "id": "education",
+      "yours": 1578
+     },
+     {
+      "id": "housing-and-urban-affairs",
+      "yours": 1255
+     },
+     {
+      "id": "health-and-family-welfare",
+      "yours": 1230
+     },
+     {
+      "id": "jal-shakti",
+      "yours": 1163
+     },
+     {
+      "id": "petroleum-and-natural-gas",
+      "yours": 502
+     },
+     {
+      "id": "atomic-energy",
+      "yours": 400
+     },
+     {
+      "id": "women-and-child-development",
+      "yours": 390
+     },
+     {
+      "id": "micro-small-and-medium-enterprises",
+      "yours": 382
+     },
+     {
+      "id": "external-affairs",
+      "yours": 270
+     },
+     {
+      "id": "labour-and-employment",
+      "yours": 240
+     },
+     {
+      "id": "commerce-and-industry",
+      "yours": 211
+     },
+     {
+      "id": "science-and-technology",
+      "yours": 200
+     },
+     {
+      "id": "space",
+      "yours": 165
+     },
+     {
+      "id": "civil-aviation",
+      "yours": 151
+     },
+     {
+      "id": "power",
+      "yours": 151
+     },
+     {
+      "id": "social-justice-and-empowerment",
+      "yours": 136
+     },
+     {
+      "id": "electronics-and-information-technology",
+      "yours": 133
+     },
+     {
+      "id": "new-and-renewable-energy",
+      "yours": 123
+     },
+     {
+      "id": "tribal-affairs",
+      "yours": 118
+     },
+     {
+      "id": "law-and-justice",
+      "yours": 111
+     },
+     {
+      "id": "information-and-broadcasting",
+      "yours": 65
+     },
+     {
+      "id": "statistics-and-programme-implementation",
+      "yours": 60
+     },
+     {
+      "id": "fisheries-animal-husbandry-and-dairying",
+      "yours": 59
+     },
+     {
+      "id": "textiles",
+      "yours": 54
+     },
+     {
+      "id": "culture",
+      "yours": 53
+     },
+     {
+      "id": "heavy-industries",
+      "yours": 44
+     },
+     {
+      "id": "youth-affairs-and-sports",
+      "yours": 41
+     },
+     {
+      "id": "ayush",
+      "yours": 40
+     },
+     {
+      "id": "environment-forests-and-climate-change",
+      "yours": 39
+     },
+     {
+      "id": "personnel-public-grievances-and-pensions",
+      "yours": 38
+     },
+     {
+      "id": "ports-shipping-and-waterways",
+      "yours": 27
+     },
+     {
+      "id": "cooperation",
+      "yours": 27
+     },
+     {
+      "id": "mines",
+      "yours": 26
+     },
+     {
+      "id": "earth-sciences",
+      "yours": 25
+     },
+     {
+      "id": "president-parliament-and-upsc",
+      "yours": 24
+     },
+     {
+      "id": "food-processing-industries",
+      "yours": 23
+     },
+     {
+      "id": "skill-development-and-entrepreneurship",
+      "yours": 22
+     },
+     {
+      "id": "development-of-north-eastern-region",
+      "yours": 16
+     },
+     {
+      "id": "panchayati-raj",
+      "yours": 15
+     },
+     {
+      "id": "planning",
+      "yours": 14
+     },
+     {
+      "id": "minority-affairs",
+      "yours": 13
+     },
+     {
+      "id": "tourism",
+      "yours": 11
+     },
+     {
+      "id": "corporate-affairs",
+      "yours": 9
+     },
+     {
+      "id": "coal",
+      "yours": 2
+     },
+     {
+      "id": "parliamentary-affairs",
+      "yours": 1
+     },
+     {
+      "id": "steel",
+      "yours": 1
+     }
+    ]
+   },
+   "states": [
+    {
+     "id": "uttar-pradesh",
+     "yours": 8487
+    },
+    {
+     "id": "bihar",
+     "yours": 4758
+    },
+    {
+     "id": "madhya-pradesh",
+     "yours": 3714
+    },
+    {
+     "id": "west-bengal",
+     "yours": 3559
+    },
+    {
+     "id": "maharashtra",
+     "yours": 2988
+    },
+    {
+     "id": "rajasthan",
+     "yours": 2851
+    },
+    {
+     "id": "odisha",
+     "yours": 2142
+    },
+    {
+     "id": "tamil-nadu",
+     "yours": 1930
+    },
+    {
+     "id": "andhra-pradesh",
+     "yours": 1914
+    },
+    {
+     "id": "karnataka",
+     "yours": 1725
+    },
+    {
+     "id": "gujarat",
+     "yours": 1645
+    },
+    {
+     "id": "chhattisgarh",
+     "yours": 1612
+    },
+    {
+     "id": "jharkhand",
+     "yours": 1564
+    },
+    {
+     "id": "assam",
+     "yours": 1480
+    },
+    {
+     "id": "telangana",
+     "yours": 994
+    },
+    {
+     "id": "kerala",
+     "yours": 911
+    },
+    {
+     "id": "punjab",
+     "yours": 855
+    },
+    {
+     "id": "arunachal-pradesh",
+     "yours": 831
+    },
+    {
+     "id": "uttarakhand",
+     "yours": 529
+    },
+    {
+     "id": "haryana",
+     "yours": 517
+    },
+    {
+     "id": "himachal-pradesh",
+     "yours": 393
+    },
+    {
+     "id": "meghalaya",
+     "yours": 363
+    },
+    {
+     "id": "manipur",
+     "yours": 339
+    },
+    {
+     "id": "tripura",
+     "yours": 335
+    },
+    {
+     "id": "nagaland",
+     "yours": 269
+    },
+    {
+     "id": "mizoram",
+     "yours": 236
+    },
+    {
+     "id": "sikkim",
+     "yours": 184
+    },
+    {
+     "id": "goa",
+     "yours": 183
+    }
+   ],
+   "cess": [
+    {
+     "id": "prarambhik-shiksha-kosh",
+     "yours": 2115
+    },
+    {
+     "id": "madhyamik-uchchatar-shiksha-kosh",
+     "yours": 1356
+    },
+    {
+     "id": "pradhan-mantri-swasthya-suraksha-nidhi",
+     "yours": 1144
+    }
+   ]
+  },
+  {
+   "period": "2022-23",
+   "paid": 25000,
+   "surcharge": 0.1,
+   "toStates": 8960,
+   "toCess": 962,
+   "toUnion": 15078,
+   "lenses": {
+    "purpose": [
+     {
+      "id": "interest-and-debt-service",
+      "yours": 3339
+     },
+     {
+      "id": "defence-and-security",
+      "yours": 2492
+     },
+     {
+      "id": "transport-housing-and-infrastructure",
+      "yours": 2162
+     },
+     {
+      "id": "agriculture-and-rural-development",
+      "yours": 1921
+     },
+     {
+      "id": "health-and-social-protection",
+      "yours": 1701
+     },
+     {
+      "id": "states-territories-and-transfers",
+      "yours": 1224
+     },
+     {
+      "id": "government-and-public-administration",
+      "yours": 1222
+     },
+     {
+      "id": "energy-industry-and-the-economy",
+      "yours": 496
+     },
+     {
+      "id": "education-skills-and-research",
+      "yours": 484
+     },
+     {
+      "id": "culture-media-and-sport",
+      "yours": 29
+     },
+     {
+      "id": "environment-and-climate",
+      "yours": 8
+     }
+    ],
+    "administrative": [
+     {
+      "id": "finance",
+      "yours": 5373
+     },
+     {
+      "id": "defence",
+      "yours": 2061
+     },
+     {
+      "id": "consumer-affairs-food-and-public-distribution",
+      "yours": 1021
+     },
+     {
+      "id": "chemicals-and-fertilisers",
+      "yours": 912
+     },
+     {
+      "id": "road-transport-and-highways",
+      "yours": 781
+     },
+     {
+      "id": "home-affairs",
+      "yours": 672
+     },
+     {
+      "id": "rural-development",
+      "yours": 639
+     },
+     {
+      "id": "railways",
+      "yours": 584
+     },
+     {
+      "id": "communications",
+      "yours": 507
+     },
+     {
+      "id": "agriculture-and-farmers-welfare",
+      "yours": 389
+     },
+     {
+      "id": "education",
+      "yours": 350
+     },
+     {
+      "id": "housing-and-urban-affairs",
+      "yours": 278
+     },
+     {
+      "id": "health-and-family-welfare",
+      "yours": 272
+     },
+     {
+      "id": "jal-shakti",
+      "yours": 258
+     },
+     {
+      "id": "petroleum-and-natural-gas",
+      "yours": 111
+     },
+     {
+      "id": "atomic-energy",
+      "yours": 89
+     },
+     {
+      "id": "women-and-child-development",
+      "yours": 86
+     },
+     {
+      "id": "micro-small-and-medium-enterprises",
+      "yours": 85
+     },
+     {
+      "id": "external-affairs",
+      "yours": 60
+     },
+     {
+      "id": "labour-and-employment",
+      "yours": 53
+     },
+     {
+      "id": "commerce-and-industry",
+      "yours": 47
+     },
+     {
+      "id": "science-and-technology",
+      "yours": 44
+     },
+     {
+      "id": "space",
+      "yours": 36
+     },
+     {
+      "id": "civil-aviation",
+      "yours": 34
+     },
+     {
+      "id": "power",
+      "yours": 34
+     },
+     {
+      "id": "social-justice-and-empowerment",
+      "yours": 30
+     },
+     {
+      "id": "electronics-and-information-technology",
+      "yours": 29
+     },
+     {
+      "id": "new-and-renewable-energy",
+      "yours": 27
+     },
+     {
+      "id": "tribal-affairs",
+      "yours": 26
+     },
+     {
+      "id": "law-and-justice",
+      "yours": 25
+     },
+     {
+      "id": "information-and-broadcasting",
+      "yours": 14
+     },
+     {
+      "id": "statistics-and-programme-implementation",
+      "yours": 13
+     },
+     {
+      "id": "fisheries-animal-husbandry-and-dairying",
+      "yours": 13
+     },
+     {
+      "id": "textiles",
+      "yours": 12
+     },
+     {
+      "id": "culture",
+      "yours": 12
+     },
+     {
+      "id": "heavy-industries",
+      "yours": 10
+     },
+     {
+      "id": "youth-affairs-and-sports",
+      "yours": 9
+     },
+     {
+      "id": "ayush",
+      "yours": 9
+     },
+     {
+      "id": "environment-forests-and-climate-change",
+      "yours": 9
+     },
+     {
+      "id": "personnel-public-grievances-and-pensions",
+      "yours": 8
+     },
+     {
+      "id": "ports-shipping-and-waterways",
+      "yours": 6
+     },
+     {
+      "id": "cooperation",
+      "yours": 6
+     },
+     {
+      "id": "mines",
+      "yours": 6
+     },
+     {
+      "id": "earth-sciences",
+      "yours": 6
+     },
+     {
+      "id": "president-parliament-and-upsc",
+      "yours": 5
+     },
+     {
+      "id": "food-processing-industries",
+      "yours": 5
+     },
+     {
+      "id": "skill-development-and-entrepreneurship",
+      "yours": 5
+     },
+     {
+      "id": "development-of-north-eastern-region",
+      "yours": 4
+     },
+     {
+      "id": "panchayati-raj",
+      "yours": 3
+     },
+     {
+      "id": "planning",
+      "yours": 3
+     },
+     {
+      "id": "minority-affairs",
+      "yours": 3
+     },
+     {
+      "id": "tourism",
+      "yours": 2
+     },
+     {
+      "id": "corporate-affairs",
+      "yours": 2
+     },
+     {
+      "id": "coal",
+      "yours": 0
+     },
+     {
+      "id": "parliamentary-affairs",
+      "yours": 0
+     },
+     {
+      "id": "steel",
+      "yours": 0
+     }
+    ]
+   },
+   "states": [
+    {
+     "id": "uttar-pradesh",
+     "yours": 1607
+    },
+    {
+     "id": "bihar",
+     "yours": 901
+    },
+    {
+     "id": "madhya-pradesh",
+     "yours": 703
+    },
+    {
+     "id": "west-bengal",
+     "yours": 674
+    },
+    {
+     "id": "maharashtra",
+     "yours": 566
+    },
+    {
+     "id": "rajasthan",
+     "yours": 540
+    },
+    {
+     "id": "odisha",
+     "yours": 406
+    },
+    {
+     "id": "tamil-nadu",
+     "yours": 366
+    },
+    {
+     "id": "andhra-pradesh",
+     "yours": 363
+    },
+    {
+     "id": "karnataka",
+     "yours": 327
+    },
+    {
+     "id": "gujarat",
+     "yours": 312
+    },
+    {
+     "id": "chhattisgarh",
+     "yours": 305
+    },
+    {
+     "id": "jharkhand",
+     "yours": 296
+    },
+    {
+     "id": "assam",
+     "yours": 280
+    },
+    {
+     "id": "telangana",
+     "yours": 188
+    },
+    {
+     "id": "kerala",
+     "yours": 173
+    },
+    {
+     "id": "punjab",
+     "yours": 162
+    },
+    {
+     "id": "arunachal-pradesh",
+     "yours": 157
+    },
+    {
+     "id": "uttarakhand",
+     "yours": 100
+    },
+    {
+     "id": "haryana",
+     "yours": 98
+    },
+    {
+     "id": "himachal-pradesh",
+     "yours": 74
+    },
+    {
+     "id": "meghalaya",
+     "yours": 69
+    },
+    {
+     "id": "manipur",
+     "yours": 64
+    },
+    {
+     "id": "tripura",
+     "yours": 63
+    },
+    {
+     "id": "nagaland",
+     "yours": 51
+    },
+    {
+     "id": "mizoram",
+     "yours": 45
+    },
+    {
+     "id": "sikkim",
+     "yours": 35
+    },
+    {
+     "id": "goa",
+     "yours": 35
+    }
+   ],
+   "cess": [
+    {
+     "id": "prarambhik-shiksha-kosh",
+     "yours": 441
+    },
+    {
+     "id": "madhyamik-uchchatar-shiksha-kosh",
+     "yours": 283
+    },
+    {
+     "id": "pradhan-mantri-swasthya-suraksha-nidhi",
+     "yours": 238
+    }
+   ]
+  },
+  {
+   "period": "2022-23",
+   "paid": 4675311,
+   "surcharge": 0.37,
+   "toStates": 1345366,
+   "toCess": 179819,
+   "toUnion": 3150126,
+   "lenses": {
+    "purpose": [
+     {
+      "id": "interest-and-debt-service",
+      "yours": 697552
+     },
+     {
+      "id": "defence-and-security",
+      "yours": 520599
+     },
+     {
+      "id": "transport-housing-and-infrastructure",
+      "yours": 451719
+     },
+     {
+      "id": "agriculture-and-rural-development",
+      "yours": 401419
+     },
+     {
+      "id": "health-and-social-protection",
+      "yours": 355302
+     },
+     {
+      "id": "states-territories-and-transfers",
+      "yours": 255645
+     },
+     {
+      "id": "government-and-public-administration",
+      "yours": 255289
+     },
+     {
+      "id": "energy-industry-and-the-economy",
+      "yours": 103603
+     },
+     {
+      "id": "education-skills-and-research",
+      "yours": 101210
+     },
+     {
+      "id": "culture-media-and-sport",
+      "yours": 5993
+     },
+     {
+      "id": "environment-and-climate",
+      "yours": 1795
+     }
+    ],
+    "administrative": [
+     {
+      "id": "finance",
+      "yours": 1122559
+     },
+     {
+      "id": "defence",
+      "yours": 430542
+     },
+     {
+      "id": "consumer-affairs-food-and-public-distribution",
+      "yours": 213322
+     },
+     {
+      "id": "chemicals-and-fertilisers",
+      "yours": 190490
+     },
+     {
+      "id": "road-transport-and-highways",
+      "yours": 163089
+     },
+     {
+      "id": "home-affairs",
+      "yours": 140363
+     },
+     {
+      "id": "rural-development",
+      "yours": 133603
+     },
+     {
+      "id": "railways",
+      "yours": 122011
+     },
+     {
+      "id": "communications",
+      "yours": 105909
+     },
+     {
+      "id": "agriculture-and-farmers-welfare",
+      "yours": 81343
+     },
+     {
+      "id": "education",
+      "yours": 73019
+     },
+     {
+      "id": "housing-and-urban-affairs",
+      "yours": 58080
+     },
+     {
+      "id": "health-and-family-welfare",
+      "yours": 56893
+     },
+     {
+      "id": "jal-shakti",
+      "yours": 53803
+     },
+     {
+      "id": "petroleum-and-natural-gas",
+      "yours": 23223
+     },
+     {
+      "id": "atomic-energy",
+      "yours": 18512
+     },
+     {
+      "id": "women-and-child-development",
+      "yours": 18026
+     },
+     {
+      "id": "micro-small-and-medium-enterprises",
+      "yours": 17685
+     },
+     {
+      "id": "external-affairs",
+      "yours": 12517
+     },
+     {
+      "id": "labour-and-employment",
+      "yours": 11115
+     },
+     {
+      "id": "commerce-and-industry",
+      "yours": 9767
+     },
+     {
+      "id": "science-and-technology",
+      "yours": 9265
+     },
+     {
+      "id": "space",
+      "yours": 7617
+     },
+     {
+      "id": "civil-aviation",
+      "yours": 7002
+     },
+     {
+      "id": "power",
+      "yours": 6996
+     },
+     {
+      "id": "social-justice-and-empowerment",
+      "yours": 6310
+     },
+     {
+      "id": "electronics-and-information-technology",
+      "yours": 6160
+     },
+     {
+      "id": "new-and-renewable-energy",
+      "yours": 5682
+     },
+     {
+      "id": "tribal-affairs",
+      "yours": 5464
+     },
+     {
+      "id": "law-and-justice",
+      "yours": 5131
+     },
+     {
+      "id": "information-and-broadcasting",
+      "yours": 3020
+     },
+     {
+      "id": "statistics-and-programme-implementation",
+      "yours": 2789
+     },
+     {
+      "id": "fisheries-animal-husbandry-and-dairying",
+      "yours": 2712
+     },
+     {
+      "id": "textiles",
+      "yours": 2486
+     },
+     {
+      "id": "culture",
+      "yours": 2461
+     },
+     {
+      "id": "heavy-industries",
+      "yours": 2033
+     },
+     {
+      "id": "youth-affairs-and-sports",
+      "yours": 1913
+     },
+     {
+      "id": "ayush",
+      "yours": 1839
+     },
+     {
+      "id": "environment-forests-and-climate-change",
+      "yours": 1795
+     },
+     {
+      "id": "personnel-public-grievances-and-pensions",
+      "yours": 1743
+     },
+     {
+      "id": "ports-shipping-and-waterways",
+      "yours": 1268
+     },
+     {
+      "id": "cooperation",
+      "yours": 1230
+     },
+     {
+      "id": "mines",
+      "yours": 1186
+     },
+     {
+      "id": "earth-sciences",
+      "yours": 1179
+     },
+     {
+      "id": "president-parliament-and-upsc",
+      "yours": 1133
+     },
+     {
+      "id": "food-processing-industries",
+      "yours": 1059
+     },
+     {
+      "id": "skill-development-and-entrepreneurship",
+      "yours": 1030
+     },
+     {
+      "id": "development-of-north-eastern-region",
+      "yours": 744
+     },
+     {
+      "id": "panchayati-raj",
+      "yours": 677
+     },
+     {
+      "id": "planning",
+      "yours": 637
+     },
+     {
+      "id": "minority-affairs",
+      "yours": 603
+     },
+     {
+      "id": "tourism",
+      "yours": 512
+     },
+     {
+      "id": "corporate-affairs",
+      "yours": 427
+     },
+     {
+      "id": "coal",
+      "yours": 78
+     },
+     {
+      "id": "parliamentary-affairs",
+      "yours": 39
+     },
+     {
+      "id": "steel",
+      "yours": 35
+     }
+    ]
+   },
+   "states": [
+    {
+     "id": "uttar-pradesh",
+     "yours": 241345
+    },
+    {
+     "id": "bihar",
+     "yours": 135317
+    },
+    {
+     "id": "madhya-pradesh",
+     "yours": 105611
+    },
+    {
+     "id": "west-bengal",
+     "yours": 101212
+    },
+    {
+     "id": "maharashtra",
+     "yours": 84987
+    },
+    {
+     "id": "rajasthan",
+     "yours": 81072
+    },
+    {
+     "id": "odisha",
+     "yours": 60918
+    },
+    {
+     "id": "tamil-nadu",
+     "yours": 54877
+    },
+    {
+     "id": "andhra-pradesh",
+     "yours": 54447
+    },
+    {
+     "id": "karnataka",
+     "yours": 49065
+    },
+    {
+     "id": "gujarat",
+     "yours": 46792
+    },
+    {
+     "id": "chhattisgarh",
+     "yours": 45837
+    },
+    {
+     "id": "jharkhand",
+     "yours": 44491
+    },
+    {
+     "id": "assam",
+     "yours": 42083
+    },
+    {
+     "id": "telangana",
+     "yours": 28280
+    },
+    {
+     "id": "kerala",
+     "yours": 25898
+    },
+    {
+     "id": "punjab",
+     "yours": 24311
+    },
+    {
+     "id": "arunachal-pradesh",
+     "yours": 23638
+    },
+    {
+     "id": "uttarakhand",
+     "yours": 15041
+    },
+    {
+     "id": "haryana",
+     "yours": 14705
+    },
+    {
+     "id": "himachal-pradesh",
+     "yours": 11167
+    },
+    {
+     "id": "meghalaya",
+     "yours": 10319
+    },
+    {
+     "id": "manipur",
+     "yours": 9633
+    },
+    {
+     "id": "tripura",
+     "yours": 9525
+    },
+    {
+     "id": "nagaland",
+     "yours": 7655
+    },
+    {
+     "id": "mizoram",
+     "yours": 6727
+    },
+    {
+     "id": "sikkim",
+     "yours": 5220
+    },
+    {
+     "id": "goa",
+     "yours": 5193
+    }
+   ],
+   "cess": [
+    {
+     "id": "prarambhik-shiksha-kosh",
+     "yours": 82434
+    },
+    {
+     "id": "madhyamik-uchchatar-shiksha-kosh",
+     "yours": 52822
+    },
+    {
+     "id": "pradhan-mantri-swasthya-suraksha-nidhi",
+     "yours": 44563
+    }
+   ]
+  },
+  {
+   "period": "2023-24",
+   "paid": 120000,
+   "surcharge": 0.0,
+   "toStates": 47308,
+   "toCess": 4615,
+   "toUnion": 68077,
+   "lenses": {
+    "purpose": [
+     {
+      "id": "interest-and-debt-service",
+      "yours": 16299
+     },
+     {
+      "id": "defence-and-security",
+      "yours": 11327
+     },
+     {
+      "id": "transport-housing-and-infrastructure",
+      "yours": 10782
+     },
+     {
+      "id": "agriculture-and-rural-development",
+      "yours": 7132
+     },
+     {
+      "id": "health-and-social-protection",
+      "yours": 6701
+     },
+     {
+      "id": "states-territories-and-transfers",
+      "yours": 5458
+     },
+     {
+      "id": "government-and-public-administration",
+      "yours": 5441
+     },
+     {
+      "id": "education-skills-and-research",
+      "yours": 2501
+     },
+     {
+      "id": "energy-industry-and-the-economy",
+      "yours": 2258
+     },
+     {
+      "id": "culture-media-and-sport",
+      "yours": 130
+     },
+     {
+      "id": "environment-and-climate",
+      "yours": 48
+     }
+    ],
+    "administrative": [
+     {
+      "id": "finance",
+      "yours": 25237
+     },
+     {
+      "id": "defence",
+      "yours": 9338
+     },
+     {
+      "id": "road-transport-and-highways",
+      "yours": 4228
+     },
+     {
+      "id": "railways",
+      "yours": 3766
+     },
+     {
+      "id": "consumer-affairs-food-and-public-distribution",
+      "yours": 3562
+     },
+     {
+      "id": "home-affairs",
+      "yours": 3016
+     },
+     {
+      "id": "chemicals-and-fertilisers",
+      "yours": 2929
+     },
+     {
+      "id": "rural-development",
+      "yours": 2507
+     },
+     {
+      "id": "education",
+      "yours": 1890
+     },
+     {
+      "id": "agriculture-and-farmers-welfare",
+      "yours": 1810
+     },
+     {
+      "id": "communications",
+      "yours": 1706
+     },
+     {
+      "id": "jal-shakti",
+      "yours": 1457
+     },
+     {
+      "id": "health-and-family-welfare",
+      "yours": 1274
+     },
+     {
+      "id": "housing-and-urban-affairs",
+      "yours": 1050
+     },
+     {
+      "id": "external-affairs",
+      "yours": 443
+     },
+     {
+      "id": "atomic-energy",
+      "yours": 397
+     },
+     {
+      "id": "women-and-child-development",
+      "yours": 378
+     },
+     {
+      "id": "micro-small-and-medium-enterprises",
+      "yours": 334
+     },
+     {
+      "id": "power",
+      "yours": 250
+     },
+     {
+      "id": "petroleum-and-natural-gas",
+      "yours": 219
+     },
+     {
+      "id": "electronics-and-information-technology",
+      "yours": 196
+     },
+     {
+      "id": "commerce-and-industry",
+      "yours": 189
+     },
+     {
+      "id": "science-and-technology",
+      "yours": 177
+     },
+     {
+      "id": "labour-and-employment",
+      "yours": 174
+     },
+     {
+      "id": "space",
+      "yours": 164
+     },
+     {
+      "id": "social-justice-and-empowerment",
+      "yours": 149
+     },
+     {
+      "id": "law-and-justice",
+      "yours": 141
+     },
+     {
+      "id": "new-and-renewable-energy",
+      "yours": 121
+     },
+     {
+      "id": "tribal-affairs",
+      "yours": 115
+     },
+     {
+      "id": "heavy-industries",
+      "yours": 72
+     },
+     {
+      "id": "fisheries-animal-husbandry-and-dairying",
+      "yours": 69
+     },
+     {
+      "id": "information-and-broadcasting",
+      "yours": 66
+     },
+     {
+      "id": "culture",
+      "yours": 52
+     },
+     {
+      "id": "environment-forests-and-climate-change",
+      "yours": 48
+     },
+     {
+      "id": "textiles",
+      "yours": 46
+     },
+     {
+      "id": "youth-affairs-and-sports",
+      "yours": 46
+     },
+     {
+      "id": "skill-development-and-entrepreneurship",
+      "yours": 46
+     },
+     {
+      "id": "mines",
+      "yours": 43
+     },
+     {
+      "id": "civil-aviation",
+      "yours": 42
+     },
+     {
+      "id": "ayush",
+      "yours": 41
+     },
+     {
+      "id": "statistics-and-programme-implementation",
+      "yours": 38
+     },
+     {
+      "id": "personnel-public-grievances-and-pensions",
+      "yours": 37
+     },
+     {
+      "id": "earth-sciences",
+      "yours": 37
+     },
+     {
+      "id": "food-processing-industries",
+      "yours": 35
+     },
+     {
+      "id": "ports-shipping-and-waterways",
+      "yours": 34
+     },
+     {
+      "id": "president-parliament-and-upsc",
+      "yours": 25
+     },
+     {
+      "id": "development-of-north-eastern-region",
+      "yours": 25
+     },
+     {
+      "id": "panchayati-raj",
+      "yours": 15
+     },
+     {
+      "id": "tourism",
+      "yours": 12
+     },
+     {
+      "id": "cooperation",
+      "yours": 11
+     },
+     {
+      "id": "corporate-affairs",
+      "yours": 9
+     },
+     {
+      "id": "planning",
+      "yours": 4
+     },
+     {
+      "id": "coal",
+      "yours": 3
+     },
+     {
+      "id": "minority-affairs",
+      "yours": 2
+     },
+     {
+      "id": "parliamentary-affairs",
+      "yours": 1
+     },
+     {
+      "id": "steel",
+      "yours": 1
+     }
+    ]
+   },
+   "states": [
+    {
+     "id": "uttar-pradesh",
+     "yours": 8487
+    },
+    {
+     "id": "bihar",
+     "yours": 4758
+    },
+    {
+     "id": "madhya-pradesh",
+     "yours": 3714
+    },
+    {
+     "id": "west-bengal",
+     "yours": 3559
+    },
+    {
+     "id": "maharashtra",
+     "yours": 2988
+    },
+    {
+     "id": "rajasthan",
+     "yours": 2851
+    },
+    {
+     "id": "odisha",
+     "yours": 2142
+    },
+    {
+     "id": "tamil-nadu",
+     "yours": 1930
+    },
+    {
+     "id": "andhra-pradesh",
+     "yours": 1914
+    },
+    {
+     "id": "karnataka",
+     "yours": 1725
+    },
+    {
+     "id": "gujarat",
+     "yours": 1645
+    },
+    {
+     "id": "chhattisgarh",
+     "yours": 1612
+    },
+    {
+     "id": "jharkhand",
+     "yours": 1564
+    },
+    {
+     "id": "assam",
+     "yours": 1480
+    },
+    {
+     "id": "telangana",
+     "yours": 994
+    },
+    {
+     "id": "kerala",
+     "yours": 911
+    },
+    {
+     "id": "punjab",
+     "yours": 855
+    },
+    {
+     "id": "arunachal-pradesh",
+     "yours": 831
+    },
+    {
+     "id": "uttarakhand",
+     "yours": 529
+    },
+    {
+     "id": "haryana",
+     "yours": 517
+    },
+    {
+     "id": "himachal-pradesh",
+     "yours": 393
+    },
+    {
+     "id": "meghalaya",
+     "yours": 363
+    },
+    {
+     "id": "manipur",
+     "yours": 339
+    },
+    {
+     "id": "tripura",
+     "yours": 335
+    },
+    {
+     "id": "nagaland",
+     "yours": 269
+    },
+    {
+     "id": "mizoram",
+     "yours": 236
+    },
+    {
+     "id": "sikkim",
+     "yours": 184
+    },
+    {
+     "id": "goa",
+     "yours": 183
+    }
+   ],
+   "cess": [
+    {
+     "id": "prarambhik-shiksha-kosh",
+     "yours": 2847
+    },
+    {
+     "id": "madhyamik-uchchatar-shiksha-kosh",
+     "yours": 1029
+    },
+    {
+     "id": "pradhan-mantri-swasthya-suraksha-nidhi",
+     "yours": 739
+    }
+   ]
+  },
+  {
+   "period": "2023-24",
+   "paid": 25000,
+   "surcharge": 0.1,
+   "toStates": 8960,
+   "toCess": 962,
+   "toUnion": 15078,
+   "lenses": {
+    "purpose": [
+     {
+      "id": "interest-and-debt-service",
+      "yours": 3610
+     },
+     {
+      "id": "defence-and-security",
+      "yours": 2509
+     },
+     {
+      "id": "transport-housing-and-infrastructure",
+      "yours": 2388
+     },
+     {
+      "id": "agriculture-and-rural-development",
+      "yours": 1580
+     },
+     {
+      "id": "health-and-social-protection",
+      "yours": 1484
+     },
+     {
+      "id": "states-territories-and-transfers",
+      "yours": 1209
+     },
+     {
+      "id": "government-and-public-administration",
+      "yours": 1205
+     },
+     {
+      "id": "education-skills-and-research",
+      "yours": 554
+     },
+     {
+      "id": "energy-industry-and-the-economy",
+      "yours": 500
+     },
+     {
+      "id": "culture-media-and-sport",
+      "yours": 29
+     },
+     {
+      "id": "environment-and-climate",
+      "yours": 10
+     }
+    ],
+    "administrative": [
+     {
+      "id": "finance",
+      "yours": 5590
+     },
+     {
+      "id": "defence",
+      "yours": 2068
+     },
+     {
+      "id": "road-transport-and-highways",
+      "yours": 936
+     },
+     {
+      "id": "railways",
+      "yours": 834
+     },
+     {
+      "id": "consumer-affairs-food-and-public-distribution",
+      "yours": 789
+     },
+     {
+      "id": "home-affairs",
+      "yours": 668
+     },
+     {
+      "id": "chemicals-and-fertilisers",
+      "yours": 649
+     },
+     {
+      "id": "rural-development",
+      "yours": 555
+     },
+     {
+      "id": "education",
+      "yours": 419
+     },
+     {
+      "id": "agriculture-and-farmers-welfare",
+      "yours": 401
+     },
+     {
+      "id": "communications",
+      "yours": 378
+     },
+     {
+      "id": "jal-shakti",
+      "yours": 323
+     },
+     {
+      "id": "health-and-family-welfare",
+      "yours": 282
+     },
+     {
+      "id": "housing-and-urban-affairs",
+      "yours": 233
+     },
+     {
+      "id": "external-affairs",
+      "yours": 98
+     },
+     {
+      "id": "atomic-energy",
+      "yours": 88
+     },
+     {
+      "id": "women-and-child-development",
+      "yours": 84
+     },
+     {
+      "id": "micro-small-and-medium-enterprises",
+      "yours": 74
+     },
+     {
+      "id": "power",
+      "yours": 55
+     },
+     {
+      "id": "petroleum-and-natural-gas",
+      "yours": 49
+     },
+     {
+      "id": "electronics-and-information-technology",
+      "yours": 43
+     },
+     {
+      "id": "commerce-and-industry",
+      "yours": 42
+     },
+     {
+      "id": "science-and-technology",
+      "yours": 39
+     },
+     {
+      "id": "labour-and-employment",
+      "yours": 39
+     },
+     {
+      "id": "space",
+      "yours": 36
+     },
+     {
+      "id": "social-justice-and-empowerment",
+      "yours": 33
+     },
+     {
+      "id": "law-and-justice",
+      "yours": 31
+     },
+     {
+      "id": "new-and-renewable-energy",
+      "yours": 27
+     },
+     {
+      "id": "tribal-affairs",
+      "yours": 25
+     },
+     {
+      "id": "heavy-industries",
+      "yours": 16
+     },
+     {
+      "id": "fisheries-animal-husbandry-and-dairying",
+      "yours": 15
+     },
+     {
+      "id": "information-and-broadcasting",
+      "yours": 15
+     },
+     {
+      "id": "culture",
+      "yours": 11
+     },
+     {
+      "id": "environment-forests-and-climate-change",
+      "yours": 11
+     },
+     {
+      "id": "textiles",
+      "yours": 10
+     },
+     {
+      "id": "youth-affairs-and-sports",
+      "yours": 10
+     },
+     {
+      "id": "skill-development-and-entrepreneurship",
+      "yours": 10
+     },
+     {
+      "id": "mines",
+      "yours": 10
+     },
+     {
+      "id": "civil-aviation",
+      "yours": 9
+     },
+     {
+      "id": "ayush",
+      "yours": 9
+     },
+     {
+      "id": "statistics-and-programme-implementation",
+      "yours": 8
+     },
+     {
+      "id": "personnel-public-grievances-and-pensions",
+      "yours": 8
+     },
+     {
+      "id": "earth-sciences",
+      "yours": 8
+     },
+     {
+      "id": "food-processing-industries",
+      "yours": 8
+     },
+     {
+      "id": "ports-shipping-and-waterways",
+      "yours": 8
+     },
+     {
+      "id": "president-parliament-and-upsc",
+      "yours": 6
+     },
+     {
+      "id": "development-of-north-eastern-region",
+      "yours": 6
+     },
+     {
+      "id": "panchayati-raj",
+      "yours": 3
+     },
+     {
+      "id": "tourism",
+      "yours": 3
+     },
+     {
+      "id": "cooperation",
+      "yours": 2
+     },
+     {
+      "id": "corporate-affairs",
+      "yours": 2
+     },
+     {
+      "id": "planning",
+      "yours": 1
+     },
+     {
+      "id": "coal",
+      "yours": 1
+     },
+     {
+      "id": "minority-affairs",
+      "yours": 0
+     },
+     {
+      "id": "parliamentary-affairs",
+      "yours": 0
+     },
+     {
+      "id": "steel",
+      "yours": 0
+     }
+    ]
+   },
+   "states": [
+    {
+     "id": "uttar-pradesh",
+     "yours": 1607
+    },
+    {
+     "id": "bihar",
+     "yours": 901
+    },
+    {
+     "id": "madhya-pradesh",
+     "yours": 703
+    },
+    {
+     "id": "west-bengal",
+     "yours": 674
+    },
+    {
+     "id": "maharashtra",
+     "yours": 566
+    },
+    {
+     "id": "rajasthan",
+     "yours": 540
+    },
+    {
+     "id": "odisha",
+     "yours": 406
+    },
+    {
+     "id": "tamil-nadu",
+     "yours": 366
+    },
+    {
+     "id": "andhra-pradesh",
+     "yours": 363
+    },
+    {
+     "id": "karnataka",
+     "yours": 327
+    },
+    {
+     "id": "gujarat",
+     "yours": 312
+    },
+    {
+     "id": "chhattisgarh",
+     "yours": 305
+    },
+    {
+     "id": "jharkhand",
+     "yours": 296
+    },
+    {
+     "id": "assam",
+     "yours": 280
+    },
+    {
+     "id": "telangana",
+     "yours": 188
+    },
+    {
+     "id": "kerala",
+     "yours": 173
+    },
+    {
+     "id": "punjab",
+     "yours": 162
+    },
+    {
+     "id": "arunachal-pradesh",
+     "yours": 157
+    },
+    {
+     "id": "uttarakhand",
+     "yours": 100
+    },
+    {
+     "id": "haryana",
+     "yours": 98
+    },
+    {
+     "id": "himachal-pradesh",
+     "yours": 74
+    },
+    {
+     "id": "meghalaya",
+     "yours": 69
+    },
+    {
+     "id": "manipur",
+     "yours": 64
+    },
+    {
+     "id": "tripura",
+     "yours": 63
+    },
+    {
+     "id": "nagaland",
+     "yours": 51
+    },
+    {
+     "id": "mizoram",
+     "yours": 45
+    },
+    {
+     "id": "sikkim",
+     "yours": 35
+    },
+    {
+     "id": "goa",
+     "yours": 35
+    }
+   ],
+   "cess": [
+    {
+     "id": "prarambhik-shiksha-kosh",
+     "yours": 593
+    },
+    {
+     "id": "madhyamik-uchchatar-shiksha-kosh",
+     "yours": 215
+    },
+    {
+     "id": "pradhan-mantri-swasthya-suraksha-nidhi",
+     "yours": 154
+    }
+   ]
+  },
+  {
+   "period": "2023-24",
+   "paid": 4675311,
+   "surcharge": 0.37,
+   "toStates": 1345366,
+   "toCess": 179819,
+   "toUnion": 3150126,
+   "lenses": {
+    "purpose": [
+     {
+      "id": "interest-and-debt-service",
+      "yours": 754219
+     },
+     {
+      "id": "defence-and-security",
+      "yours": 524107
+     },
+     {
+      "id": "transport-housing-and-infrastructure",
+      "yours": 498904
+     },
+     {
+      "id": "agriculture-and-rural-development",
+      "yours": 330013
+     },
+     {
+      "id": "health-and-social-protection",
+      "yours": 310088
+     },
+     {
+      "id": "states-territories-and-transfers",
+      "yours": 252570
+     },
+     {
+      "id": "government-and-public-administration",
+      "yours": 251766
+     },
+     {
+      "id": "education-skills-and-research",
+      "yours": 115743
+     },
+     {
+      "id": "energy-industry-and-the-economy",
+      "yours": 104485
+     },
+     {
+      "id": "culture-media-and-sport",
+      "yours": 6024
+     },
+     {
+      "id": "environment-and-climate",
+      "yours": 2207
+     }
+    ],
+    "administrative": [
+     {
+      "id": "finance",
+      "yours": 1167781
+     },
+     {
+      "id": "defence",
+      "yours": 432100
+     },
+     {
+      "id": "road-transport-and-highways",
+      "yours": 195657
+     },
+     {
+      "id": "railways",
+      "yours": 174251
+     },
+     {
+      "id": "consumer-affairs-food-and-public-distribution",
+      "yours": 164825
+     },
+     {
+      "id": "home-affairs",
+      "yours": 139570
+     },
+     {
+      "id": "chemicals-and-fertilisers",
+      "yours": 135524
+     },
+     {
+      "id": "rural-development",
+      "yours": 116012
+     },
+     {
+      "id": "education",
+      "yours": 87458
+     },
+     {
+      "id": "agriculture-and-farmers-welfare",
+      "yours": 83758
+     },
+     {
+      "id": "communications",
+      "yours": 78932
+     },
+     {
+      "id": "jal-shakti",
+      "yours": 67426
+     },
+     {
+      "id": "health-and-family-welfare",
+      "yours": 58948
+     },
+     {
+      "id": "housing-and-urban-affairs",
+      "yours": 48608
+     },
+     {
+      "id": "external-affairs",
+      "yours": 20499
+     },
+     {
+      "id": "atomic-energy",
+      "yours": 18349
+     },
+     {
+      "id": "women-and-child-development",
+      "yours": 17508
+     },
+     {
+      "id": "micro-small-and-medium-enterprises",
+      "yours": 15443
+     },
+     {
+      "id": "power",
+      "yours": 11575
+     },
+     {
+      "id": "petroleum-and-natural-gas",
+      "yours": 10158
+     },
+     {
+      "id": "electronics-and-information-technology",
+      "yours": 9051
+     },
+     {
+      "id": "commerce-and-industry",
+      "yours": 8771
+     },
+     {
+      "id": "science-and-technology",
+      "yours": 8194
+     },
+     {
+      "id": "labour-and-employment",
+      "yours": 8072
+     },
+     {
+      "id": "space",
+      "yours": 7589
+     },
+     {
+      "id": "social-justice-and-empowerment",
+      "yours": 6879
+     },
+     {
+      "id": "law-and-justice",
+      "yours": 6543
+     },
+     {
+      "id": "new-and-renewable-energy",
+      "yours": 5621
+     },
+     {
+      "id": "tribal-affairs",
+      "yours": 5325
+     },
+     {
+      "id": "heavy-industries",
+      "yours": 3314
+     },
+     {
+      "id": "fisheries-animal-husbandry-and-dairying",
+      "yours": 3182
+     },
+     {
+      "id": "information-and-broadcasting",
+      "yours": 3056
+     },
+     {
+      "id": "culture",
+      "yours": 2400
+     },
+     {
+      "id": "environment-forests-and-climate-change",
+      "yours": 2207
+     },
+     {
+      "id": "textiles",
+      "yours": 2138
+     },
+     {
+      "id": "youth-affairs-and-sports",
+      "yours": 2114
+     },
+     {
+      "id": "skill-development-and-entrepreneurship",
+      "yours": 2114
+     },
+     {
+      "id": "mines",
+      "yours": 1996
+     },
+     {
+      "id": "civil-aviation",
+      "yours": 1955
+     },
+     {
+      "id": "ayush",
+      "yours": 1894
+     },
+     {
+      "id": "statistics-and-programme-implementation",
+      "yours": 1750
+     },
+     {
+      "id": "personnel-public-grievances-and-pensions",
+      "yours": 1699
+     },
+     {
+      "id": "earth-sciences",
+      "yours": 1698
+     },
+     {
+      "id": "food-processing-industries",
+      "yours": 1604
+     },
+     {
+      "id": "ports-shipping-and-waterways",
+      "yours": 1581
+     },
+     {
+      "id": "president-parliament-and-upsc",
+      "yours": 1160
+     },
+     {
+      "id": "development-of-north-eastern-region",
+      "yours": 1154
+     },
+     {
+      "id": "panchayati-raj",
+      "yours": 695
+     },
+     {
+      "id": "tourism",
+      "yours": 568
+     },
+     {
+      "id": "cooperation",
+      "yours": 488
+     },
+     {
+      "id": "corporate-affairs",
+      "yours": 414
+     },
+     {
+      "id": "planning",
+      "yours": 204
+     },
+     {
+      "id": "coal",
+      "yours": 126
+     },
+     {
+      "id": "minority-affairs",
+      "yours": 109
+     },
+     {
+      "id": "parliamentary-affairs",
+      "yours": 42
+     },
+     {
+      "id": "steel",
+      "yours": 37
+     }
+    ]
+   },
+   "states": [
+    {
+     "id": "uttar-pradesh",
+     "yours": 241345
+    },
+    {
+     "id": "bihar",
+     "yours": 135317
+    },
+    {
+     "id": "madhya-pradesh",
+     "yours": 105611
+    },
+    {
+     "id": "west-bengal",
+     "yours": 101212
+    },
+    {
+     "id": "maharashtra",
+     "yours": 84987
+    },
+    {
+     "id": "rajasthan",
+     "yours": 81072
+    },
+    {
+     "id": "odisha",
+     "yours": 60918
+    },
+    {
+     "id": "tamil-nadu",
+     "yours": 54877
+    },
+    {
+     "id": "andhra-pradesh",
+     "yours": 54447
+    },
+    {
+     "id": "karnataka",
+     "yours": 49065
+    },
+    {
+     "id": "gujarat",
+     "yours": 46792
+    },
+    {
+     "id": "chhattisgarh",
+     "yours": 45837
+    },
+    {
+     "id": "jharkhand",
+     "yours": 44491
+    },
+    {
+     "id": "assam",
+     "yours": 42083
+    },
+    {
+     "id": "telangana",
+     "yours": 28280
+    },
+    {
+     "id": "kerala",
+     "yours": 25898
+    },
+    {
+     "id": "punjab",
+     "yours": 24311
+    },
+    {
+     "id": "arunachal-pradesh",
+     "yours": 23638
+    },
+    {
+     "id": "uttarakhand",
+     "yours": 15041
+    },
+    {
+     "id": "haryana",
+     "yours": 14705
+    },
+    {
+     "id": "himachal-pradesh",
+     "yours": 11167
+    },
+    {
+     "id": "meghalaya",
+     "yours": 10319
+    },
+    {
+     "id": "manipur",
+     "yours": 9633
+    },
+    {
+     "id": "tripura",
+     "yours": 9525
+    },
+    {
+     "id": "nagaland",
+     "yours": 7655
+    },
+    {
+     "id": "mizoram",
+     "yours": 6727
+    },
+    {
+     "id": "sikkim",
+     "yours": 5220
+    },
+    {
+     "id": "goa",
+     "yours": 5193
+    }
+   ],
+   "cess": [
+    {
+     "id": "prarambhik-shiksha-kosh",
+     "yours": 110922
+    },
+    {
+     "id": "madhyamik-uchchatar-shiksha-kosh",
+     "yours": 40087
+    },
+    {
+     "id": "pradhan-mantri-swasthya-suraksha-nidhi",
+     "yours": 28810
+    }
+   ]
+  },
+  {
+   "period": "2024-25",
+   "paid": 120000,
+   "surcharge": 0.0,
+   "toStates": 47308,
+   "toCess": 4615,
+   "toUnion": 68077,
+   "lenses": {
+    "purpose": [
+     {
+      "id": "interest-and-debt-service",
+      "yours": 16322
+     },
+     {
+      "id": "defence-and-security",
+      "yours": 11534
+     },
+     {
+      "id": "transport-housing-and-infrastructure",
+      "yours": 11101
+     },
+     {
+      "id": "agriculture-and-rural-development",
+      "yours": 7254
+     },
+     {
+      "id": "health-and-social-protection",
+      "yours": 6578
+     },
+     {
+      "id": "states-territories-and-transfers",
+      "yours": 5467
+     },
+     {
+      "id": "government-and-public-administration",
+      "yours": 4583
+     },
+     {
+      "id": "energy-industry-and-the-economy",
+      "yours": 2827
+     },
+     {
+      "id": "education-skills-and-research",
+      "yours": 2266
+     },
+     {
+      "id": "culture-media-and-sport",
+      "yours": 113
+     },
+     {
+      "id": "environment-and-climate",
+      "yours": 32
+     }
+    ],
+    "administrative": [
+     {
+      "id": "finance",
+      "yours": 25946
+     },
+     {
+      "id": "defence",
+      "yours": 9306
+     },
+     {
+      "id": "road-transport-and-highways",
+      "yours": 4381
+     },
+     {
+      "id": "railways",
+      "yours": 3735
+     },
+     {
+      "id": "home-affairs",
+      "yours": 3286
+     },
+     {
+      "id": "consumer-affairs-food-and-public-distribution",
+      "yours": 3146
+     },
+     {
+      "id": "chemicals-and-fertilisers",
+      "yours": 2707
+     },
+     {
+      "id": "rural-development",
+      "yours": 2623
+     },
+     {
+      "id": "communications",
+      "yours": 2163
+     },
+     {
+      "id": "agriculture-and-farmers-welfare",
+      "yours": 2045
+     },
+     {
+      "id": "education",
+      "yours": 1620
+     },
+     {
+      "id": "health-and-family-welfare",
+      "yours": 1327
+     },
+     {
+      "id": "housing-and-urban-affairs",
+      "yours": 779
+     },
+     {
+      "id": "jal-shakti",
+      "yours": 684
+     },
+     {
+      "id": "external-affairs",
+      "yours": 373
+     },
+     {
+      "id": "atomic-energy",
+      "yours": 367
+     },
+     {
+      "id": "women-and-child-development",
+      "yours": 364
+     },
+     {
+      "id": "power",
+      "yours": 288
+     },
+     {
+      "id": "new-and-renewable-energy",
+      "yours": 273
+     },
+     {
+      "id": "petroleum-and-natural-gas",
+      "yours": 248
+     },
+     {
+      "id": "electronics-and-information-technology",
+      "yours": 200
+     },
+     {
+      "id": "commerce-and-industry",
+      "yours": 195
+     },
+     {
+      "id": "science-and-technology",
+      "yours": 193
+     },
+     {
+      "id": "labour-and-employment",
+      "yours": 167
+     },
+     {
+      "id": "space",
+      "yours": 160
+     },
+     {
+      "id": "tribal-affairs",
+      "yours": 148
+     },
+     {
+      "id": "social-justice-and-empowerment",
+      "yours": 148
+     },
+     {
+      "id": "steel",
+      "yours": 125
+     },
+     {
+      "id": "micro-small-and-medium-enterprises",
+      "yours": 120
+     },
+     {
+      "id": "law-and-justice",
+      "yours": 118
+     },
+     {
+      "id": "information-and-broadcasting",
+      "yours": 63
+     },
+     {
+      "id": "statistics-and-programme-implementation",
+      "yours": 59
+     },
+     {
+      "id": "fisheries-animal-husbandry-and-dairying",
+      "yours": 58
+     },
+     {
+      "id": "earth-sciences",
+      "yours": 49
+     },
+     {
+      "id": "development-of-north-eastern-region",
+      "yours": 49
+     },
+     {
+      "id": "ayush",
+      "yours": 48
+     },
+     {
+      "id": "culture",
+      "yours": 48
+     },
+     {
+      "id": "mines",
+      "yours": 45
+     },
+     {
+      "id": "textiles",
+      "yours": 43
+     },
+     {
+      "id": "ports-shipping-and-waterways",
+      "yours": 42
+     },
+     {
+      "id": "skill-development-and-entrepreneurship",
+      "yours": 41
+     },
+     {
+      "id": "youth-affairs-and-sports",
+      "yours": 40
+     },
+     {
+      "id": "heavy-industries",
+      "yours": 39
+     },
+     {
+      "id": "civil-aviation",
+      "yours": 38
+     },
+     {
+      "id": "personnel-public-grievances-and-pensions",
+      "yours": 37
+     },
+     {
+      "id": "food-processing-industries",
+      "yours": 34
+     },
+     {
+      "id": "environment-forests-and-climate-change",
+      "yours": 33
+     },
+     {
+      "id": "president-parliament-and-upsc",
+      "yours": 24
+     },
+     {
+      "id": "panchayati-raj",
+      "yours": 12
+     },
+     {
+      "id": "cooperation",
+      "yours": 11
+     },
+     {
+      "id": "minority-affairs",
+      "yours": 10
+     },
+     {
+      "id": "corporate-affairs",
+      "yours": 10
+     },
+     {
+      "id": "planning",
+      "yours": 4
+     },
+     {
+      "id": "tourism",
+      "yours": 2
+     },
+     {
+      "id": "coal",
+      "yours": 2
+     },
+     {
+      "id": "parliamentary-affairs",
+      "yours": 1
+     }
+    ]
+   },
+   "states": [
+    {
+     "id": "uttar-pradesh",
+     "yours": 8487
+    },
+    {
+     "id": "bihar",
+     "yours": 4758
+    },
+    {
+     "id": "madhya-pradesh",
+     "yours": 3714
+    },
+    {
+     "id": "west-bengal",
+     "yours": 3559
+    },
+    {
+     "id": "maharashtra",
+     "yours": 2988
+    },
+    {
+     "id": "rajasthan",
+     "yours": 2851
+    },
+    {
+     "id": "odisha",
+     "yours": 2142
+    },
+    {
+     "id": "tamil-nadu",
+     "yours": 1930
+    },
+    {
+     "id": "andhra-pradesh",
+     "yours": 1914
+    },
+    {
+     "id": "karnataka",
+     "yours": 1725
+    },
+    {
+     "id": "gujarat",
+     "yours": 1645
+    },
+    {
+     "id": "chhattisgarh",
+     "yours": 1612
+    },
+    {
+     "id": "jharkhand",
+     "yours": 1564
+    },
+    {
+     "id": "assam",
+     "yours": 1480
+    },
+    {
+     "id": "telangana",
+     "yours": 994
+    },
+    {
+     "id": "kerala",
+     "yours": 911
+    },
+    {
+     "id": "punjab",
+     "yours": 855
+    },
+    {
+     "id": "arunachal-pradesh",
+     "yours": 831
+    },
+    {
+     "id": "uttarakhand",
+     "yours": 529
+    },
+    {
+     "id": "haryana",
+     "yours": 517
+    },
+    {
+     "id": "himachal-pradesh",
+     "yours": 393
+    },
+    {
+     "id": "meghalaya",
+     "yours": 363
+    },
+    {
+     "id": "manipur",
+     "yours": 339
+    },
+    {
+     "id": "tripura",
+     "yours": 335
+    },
+    {
+     "id": "nagaland",
+     "yours": 269
+    },
+    {
+     "id": "mizoram",
+     "yours": 236
+    },
+    {
+     "id": "sikkim",
+     "yours": 184
+    },
+    {
+     "id": "goa",
+     "yours": 183
+    }
+   ],
+   "cess": [
+    {
+     "id": "prarambhik-shiksha-kosh",
+     "yours": 2223
+    },
+    {
+     "id": "madhyamik-uchchatar-shiksha-kosh",
+     "yours": 1631
+    },
+    {
+     "id": "pradhan-mantri-swasthya-suraksha-nidhi",
+     "yours": 761
+    }
+   ]
+  },
+  {
+   "period": "2024-25",
+   "paid": 25000,
+   "surcharge": 0.1,
+   "toStates": 8960,
+   "toCess": 962,
+   "toUnion": 15078,
+   "lenses": {
+    "purpose": [
+     {
+      "id": "interest-and-debt-service",
+      "yours": 3615
+     },
+     {
+      "id": "defence-and-security",
+      "yours": 2555
+     },
+     {
+      "id": "transport-housing-and-infrastructure",
+      "yours": 2459
+     },
+     {
+      "id": "agriculture-and-rural-development",
+      "yours": 1606
+     },
+     {
+      "id": "health-and-social-protection",
+      "yours": 1457
+     },
+     {
+      "id": "states-territories-and-transfers",
+      "yours": 1211
+     },
+     {
+      "id": "government-and-public-administration",
+      "yours": 1015
+     },
+     {
+      "id": "energy-industry-and-the-economy",
+      "yours": 626
+     },
+     {
+      "id": "education-skills-and-research",
+      "yours": 502
+     },
+     {
+      "id": "culture-media-and-sport",
+      "yours": 25
+     },
+     {
+      "id": "environment-and-climate",
+      "yours": 7
+     }
+    ],
+    "administrative": [
+     {
+      "id": "finance",
+      "yours": 5747
+     },
+     {
+      "id": "defence",
+      "yours": 2061
+     },
+     {
+      "id": "road-transport-and-highways",
+      "yours": 970
+     },
+     {
+      "id": "railways",
+      "yours": 827
+     },
+     {
+      "id": "home-affairs",
+      "yours": 728
+     },
+     {
+      "id": "consumer-affairs-food-and-public-distribution",
+      "yours": 697
+     },
+     {
+      "id": "chemicals-and-fertilisers",
+      "yours": 599
+     },
+     {
+      "id": "rural-development",
+      "yours": 581
+     },
+     {
+      "id": "communications",
+      "yours": 479
+     },
+     {
+      "id": "agriculture-and-farmers-welfare",
+      "yours": 453
+     },
+     {
+      "id": "education",
+      "yours": 359
+     },
+     {
+      "id": "health-and-family-welfare",
+      "yours": 294
+     },
+     {
+      "id": "housing-and-urban-affairs",
+      "yours": 173
+     },
+     {
+      "id": "jal-shakti",
+      "yours": 151
+     },
+     {
+      "id": "external-affairs",
+      "yours": 83
+     },
+     {
+      "id": "atomic-energy",
+      "yours": 81
+     },
+     {
+      "id": "women-and-child-development",
+      "yours": 81
+     },
+     {
+      "id": "power",
+      "yours": 64
+     },
+     {
+      "id": "new-and-renewable-energy",
+      "yours": 60
+     },
+     {
+      "id": "petroleum-and-natural-gas",
+      "yours": 55
+     },
+     {
+      "id": "electronics-and-information-technology",
+      "yours": 44
+     },
+     {
+      "id": "commerce-and-industry",
+      "yours": 43
+     },
+     {
+      "id": "science-and-technology",
+      "yours": 43
+     },
+     {
+      "id": "labour-and-employment",
+      "yours": 37
+     },
+     {
+      "id": "space",
+      "yours": 35
+     },
+     {
+      "id": "tribal-affairs",
+      "yours": 33
+     },
+     {
+      "id": "social-justice-and-empowerment",
+      "yours": 33
+     },
+     {
+      "id": "steel",
+      "yours": 28
+     },
+     {
+      "id": "micro-small-and-medium-enterprises",
+      "yours": 27
+     },
+     {
+      "id": "law-and-justice",
+      "yours": 26
+     },
+     {
+      "id": "information-and-broadcasting",
+      "yours": 14
+     },
+     {
+      "id": "statistics-and-programme-implementation",
+      "yours": 13
+     },
+     {
+      "id": "fisheries-animal-husbandry-and-dairying",
+      "yours": 13
+     },
+     {
+      "id": "earth-sciences",
+      "yours": 11
+     },
+     {
+      "id": "development-of-north-eastern-region",
+      "yours": 11
+     },
+     {
+      "id": "ayush",
+      "yours": 11
+     },
+     {
+      "id": "culture",
+      "yours": 11
+     },
+     {
+      "id": "mines",
+      "yours": 10
+     },
+     {
+      "id": "textiles",
+      "yours": 10
+     },
+     {
+      "id": "ports-shipping-and-waterways",
+      "yours": 9
+     },
+     {
+      "id": "skill-development-and-entrepreneurship",
+      "yours": 9
+     },
+     {
+      "id": "youth-affairs-and-sports",
+      "yours": 9
+     },
+     {
+      "id": "heavy-industries",
+      "yours": 9
+     },
+     {
+      "id": "civil-aviation",
+      "yours": 8
+     },
+     {
+      "id": "personnel-public-grievances-and-pensions",
+      "yours": 8
+     },
+     {
+      "id": "food-processing-industries",
+      "yours": 7
+     },
+     {
+      "id": "environment-forests-and-climate-change",
+      "yours": 7
+     },
+     {
+      "id": "president-parliament-and-upsc",
+      "yours": 5
+     },
+     {
+      "id": "panchayati-raj",
+      "yours": 3
+     },
+     {
+      "id": "cooperation",
+      "yours": 2
+     },
+     {
+      "id": "minority-affairs",
+      "yours": 2
+     },
+     {
+      "id": "corporate-affairs",
+      "yours": 2
+     },
+     {
+      "id": "planning",
+      "yours": 1
+     },
+     {
+      "id": "tourism",
+      "yours": 1
+     },
+     {
+      "id": "coal",
+      "yours": 0
+     },
+     {
+      "id": "parliamentary-affairs",
+      "yours": 0
+     }
+    ]
+   },
+   "states": [
+    {
+     "id": "uttar-pradesh",
+     "yours": 1607
+    },
+    {
+     "id": "bihar",
+     "yours": 901
+    },
+    {
+     "id": "madhya-pradesh",
+     "yours": 703
+    },
+    {
+     "id": "west-bengal",
+     "yours": 674
+    },
+    {
+     "id": "maharashtra",
+     "yours": 566
+    },
+    {
+     "id": "rajasthan",
+     "yours": 540
+    },
+    {
+     "id": "odisha",
+     "yours": 406
+    },
+    {
+     "id": "tamil-nadu",
+     "yours": 366
+    },
+    {
+     "id": "andhra-pradesh",
+     "yours": 363
+    },
+    {
+     "id": "karnataka",
+     "yours": 327
+    },
+    {
+     "id": "gujarat",
+     "yours": 312
+    },
+    {
+     "id": "chhattisgarh",
+     "yours": 305
+    },
+    {
+     "id": "jharkhand",
+     "yours": 296
+    },
+    {
+     "id": "assam",
+     "yours": 280
+    },
+    {
+     "id": "telangana",
+     "yours": 188
+    },
+    {
+     "id": "kerala",
+     "yours": 173
+    },
+    {
+     "id": "punjab",
+     "yours": 162
+    },
+    {
+     "id": "arunachal-pradesh",
+     "yours": 157
+    },
+    {
+     "id": "uttarakhand",
+     "yours": 100
+    },
+    {
+     "id": "haryana",
+     "yours": 98
+    },
+    {
+     "id": "himachal-pradesh",
+     "yours": 74
+    },
+    {
+     "id": "meghalaya",
+     "yours": 69
+    },
+    {
+     "id": "manipur",
+     "yours": 64
+    },
+    {
+     "id": "tripura",
+     "yours": 63
+    },
+    {
+     "id": "nagaland",
+     "yours": 51
+    },
+    {
+     "id": "mizoram",
+     "yours": 45
+    },
+    {
+     "id": "sikkim",
+     "yours": 35
+    },
+    {
+     "id": "goa",
+     "yours": 35
+    }
+   ],
+   "cess": [
+    {
+     "id": "prarambhik-shiksha-kosh",
+     "yours": 463
+    },
+    {
+     "id": "madhyamik-uchchatar-shiksha-kosh",
+     "yours": 340
+    },
+    {
+     "id": "pradhan-mantri-swasthya-suraksha-nidhi",
+     "yours": 159
+    }
+   ]
+  },
+  {
+   "period": "2024-25",
+   "paid": 4675311,
+   "surcharge": 0.37,
+   "toStates": 1345366,
+   "toCess": 179819,
+   "toUnion": 3150126,
+   "lenses": {
+    "purpose": [
+     {
+      "id": "interest-and-debt-service",
+      "yours": 755276
+     },
+     {
+      "id": "defence-and-security",
+      "yours": 533709
+     },
+     {
+      "id": "transport-housing-and-infrastructure",
+      "yours": 513676
+     },
+     {
+      "id": "agriculture-and-rural-development",
+      "yours": 335641
+     },
+     {
+      "id": "health-and-social-protection",
+      "yours": 304386
+     },
+     {
+      "id": "states-territories-and-transfers",
+      "yours": 252967
+     },
+     {
+      "id": "government-and-public-administration",
+      "yours": 212092
+     },
+     {
+      "id": "energy-industry-and-the-economy",
+      "yours": 130812
+     },
+     {
+      "id": "education-skills-and-research",
+      "yours": 104844
+     },
+     {
+      "id": "culture-media-and-sport",
+      "yours": 5220
+     },
+     {
+      "id": "environment-and-climate",
+      "yours": 1503
+     }
+    ],
+    "administrative": [
+     {
+      "id": "finance",
+      "yours": 1200601
+     },
+     {
+      "id": "defence",
+      "yours": 430592
+     },
+     {
+      "id": "road-transport-and-highways",
+      "yours": 202743
+     },
+     {
+      "id": "railways",
+      "yours": 172820
+     },
+     {
+      "id": "home-affairs",
+      "yours": 152051
+     },
+     {
+      "id": "consumer-affairs-food-and-public-distribution",
+      "yours": 145567
+     },
+     {
+      "id": "chemicals-and-fertilisers",
+      "yours": 125245
+     },
+     {
+      "id": "rural-development",
+      "yours": 121396
+     },
+     {
+      "id": "communications",
+      "yours": 100087
+     },
+     {
+      "id": "agriculture-and-farmers-welfare",
+      "yours": 94611
+     },
+     {
+      "id": "education",
+      "yours": 74971
+     },
+     {
+      "id": "health-and-family-welfare",
+      "yours": 61396
+     },
+     {
+      "id": "housing-and-urban-affairs",
+      "yours": 36055
+     },
+     {
+      "id": "jal-shakti",
+      "yours": 31631
+     },
+     {
+      "id": "external-affairs",
+      "yours": 17273
+     },
+     {
+      "id": "atomic-energy",
+      "yours": 16988
+     },
+     {
+      "id": "women-and-child-development",
+      "yours": 16819
+     },
+     {
+      "id": "power",
+      "yours": 13347
+     },
+     {
+      "id": "new-and-renewable-energy",
+      "yours": 12611
+     },
+     {
+      "id": "petroleum-and-natural-gas",
+      "yours": 11484
+     },
+     {
+      "id": "electronics-and-information-technology",
+      "yours": 9249
+     },
+     {
+      "id": "commerce-and-industry",
+      "yours": 9004
+     },
+     {
+      "id": "science-and-technology",
+      "yours": 8935
+     },
+     {
+      "id": "labour-and-employment",
+      "yours": 7724
+     },
+     {
+      "id": "space",
+      "yours": 7413
+     },
+     {
+      "id": "tribal-affairs",
+      "yours": 6860
+     },
+     {
+      "id": "social-justice-and-empowerment",
+      "yours": 6848
+     },
+     {
+      "id": "steel",
+      "yours": 5781
+     },
+     {
+      "id": "micro-small-and-medium-enterprises",
+      "yours": 5573
+     },
+     {
+      "id": "law-and-justice",
+      "yours": 5468
+     },
+     {
+      "id": "information-and-broadcasting",
+      "yours": 2912
+     },
+     {
+      "id": "statistics-and-programme-implementation",
+      "yours": 2721
+     },
+     {
+      "id": "fisheries-animal-husbandry-and-dairying",
+      "yours": 2699
+     },
+     {
+      "id": "earth-sciences",
+      "yours": 2282
+     },
+     {
+      "id": "development-of-north-eastern-region",
+      "yours": 2282
+     },
+     {
+      "id": "ayush",
+      "yours": 2242
+     },
+     {
+      "id": "culture",
+      "yours": 2197
+     },
+     {
+      "id": "mines",
+      "yours": 2096
+     },
+     {
+      "id": "textiles",
+      "yours": 1989
+     },
+     {
+      "id": "ports-shipping-and-waterways",
+      "yours": 1921
+     },
+     {
+      "id": "skill-development-and-entrepreneurship",
+      "yours": 1879
+     },
+     {
+      "id": "youth-affairs-and-sports",
+      "yours": 1835
+     },
+     {
+      "id": "heavy-industries",
+      "yours": 1793
+     },
+     {
+      "id": "civil-aviation",
+      "yours": 1761
+     },
+     {
+      "id": "personnel-public-grievances-and-pensions",
+      "yours": 1726
+     },
+     {
+      "id": "food-processing-industries",
+      "yours": 1560
+     },
+     {
+      "id": "environment-forests-and-climate-change",
+      "yours": 1503
+     },
+     {
+      "id": "president-parliament-and-upsc",
+      "yours": 1131
+     },
+     {
+      "id": "panchayati-raj",
+      "yours": 576
+     },
+     {
+      "id": "cooperation",
+      "yours": 498
+     },
+     {
+      "id": "minority-affairs",
+      "yours": 484
+     },
+     {
+      "id": "corporate-affairs",
+      "yours": 460
+     },
+     {
+      "id": "planning",
+      "yours": 190
+     },
+     {
+      "id": "tourism",
+      "yours": 111
+     },
+     {
+      "id": "coal",
+      "yours": 92
+     },
+     {
+      "id": "parliamentary-affairs",
+      "yours": 43
+     }
+    ]
+   },
+   "states": [
+    {
+     "id": "uttar-pradesh",
+     "yours": 241345
+    },
+    {
+     "id": "bihar",
+     "yours": 135317
+    },
+    {
+     "id": "madhya-pradesh",
+     "yours": 105611
+    },
+    {
+     "id": "west-bengal",
+     "yours": 101212
+    },
+    {
+     "id": "maharashtra",
+     "yours": 84987
+    },
+    {
+     "id": "rajasthan",
+     "yours": 81072
+    },
+    {
+     "id": "odisha",
+     "yours": 60918
+    },
+    {
+     "id": "tamil-nadu",
+     "yours": 54877
+    },
+    {
+     "id": "andhra-pradesh",
+     "yours": 54447
+    },
+    {
+     "id": "karnataka",
+     "yours": 49065
+    },
+    {
+     "id": "gujarat",
+     "yours": 46792
+    },
+    {
+     "id": "chhattisgarh",
+     "yours": 45837
+    },
+    {
+     "id": "jharkhand",
+     "yours": 44491
+    },
+    {
+     "id": "assam",
+     "yours": 42083
+    },
+    {
+     "id": "telangana",
+     "yours": 28280
+    },
+    {
+     "id": "kerala",
+     "yours": 25898
+    },
+    {
+     "id": "punjab",
+     "yours": 24311
+    },
+    {
+     "id": "arunachal-pradesh",
+     "yours": 23638
+    },
+    {
+     "id": "uttarakhand",
+     "yours": 15041
+    },
+    {
+     "id": "haryana",
+     "yours": 14705
+    },
+    {
+     "id": "himachal-pradesh",
+     "yours": 11167
+    },
+    {
+     "id": "meghalaya",
+     "yours": 10319
+    },
+    {
+     "id": "manipur",
+     "yours": 9633
+    },
+    {
+     "id": "tripura",
+     "yours": 9525
+    },
+    {
+     "id": "nagaland",
+     "yours": 7655
+    },
+    {
+     "id": "mizoram",
+     "yours": 6727
+    },
+    {
+     "id": "sikkim",
+     "yours": 5220
+    },
+    {
+     "id": "goa",
+     "yours": 5193
+    }
+   ],
+   "cess": [
+    {
+     "id": "prarambhik-shiksha-kosh",
+     "yours": 86611
+    },
+    {
+     "id": "madhyamik-uchchatar-shiksha-kosh",
+     "yours": 63546
+    },
+    {
+     "id": "pradhan-mantri-swasthya-suraksha-nidhi",
+     "yours": 29662
+    }
+   ]
+  },
+  {
+   "period": "2025-26",
+   "paid": 120000,
+   "surcharge": 0.0,
+   "toStates": 47308,
+   "toCess": 4615,
+   "toUnion": 68077,
+   "lenses": {
+    "purpose": [
+     {
+      "id": "interest-and-debt-service",
+      "yours": 17473
+     },
+     {
+      "id": "defence-and-security",
+      "yours": 12372
+     },
+     {
+      "id": "transport-housing-and-infrastructure",
+      "yours": 9323
+     },
+     {
+      "id": "agriculture-and-rural-development",
+      "yours": 6945
+     },
+     {
+      "id": "health-and-social-protection",
+      "yours": 6629
+     },
+     {
+      "id": "states-territories-and-transfers",
+      "yours": 5919
+     },
+     {
+      "id": "energy-industry-and-the-economy",
+      "yours": 4190
+     },
+     {
+      "id": "government-and-public-administration",
+      "yours": 2594
+     },
+     {
+      "id": "education-skills-and-research",
+      "yours": 2434
+     },
+     {
+      "id": "culture-media-and-sport",
+      "yours": 150
+     },
+     {
+      "id": "environment-and-climate",
+      "yours": 48
+     }
+    ],
+    "administrative": [
+     {
+      "id": "finance",
+      "yours": 26585
+     },
+     {
+      "id": "defence",
+      "yours": 10044
+     },
+     {
+      "id": "road-transport-and-highways",
+      "yours": 3937
+     },
+     {
+      "id": "railways",
+      "yours": 3503
+     },
+     {
+      "id": "home-affairs",
+      "yours": 3311
+     },
+     {
+      "id": "consumer-affairs-food-and-public-distribution",
+      "yours": 3269
+     },
+     {
+      "id": "chemicals-and-fertilisers",
+      "yours": 2622
+     },
+     {
+      "id": "rural-development",
+      "yours": 2588
+     },
+     {
+      "id": "agriculture-and-farmers-welfare",
+      "yours": 1829
+     },
+     {
+      "id": "education",
+      "yours": 1672
+     },
+     {
+      "id": "health-and-family-welfare",
+      "yours": 1328
+     },
+     {
+      "id": "communications",
+      "yours": 1094
+     },
+     {
+      "id": "housing-and-urban-affairs",
+      "yours": 784
+     },
+     {
+      "id": "jal-shakti",
+      "yours": 568
+     },
+     {
+      "id": "petroleum-and-natural-gas",
+      "yours": 409
+     },
+     {
+      "id": "new-and-renewable-energy",
+      "yours": 347
+     },
+     {
+      "id": "atomic-energy",
+      "yours": 335
+     },
+     {
+      "id": "women-and-child-development",
+      "yours": 334
+     },
+     {
+      "id": "external-affairs",
+      "yours": 298
+     },
+     {
+      "id": "power",
+      "yours": 296
+     },
+     {
+      "id": "science-and-technology",
+      "yours": 291
+     },
+     {
+      "id": "electronics-and-information-technology",
+      "yours": 277
+     },
+     {
+      "id": "commerce-and-industry",
+      "yours": 209
+     },
+     {
+      "id": "social-justice-and-empowerment",
+      "yours": 174
+     },
+     {
+      "id": "labour-and-employment",
+      "yours": 174
+     },
+     {
+      "id": "space",
+      "yours": 171
+     },
+     {
+      "id": "micro-small-and-medium-enterprises",
+      "yours": 166
+     },
+     {
+      "id": "tribal-affairs",
+      "yours": 148
+     },
+     {
+      "id": "corporate-affairs",
+      "yours": 122
+     },
+     {
+      "id": "fisheries-animal-husbandry-and-dairying",
+      "yours": 97
+     },
+     {
+      "id": "law-and-justice",
+      "yours": 85
+     },
+     {
+      "id": "information-and-broadcasting",
+      "yours": 84
+     },
+     {
+      "id": "textiles",
+      "yours": 79
+     },
+     {
+      "id": "statistics-and-programme-implementation",
+      "yours": 76
+     },
+     {
+      "id": "heavy-industries",
+      "yours": 73
+     },
+     {
+      "id": "development-of-north-eastern-region",
+      "yours": 61
+     },
+     {
+      "id": "ayush",
+      "yours": 50
+     },
+     {
+      "id": "food-processing-industries",
+      "yours": 49
+     },
+     {
+      "id": "culture",
+      "yours": 49
+     },
+     {
+      "id": "environment-forests-and-climate-change",
+      "yours": 48
+     },
+     {
+      "id": "earth-sciences",
+      "yours": 46
+     },
+     {
+      "id": "youth-affairs-and-sports",
+      "yours": 46
+     },
+     {
+      "id": "steel",
+      "yours": 45
+     },
+     {
+      "id": "mines",
+      "yours": 43
+     },
+     {
+      "id": "ports-shipping-and-waterways",
+      "yours": 40
+     },
+     {
+      "id": "skill-development-and-entrepreneurship",
+      "yours": 37
+     },
+     {
+      "id": "personnel-public-grievances-and-pensions",
+      "yours": 35
+     },
+     {
+      "id": "minority-affairs",
+      "yours": 30
+     },
+     {
+      "id": "civil-aviation",
+      "yours": 28
+     },
+     {
+      "id": "president-parliament-and-upsc",
+      "yours": 27
+     },
+     {
+      "id": "tourism",
+      "yours": 18
+     },
+     {
+      "id": "cooperation",
+      "yours": 13
+     },
+     {
+      "id": "panchayati-raj",
+      "yours": 13
+     },
+     {
+      "id": "planning",
+      "yours": 12
+     },
+     {
+      "id": "coal",
+      "yours": 7
+     },
+     {
+      "id": "parliamentary-affairs",
+      "yours": 1
+     }
+    ]
+   },
+   "states": [
+    {
+     "id": "uttar-pradesh",
+     "yours": 8487
+    },
+    {
+     "id": "bihar",
+     "yours": 4758
+    },
+    {
+     "id": "madhya-pradesh",
+     "yours": 3714
+    },
+    {
+     "id": "west-bengal",
+     "yours": 3559
+    },
+    {
+     "id": "maharashtra",
+     "yours": 2988
+    },
+    {
+     "id": "rajasthan",
+     "yours": 2851
+    },
+    {
+     "id": "odisha",
+     "yours": 2142
+    },
+    {
+     "id": "tamil-nadu",
+     "yours": 1930
+    },
+    {
+     "id": "andhra-pradesh",
+     "yours": 1914
+    },
+    {
+     "id": "karnataka",
+     "yours": 1725
+    },
+    {
+     "id": "gujarat",
+     "yours": 1645
+    },
+    {
+     "id": "chhattisgarh",
+     "yours": 1612
+    },
+    {
+     "id": "jharkhand",
+     "yours": 1564
+    },
+    {
+     "id": "assam",
+     "yours": 1480
+    },
+    {
+     "id": "telangana",
+     "yours": 994
+    },
+    {
+     "id": "kerala",
+     "yours": 911
+    },
+    {
+     "id": "punjab",
+     "yours": 855
+    },
+    {
+     "id": "arunachal-pradesh",
+     "yours": 831
+    },
+    {
+     "id": "uttarakhand",
+     "yours": 529
+    },
+    {
+     "id": "haryana",
+     "yours": 517
+    },
+    {
+     "id": "himachal-pradesh",
+     "yours": 393
+    },
+    {
+     "id": "meghalaya",
+     "yours": 363
+    },
+    {
+     "id": "manipur",
+     "yours": 339
+    },
+    {
+     "id": "tripura",
+     "yours": 335
+    },
+    {
+     "id": "nagaland",
+     "yours": 269
+    },
+    {
+     "id": "mizoram",
+     "yours": 236
+    },
+    {
+     "id": "sikkim",
+     "yours": 184
+    },
+    {
+     "id": "goa",
+     "yours": 183
+    }
+   ],
+   "cess": [
+    {
+     "id": "prarambhik-shiksha-kosh",
+     "yours": 2071
+    },
+    {
+     "id": "madhyamik-uchchatar-shiksha-kosh",
+     "yours": 1333
+    },
+    {
+     "id": "pradhan-mantri-swasthya-suraksha-nidhi",
+     "yours": 1211
+    }
+   ]
+  },
+  {
+   "period": "2025-26",
+   "paid": 25000,
+   "surcharge": 0.1,
+   "toStates": 8960,
+   "toCess": 962,
+   "toUnion": 15078,
+   "lenses": {
+    "purpose": [
+     {
+      "id": "interest-and-debt-service",
+      "yours": 3870
+     },
+     {
+      "id": "defence-and-security",
+      "yours": 2740
+     },
+     {
+      "id": "transport-housing-and-infrastructure",
+      "yours": 2065
+     },
+     {
+      "id": "agriculture-and-rural-development",
+      "yours": 1538
+     },
+     {
+      "id": "health-and-social-protection",
+      "yours": 1468
+     },
+     {
+      "id": "states-territories-and-transfers",
+      "yours": 1311
+     },
+     {
+      "id": "energy-industry-and-the-economy",
+      "yours": 928
+     },
+     {
+      "id": "government-and-public-administration",
+      "yours": 575
+     },
+     {
+      "id": "education-skills-and-research",
+      "yours": 539
+     },
+     {
+      "id": "culture-media-and-sport",
+      "yours": 33
+     },
+     {
+      "id": "environment-and-climate",
+      "yours": 11
+     }
+    ],
+    "administrative": [
+     {
+      "id": "finance",
+      "yours": 5888
+     },
+     {
+      "id": "defence",
+      "yours": 2225
+     },
+     {
+      "id": "road-transport-and-highways",
+      "yours": 872
+     },
+     {
+      "id": "railways",
+      "yours": 776
+     },
+     {
+      "id": "home-affairs",
+      "yours": 733
+     },
+     {
+      "id": "consumer-affairs-food-and-public-distribution",
+      "yours": 724
+     },
+     {
+      "id": "chemicals-and-fertilisers",
+      "yours": 581
+     },
+     {
+      "id": "rural-development",
+      "yours": 573
+     },
+     {
+      "id": "agriculture-and-farmers-welfare",
+      "yours": 405
+     },
+     {
+      "id": "education",
+      "yours": 370
+     },
+     {
+      "id": "health-and-family-welfare",
+      "yours": 294
+     },
+     {
+      "id": "communications",
+      "yours": 242
+     },
+     {
+      "id": "housing-and-urban-affairs",
+      "yours": 174
+     },
+     {
+      "id": "jal-shakti",
+      "yours": 126
+     },
+     {
+      "id": "petroleum-and-natural-gas",
+      "yours": 90
+     },
+     {
+      "id": "new-and-renewable-energy",
+      "yours": 77
+     },
+     {
+      "id": "atomic-energy",
+      "yours": 74
+     },
+     {
+      "id": "women-and-child-development",
+      "yours": 74
+     },
+     {
+      "id": "external-affairs",
+      "yours": 66
+     },
+     {
+      "id": "power",
+      "yours": 66
+     },
+     {
+      "id": "science-and-technology",
+      "yours": 64
+     },
+     {
+      "id": "electronics-and-information-technology",
+      "yours": 61
+     },
+     {
+      "id": "commerce-and-industry",
+      "yours": 46
+     },
+     {
+      "id": "social-justice-and-empowerment",
+      "yours": 39
+     },
+     {
+      "id": "labour-and-employment",
+      "yours": 38
+     },
+     {
+      "id": "space",
+      "yours": 38
+     },
+     {
+      "id": "micro-small-and-medium-enterprises",
+      "yours": 37
+     },
+     {
+      "id": "tribal-affairs",
+      "yours": 33
+     },
+     {
+      "id": "corporate-affairs",
+      "yours": 27
+     },
+     {
+      "id": "fisheries-animal-husbandry-and-dairying",
+      "yours": 21
+     },
+     {
+      "id": "law-and-justice",
+      "yours": 19
+     },
+     {
+      "id": "information-and-broadcasting",
+      "yours": 19
+     },
+     {
+      "id": "textiles",
+      "yours": 17
+     },
+     {
+      "id": "statistics-and-programme-implementation",
+      "yours": 17
+     },
+     {
+      "id": "heavy-industries",
+      "yours": 16
+     },
+     {
+      "id": "development-of-north-eastern-region",
+      "yours": 14
+     },
+     {
+      "id": "ayush",
+      "yours": 11
+     },
+     {
+      "id": "food-processing-industries",
+      "yours": 11
+     },
+     {
+      "id": "culture",
+      "yours": 11
+     },
+     {
+      "id": "environment-forests-and-climate-change",
+      "yours": 11
+     },
+     {
+      "id": "earth-sciences",
+      "yours": 10
+     },
+     {
+      "id": "youth-affairs-and-sports",
+      "yours": 10
+     },
+     {
+      "id": "steel",
+      "yours": 10
+     },
+     {
+      "id": "mines",
+      "yours": 10
+     },
+     {
+      "id": "ports-shipping-and-waterways",
+      "yours": 9
+     },
+     {
+      "id": "skill-development-and-entrepreneurship",
+      "yours": 8
+     },
+     {
+      "id": "personnel-public-grievances-and-pensions",
+      "yours": 8
+     },
+     {
+      "id": "minority-affairs",
+      "yours": 7
+     },
+     {
+      "id": "civil-aviation",
+      "yours": 6
+     },
+     {
+      "id": "president-parliament-and-upsc",
+      "yours": 6
+     },
+     {
+      "id": "tourism",
+      "yours": 4
+     },
+     {
+      "id": "cooperation",
+      "yours": 3
+     },
+     {
+      "id": "panchayati-raj",
+      "yours": 3
+     },
+     {
+      "id": "planning",
+      "yours": 3
+     },
+     {
+      "id": "coal",
+      "yours": 1
+     },
+     {
+      "id": "parliamentary-affairs",
+      "yours": 0
+     }
+    ]
+   },
+   "states": [
+    {
+     "id": "uttar-pradesh",
+     "yours": 1607
+    },
+    {
+     "id": "bihar",
+     "yours": 901
+    },
+    {
+     "id": "madhya-pradesh",
+     "yours": 703
+    },
+    {
+     "id": "west-bengal",
+     "yours": 674
+    },
+    {
+     "id": "maharashtra",
+     "yours": 566
+    },
+    {
+     "id": "rajasthan",
+     "yours": 540
+    },
+    {
+     "id": "odisha",
+     "yours": 406
+    },
+    {
+     "id": "tamil-nadu",
+     "yours": 366
+    },
+    {
+     "id": "andhra-pradesh",
+     "yours": 363
+    },
+    {
+     "id": "karnataka",
+     "yours": 327
+    },
+    {
+     "id": "gujarat",
+     "yours": 312
+    },
+    {
+     "id": "chhattisgarh",
+     "yours": 305
+    },
+    {
+     "id": "jharkhand",
+     "yours": 296
+    },
+    {
+     "id": "assam",
+     "yours": 280
+    },
+    {
+     "id": "telangana",
+     "yours": 188
+    },
+    {
+     "id": "kerala",
+     "yours": 173
+    },
+    {
+     "id": "punjab",
+     "yours": 162
+    },
+    {
+     "id": "arunachal-pradesh",
+     "yours": 157
+    },
+    {
+     "id": "uttarakhand",
+     "yours": 100
+    },
+    {
+     "id": "haryana",
+     "yours": 98
+    },
+    {
+     "id": "himachal-pradesh",
+     "yours": 74
+    },
+    {
+     "id": "meghalaya",
+     "yours": 69
+    },
+    {
+     "id": "manipur",
+     "yours": 64
+    },
+    {
+     "id": "tripura",
+     "yours": 63
+    },
+    {
+     "id": "nagaland",
+     "yours": 51
+    },
+    {
+     "id": "mizoram",
+     "yours": 45
+    },
+    {
+     "id": "sikkim",
+     "yours": 35
+    },
+    {
+     "id": "goa",
+     "yours": 35
+    }
+   ],
+   "cess": [
+    {
+     "id": "prarambhik-shiksha-kosh",
+     "yours": 432
+    },
+    {
+     "id": "madhyamik-uchchatar-shiksha-kosh",
+     "yours": 278
+    },
+    {
+     "id": "pradhan-mantri-swasthya-suraksha-nidhi",
+     "yours": 252
+    }
+   ]
+  },
+  {
+   "period": "2025-26",
+   "paid": 4675311,
+   "surcharge": 0.37,
+   "toStates": 1345366,
+   "toCess": 179819,
+   "toUnion": 3150126,
+   "lenses": {
+    "purpose": [
+     {
+      "id": "interest-and-debt-service",
+      "yours": 808551
+     },
+     {
+      "id": "defence-and-security",
+      "yours": 572482
+     },
+     {
+      "id": "transport-housing-and-infrastructure",
+      "yours": 431398
+     },
+     {
+      "id": "agriculture-and-rural-development",
+      "yours": 321361
+     },
+     {
+      "id": "health-and-social-protection",
+      "yours": 306723
+     },
+     {
+      "id": "states-territories-and-transfers",
+      "yours": 273911
+     },
+     {
+      "id": "energy-industry-and-the-economy",
+      "yours": 193898
+     },
+     {
+      "id": "government-and-public-administration",
+      "yours": 120017
+     },
+     {
+      "id": "education-skills-and-research",
+      "yours": 112620
+     },
+     {
+      "id": "culture-media-and-sport",
+      "yours": 6956
+     },
+     {
+      "id": "environment-and-climate",
+      "yours": 2209
+     }
+    ],
+    "administrative": [
+     {
+      "id": "finance",
+      "yours": 1230184
+     },
+     {
+      "id": "defence",
+      "yours": 464769
+     },
+     {
+      "id": "road-transport-and-highways",
+      "yours": 182188
+     },
+     {
+      "id": "railways",
+      "yours": 162090
+     },
+     {
+      "id": "home-affairs",
+      "yours": 153219
+     },
+     {
+      "id": "consumer-affairs-food-and-public-distribution",
+      "yours": 151268
+     },
+     {
+      "id": "chemicals-and-fertilisers",
+      "yours": 121305
+     },
+     {
+      "id": "rural-development",
+      "yours": 119761
+     },
+     {
+      "id": "agriculture-and-farmers-welfare",
+      "yours": 84622
+     },
+     {
+      "id": "education",
+      "yours": 77375
+     },
+     {
+      "id": "health-and-family-welfare",
+      "yours": 61452
+     },
+     {
+      "id": "communications",
+      "yours": 50612
+     },
+     {
+      "id": "housing-and-urban-affairs",
+      "yours": 36295
+     },
+     {
+      "id": "jal-shakti",
+      "yours": 26291
+     },
+     {
+      "id": "petroleum-and-natural-gas",
+      "yours": 18908
+     },
+     {
+      "id": "new-and-renewable-energy",
+      "yours": 16053
+     },
+     {
+      "id": "atomic-energy",
+      "yours": 15489
+     },
+     {
+      "id": "women-and-child-development",
+      "yours": 15465
+     },
+     {
+      "id": "external-affairs",
+      "yours": 13796
+     },
+     {
+      "id": "power",
+      "yours": 13697
+     },
+     {
+      "id": "science-and-technology",
+      "yours": 13442
+     },
+     {
+      "id": "electronics-and-information-technology",
+      "yours": 12838
+     },
+     {
+      "id": "commerce-and-industry",
+      "yours": 9658
+     },
+     {
+      "id": "social-justice-and-empowerment",
+      "yours": 8054
+     },
+     {
+      "id": "labour-and-employment",
+      "yours": 8050
+     },
+     {
+      "id": "space",
+      "yours": 7899
+     },
+     {
+      "id": "micro-small-and-medium-enterprises",
+      "yours": 7675
+     },
+     {
+      "id": "tribal-affairs",
+      "yours": 6868
+     },
+     {
+      "id": "corporate-affairs",
+      "yours": 5659
+     },
+     {
+      "id": "fisheries-animal-husbandry-and-dairying",
+      "yours": 4464
+     },
+     {
+      "id": "law-and-justice",
+      "yours": 3931
+     },
+     {
+      "id": "information-and-broadcasting",
+      "yours": 3872
+     },
+     {
+      "id": "textiles",
+      "yours": 3659
+     },
+     {
+      "id": "statistics-and-programme-implementation",
+      "yours": 3522
+     },
+     {
+      "id": "heavy-industries",
+      "yours": 3359
+     },
+     {
+      "id": "development-of-north-eastern-region",
+      "yours": 2842
+     },
+     {
+      "id": "ayush",
+      "yours": 2330
+     },
+     {
+      "id": "food-processing-industries",
+      "yours": 2266
+     },
+     {
+      "id": "culture",
+      "yours": 2253
+     },
+     {
+      "id": "environment-forests-and-climate-change",
+      "yours": 2209
+     },
+     {
+      "id": "earth-sciences",
+      "yours": 2145
+     },
+     {
+      "id": "youth-affairs-and-sports",
+      "yours": 2123
+     },
+     {
+      "id": "steel",
+      "yours": 2076
+     },
+     {
+      "id": "mines",
+      "yours": 2008
+     },
+     {
+      "id": "ports-shipping-and-waterways",
+      "yours": 1839
+     },
+     {
+      "id": "skill-development-and-entrepreneurship",
+      "yours": 1715
+     },
+     {
+      "id": "personnel-public-grievances-and-pensions",
+      "yours": 1634
+     },
+     {
+      "id": "minority-affairs",
+      "yours": 1371
+     },
+     {
+      "id": "civil-aviation",
+      "yours": 1304
+     },
+     {
+      "id": "president-parliament-and-upsc",
+      "yours": 1263
+     },
+     {
+      "id": "tourism",
+      "yours": 831
+     },
+     {
+      "id": "cooperation",
+      "yours": 623
+     },
+     {
+      "id": "panchayati-raj",
+      "yours": 613
+     },
+     {
+      "id": "planning",
+      "yours": 538
+     },
+     {
+      "id": "coal",
+      "yours": 312
+     },
+     {
+      "id": "parliamentary-affairs",
+      "yours": 42
+     }
+    ]
+   },
+   "states": [
+    {
+     "id": "uttar-pradesh",
+     "yours": 241345
+    },
+    {
+     "id": "bihar",
+     "yours": 135317
+    },
+    {
+     "id": "madhya-pradesh",
+     "yours": 105611
+    },
+    {
+     "id": "west-bengal",
+     "yours": 101212
+    },
+    {
+     "id": "maharashtra",
+     "yours": 84987
+    },
+    {
+     "id": "rajasthan",
+     "yours": 81072
+    },
+    {
+     "id": "odisha",
+     "yours": 60918
+    },
+    {
+     "id": "tamil-nadu",
+     "yours": 54877
+    },
+    {
+     "id": "andhra-pradesh",
+     "yours": 54447
+    },
+    {
+     "id": "karnataka",
+     "yours": 49065
+    },
+    {
+     "id": "gujarat",
+     "yours": 46792
+    },
+    {
+     "id": "chhattisgarh",
+     "yours": 45837
+    },
+    {
+     "id": "jharkhand",
+     "yours": 44491
+    },
+    {
+     "id": "assam",
+     "yours": 42083
+    },
+    {
+     "id": "telangana",
+     "yours": 28280
+    },
+    {
+     "id": "kerala",
+     "yours": 25898
+    },
+    {
+     "id": "punjab",
+     "yours": 24311
+    },
+    {
+     "id": "arunachal-pradesh",
+     "yours": 23638
+    },
+    {
+     "id": "uttarakhand",
+     "yours": 15041
+    },
+    {
+     "id": "haryana",
+     "yours": 14705
+    },
+    {
+     "id": "himachal-pradesh",
+     "yours": 11167
+    },
+    {
+     "id": "meghalaya",
+     "yours": 10319
+    },
+    {
+     "id": "manipur",
+     "yours": 9633
+    },
+    {
+     "id": "tripura",
+     "yours": 9525
+    },
+    {
+     "id": "nagaland",
+     "yours": 7655
+    },
+    {
+     "id": "mizoram",
+     "yours": 6727
+    },
+    {
+     "id": "sikkim",
+     "yours": 5220
+    },
+    {
+     "id": "goa",
+     "yours": 5193
+    }
+   ],
+   "cess": [
+    {
+     "id": "prarambhik-shiksha-kosh",
+     "yours": 80715
+    },
+    {
+     "id": "madhyamik-uchchatar-shiksha-kosh",
+     "yours": 51936
+    },
+    {
+     "id": "pradhan-mantri-swasthya-suraksha-nidhi",
+     "yours": 47168
+    }
+   ]
+  }
+ ]
+}

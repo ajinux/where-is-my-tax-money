@@ -1,0 +1,66 @@
+---
+// One entity's figure in every year the dataset covers.
+//
+// This table is the reason the reference pages exist at all. The app answers
+// "what did this year look like"; a page answers "what has happened to this line
+// since 2020-21", which is the question a reader arrives from a search engine
+// already asking, and which no single year file can answer.
+
+import { formatCrore } from "../../lib/format";
+import { entities, type Amounts, type AccountSplit } from "../../lib/entities";
+
+export interface Props {
+  amounts: Amounts;
+  /** Revenue/capital columns, where Statement 3 publishes both. */
+  split?: Record<string, AccountSplit>;
+  caption?: string;
+  /** Show each year's figure as a share of that year's total union spending. */
+  shareOfUnion?: boolean;
+}
+
+const { amounts, split = {}, caption, shareOfUnion = false } = Astro.props;
+
+const hasSplit = Object.keys(split).length > 0;
+const rows = entities.years
+  .filter((year) => amounts[year.id] != null)
+  .map((year) => ({
+    year,
+    amount: amounts[year.id]!,
+    split: split[year.id] ?? null,
+    share: year.unionTotal ? (amounts[year.id]! / year.unionTotal) * 100 : null,
+  }));
+---
+
+<div class="scroll-x">
+  <table class="figures">
+    {caption && <caption>{caption}</caption>}
+    <thead>
+      <tr>
+        <th scope="col">Year</th>
+        <th scope="col" class="num">Amount</th>
+        {hasSplit && <th scope="col" class="num">Revenue</th>}
+        {hasSplit && <th scope="col" class="num">Capital</th>}
+        {shareOfUnion && <th scope="col" class="num">Share of union spending</th>}
+        <th scope="col">Basis</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        rows.map(({ year, amount, split: parts, share }) => (
+          <tr>
+            <th scope="row">
+              <a href={`/year/${year.id}/`}>{year.label}</a>
+            </th>
+            <td class="num">{formatCrore(amount)}</td>
+            {hasSplit && <td class="num">{parts?.revenue != null ? formatCrore(parts.revenue) : "–"}</td>}
+            {hasSplit && <td class="num">{parts?.capital != null ? formatCrore(parts.capital) : "–"}</td>}
+            {shareOfUnion && <td class="num">{share != null ? `${share.toFixed(2)}%` : "–"}</td>}
+            <td>
+              <small>{year.status === "actual-final" ? "Actuals" : "Revised estimate"}</small>
+            </td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,115 @@
+name: web
+
+# Triggers on web/** *and* data/dist/**: a merged dataset correction should
+# redeploy the site, not sit there until someone happens to touch the frontend.
+# The build reads the committed artifact, so it needs Node and nothing else —
+# no uv, no Python, no pipeline install.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "web/**"
+      - "data/dist/**"
+      - ".github/workflows/web.yml"
+  pull_request:
+    paths:
+      - "web/**"
+      - "data/dist/**"
+      - ".github/workflows/web.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: web-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - run: npm ci
+
+      # Python only to regenerate the golden fixtures the TS suite checks itself
+      # against. The site build does not need it.
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Regenerate allocation fixtures from the Python
+        run: npm run fixtures
+
+      - name: Fixtures must match what is committed
+        run: |
+          if ! git diff --quiet tests/fixtures.json; then
+            echo "::error::tests/fixtures.json is stale — the Python allocation maths changed."
+            echo "Run 'npm run fixtures' in web/ and commit the result."
+            git diff tests/fixtures.json
+            exit 1
+          fi
+
+      # The suite reads the per-year view models under public/data/, which are
+      # generated from the committed artifact and gitignored. `npm run build`
+      # creates them, but it runs after the tests, so on a fresh checkout they do
+      # not exist yet. A working tree left over from a previous build hides this
+      # locally, which is why it first appeared on the very first CI run.
+      - name: Transform the dataset into the site's view models
+        run: npm run data
+
+      - name: TypeScript allocation matches the Python
+        run: npm test
+
+      - run: npm run build
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: web/dist
+          retention-days: 7
+
+  deploy:
+    # Deploys only from main. A pull request gets the build and the tests, which
+    # is the part that can fail; publishing is not something a PR should do.
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      # contents: read is not inherited. A job-level permissions block replaces
+      # the top-level one outright rather than adding to it, so omitting this
+      # leaves actions/checkout with no read access and it fails with
+      # "repository not found".
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm ci
+        working-directory: web
+      - run: npm run build
+        working-directory: web
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web/dist
+      - id: deployment
+        uses: actions/deploy-pages@v4

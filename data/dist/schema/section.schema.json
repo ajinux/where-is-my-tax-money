@@ -1,0 +1,437 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SectionFile",
+  "description": "One period of one section. Every section in the dataset — expenditure,\ndevolution, receipts, the cess earmark — is this shape.",
+  "$defs": {
+    "Amount": {
+      "properties": {
+        "value": {
+          "anyOf": [
+            {
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            }
+          ],
+          "title": "Value"
+        },
+        "unit": {
+          "enum": [
+            "rupees",
+            "lakh-rupees",
+            "crore-rupees"
+          ],
+          "title": "Unit",
+          "type": "string"
+        }
+      },
+      "required": [
+        "value",
+        "unit"
+      ],
+      "title": "Amount",
+      "type": "object"
+    },
+    "Citation": {
+      "description": "Which document a figure came from, and where inside it.",
+      "properties": {
+        "sourceId": {
+          "title": "Sourceid",
+          "type": "string"
+        },
+        "locator": {
+          "minLength": 1,
+          "title": "Locator",
+          "type": "string"
+        }
+      },
+      "required": [
+        "sourceId",
+        "locator"
+      ],
+      "title": "Citation",
+      "type": "object"
+    },
+    "ClassificationPart": {
+      "description": "One inline part of a classification split — a group id from the\naxis's own vocabulary (`revenue` or `capital`) and its amount, printed as\na column of the same row as the total rather than named in a separate\ndocument. See `Tree.parts`.",
+      "properties": {
+        "group": {
+          "title": "Group",
+          "type": "string"
+        },
+        "amount": {
+          "$ref": "#/$defs/SignedAmount"
+        }
+      },
+      "required": [
+        "group",
+        "amount"
+      ],
+      "title": "ClassificationPart",
+      "type": "object"
+    },
+    "DerivedBy": {
+      "properties": {
+        "method": {
+          "title": "Method",
+          "type": "string"
+        },
+        "using": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Using",
+          "type": "object"
+        }
+      },
+      "required": [
+        "method"
+      ],
+      "title": "DerivedBy",
+      "type": "object"
+    },
+    "Fact": {
+      "description": "A published figure — the only thing in the dataset that carries an\namount. Facts are held in one flat list per section rather than nested\ninside each other, so no amount is ever written twice.",
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "label": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Label"
+        },
+        "amount": {
+          "$ref": "#/$defs/Amount"
+        },
+        "basis": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Basis"
+        },
+        "cite": {
+          "items": {
+            "$ref": "#/$defs/Citation"
+          },
+          "minItems": 1,
+          "title": "Cite",
+          "type": "array"
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        }
+      },
+      "required": [
+        "id",
+        "amount",
+        "cite"
+      ],
+      "title": "Fact",
+      "type": "object"
+    },
+    "SectionRoot": {
+      "description": "The section's own total. `amount` is optional: when a document\npublishes it the trees below are checked against it; when none does, it\nis summed from the trees. `label`/`description` are not here — they are\nperiod-invariant and live once in the section's `section.json`.",
+      "properties": {
+        "amount": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Amount"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "cite": {
+          "items": {
+            "$ref": "#/$defs/Citation"
+          },
+          "title": "Cite",
+          "type": "array"
+        }
+      },
+      "title": "SectionRoot",
+      "type": "object"
+    },
+    "SignedAmount": {
+      "description": "An amount that may be negative, for the one place a source publishes\none. Everywhere else `Amount` applies and money spent cannot be below\nzero.\n\nStatement 3 prints net capital expenditure, and a body whose capital\nreceipts and recoveries exceed its capital outlay in a year nets out\nnegative — the Election Commission's capital column is -5.00 crore in\n2022-23 and -30.05 crore in 2024-25. That is the government's own\npublished figure, and Revenue + Capital still equals the Total exactly in\nboth years, so the sum rule is untouched. Rejecting it would mean\ndropping a split the document plainly states.\n\nThis is deliberately narrow: it is the part of a decomposition that may be\nsigned, never a fact's own amount.",
+      "properties": {
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            }
+          ],
+          "title": "Value"
+        },
+        "unit": {
+          "enum": [
+            "rupees",
+            "lakh-rupees",
+            "crore-rupees"
+          ],
+          "title": "Unit",
+          "type": "string"
+        }
+      },
+      "required": [
+        "value",
+        "unit"
+      ],
+      "title": "SignedAmount",
+      "type": "object"
+    },
+    "Tree": {
+      "description": "How a total is broken up. `of` is what is being decomposed (`@root` or\na fact id); `axis` names the question being answered.\n\nThe parts must sum exactly to what they decompose — that single rule\nreplaces five separately-written ones, and it is where the dataset's\ntrustworthiness comes from: the total and the parts almost always come\nfrom different documents, so their agreement is corroboration between\ntwo independent publications rather than arithmetic performed on\nourselves.\n\nExactly one of three shapes: `children` (listed), `derivedBy` (computed\nat build time from a published rule, never checked in), or `parts`\n(inline, for a classification axis whose parts are columns of the same\nrow as their total — Revenue and Capital in Statement 3 — rather than\nnamed in a second document. Promoting each column to a full fact would\ninvent a permanent id that buys no corroboration, because there is no\nsecond document for a same-row column to agree with). A tree using\n`parts` must carry `cite` itself, since the parts have none of their own.",
+      "properties": {
+        "of": {
+          "anyOf": [
+            {
+              "const": "@root",
+              "type": "string"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "title": "Of"
+        },
+        "axis": {
+          "title": "Axis",
+          "type": "string"
+        },
+        "children": {
+          "anyOf": [
+            {
+              "items": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "$ref": "#/$defs/TreeNode"
+                  }
+                ]
+              },
+              "minItems": 1,
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Children"
+        },
+        "derivedBy": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/DerivedBy"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "parts": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/ClassificationPart"
+              },
+              "minItems": 1,
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Parts"
+        },
+        "cite": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/Citation"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cite"
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        }
+      },
+      "required": [
+        "of",
+        "axis"
+      ],
+      "title": "Tree",
+      "type": "object"
+    },
+    "TreeNode": {
+      "description": "A named group holding more nodes. Carries no amount and never can —\nits subtotal is summed from what is underneath it.",
+      "properties": {
+        "group": {
+          "title": "Group",
+          "type": "string"
+        },
+        "children": {
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "$ref": "#/$defs/TreeNode"
+              }
+            ]
+          },
+          "minItems": 1,
+          "title": "Children",
+          "type": "array"
+        }
+      },
+      "required": [
+        "group",
+        "children"
+      ],
+      "title": "TreeNode",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "section": {
+      "title": "Section",
+      "type": "string"
+    },
+    "period": {
+      "title": "Period",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "actual-final",
+        "actual-provisional",
+        "revised-estimate",
+        "budget-estimate"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "perimeter": {
+      "enum": [
+        "union-spending",
+        "outside-union-spending",
+        "financing",
+        "receipts"
+      ],
+      "title": "Perimeter",
+      "type": "string"
+    },
+    "perimeterOf": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Perimeterof"
+    },
+    "root": {
+      "$ref": "#/$defs/SectionRoot"
+    },
+    "facts": {
+      "items": {
+        "$ref": "#/$defs/Fact"
+      },
+      "title": "Facts",
+      "type": "array"
+    },
+    "trees": {
+      "items": {
+        "$ref": "#/$defs/Tree"
+      },
+      "minItems": 1,
+      "title": "Trees",
+      "type": "array"
+    },
+    "notes": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Notes"
+    }
+  },
+  "required": [
+    "section",
+    "period",
+    "status",
+    "perimeter",
+    "root",
+    "trees"
+  ],
+  "type": "object"
+}

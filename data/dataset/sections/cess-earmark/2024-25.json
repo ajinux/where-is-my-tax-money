@@ -1,0 +1,305 @@
+{
+  "section": "cess-earmark",
+  "period": "2024-25",
+  "status": "revised-estimate",
+  "perimeter": "financing",
+  "perimeterOf": "union-expenditure",
+  "root": {
+    "cite": []
+  },
+  "facts": [
+    {
+      "id": "pm-poshan",
+      "amount": {
+        "value": 10000.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2024-25",
+          "locator": "Statement 15, Prarambhik Shiksha Kosh, RE 2024-25, amount utilised"
+        }
+      ]
+    },
+    {
+      "id": "samagra-shiksha",
+      "amount": {
+        "value": 32000.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2024-25",
+          "locator": "Statement 15, Prarambhik Shiksha Kosh, RE 2024-25, amount utilised"
+        }
+      ]
+    },
+    {
+      "id": "prarambhik-shiksha-kosh",
+      "amount": {
+        "value": 42000.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2024-25",
+          "locator": "Statement 15, Prarambhik Shiksha Kosh, Total, RE 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "samagra-shiksha-secondary",
+      "amount": {
+        "value": 5010.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2024-25",
+          "locator": "Statement 15, Madhyamik and Uchchatar Shiksha Kosh, RE 2024-25, amount utilised"
+        }
+      ]
+    },
+    {
+      "id": "national-means-cum-merit-scholarship",
+      "amount": {
+        "value": 352.6,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2024-25",
+          "locator": "Statement 15, Madhyamik and Uchchatar Shiksha Kosh, RE 2024-25, amount utilised"
+        }
+      ]
+    },
+    {
+      "id": "kendriya-vidyalaya-sangathan",
+      "amount": {
+        "value": 4500.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2024-25",
+          "locator": "Statement 15, Madhyamik and Uchchatar Shiksha Kosh, RE 2024-25, amount utilised"
+        }
+      ]
+    },
+    {
+      "id": "navodaya-vidyalaya-samiti",
+      "amount": {
+        "value": 2800.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2024-25",
+          "locator": "Statement 15, Madhyamik and Uchchatar Shiksha Kosh, RE 2024-25, amount utilised"
+        }
+      ]
+    },
+    {
+      "id": "pm-usp-yojana",
+      "amount": {
+        "value": 1000.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2024-25",
+          "locator": "Statement 15, Madhyamik and Uchchatar Shiksha Kosh, RE 2024-25, amount utilised"
+        }
+      ]
+    },
+    {
+      "id": "university-grants-commission",
+      "amount": {
+        "value": 2034.59,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2024-25",
+          "locator": "Statement 15, Madhyamik and Uchchatar Shiksha Kosh, RE 2024-25, amount utilised"
+        }
+      ]
+    },
+    {
+      "id": "grants-to-central-universities",
+      "amount": {
+        "value": 4500.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2024-25",
+          "locator": "Statement 15, Madhyamik and Uchchatar Shiksha Kosh, RE 2024-25, amount utilised"
+        }
+      ]
+    },
+    {
+      "id": "indian-institutes-of-technology",
+      "amount": {
+        "value": 3000.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2024-25",
+          "locator": "Statement 15, Madhyamik and Uchchatar Shiksha Kosh, RE 2024-25, amount utilised"
+        }
+      ]
+    },
+    {
+      "id": "national-institutes-of-technology",
+      "amount": {
+        "value": 5300.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2024-25",
+          "locator": "Statement 15, Madhyamik and Uchchatar Shiksha Kosh, RE 2024-25, amount utilised"
+        }
+      ]
+    },
+    {
+      "id": "skill-india-programme",
+      "amount": {
+        "value": 2318.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2024-25",
+          "locator": "Statement 15, Madhyamik and Uchchatar Shiksha Kosh, RE 2024-25, amount utilised"
+        }
+      ]
+    },
+    {
+      "id": "madhyamik-uchchatar-shiksha-kosh",
+      "amount": {
+        "value": 30815.19,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2024-25",
+          "locator": "Statement 15, Madhyamik and Uchchatar Shiksha Kosh, Total, RE 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "rch-health-system-strengthening",
+      "amount": {
+        "value": 3235.21,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2024-25",
+          "locator": "Statement 15, Pradhan Mantri Swasthya Suraksha Nidhi, RE 2024-25, amount utilised"
+        }
+      ]
+    },
+    {
+      "id": "health-infrastructure-maintenance",
+      "amount": {
+        "value": 3168.68,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2024-25",
+          "locator": "Statement 15, Pradhan Mantri Swasthya Suraksha Nidhi, RE 2024-25, amount utilised"
+        }
+      ]
+    },
+    {
+      "id": "human-resources-for-health",
+      "amount": {
+        "value": 379.12,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2024-25",
+          "locator": "Statement 15, Pradhan Mantri Swasthya Suraksha Nidhi, RE 2024-25, amount utilised"
+        }
+      ]
+    },
+    {
+      "id": "ayushman-bharat-pmjay",
+      "amount": {
+        "value": 7600.53,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2024-25",
+          "locator": "Statement 15, Pradhan Mantri Swasthya Suraksha Nidhi, RE 2024-25, amount utilised"
+        }
+      ]
+    },
+    {
+      "id": "pradhan-mantri-swasthya-suraksha-nidhi",
+      "amount": {
+        "value": 14383.54,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2024-25",
+          "locator": "Statement 15, Pradhan Mantri Swasthya Suraksha Nidhi, Total, RE 2024-25"
+        }
+      ]
+    }
+  ],
+  "trees": [
+    {
+      "of": "prarambhik-shiksha-kosh",
+      "axis": "destination",
+      "children": [
+        "pm-poshan",
+        "samagra-shiksha"
+      ]
+    },
+    {
+      "of": "madhyamik-uchchatar-shiksha-kosh",
+      "axis": "destination",
+      "children": [
+        "samagra-shiksha-secondary",
+        "national-means-cum-merit-scholarship",
+        "kendriya-vidyalaya-sangathan",
+        "navodaya-vidyalaya-samiti",
+        "pm-usp-yojana",
+        "university-grants-commission",
+        "grants-to-central-universities",
+        "indian-institutes-of-technology",
+        "national-institutes-of-technology",
+        "skill-india-programme"
+      ]
+    },
+    {
+      "of": "pradhan-mantri-swasthya-suraksha-nidhi",
+      "axis": "destination",
+      "children": [
+        "rch-health-system-strengthening",
+        "health-infrastructure-maintenance",
+        "human-resources-for-health",
+        "ayushman-bharat-pmjay"
+      ]
+    },
+    {
+      "of": "@root",
+      "axis": "destination",
+      "children": [
+        "prarambhik-shiksha-kosh",
+        "madhyamik-uchchatar-shiksha-kosh",
+        "pradhan-mantri-swasthya-suraksha-nidhi"
+      ]
+    }
+  ],
+  "notes": "Where the 4% Health and Education Cess went in 2024-25, as far as it is published. Statement 15 carries revised estimates only — the government reports no actuals for cess utilisation in any year — so this is the most recent figure rather than a settled one. Amounts are the 'utilised' column; rows the statement labels 'Additional Transfers' carry a transfer with no utilisation and are folded into the scheme above them."
+}

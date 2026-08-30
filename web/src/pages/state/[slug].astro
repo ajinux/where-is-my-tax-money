@@ -1,0 +1,120 @@
+---
+// /state/<slug>/, what one state received as its share of central taxes.
+//
+// This money sits outside the union spending perimeter entirely: it is deducted
+// from receipts before the union spends anything, which is why it can never be
+// added to the expenditure figures elsewhere on the site. The dataset declares
+// that perimeter rather than leaving it to prose, and this page repeats it
+// because a reader arriving from a search engine has not read the rest.
+
+import Page from "../../layouts/Page.astro";
+import YearTable from "../../components/doc/YearTable.astro";
+import Citations from "../../components/doc/Citations.astro";
+import { entities, amountIn, newestPeriodOf } from "../../lib/entities";
+import { formatCrore } from "../../lib/format";
+
+export function getStaticPaths() {
+  return entities.states.map((state) => ({
+    params: { slug: state.slug },
+    props: { state },
+  }));
+}
+
+const { state } = Astro.props;
+const period = newestPeriodOf(state);
+const year = entities.years.find((y) => y.id === period) ?? entities.years[0];
+const amount = amountIn(state, period);
+const sharePercent = state.sharePercent[period];
+
+const devolutionSection = entities.sections.find((s) => s.id === "tax-devolution");
+
+const title = `${state.label}: share of central taxes, ${year.label}`;
+const description =
+  `${state.label} received ${formatCrore(amount)} as its share of central taxes in ` +
+  `${year.label}` +
+  (sharePercent ? `, ${sharePercent}% of the divisible pool` : "") +
+  `. Figures for every year, with the Finance Commission award they come from.`;
+---
+
+<Page
+  title={title}
+  description={description}
+  path={`/state/${state.slug}/`}
+  ogImageAlt={`${state.label}'s share of India's central taxes.`}
+  crumbs={[
+    { label: "Home", href: "/" },
+    { label: "States' share", href: "/state/" },
+    { label: state.label },
+  ]}
+>
+  <h1>{state.label}</h1>
+  <p class="lede">
+    What {state.label} received as its constitutional share of union tax collections, devolved
+    unconditionally, and deducted before the union government spends anything.
+  </p>
+
+  <div class="card">
+    <p class="figure">{formatCrore(amount)}</p>
+    <p style="margin-top:6px">
+      devolved in <a href={`/year/${year.id}/`}>{year.label}</a>
+      {sharePercent && <>, {sharePercent}% of the divisible pool</>}. <small>{year.tag}.</small>
+    </p>
+  </div>
+
+  <h2>Every year on record</h2>
+  <YearTable amounts={state.amounts} caption={`${state.label}, share of central taxes by year`} />
+
+  {
+    Object.keys(state.sharePercent).length > 0 && (
+      <>
+        <h2>The share it is entitled to</h2>
+        <div class="scroll-x">
+          <table class="figures">
+            <thead>
+              <tr>
+                <th scope="col">Year</th>
+                <th scope="col" class="num">Horizontal share</th>
+                <th scope="col" class="num">Union's divisible pool</th>
+                <th scope="col">Award</th>
+              </tr>
+            </thead>
+            <tbody>
+              {entities.years
+                .filter((y) => state.sharePercent[y.id] != null)
+                .map((y) => (
+                  <tr>
+                    <th scope="row">
+                      <a href={`/year/${y.id}/`}>{y.label}</a>
+                    </th>
+                    <td class="num">{state.sharePercent[y.id]}%</td>
+                    <td class="num">{y.divisiblePoolPercent}%</td>
+                    <td>
+                      <small>{y.awardLabel ?? "–"}</small>
+                    </td>
+                  </tr>
+                ))}
+            </tbody>
+          </table>
+        </div>
+        {state.method && (
+          <p>
+            <small>{state.method}</small>
+          </p>
+        )}
+      </>
+    )
+  }
+
+  {
+    devolutionSection && (
+      <>
+        <h2>Why this is not union spending</h2>
+        <p>{devolutionSection.description}</p>
+      </>
+    )
+  }
+
+  <Citations byPeriod={state.cites} />
+
+  <a class="cta" href="/">See where the union's own share went</a>
+</Page>

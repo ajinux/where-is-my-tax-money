@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 3,
+  "datasetVersion": "2026.08.22",
+  "vocabularyVersions": {
+    "purpose": "purpose-taxonomy-1",
+    "administrative": "administrative-vocabulary-3",
+    "axes": "axes-1"
+  },
+  "revisionNotes": [
+    {
+      "version": "2026.07.18",
+      "date": "2026-07-18",
+      "summary": "Initial five-year candidate dataset.",
+      "affectedIds": []
+    },
+    {
+      "version": "2026.08.02",
+      "date": "2026-08-02",
+      "summary": "Corrected the states-territories-and-transfers purpose category. Its description claimed it included \"shared taxes\", which was wrong: tax devolution is deducted from receipts before the union spends anything and is outside the expenditure perimeter, so it has never been in this category and cannot be. The figures were always right — 2024-25 holds Rs 3,73,643 crore of grants, not the Rs 12,86,885 crore devolved — but the wording invited readers to think devolution was being double-counted against the separate devolution section. Relabelled to \"Grants to states and union territories\" to make the contrast plain. Id unchanged; no amount changed. Added the cess earmark section (cess/2025-26.json) in the same release.",
+      "affectedIds": []
+    },
+    {
+      "version": "2026.08.02.1",
+      "date": "2026-08-02",
+      "summary": "Broke Demand No. 42 (Transfers to States, Rs 2,98,955.22 crore) into its eleven published components, each with its own citation and a stated basis for how its destination is decided. Source is the demand's own Notes on Demands, whose Actual 2024-25 net total matches the figure Statement 3 prints for the same demand exactly. The demand total hid wholly unlike things: Rs 1,49,483.73 crore of discretionary conditional capital loans sat beside Rs 1,20,858.16 crore of Finance Commission grants whose state-wise amounts are fixed in an award. Adds the optional components field to recordSchema; no record id changed and no amount moved.",
+      "affectedIds": [
+        "2024-25-demand-42"
+      ]
+    },
+    {
+      "version": "2026.08.02.2",
+      "date": "2026-08-02",
+      "summary": "Added the state-wise split of post-devolution revenue deficit grants: nine states, summing to the component's Rs 24,483 crore exactly. Source is Table 10.4 of the Fifteenth Finance Commission's report, whose 2024-25 column matches the actual the Notes on Demands print for the same head. That exact agreement is the whole licence for using an award table as an actual, and it does NOT extend to the Commission's other grants: local body grants were awarded Rs 75,453 crore against Rs 60,522.07 crore actually released, disaster funds Rs 25,688 against Rs 25,248.65, health Rs 14,544 against Rs 10,604.44 — all conditional on state eligibility. Adds the states field on a component plus the state-split-mismatch and unknown-state-id rules, which make that reconciliation a build-time requirement rather than an author's judgement.",
+      "affectedIds": [
+        "2024-25-demand-42"
+      ]
+    },
+    {
+      "version": "2026.08.03",
+      "date": "2026-08-03",
+      "summary": "Restructured to schema v3. Four section shapes — expenditure, devolution, receipts, cess — became one, and the three separate ways of nesting detail (lens trees, record components, per-state splits) became one tree type obeying one rule: the parts of a decomposition must sum exactly to what they decompose. Five sum-checking rules collapse into that one. Ids lost their year prefix and comparableId was dropped, since a fact's id is now its cross-period identity. Labels moved into the vocabularies so they can no longer drift from their descriptions. No amount changed and no figure was recomputed.",
+      "affectedIds": []
+    },
+    {
+      "version": "2026.08.15",
+      "date": "2026-08-15",
+      "summary": "Added fiscal year 2025-26 to union expenditure, tax devolution and tax receipts. These are revised estimates, not actuals, and are labelled revised-estimate throughout: the Expenditure Profile reports a year's actuals two budgets later, so 2025-26 actuals are not published until the 2027-28 Budget and this year should be replaced when they appear. Every figure comes from the Revised Estimates 2025-26 columns of the same Budget 2026-27 documents that already supply 2024-25's actuals — no new document was fetched, and the five new source entries share their files and checksums with their 2024-25 siblings. Union expenditure closes exactly: 101 demands summing to Rs 49,64,841.74 crore against Statement 1's own revised-estimate total. The revenue/capital split lands with it, because the 2026-27 Statement 3 is text-extractable where 2020-21, 2022-23 and 2024-25 are scanned. Demand No. 42 gained three components that were nil in 2024-25 (assistance for public health infrastructure, grants for shared municipal services, and a token COVID-19 vaccination provision) and lost one that nets to nil in 2025-26 (the transfer to the national disaster funds). Post-devolution revenue deficit grants fall to six states and Rs 13,705 crore, the last year of the Fifteenth Finance Commission's award: Punjab, West Bengal and Meghalaya drew this grant in 2024-25 and draw nothing in 2025-26.",
+      "affectedIds": []
+    },
+    {
+      "version": "2026.08.15.1",
+      "date": "2026-08-15",
+      "summary": "Filled the three long-standing gaps. (1) The revenue/capital split now covers all six years. It was recorded as blocked on OCR of a scanned Statement 3; that was wrong — every cached edition carries a text layer, and what actually hid 2020-21 was a row-layout difference (`1. Department of…` where later editions print `Demand No. 1`). Every demand closes exactly against its own Total column. (2) Tax devolution and gross tax revenue now exist for 2020-21 to 2023-24, from the archived Budget at a Glance of the budget two years later, so all six years can show the full journey from tax paid to money spent. 2020-21 uses the Fifteenth Finance Commission's separate single-year report — not the Fourteenth Commission, whose award ended with 2019-20 — with its own inter se shares summing to 100 and the same 41 per cent vertical share. (3) The administrative view is grouped into 56 ministries, read from each demand's own Notes on Demands rather than invented. Three supporting changes: a classification part may now be negative, because Statement 3 publishes net capital expenditure and the Election Commission's is below zero in two years; a fact's amount still may not. A new `award-period-mismatch` rule rejects a period that uses a Finance Commission award not covering it — a derived split always sums, so nothing else could catch it. No figure already in the dataset changed.",
+      "affectedIds": []
+    },
+    {
+      "version": "2026.08.16",
+      "date": "2026-08-16",
+      "summary": "Cess-earmark now has a section per year, 2020-21 to 2025-26, so the earmark shown beside a year's spending is that year's own rather than the latest for every year — defensible when one year was selectable, misleading once six were. Every figure is the 'amount utilised' column of that year's own Expenditure Profile Statement 15, and each of the fifteen new fund-years closes exactly against the Total the statement prints. These remain revised estimates: no edition of Statement 15 carries an actuals column, so cess utilisation has no settled figure in any year. Two things worth recording about the extraction. The archived editions print fund names and the RE/BE markers rotated 90 degrees, so blocks had to be located by geometry — the block appearing first in the text stream is not reliably the revised estimate, and in 2021-22 it was the budget estimate. And Samagra Shiksha is financed from two funds at once, elementary from Prarambhik Shiksha Kosh and secondary from Madhyamik and Uchchatar Shiksha Kosh, so it carries two ids rather than one. Cess labels moved into section.json now that the section is multi-period and label-drift applies to it.",
+      "affectedIds": []
+    },
+    {
+      "version": "2026.08.16.1",
+      "date": "2026-08-16",
+      "summary": "Corrected the provenance of tax devolution, and closed the hole that hid it. The Fifteenth Finance Commission's inter se shares were cited to the Ministry of Finance's restatement in the Receipts Budget 2025-26, Annex-4 — an edition picked because its text layer rendered all 28 rows, which is an extraction convenience standing in for a provenance claim. The effect was that four actual-final years (2021-22 to 2024-25) were published as citing a budget-estimate document from a year none of them are. No share was wrong: they are fixed across the award period, and the Commission's own Table 6.5 matches the vocabulary exactly, 28 states summing to 100. They now cite that table, which is where the shares are actually decided; Annex-4 stays in the manifest marked verification: unstable, as the cross-reference it always was. The rule that should have caught this could not see it: a derivedBy tree writes no citation of its own, so a generator's award source reached the artifact without passing through the citation checks. `_check_generator_sources` now routes it through them, and reported all four years the moment it was added. This is the second rule a generator has slipped past after `award-period-mismatch`; derived output is not exempt from the checks its inputs would face.",
+      "affectedIds": []
+    },
+    {
+      "version": "2026.08.22",
+      "date": "2026-08-22",
+      "summary": "Ministries and departments can now carry their own official website, as an optional `url` on the administrative vocabulary's groups and on each line in union-expenditure's section.json. 27 of 56 ministries and 15 of 102 demand lines have one. The coverage is deliberately partial. A URL is the only claim in this dataset that no checksum can protect — a live site moves or dies where a document's bytes do not — so it is held to a different but explicit bar: a candidate is recorded only once the page it serves names itself as that body, either in its own title or as its full name in the page. Anything that merely looked plausible was dropped, which is not a hypothetical safeguard: the first domain tried from recollection, finmin.nic.in for the Ministry of Finance, does not resolve at all and would have shipped as a dead link. An absent url therefore means 'not corroborated', never 'has no website' — and 30 of those 102 demand lines are accounting heads such as Interest Payments or Repayment of Debt, which have no website to find. No figure changed.",
+      "affectedIds": []
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+---
+// Chrome for the reference pages, everything under /where, /ministry, /demand,
+// /state, /year, plus /method and /sources.
+//
+// These are plain documents, not the app. They carry no island and ship no
+// JavaScript at all, which is the whole reason they exist: a crawler reads them
+// in full, and so does a reader on a slow connection. The app at "/" is
+// unchanged and still owns the interactive view.
+
+import Base from "./Base.astro";
+import { LogoMark } from "../components/Logo";
+import { entities } from "../lib/entities";
+import { SITE_NAME, REPO_URL, hasRepo } from "../lib/site";
+
+export interface Props {
+  title: string;
+  description: string;
+  path: string;
+  ogImage?: string;
+  ogImageAlt?: string;
+  noindex?: boolean;
+  jsonLd?: Record<string, unknown>[];
+  /** Trail above the heading; the last entry is the current page and is not linked. */
+  crumbs?: { label: string; href?: string }[];
+  /** Widen the measure for pages that are mostly table. */
+  wide?: boolean;
+  /**
+   * Skip the .doc measure and padding, for content that brings its own layout,
+   * /method/ reuses the app's Method component, which already sets both, and
+   * nesting the two doubles the gutter on a phone.
+   */
+  bare?: boolean;
+}
+
+const {
+  title,
+  description,
+  path,
+  ogImage,
+  ogImageAlt,
+  noindex,
+  jsonLd = [],
+  crumbs = [],
+  wide = false,
+  bare = false,
+} = Astro.props;
+
+const origin = Astro.site ?? new URL("https://whereismytaxmoney.com");
+
+// BreadcrumbList earns its place here in a way it could not when the site was a
+// single URL: there is a real hierarchy now, and it is the trail actually drawn
+// above the heading rather than a second invented one.
+const breadcrumbLd =
+  crumbs.length > 1
+    ? [
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: crumbs.map((crumb, index) => ({
+            "@type": "ListItem",
+            position: index + 1,
+            name: crumb.label,
+            ...(crumb.href ? { item: new URL(crumb.href, origin).href } : {}),
+          })),
+        },
+      ]
+    : [];
+---
+
+<Base
+  title={title}
+  description={description}
+  path={path}
+  ogImage={ogImage}
+  ogImageAlt={ogImageAlt}
+  noindex={noindex}
+  jsonLd={[...jsonLd, ...breadcrumbLd]}
+>
+  <div
+    style="min-height:100vh;display:flex;justify-content:center;background:var(--color-bg);font-family:var(--font-body);color:var(--color-text)"
+  >
+    <div
+      style="width:100%;max-width:1120px;min-height:100vh;display:flex;flex-direction:column;overflow-x:clip"
+    >
+      <header
+        style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:16px clamp(22px,4vw,48px) 0;flex:none"
+      >
+        <a
+          href="/"
+          style="display:flex;align-items:center;gap:8px;padding:11px 0;text-decoration:none;color:var(--color-text)"
+        >
+          <LogoMark />
+          <span style="font-size:13px;font-weight:700;letter-spacing:-0.01em">{SITE_NAME}</span>
+        </a>
+        <nav style="display:flex;align-items:center;gap:18px;font-size:13px">
+          <a href="/method/" style="text-decoration:underline;text-underline-offset:3px">Method</a>
+          <a href="/sources/" style="text-decoration:underline;text-underline-offset:3px">Sources</a>
+        </nav>
+      </header>
+
+      <main class={bare ? "" : wide ? "doc doc-wide" : "doc"} style={bare ? "flex:1;display:flex;flex-direction:column" : ""}>
+        {
+          crumbs.length > 0 && (
+            <nav class="crumbs" aria-label="Breadcrumb">
+              {crumbs.map((crumb, index) => (
+                <>
+                  {index > 0 && <span aria-hidden="true">›</span>}
+                  {crumb.href ? <a href={crumb.href}>{crumb.label}</a> : <span>{crumb.label}</span>}
+                </>
+              ))}
+            </nav>
+          )
+        }
+        <slot />
+      </main>
+
+      <footer
+        style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;padding:18px clamp(22px,4vw,48px) 28px;border-top:1px solid var(--color-divider);margin-top:auto;font-size:13px"
+      >
+        <a href="/">Work out your own share</a>
+        <a href="/method/">How this is calculated</a>
+        <a href="/sources/">Sources</a>
+        {
+          hasRepo() && (
+            <a href={REPO_URL} rel="noopener">
+              Code and data on GitHub
+            </a>
+          )
+        }
+        {
+          hasRepo() && (
+            <span style="font-size:12px;color:var(--color-neutral-700)">
+              A star there helps people find it.
+            </span>
+          )
+        }
+        <span style="font-size:12px;color:var(--color-neutral-700)">
+          Government budget figures, {entities.years[entities.years.length - 1].label} to {
+            entities.years[0].label
+          } · Ministry of Finance · dataset {entities.datasetVersion}
+        </span>
+      </footer>
+    </div>
+  </div>
+</Base>

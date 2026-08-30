@@ -1,0 +1,41 @@
+# Data licence
+
+The dataset in this package — `years/`, `taxonomy/`, `sources/manifest.json`,
+`dataset.json`, and the built artifact in `dist/` — is licensed under the
+Creative Commons Attribution 4.0 International Licence (CC BY 4.0).
+
+    https://creativecommons.org/licenses/by/4.0/
+
+You are free to share and adapt the data for any purpose, including
+commercially, provided you give appropriate credit.
+
+## Attribution
+
+Please credit both the underlying records and this project's work on them:
+
+    Union Government expenditure figures: Government of India (Ministry of
+    Finance, Expenditure Profile; Controller General of Accounts). Purpose
+    taxonomy, hierarchical arrangement and reconciliation:
+    whereismytaxmoney.in contributors, CC BY 4.0.
+
+## What is and is not covered
+
+The underlying expenditure figures are public records of the Government of
+India and are not the subject of any copyright claim by this project. What this
+licence covers is the work done on top of them: the purpose taxonomy, the
+hierarchical arrangement, the identifiers, the reconciliation, and the
+provenance records.
+
+Source documents downloaded into `sources/cache/` are Government of India
+publications and are not covered by this licence. They are not distributed with
+this package.
+
+The code in `src/` and `scripts/` is licensed separately under the MIT Licence;
+see LICENSE.
+
+## No warranty
+
+This dataset is an educational reconstruction from published documents. It
+reconciles exactly to the Government of India's own published totals, but it is
+not an official publication and carries no warranty. Known limitations are
+listed in README.md.

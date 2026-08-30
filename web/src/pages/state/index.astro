@@ -1,0 +1,41 @@
+---
+import Page from "../../layouts/Page.astro";
+import RowList from "../../components/doc/RowList.astro";
+import { entities, amountIn } from "../../lib/entities";
+import { formatCrore } from "../../lib/format";
+import { statePath } from "../../lib/routes";
+
+const newest = entities.years[0];
+const states = entities.states;
+const title = `Every state's share of India's central taxes, ${newest.label}`;
+const description =
+  `What each of the ${states.length} states received from the divisible pool in ${newest.label}, ` +
+  `${formatCrore(newest.devolutionTotal)} in total, at the ${newest.divisiblePoolPercent}% rate ` +
+  `the ${newest.awardLabel ?? "Finance Commission"} sets.`;
+---
+
+<Page
+  title={title}
+  description={description}
+  path="/state/"
+  crumbs={[{ label: "Home", href: "/" }, { label: "States' share" }]}
+>
+  <h1>What the states received</h1>
+  <p class="lede">
+    {formatCrore(newest.devolutionTotal)} was devolved to the states in {newest.label} as their
+    constitutional share of union tax collections, at the {newest.divisiblePoolPercent}% rate
+    {newest.awardLabel ? ` the ${newest.awardLabel} sets` : ""}. It is deducted from receipts
+    before the union spends anything, so it is not part of union spending and cannot be added to
+    it.
+  </p>
+  <RowList
+    showBars
+    items={states.map((state) => ({
+      href: statePath(state.slug),
+      name: state.label,
+      blurb: state.sharePercent[newest.id] ? `${state.sharePercent[newest.id]}% of the divisible pool` : null,
+      amountRupees: amountIn(state, newest.id),
+    }))}
+  />
+  <a class="cta" href="/">See where the union's own share went</a>
+</Page>

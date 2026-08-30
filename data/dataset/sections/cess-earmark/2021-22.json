@@ -1,0 +1,305 @@
+{
+  "section": "cess-earmark",
+  "period": "2021-22",
+  "status": "revised-estimate",
+  "perimeter": "financing",
+  "perimeterOf": "union-expenditure",
+  "root": {
+    "cite": []
+  },
+  "facts": [
+    {
+      "id": "pm-poshan",
+      "amount": {
+        "value": 10000.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2021-22",
+          "locator": "Statement 15, Prarambhik Shiksha Kosh, RE 2021-22, amount utilised"
+        }
+      ]
+    },
+    {
+      "id": "samagra-shiksha",
+      "amount": {
+        "value": 25000.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2021-22",
+          "locator": "Statement 15, Prarambhik Shiksha Kosh, RE 2021-22, amount utilised"
+        }
+      ]
+    },
+    {
+      "id": "prarambhik-shiksha-kosh",
+      "amount": {
+        "value": 35000.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2021-22",
+          "locator": "Statement 15, Prarambhik Shiksha Kosh, Total, RE 2021-22"
+        }
+      ]
+    },
+    {
+      "id": "samagra-shiksha-secondary",
+      "amount": {
+        "value": 3750.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2021-22",
+          "locator": "Statement 15, Madhyamik and Uchchatar Shiksha Kosh, RE 2021-22, amount utilised"
+        }
+      ]
+    },
+    {
+      "id": "national-means-cum-merit-scholarship",
+      "amount": {
+        "value": 250.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2021-22",
+          "locator": "Statement 15, Madhyamik and Uchchatar Shiksha Kosh, RE 2021-22, amount utilised"
+        }
+      ]
+    },
+    {
+      "id": "kendriya-vidyalaya-sangathan",
+      "amount": {
+        "value": 1000.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2021-22",
+          "locator": "Statement 15, Madhyamik and Uchchatar Shiksha Kosh, RE 2021-22, amount utilised"
+        }
+      ]
+    },
+    {
+      "id": "navodaya-vidyalaya-samiti",
+      "amount": {
+        "value": 2000.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2021-22",
+          "locator": "Statement 15, Madhyamik and Uchchatar Shiksha Kosh, RE 2021-22, amount utilised"
+        }
+      ]
+    },
+    {
+      "id": "interest-subsidy-guarantee-funds",
+      "amount": {
+        "value": 1500.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2021-22",
+          "locator": "Statement 15, Madhyamik and Uchchatar Shiksha Kosh, RE 2021-22, amount utilised"
+        }
+      ]
+    },
+    {
+      "id": "scholarship-for-college-students",
+      "amount": {
+        "value": 206.32,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2021-22",
+          "locator": "Statement 15, Madhyamik and Uchchatar Shiksha Kosh, RE 2021-22, amount utilised"
+        }
+      ]
+    },
+    {
+      "id": "teachers-and-teaching",
+      "amount": {
+        "value": 90.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2021-22",
+          "locator": "Statement 15, Madhyamik and Uchchatar Shiksha Kosh, RE 2021-22, amount utilised"
+        }
+      ]
+    },
+    {
+      "id": "university-grants-commission",
+      "amount": {
+        "value": 4723.2,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2021-22",
+          "locator": "Statement 15, Madhyamik and Uchchatar Shiksha Kosh, RE 2021-22, amount utilised"
+        }
+      ]
+    },
+    {
+      "id": "grants-to-central-universities",
+      "amount": {
+        "value": 7479.79,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2021-22",
+          "locator": "Statement 15, Madhyamik and Uchchatar Shiksha Kosh, RE 2021-22, amount utilised"
+        }
+      ]
+    },
+    {
+      "id": "national-institutes-of-technology",
+      "amount": {
+        "value": 3771.02,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2021-22",
+          "locator": "Statement 15, Madhyamik and Uchchatar Shiksha Kosh, RE 2021-22, amount utilised"
+        }
+      ]
+    },
+    {
+      "id": "pm-usha",
+      "amount": {
+        "value": 229.67,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2021-22",
+          "locator": "Statement 15, Madhyamik and Uchchatar Shiksha Kosh, RE 2021-22, amount utilised"
+        }
+      ]
+    },
+    {
+      "id": "madhyamik-uchchatar-shiksha-kosh",
+      "amount": {
+        "value": 25000.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2021-22",
+          "locator": "Statement 15, Madhyamik and Uchchatar Shiksha Kosh, Total, RE 2021-22"
+        }
+      ]
+    },
+    {
+      "id": "national-rural-health-mission",
+      "amount": {
+        "value": 12699.72,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2021-22",
+          "locator": "Statement 15, Pradhan Mantri Swasthya Suraksha Nidhi, RE 2021-22, amount utilised"
+        }
+      ]
+    },
+    {
+      "id": "human-resources-for-health",
+      "amount": {
+        "value": 5600.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2021-22",
+          "locator": "Statement 15, Pradhan Mantri Swasthya Suraksha Nidhi, RE 2021-22, amount utilised"
+        }
+      ]
+    },
+    {
+      "id": "ayushman-bharat-pmjay",
+      "amount": {
+        "value": 3199.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2021-22",
+          "locator": "Statement 15, Pradhan Mantri Swasthya Suraksha Nidhi, RE 2021-22, amount utilised"
+        }
+      ]
+    },
+    {
+      "id": "pradhan-mantri-swasthya-suraksha-nidhi",
+      "amount": {
+        "value": 21498.72,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-cess-funds-statement-15-2021-22",
+          "locator": "Statement 15, Pradhan Mantri Swasthya Suraksha Nidhi, Total, RE 2021-22"
+        }
+      ]
+    }
+  ],
+  "trees": [
+    {
+      "of": "prarambhik-shiksha-kosh",
+      "axis": "destination",
+      "children": [
+        "pm-poshan",
+        "samagra-shiksha"
+      ]
+    },
+    {
+      "of": "madhyamik-uchchatar-shiksha-kosh",
+      "axis": "destination",
+      "children": [
+        "samagra-shiksha-secondary",
+        "national-means-cum-merit-scholarship",
+        "kendriya-vidyalaya-sangathan",
+        "navodaya-vidyalaya-samiti",
+        "interest-subsidy-guarantee-funds",
+        "scholarship-for-college-students",
+        "teachers-and-teaching",
+        "university-grants-commission",
+        "grants-to-central-universities",
+        "national-institutes-of-technology",
+        "pm-usha"
+      ]
+    },
+    {
+      "of": "pradhan-mantri-swasthya-suraksha-nidhi",
+      "axis": "destination",
+      "children": [
+        "national-rural-health-mission",
+        "human-resources-for-health",
+        "ayushman-bharat-pmjay"
+      ]
+    },
+    {
+      "of": "@root",
+      "axis": "destination",
+      "children": [
+        "prarambhik-shiksha-kosh",
+        "madhyamik-uchchatar-shiksha-kosh",
+        "pradhan-mantri-swasthya-suraksha-nidhi"
+      ]
+    }
+  ],
+  "notes": "Where the 4% Health and Education Cess went in 2021-22, as far as it is published. Statement 15 carries revised estimates only — the government reports no actuals for cess utilisation in any year — so this is the most recent figure rather than a settled one. Amounts are the 'utilised' column; rows the statement labels 'Additional Transfers' carry a transfer with no utilisation and are folded into the scheme above them."
+}

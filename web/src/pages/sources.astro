@@ -1,0 +1,90 @@
+---
+// /sources/, every document the figures were read from.
+//
+// This page is the site's actual argument. Anyone can publish a chart of the
+// union budget; what is unusual here is that each figure names the PDF it came
+// from, the column it sat in, and the SHA-256 of the file that was read. Keeping
+// that list off the public site while claiming the figures are checkable was the
+// odd part.
+
+import Page from "../layouts/Page.astro";
+import { entities } from "../lib/entities";
+
+const sources = [...entities.sources].sort(
+  (a, b) => b.period.localeCompare(a.period) || a.documentTitle.localeCompare(b.documentTitle)
+);
+
+const byPeriod = new Map<string, typeof sources>();
+for (const source of sources) {
+  const bucket = byPeriod.get(source.period) ?? [];
+  bucket.push(source);
+  byPeriod.set(source.period, bucket);
+}
+
+const checksummed = sources.filter((s) => s.checksumSha256).length;
+
+const title = "Sources: every document these budget figures come from";
+const description =
+  `All ${sources.length} Ministry of Finance and Finance Commission documents behind the figures ` +
+  `on this site, with canonical links and SHA-256 checksums for ${checksummed} of them.`;
+---
+
+<Page
+  title={title}
+  description={description}
+  path="/sources/"
+  wide
+  crumbs={[{ label: "Home", href: "/" }, { label: "Sources" }]}
+>
+  <h1>Where the figures come from</h1>
+  <p class="lede">
+    Every number on this site was read out of one of these {sources.length} published documents,
+    and {checksummed} of them are pinned to the exact file by SHA-256 checksum. Nothing here is
+    estimated, modelled or adjusted.
+  </p>
+  <p>
+    A document's title is its <em>publication</em> year, which is usually not the year of the
+    figures inside it: an Expenditure Profile's actuals column reports the year that ended two
+    years earlier, so 2020-21's figures come from the Budget 2022-23 papers. The heading each
+    document sits under below is the year its figures are <em>for</em>.
+  </p>
+
+  {
+    [...byPeriod.entries()].map(([period, docs]) => (
+      <>
+        <h2>Figures for {period.replace("-", "–")}</h2>
+        <ul class="rows">
+          {docs.map((source) => (
+            <li style="padding:13px 0">
+              <div class="name">
+                <a href={source.canonicalUrl} rel="noopener nofollow">
+                  {source.documentTitle}
+                </a>
+              </div>
+              <div class="blurb">
+                {source.publisher} · {source.documentKind === "award" ? "award" : "budget document"}
+                {source.retrievedAt && <> · retrieved {source.retrievedAt}</>}
+              </div>
+              {source.notes && <div class="blurb">{source.notes}</div>}
+              {source.checksumSha256 && (
+                <div class="cite" style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;word-break:break-all">
+                  SHA-256 {source.checksumSha256}
+                </div>
+              )}
+            </li>
+          ))}
+        </ul>
+      </>
+    ))
+  }
+
+  <h2>How these are used</h2>
+  <p>
+    A figure may not cite a source whose verification is marked unstable, and every checksummed
+    source must be cited by something, both are enforced when the dataset is built, not reviewed
+    by hand. A Finance Commission award may back a settled figure only when something published
+    elsewhere corroborates it, because an award states an entitlement and what states actually
+    drew usually falls short of it.
+  </p>
+  <p><a href="/method/">How the calculation works →</a></p>
+</Page>

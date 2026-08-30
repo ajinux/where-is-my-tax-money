@@ -1,0 +1,33 @@
+{
+  "section": "tax-receipts",
+  "period": "2025-26",
+  "status": "revised-estimate",
+  "perimeter": "receipts",
+  "root": {
+    "amount": {
+      "value": 4077772,
+      "unit": "crore-rupees"
+    },
+    "cite": [
+      {
+        "sourceId": "mof-2025-26-glance-receipts",
+        "locator": "Budget at a Glance, Receipts, Gross Tax Revenue, Revised Estimates 2025-26 column"
+      }
+    ]
+  },
+  "facts": [],
+  "trees": [
+    {
+      "of": "@root",
+      "axis": "shareability",
+      "derivedBy": {
+        "method": "divisible-pool",
+        "using": {
+          "devolutionSection": "tax-devolution"
+        }
+      },
+      "notes": "The divisible pool is not published as its own line, but it follows from two figures that are: devolution is a fixed percentage of it, so dividing back out recovers it. What is left is the cess and surcharge states get no share of."
+    }
+  ],
+  "notes": "The denominator that turns a national devolution total into a share of tax collected. Gross tax revenue is what the Union collected before anything is devolved or spent; it is a receipts figure, which is why it lives outside the expenditure dataset. Revised estimate: the same Budget at a Glance prints a separate budget estimate for 2025-26, and neither is the settled figure."
+}

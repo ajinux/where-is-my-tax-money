@@ -1,0 +1,93 @@
+---
+import Base from "../layouts/Base.astro";
+import summary from "../data/summary.json";
+import { entities } from "../lib/entities";
+import { App } from "../components/App";
+
+const title = "Where Is My Tax Money? See Where Your Income Tax Goes";
+const description =
+  "Enter what you paid in Indian income tax and see exactly where it went, ministry by " +
+  "ministry, scheme by scheme, using the Ministry of Finance's own budget figures for " +
+  `${summary.yearRange}.`;
+
+const origin = Astro.site ?? new URL("https://whereismytaxmoney.com");
+
+// Two blocks, and deliberately only two.
+//
+// `WebSite` is the cheap canonical entity anchor. `Dataset` is the one with real
+// upside: Google Dataset Search indexes it, and a checksummed, per-figure-cited
+// reading of the union budget is not otherwise on the open web. Both describe
+// things that actually exist here, there is no `SoftwareApplication` block
+// because its rich result wants an `aggregateRating` this site has never
+// collected, and inventing one is exactly the kind of claim this project exists
+// not to make.
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Where is my tax money?",
+    alternateName: "whereismytaxmoney.com",
+    url: origin.href,
+    description,
+    inLanguage: "en-IN",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    name: "Union Government of India expenditure, tax receipts, devolution and cess earmarks",
+    description:
+      "Every rupee of Union Government expenditure for " +
+      `${summary.yearRange}, decomposed by purpose and by ministry, alongside the states' ` +
+      "share of central taxes, gross tax receipts and the earmarked Health and Education " +
+      "Cess. Every figure carries a citation to the Ministry of Finance document it was " +
+      "read from, identified by SHA-256 checksum.",
+    url: origin.href,
+    version: entities.datasetVersion,
+    inLanguage: "en-IN",
+    isAccessibleForFree: true,
+    // Google Dataset Search treats the licence as a key field, and this project
+    // has a real one: data/LICENSE-DATA is CC BY 4.0. The figures underneath are
+    // Government of India public records; the taxonomy and the arrangement are
+    // this project's work, and the licence asks that both be attributed.
+    license: "https://creativecommons.org/licenses/by/4.0/",
+    temporalCoverage: `${entities.periods[entities.periods.length - 1].slice(0, 4)}-04-01/${
+      Number(entities.periods[0].slice(0, 4)) + 1
+    }-03-31`,
+    spatialCoverage: { "@type": "Place", name: "India" },
+    creator: {
+      "@type": "GovernmentOrganization",
+      name: "Ministry of Finance, Government of India",
+      url: "https://www.indiabudget.gov.in/",
+    },
+    variableMeasured: [
+      "Union Government expenditure by purpose",
+      "Union Government expenditure by ministry",
+      "States' share of central taxes",
+      "Gross tax revenue",
+      "Health and Education Cess earmarks",
+    ],
+    distribution: entities.periods.map((period) => ({
+      "@type": "DataDownload",
+      name: `Union budget figures, ${period}`,
+      encodingFormat: "application/json",
+      contentUrl: new URL(`/data/${period}.json`, origin).href,
+    })),
+    citation: entities.sources.slice(0, 12).map((source) => ({
+      "@type": "CreativeWork",
+      name: source.documentTitle,
+      url: source.canonicalUrl,
+      publisher: { "@type": "Organization", name: source.publisher },
+    })),
+  },
+];
+---
+
+<Base
+  title={title}
+  description={description}
+  path="/"
+  ogImage="/og/default.png"
+  jsonLd={jsonLd}
+>
+  <App summary={summary} client:load />
+</Base>

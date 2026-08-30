@@ -1,0 +1,4854 @@
+{
+  "section": "union-expenditure",
+  "period": "2024-25",
+  "status": "actual-final",
+  "perimeter": "union-spending",
+  "root": {
+    "amount": {
+      "value": 4652867.4,
+      "unit": "crore-rupees"
+    },
+    "cite": [
+      {
+        "sourceId": "mof-2024-25-statement-1",
+        "locator": "Statement 1, total expenditure"
+      }
+    ]
+  },
+  "facts": [
+    {
+      "id": "demand-1",
+      "amount": {
+        "value": 129933.47,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 1, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-2",
+      "amount": {
+        "value": 9810.53,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 2, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-3",
+      "amount": {
+        "value": 25092.58,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 3, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-4",
+      "amount": {
+        "value": 3312.05,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 4, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-5",
+      "amount": {
+        "value": 226.01,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 5, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-6",
+      "amount": {
+        "value": 181793.38,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 6, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-7",
+      "amount": {
+        "value": 2973.34,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 7, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-8",
+      "amount": {
+        "value": 2600.63,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 8, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-9",
+      "amount": {
+        "value": 135.67,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 9, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-10",
+      "amount": {
+        "value": 5412.45,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 10, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-11",
+      "amount": {
+        "value": 7886.69,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 11, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-12",
+      "amount": {
+        "value": 26105.69,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 12, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-13",
+      "amount": {
+        "value": 121726.64,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 13, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-14",
+      "amount": {
+        "value": 7302.24,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 14, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-15",
+      "amount": {
+        "value": 207706.5,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 15, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-16",
+      "amount": {
+        "value": 736.1,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 16, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-17",
+      "amount": {
+        "value": 679.91,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 17, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-18",
+      "amount": {
+        "value": 3244.79,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 18, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-19",
+      "amount": {
+        "value": 27616.45,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 19, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-20",
+      "amount": {
+        "value": 290964.51,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 20, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-21",
+      "amount": {
+        "value": 159768.4,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 21, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-22",
+      "amount": {
+        "value": 157653.65,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 22, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-23",
+      "amount": {
+        "value": 3370.62,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 23, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-24",
+      "amount": {
+        "value": 3371.17,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 24, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-25",
+      "amount": {
+        "value": 65159.25,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 25, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-26",
+      "amount": {
+        "value": 45576.52,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 26, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-27",
+      "amount": {
+        "value": 13661.31,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 27, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-28",
+      "amount": {
+        "value": 2219.7,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 28, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-29",
+      "amount": {
+        "value": 25512.37,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 29, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-30",
+      "amount": {
+        "value": 53326.18,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 30, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-31",
+      "amount": {
+        "value": 486.85,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 31, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-32",
+      "amount": {
+        "value": 3685.15,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 32, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-33",
+      "amount": {
+        "value": 21.81,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 33, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-34",
+      "amount": {
+        "value": 38.75,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 34, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-35",
+      "amount": {
+        "value": 152537.22,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 35, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-36",
+      "amount": {
+        "value": 11432.8,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 36, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-37",
+      "amount": {
+        "value": 38801.62,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 37, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-38",
+      "amount": {
+        "value": 6197.41,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 38, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-39",
+      "amount": {
+        "value": 1115574.6,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 39, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-41",
+      "amount": {
+        "value": 92279.49,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 41, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "capital-investment-loans",
+      "amount": {
+        "value": 149483.73,
+        "unit": "crore-rupees"
+      },
+      "basis": "Discretionary and conditional. Part is allocated in proportion to each state's share of central taxes; the rest is tied to specific reforms and projects, so a state draws it only by qualifying. This is the largest single item and the least formula-bound.",
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-demand-42-notes",
+          "locator": "Demand No. 42, item 11, Actual 2024-25 Capital column"
+        }
+      ]
+    },
+    {
+      "id": "local-body-grants",
+      "amount": {
+        "value": 60522.07,
+        "unit": "crore-rupees"
+      },
+      "basis": "Fifteenth Finance Commission award. Divided between states largely by population and area, then onward to individual panchayats and municipalities by the state. No year-by-year union discretion.",
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-demand-42-notes",
+          "locator": "Demand No. 42, item 2, Total-Grants for Local Bodies, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "revenue-deficit-grants-himachal-pradesh",
+      "amount": {
+        "value": 6258.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-demand-42-notes",
+          "locator": "Demand No. 42, item 5, Actual 2024-25"
+        },
+        {
+          "sourceId": "xvfc-main-report",
+          "locator": "Table 10.4: Grants-in-aid for Revenue Deficit, 2024-25 column"
+        }
+      ]
+    },
+    {
+      "id": "revenue-deficit-grants-uttarakhand",
+      "amount": {
+        "value": 4916.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-demand-42-notes",
+          "locator": "Demand No. 42, item 5, Actual 2024-25"
+        },
+        {
+          "sourceId": "xvfc-main-report",
+          "locator": "Table 10.4: Grants-in-aid for Revenue Deficit, 2024-25 column"
+        }
+      ]
+    },
+    {
+      "id": "revenue-deficit-grants-nagaland",
+      "amount": {
+        "value": 4068.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-demand-42-notes",
+          "locator": "Demand No. 42, item 5, Actual 2024-25"
+        },
+        {
+          "sourceId": "xvfc-main-report",
+          "locator": "Table 10.4: Grants-in-aid for Revenue Deficit, 2024-25 column"
+        }
+      ]
+    },
+    {
+      "id": "revenue-deficit-grants-tripura",
+      "amount": {
+        "value": 3788.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-demand-42-notes",
+          "locator": "Demand No. 42, item 5, Actual 2024-25"
+        },
+        {
+          "sourceId": "xvfc-main-report",
+          "locator": "Table 10.4: Grants-in-aid for Revenue Deficit, 2024-25 column"
+        }
+      ]
+    },
+    {
+      "id": "revenue-deficit-grants-punjab",
+      "amount": {
+        "value": 1995.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-demand-42-notes",
+          "locator": "Demand No. 42, item 5, Actual 2024-25"
+        },
+        {
+          "sourceId": "xvfc-main-report",
+          "locator": "Table 10.4: Grants-in-aid for Revenue Deficit, 2024-25 column"
+        }
+      ]
+    },
+    {
+      "id": "revenue-deficit-grants-manipur",
+      "amount": {
+        "value": 1701.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-demand-42-notes",
+          "locator": "Demand No. 42, item 5, Actual 2024-25"
+        },
+        {
+          "sourceId": "xvfc-main-report",
+          "locator": "Table 10.4: Grants-in-aid for Revenue Deficit, 2024-25 column"
+        }
+      ]
+    },
+    {
+      "id": "revenue-deficit-grants-mizoram",
+      "amount": {
+        "value": 1079.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-demand-42-notes",
+          "locator": "Demand No. 42, item 5, Actual 2024-25"
+        },
+        {
+          "sourceId": "xvfc-main-report",
+          "locator": "Table 10.4: Grants-in-aid for Revenue Deficit, 2024-25 column"
+        }
+      ]
+    },
+    {
+      "id": "revenue-deficit-grants-west-bengal",
+      "amount": {
+        "value": 568.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-demand-42-notes",
+          "locator": "Demand No. 42, item 5, Actual 2024-25"
+        },
+        {
+          "sourceId": "xvfc-main-report",
+          "locator": "Table 10.4: Grants-in-aid for Revenue Deficit, 2024-25 column"
+        }
+      ]
+    },
+    {
+      "id": "revenue-deficit-grants-meghalaya",
+      "amount": {
+        "value": 110.0,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-demand-42-notes",
+          "locator": "Demand No. 42, item 5, Actual 2024-25"
+        },
+        {
+          "sourceId": "xvfc-main-report",
+          "locator": "Table 10.4: Grants-in-aid for Revenue Deficit, 2024-25 column"
+        }
+      ]
+    },
+    {
+      "id": "revenue-deficit-grants",
+      "amount": {
+        "value": 24483.0,
+        "unit": "crore-rupees"
+      },
+      "basis": "Fifteenth Finance Commission award. Paid only to the states the Commission assessed as still in deficit after devolution — a named and shrinking list, which is why most states receive nothing under this head.",
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-demand-42-notes",
+          "locator": "Demand No. 42, item 5, Actual 2024-25"
+        },
+        {
+          "sourceId": "xvfc-main-report",
+          "locator": "Table 10.4: Grants-in-aid for Revenue Deficit, 2024-25 column"
+        }
+      ],
+      "notes": "The nineteen states absent from the state list received nothing under this head in 2024-25. The grant exists to close an assessed revenue gap remaining after devolution, so a state leaves the list once the Commission judged that gap closed — Karnataka's entitlement ended after 2021-22, Kerala's and Andhra Pradesh's after 2023-24."
+    },
+    {
+      "id": "state-disaster-response",
+      "amount": {
+        "value": 20264.4,
+        "unit": "crore-rupees"
+      },
+      "basis": "Fifteenth Finance Commission award. State-wise amounts fixed from each state's past disaster expenditure and its exposure to risk.",
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-demand-42-notes",
+          "locator": "Demand No. 42, item 3, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "eap-loans",
+      "amount": {
+        "value": 16217.43,
+        "unit": "crore-rupees"
+      },
+      "basis": "Follows the projects themselves. External assistance is passed to a state on the same terms the union received it from the donor — so it goes wherever the funded project is, not by any formula. North-eastern and Himalayan states are outside this back-to-back arrangement.",
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-demand-42-notes",
+          "locator": "Demand No. 42, item 13, Actual 2024-25 Capital column, net"
+        }
+      ]
+    },
+    {
+      "id": "health-sector-grants",
+      "amount": {
+        "value": 10604.44,
+        "unit": "crore-rupees"
+      },
+      "basis": "Fifteenth Finance Commission award. Allocated by the Commission's health-sector formula.",
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-demand-42-notes",
+          "locator": "Demand No. 42, item 6, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "eap-grants",
+      "amount": {
+        "value": 8173.68,
+        "unit": "crore-rupees"
+      },
+      "basis": "Follows the projects themselves, as with the loan component — determined by which state hosts the donor-funded project.",
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-demand-42-notes",
+          "locator": "Demand No. 42, item 12, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "state-disaster-mitigation",
+      "amount": {
+        "value": 4984.25,
+        "unit": "crore-rupees"
+      },
+      "basis": "Fifteenth Finance Commission award. State-wise amounts fixed in the award, as for the response fund.",
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-demand-42-notes",
+          "locator": "Demand No. 42, item 4, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "special-assistance",
+      "amount": {
+        "value": 3350.0,
+        "unit": "crore-rupees"
+      },
+      "basis": "Discretionary. The demand describes it as covering committed liabilities without provision and other need-based assistance, so it is decided case by case rather than by any published rule.",
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-demand-42-notes",
+          "locator": "Demand No. 42, item 9, Actual 2024-25"
+        }
+      ]
+    },
+    {
+      "id": "ndrf-assistance",
+      "amount": {
+        "value": 719.72,
+        "unit": "crore-rupees"
+      },
+      "basis": "Event-driven. Released to a state after a notified disaster, against assessed need, so it depends on what happened that year rather than on any share.",
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-demand-42-notes",
+          "locator": "Demand No. 42, item 15, Actual 2024-25, net"
+        }
+      ]
+    },
+    {
+      "id": "ndrf-transfer",
+      "amount": {
+        "value": 152.5,
+        "unit": "crore-rupees"
+      },
+      "basis": "Not a transfer to any state. It is the union topping up the national disaster funds beyond what the National Calamity Contingent Duty covers.",
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-demand-42-notes",
+          "locator": "Demand No. 42, item 14, Actual 2024-25, net"
+        }
+      ]
+    },
+    {
+      "id": "demand-42",
+      "amount": {
+        "value": 298955.22,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 42, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-43",
+      "amount": {
+        "value": 1024.99,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 43, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-44",
+      "amount": {
+        "value": 2961.32,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 44, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-45",
+      "amount": {
+        "value": 2304.07,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 45, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-46",
+      "amount": {
+        "value": 87300.17,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 46, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-47",
+      "amount": {
+        "value": 3383.93,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 47, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-48",
+      "amount": {
+        "value": 2647.97,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 48, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-49",
+      "amount": {
+        "value": 5672.45,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 49, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-50",
+      "amount": {
+        "value": 960.95,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 50, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-51",
+      "amount": {
+        "value": 146634.82,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 51, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-52",
+      "amount": {
+        "value": 5941.32,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 52, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-53",
+      "amount": {
+        "value": 5858.93,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 53, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-54",
+      "amount": {
+        "value": 2636.26,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 54, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-55",
+      "amount": {
+        "value": 4857.05,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 55, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-56",
+      "amount": {
+        "value": 1613,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 56, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-57",
+      "amount": {
+        "value": 1108,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 57, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-58",
+      "amount": {
+        "value": 46000.06,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 58, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-59",
+      "amount": {
+        "value": 3302.36,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 59, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-60",
+      "amount": {
+        "value": 53255.15,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 60, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-61",
+      "amount": {
+        "value": 4301.82,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 61, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-62",
+      "amount": {
+        "value": 20866.65,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 62, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-63",
+      "amount": {
+        "value": 25853.25,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 63, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-64",
+      "amount": {
+        "value": 11408.02,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 64, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-65",
+      "amount": {
+        "value": 7189.58,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 65, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-66",
+      "amount": {
+        "value": 289.01,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 66, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-67",
+      "amount": {
+        "value": 598.55,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 67, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-68",
+      "amount": {
+        "value": 8230.97,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 68, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-69",
+      "amount": {
+        "value": 3096.41,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 69, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-70",
+      "amount": {
+        "value": 714.98,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 70, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-71",
+      "amount": {
+        "value": 18626.65,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 71, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-72",
+      "amount": {
+        "value": 850.23,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 72, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-73",
+      "amount": {
+        "value": 63.02,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 73, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-74",
+      "amount": {
+        "value": 2501.32,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 74, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-75",
+      "amount": {
+        "value": 48.44,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 75, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-76",
+      "amount": {
+        "value": 16962.33,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 76, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-77",
+      "amount": {
+        "value": 280.43,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 77, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-78",
+      "amount": {
+        "value": 2837.58,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 78, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-79",
+      "amount": {
+        "value": 19713.78,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 79, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-80",
+      "amount": {
+        "value": 124.18,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 80, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-81",
+      "amount": {
+        "value": 695.54,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 81, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-82",
+      "amount": {
+        "value": 412.04,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 82, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-83",
+      "amount": {
+        "value": 10.97,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 83, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-84",
+      "amount": {
+        "value": 427.01,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 84, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-85",
+      "amount": {
+        "value": 255263.01,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 85, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-86",
+      "amount": {
+        "value": 299460.35,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 86, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-87",
+      "amount": {
+        "value": 176654.76,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 87, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-88",
+      "amount": {
+        "value": 2652,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 88, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-89",
+      "amount": {
+        "value": 5021.41,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 89, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-90",
+      "amount": {
+        "value": 1971.66,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 90, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-91",
+      "amount": {
+        "value": 6204.69,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 91, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-92",
+      "amount": {
+        "value": 2774.7,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 92, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-93",
+      "amount": {
+        "value": 9030.95,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 93, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-94",
+      "amount": {
+        "value": 1083.9,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 94, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-95",
+      "amount": {
+        "value": 10949.4,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 95, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-96",
+      "amount": {
+        "value": 4019.28,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 96, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-97",
+      "amount": {
+        "value": 8539.07,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 97, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-98",
+      "amount": {
+        "value": 2937.79,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 98, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-99",
+      "amount": {
+        "value": 164.07,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 99, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-100",
+      "amount": {
+        "value": 10131.86,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 100, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-101",
+      "amount": {
+        "value": 24842.49,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 101, Actuals 2024-25, Total column"
+        }
+      ]
+    },
+    {
+      "id": "demand-102",
+      "amount": {
+        "value": 2710.73,
+        "unit": "crore-rupees"
+      },
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 102, Actuals 2024-25, Total column"
+        }
+      ]
+    }
+  ],
+  "trees": [
+    {
+      "of": "revenue-deficit-grants",
+      "axis": "recipient",
+      "children": [
+        "revenue-deficit-grants-himachal-pradesh",
+        "revenue-deficit-grants-uttarakhand",
+        "revenue-deficit-grants-nagaland",
+        "revenue-deficit-grants-tripura",
+        "revenue-deficit-grants-punjab",
+        "revenue-deficit-grants-manipur",
+        "revenue-deficit-grants-mizoram",
+        "revenue-deficit-grants-west-bengal",
+        "revenue-deficit-grants-meghalaya"
+      ]
+    },
+    {
+      "of": "demand-42",
+      "axis": "destination",
+      "children": [
+        "capital-investment-loans",
+        "local-body-grants",
+        "revenue-deficit-grants",
+        "state-disaster-response",
+        "eap-loans",
+        "health-sector-grants",
+        "eap-grants",
+        "state-disaster-mitigation",
+        "special-assistance",
+        "ndrf-assistance",
+        "ndrf-transfer"
+      ]
+    },
+    {
+      "of": "@root",
+      "axis": "purpose",
+      "children": [
+        {
+          "group": "agriculture-and-rural-development",
+          "children": [
+            "demand-1",
+            "demand-16",
+            "demand-43",
+            "demand-44",
+            "demand-6",
+            "demand-87",
+            "demand-88"
+          ]
+        },
+        {
+          "group": "culture-media-and-sport",
+          "children": [
+            "demand-18",
+            "demand-61",
+            "demand-99"
+          ]
+        },
+        {
+          "group": "defence-and-security",
+          "children": [
+            "demand-19",
+            "demand-20",
+            "demand-21",
+            "demand-22",
+            "demand-49",
+            "demand-51"
+          ]
+        },
+        {
+          "group": "education-skills-and-research",
+          "children": [
+            "demand-2",
+            "demand-24",
+            "demand-25",
+            "demand-26",
+            "demand-89",
+            "demand-90",
+            "demand-91",
+            "demand-92",
+            "demand-95",
+            "demand-96"
+          ]
+        },
+        {
+          "group": "energy-industry-and-the-economy",
+          "children": [
+            "demand-10",
+            "demand-11",
+            "demand-27",
+            "demand-3",
+            "demand-30",
+            "demand-32",
+            "demand-33",
+            "demand-34",
+            "demand-48",
+            "demand-5",
+            "demand-68",
+            "demand-69",
+            "demand-7",
+            "demand-71",
+            "demand-76",
+            "demand-79",
+            "demand-9",
+            "demand-97",
+            "demand-98"
+          ]
+        },
+        {
+          "group": "environment-and-climate",
+          "children": [
+            "demand-28"
+          ]
+        },
+        {
+          "group": "government-and-public-administration",
+          "children": [
+            "demand-12",
+            "demand-17",
+            "demand-29",
+            "demand-31",
+            "demand-35",
+            "demand-36",
+            "demand-37",
+            "demand-38",
+            "demand-45",
+            "demand-50",
+            "demand-63",
+            "demand-64",
+            "demand-65",
+            "demand-66",
+            "demand-67",
+            "demand-72",
+            "demand-73",
+            "demand-75",
+            "demand-77",
+            "demand-80",
+            "demand-81",
+            "demand-82",
+            "demand-83",
+            "demand-84"
+          ]
+        },
+        {
+          "group": "health-and-social-protection",
+          "children": [
+            "demand-100",
+            "demand-101",
+            "demand-14",
+            "demand-15",
+            "demand-4",
+            "demand-41",
+            "demand-46",
+            "demand-47",
+            "demand-70",
+            "demand-74",
+            "demand-93",
+            "demand-94"
+          ]
+        },
+        {
+          "group": "interest-and-debt-service",
+          "children": [
+            "demand-39"
+          ]
+        },
+        {
+          "group": "states-territories-and-transfers",
+          "children": [
+            "demand-23",
+            "demand-42",
+            "demand-52",
+            "demand-53",
+            "demand-54",
+            "demand-55",
+            "demand-56",
+            "demand-57",
+            "demand-58",
+            "demand-59"
+          ]
+        },
+        {
+          "group": "transport-housing-and-infrastructure",
+          "children": [
+            "demand-102",
+            "demand-13",
+            "demand-60",
+            "demand-62",
+            "demand-78",
+            "demand-8",
+            "demand-85",
+            "demand-86"
+          ]
+        }
+      ]
+    },
+    {
+      "of": "@root",
+      "axis": "administrative",
+      "children": [
+        {
+          "group": "agriculture-and-farmers-welfare",
+          "children": [
+            "demand-1",
+            "demand-2"
+          ]
+        },
+        {
+          "group": "atomic-energy",
+          "children": [
+            "demand-3"
+          ]
+        },
+        {
+          "group": "ayush",
+          "children": [
+            "demand-4"
+          ]
+        },
+        {
+          "group": "chemicals-and-fertilisers",
+          "children": [
+            "demand-5",
+            "demand-6",
+            "demand-7"
+          ]
+        },
+        {
+          "group": "civil-aviation",
+          "children": [
+            "demand-8"
+          ]
+        },
+        {
+          "group": "coal",
+          "children": [
+            "demand-9"
+          ]
+        },
+        {
+          "group": "commerce-and-industry",
+          "children": [
+            "demand-10",
+            "demand-11"
+          ]
+        },
+        {
+          "group": "communications",
+          "children": [
+            "demand-12",
+            "demand-13"
+          ]
+        },
+        {
+          "group": "consumer-affairs-food-and-public-distribution",
+          "children": [
+            "demand-14",
+            "demand-15"
+          ]
+        },
+        {
+          "group": "cooperation",
+          "children": [
+            "demand-16"
+          ]
+        },
+        {
+          "group": "corporate-affairs",
+          "children": [
+            "demand-17"
+          ]
+        },
+        {
+          "group": "culture",
+          "children": [
+            "demand-18"
+          ]
+        },
+        {
+          "group": "defence",
+          "children": [
+            "demand-19",
+            "demand-20",
+            "demand-21",
+            "demand-22"
+          ]
+        },
+        {
+          "group": "development-of-north-eastern-region",
+          "children": [
+            "demand-23"
+          ]
+        },
+        {
+          "group": "earth-sciences",
+          "children": [
+            "demand-24"
+          ]
+        },
+        {
+          "group": "education",
+          "children": [
+            "demand-25",
+            "demand-26"
+          ]
+        },
+        {
+          "group": "electronics-and-information-technology",
+          "children": [
+            "demand-27"
+          ]
+        },
+        {
+          "group": "environment-forests-and-climate-change",
+          "children": [
+            "demand-28"
+          ]
+        },
+        {
+          "group": "external-affairs",
+          "children": [
+            "demand-29"
+          ]
+        },
+        {
+          "group": "finance",
+          "children": [
+            "demand-30",
+            "demand-31",
+            "demand-32",
+            "demand-33",
+            "demand-34",
+            "demand-35",
+            "demand-36",
+            "demand-37",
+            "demand-38",
+            "demand-39",
+            "demand-41",
+            "demand-42"
+          ]
+        },
+        {
+          "group": "fisheries-animal-husbandry-and-dairying",
+          "children": [
+            "demand-43",
+            "demand-44"
+          ]
+        },
+        {
+          "group": "food-processing-industries",
+          "children": [
+            "demand-45"
+          ]
+        },
+        {
+          "group": "health-and-family-welfare",
+          "children": [
+            "demand-46",
+            "demand-47"
+          ]
+        },
+        {
+          "group": "heavy-industries",
+          "children": [
+            "demand-48"
+          ]
+        },
+        {
+          "group": "home-affairs",
+          "children": [
+            "demand-49",
+            "demand-50",
+            "demand-51",
+            "demand-52",
+            "demand-53",
+            "demand-54",
+            "demand-55",
+            "demand-56",
+            "demand-57",
+            "demand-58",
+            "demand-59"
+          ]
+        },
+        {
+          "group": "housing-and-urban-affairs",
+          "children": [
+            "demand-60"
+          ]
+        },
+        {
+          "group": "information-and-broadcasting",
+          "children": [
+            "demand-61"
+          ]
+        },
+        {
+          "group": "jal-shakti",
+          "children": [
+            "demand-62",
+            "demand-63"
+          ]
+        },
+        {
+          "group": "labour-and-employment",
+          "children": [
+            "demand-64"
+          ]
+        },
+        {
+          "group": "law-and-justice",
+          "children": [
+            "demand-65",
+            "demand-66",
+            "demand-67"
+          ]
+        },
+        {
+          "group": "micro-small-and-medium-enterprises",
+          "children": [
+            "demand-68"
+          ]
+        },
+        {
+          "group": "mines",
+          "children": [
+            "demand-69"
+          ]
+        },
+        {
+          "group": "minority-affairs",
+          "children": [
+            "demand-70"
+          ]
+        },
+        {
+          "group": "new-and-renewable-energy",
+          "children": [
+            "demand-71"
+          ]
+        },
+        {
+          "group": "panchayati-raj",
+          "children": [
+            "demand-72"
+          ]
+        },
+        {
+          "group": "parliamentary-affairs",
+          "children": [
+            "demand-73"
+          ]
+        },
+        {
+          "group": "personnel-public-grievances-and-pensions",
+          "children": [
+            "demand-74",
+            "demand-75"
+          ]
+        },
+        {
+          "group": "petroleum-and-natural-gas",
+          "children": [
+            "demand-76"
+          ]
+        },
+        {
+          "group": "planning",
+          "children": [
+            "demand-77"
+          ]
+        },
+        {
+          "group": "ports-shipping-and-waterways",
+          "children": [
+            "demand-78"
+          ]
+        },
+        {
+          "group": "power",
+          "children": [
+            "demand-79"
+          ]
+        },
+        {
+          "group": "president-parliament-and-upsc",
+          "children": [
+            "demand-80",
+            "demand-81",
+            "demand-82",
+            "demand-83",
+            "demand-84"
+          ]
+        },
+        {
+          "group": "railways",
+          "children": [
+            "demand-85"
+          ]
+        },
+        {
+          "group": "road-transport-and-highways",
+          "children": [
+            "demand-86"
+          ]
+        },
+        {
+          "group": "rural-development",
+          "children": [
+            "demand-87",
+            "demand-88"
+          ]
+        },
+        {
+          "group": "science-and-technology",
+          "children": [
+            "demand-89",
+            "demand-90",
+            "demand-91"
+          ]
+        },
+        {
+          "group": "skill-development-and-entrepreneurship",
+          "children": [
+            "demand-92"
+          ]
+        },
+        {
+          "group": "social-justice-and-empowerment",
+          "children": [
+            "demand-93",
+            "demand-94"
+          ]
+        },
+        {
+          "group": "space",
+          "children": [
+            "demand-95"
+          ]
+        },
+        {
+          "group": "statistics-and-programme-implementation",
+          "children": [
+            "demand-96"
+          ]
+        },
+        {
+          "group": "steel",
+          "children": [
+            "demand-97"
+          ]
+        },
+        {
+          "group": "textiles",
+          "children": [
+            "demand-98"
+          ]
+        },
+        {
+          "group": "tourism",
+          "children": [
+            "demand-99"
+          ]
+        },
+        {
+          "group": "tribal-affairs",
+          "children": [
+            "demand-100"
+          ]
+        },
+        {
+          "group": "women-and-child-development",
+          "children": [
+            "demand-101"
+          ]
+        },
+        {
+          "group": "youth-affairs-and-sports",
+          "children": [
+            "demand-102"
+          ]
+        }
+      ]
+    },
+    {
+      "of": "demand-1",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 129858.28,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 75.19,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 1, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-2",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 9807.38,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 3.15,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 2, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-3",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 12692.24,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 12400.34,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 3, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-4",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 3299.71,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 12.34,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 4, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-5",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 104.65,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 121.36,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 5, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-6",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 181785.32,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 8.06,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 6, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-7",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 2933.35,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 39.99,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 7, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-8",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 2503.51,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 97.12,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 8, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-9",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 133.51,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 2.16,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 9, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-10",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 5367.76,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 44.69,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 10, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-11",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 6489.22,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 1397.47,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 11, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-12",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 24915.2,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 1190.49,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 12, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-13",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 47880.58,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 73846.06,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 13, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-14",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 7239.86,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 62.38,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 14, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-15",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 207602.24,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 104.26,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 15, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-16",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 733.85,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 2.25,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 16, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-17",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 638.01,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 41.9,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 17, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-18",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 3062.47,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 182.32,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 18, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-19",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 16767.97,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 10848.48,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 19, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-20",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 290964.51,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 0,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 20, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-21",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 0,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 159768.4,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 21, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-22",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 157653.65,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 0,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 22, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-23",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 1047.41,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 2323.21,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 23, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-24",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 2371.84,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 999.33,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 24, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-25",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 65159.0,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 0.25,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 25, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-26",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 45571.68,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 4.84,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 26, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-27",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 13335.47,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 325.84,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 27, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-28",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 2130.61,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 89.09,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 28, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-29",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 23908.89,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 1603.48,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 29, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-30",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 43274.82,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 10051.36,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 30, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-31",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 439.37,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 47.48,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 31, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-32",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 3161.78,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 523.37,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 32, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-33",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 21.17,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 0.64,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 33, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-34",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 37.96,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 0.79,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 34, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-35",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 152087.54,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 449.68,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 35, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-36",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 9135.55,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 2297.25,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 36, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-37",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 37029.9,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 1771.72,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 37, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-38",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 6045.06,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 152.35,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 38, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-39",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 1115574.6,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 0,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 39, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-41",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 92279.49,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 0,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 41, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-42",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 133254.06,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 165701.16,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 42, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-43",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 1019.71,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 5.28,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 43, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-44",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 2763.31,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 198.01,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 44, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-45",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 2302.09,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 1.98,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 45, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-46",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 84974.51,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 2325.66,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 46, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-47",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 3382.98,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 0.95,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 47, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-48",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 2646.42,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 1.55,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 48, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-49",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 5402.82,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 269.63,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 49, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-50",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 643.78,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 317.17,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 50, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-51",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 135073.72,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 11561.1,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 51, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-52",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 5539.36,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 401.96,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 52, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-53",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 5409.74,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 449.19,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 53, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-54",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 1632.93,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 1003.33,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 54, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-55",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 2374.92,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 2482.13,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 55, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-56",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 1397.4,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 215.6,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 56, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-57",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 966.0,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 142.0,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 57, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-58",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 46000.06,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 0,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 58, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-59",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 3302.36,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 0,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 59, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-60",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 21632.38,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 31622.77,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 60, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-61",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 4256.72,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 45.1,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 61, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-62",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 20566.52,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 300.13,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 62, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-63",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 25851.75,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 1.5,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 63, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-64",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 11375.63,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 32.39,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 64, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-65",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 7087.29,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 102.29,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 65, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-66",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 319.06,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": -30.05,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 66, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-67",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 507.96,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 90.59,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 67, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-68",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 7643.05,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 587.92,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 68, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-69",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 3050.41,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 46.0,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 69, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-70",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 712.03,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 2.95,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 70, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-71",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 18620.26,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 6.39,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 71, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-72",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 838.57,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 11.66,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 72, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-73",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 56.68,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 6.34,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 73, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-74",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 2249.33,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 251.99,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 74, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-75",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 46.84,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 1.6,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 75, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-76",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 16621.78,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 340.55,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 76, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-77",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 273.28,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 7.15,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 77, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-78",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 1498.17,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 1339.41,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 78, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-79",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 18591.32,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 1122.46,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 79, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-80",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 111.19,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 12.99,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 80, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-81",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 669.72,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 25.82,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 81, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-82",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 399.68,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 12.36,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 82, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-83",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 10.68,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 0.29,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 83, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-84",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 405.51,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 21.5,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 84, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-85",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 3316.45,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 251946.56,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 85, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-86",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 14115.95,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 285344.4,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 86, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-87",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 176650.78,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 3.98,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 87, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-88",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 2651.13,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 0.87,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 88, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-89",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 4957.19,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 64.22,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 89, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-90",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 1971.66,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 0,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 90, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-91",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 6203.39,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 1.3,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 91, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-92",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 2688.69,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 86.01,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 92, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-93",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 8995.16,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 35.79,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 93, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-94",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 1083.89,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 0.01,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 94, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-95",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 6923.93,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 4025.47,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 95, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-96",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 3989.26,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 30.02,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 96, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-97",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 109.77,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 8429.3,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 97, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-98",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 2895.37,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 42.42,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 98, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-99",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 159.9,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 4.17,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 99, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-100",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 10129.81,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 2.05,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 100, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-101",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 24835.97,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 6.52,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 101, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    },
+    {
+      "of": "demand-102",
+      "axis": "account-class",
+      "parts": [
+        {
+          "group": "revenue",
+          "amount": {
+            "value": 2708.49,
+            "unit": "crore-rupees"
+          }
+        },
+        {
+          "group": "capital",
+          "amount": {
+            "value": 2.24,
+            "unit": "crore-rupees"
+          }
+        }
+      ],
+      "cite": [
+        {
+          "sourceId": "mof-2024-25-statement-3",
+          "locator": "Statement 3, Demand No. 102, Actuals 2024-25, Revenue and Capital columns"
+        }
+      ]
+    }
+  ]
+}

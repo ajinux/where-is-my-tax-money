@@ -1,0 +1,39 @@
+---
+import Page from "../../layouts/Page.astro";
+import RowList from "../../components/doc/RowList.astro";
+import { entities, amountIn } from "../../lib/entities";
+import { formatCrore } from "../../lib/format";
+import { ministryPath } from "../../lib/routes";
+
+const newest = entities.years[0];
+const ministries = entities.ministries;
+const title = `Every Indian union ministry's budget, ${newest.label}`;
+const description =
+  `What each of the ${ministries.length} ministries and departments of the Government of India ` +
+  `spent in ${newest.label}, from ${formatCrore(newest.unionTotal)} of total union spending.`;
+---
+
+<Page
+  title={title}
+  description={description}
+  path="/ministry/"
+  crumbs={[{ label: "Home", href: "/" }, { label: "Who spent it" }]}
+>
+  <h1>Who spent it</h1>
+  <p class="lede">
+    All {ministries.length} ministries and departments, by what they spent in {newest.label}. The
+    grouping is published rather than invented: every Notes on Demands document prints its
+    ministry as the heading above the demand number.
+  </p>
+  <RowList
+    showBars
+    items={ministries.map((ministry) => ({
+      href: ministryPath(ministry.slug),
+      name: ministry.label,
+      blurb: ministry.description,
+      amountRupees: amountIn(ministry, newest.id),
+      tone: ministry.tone,
+    }))}
+  />
+  <a class="cta" href="/">Work out your own share</a>
+</Page>

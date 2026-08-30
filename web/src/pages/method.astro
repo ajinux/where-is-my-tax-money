@@ -1,0 +1,84 @@
+---
+// /method/, the explainer, as a real URL.
+//
+// The same component the app shows behind its "Method" button. That version is
+// inside a React island gated on `screen === "about"`, so it renders only after
+// a click and no crawler has ever seen a word of it: six revenue streams, the
+// base-tax/cess/surcharge split, the Finance Commission's share, and what the
+// site does not count. It is the most substantial original writing on the site
+// and it was invisible.
+//
+// Rendered with no client:* directive. Astro runs the component through the
+// React renderer at build time and ships the HTML with no JavaScript attached,
+// which is why Method takes `backHref`, the in-app <button onClick> would be
+// inert here.
+
+import Page from "../layouts/Page.astro";
+import { Method } from "../components/Method";
+import { entities } from "../lib/entities";
+import { HEALTH_EDUCATION_CESS } from "../lib/allocate";
+
+const newest = entities.years[0];
+
+const title = "How your income tax is split, and where the union spends it";
+const description =
+  "Where the union government's money comes from, how income tax splits into base tax, " +
+  `the ${Math.round(HEALTH_EDUCATION_CESS * 100)}% health and education cess and surcharge, and why only ` +
+  `the base part is ` +
+  `shared with states, at the ${newest.divisiblePoolPercent}% rate the ${
+    newest.awardLabel ?? "Finance Commission"
+  } sets.`;
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: "How your income tax is calculated and where it goes",
+    description,
+    inLanguage: "en-IN",
+    isAccessibleForFree: true,
+    about: [
+      { "@type": "Thing", name: "Union budget of India", sameAs: "https://en.wikipedia.org/wiki/Union_budget_of_India" },
+      { "@type": "Thing", name: "Finance Commission of India", sameAs: "https://en.wikipedia.org/wiki/Finance_Commission" },
+      { "@type": "Thing", name: "Income tax in India", sameAs: "https://en.wikipedia.org/wiki/Income_tax_in_India" },
+    ],
+  },
+];
+---
+
+<Page
+  title={title}
+  description={description}
+  path="/method/"
+  ogImage="/og/method.png"
+  ogImageAlt="How your income tax is split between the union government and the states."
+  jsonLd={jsonLd}
+  bare
+  crumbs={[{ label: "Home", href: "/" }, { label: "Method" }]}
+>
+  <Method
+    yearLabel={newest.label}
+    yearTag={newest.tag}
+    divisiblePoolPercent={newest.divisiblePoolPercent}
+    awardLabel={newest.awardLabel}
+    backHref="/"
+    heading="h1"
+  />
+
+  <div class="doc">
+    <h2>Then what?</h2>
+    <p>
+      The union's share is divided across ministries and purposes in the proportions of the real
+      budget. You can read those proportions directly, <a href="/where/">by what the money paid
+      for</a>, by the ministry that spent it, or year by year, or put in what you paid and see
+      your own share of each.
+    </p>
+    <p>
+      Every figure on this site is read from a published Ministry of Finance document and carries
+      a citation to it, down to the statement and column. <a href="/sources/">The full list of
+      documents</a> is public, and each one is identified by the SHA-256 checksum of the file it
+      was read from.
+    </p>
+    <a class="cta" href="/">Work out your own share</a>
+  </div>
+</Page>

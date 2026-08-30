@@ -1,0 +1,58 @@
+name: data
+
+# There was no CI in this repo before this workflow — every contribution was
+# validated by a human running `wimtm-data validate` locally, or not at all.
+# This runs the same checks a contributor is asked to run in CONTRIBUTING.md,
+# so a PR that fails them fails visibly instead of trusting recollection.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/**'
+      - '.github/workflows/data.yml'
+  pull_request:
+    paths:
+      - 'data/**'
+      - '.github/workflows/data.yml'
+
+defaults:
+  run:
+    working-directory: data
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+          cache-dependency-glob: data/uv.lock
+
+      - name: Sync dependencies
+        run: uv sync --locked
+
+      - name: Lint
+        run: uv run ruff check wimtm_data/ tests/
+
+      - name: Type check
+        run: uv run mypy wimtm_data/
+
+      - name: Test
+        run: uv run pytest
+
+      # Semantic rules — sum-mismatch, provenance, cross-period drift, all of it.
+      - name: Validate the dataset
+        run: uv run wimtm-data validate
+
+      # A clean validate does not guarantee a clean resolve — this is the
+      # step that actually produces dist/dataset.v3.json.
+      - name: Build the artifact
+        run: uv run wimtm-data build
+
+      # Source PDFs are large and not committed (`data/.cache/` is
+      # gitignored), so sources-verify has nothing to check here — that step
+      # is for a contributor's own machine after `sources-fetch`, not CI.

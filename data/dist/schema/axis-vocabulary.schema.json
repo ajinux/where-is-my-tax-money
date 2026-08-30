@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AxisVocabulary",
+  "description": "Named axes, so \"recipient\" means the same thing everywhere it\nappears.",
+  "$defs": {
+    "Axis": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "label": {
+          "minLength": 1,
+          "title": "Label",
+          "type": "string"
+        },
+        "description": {
+          "minLength": 1,
+          "title": "Description",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "partition",
+            "classification"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "groups": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Groups"
+        }
+      },
+      "required": [
+        "id",
+        "label",
+        "description",
+        "kind"
+      ],
+      "title": "Axis",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "version": {
+      "minLength": 1,
+      "title": "Version",
+      "type": "string"
+    },
+    "axes": {
+      "items": {
+        "$ref": "#/$defs/Axis"
+      },
+      "minItems": 1,
+      "title": "Axes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "version",
+    "axes"
+  ],
+  "type": "object"
+}

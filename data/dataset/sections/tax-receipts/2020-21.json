@@ -1,0 +1,33 @@
+{
+  "section": "tax-receipts",
+  "period": "2020-21",
+  "status": "actual-final",
+  "perimeter": "receipts",
+  "root": {
+    "amount": {
+      "value": 2027104,
+      "unit": "crore-rupees"
+    },
+    "cite": [
+      {
+        "sourceId": "mof-2020-21-glance-receipts",
+        "locator": "Budget at a Glance, Receipts, Gross Tax Revenue, Actuals 2020-21 column"
+      }
+    ]
+  },
+  "facts": [],
+  "trees": [
+    {
+      "of": "@root",
+      "axis": "shareability",
+      "derivedBy": {
+        "method": "divisible-pool",
+        "using": {
+          "devolutionSection": "tax-devolution"
+        }
+      },
+      "notes": "The divisible pool is not published as its own line, but it follows from two figures that are: devolution is a fixed percentage of it, so dividing back out recovers it. What is left is the cess and surcharge states get no share of."
+    }
+  ],
+  "notes": "The denominator that turns a national devolution total into a share of tax collected. Gross tax revenue is what the Union collected before anything is devolved or spent; it is a receipts figure, which is why it lives outside the expenditure dataset."
+}

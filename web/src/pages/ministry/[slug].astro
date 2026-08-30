@@ -1,0 +1,104 @@
+---
+// /ministry/<slug>/, the administrative lens, one ministry at a time.
+//
+// The grouping is read, not invented: every Notes on Demands document prints its
+// ministry as the heading above the demand number, so the mapping is published
+// per demand. The description is the list of departments the ministry contains,
+// for the same reason, no document describes a grouping we made up, so nothing
+// here pretends one does.
+
+import Page from "../../layouts/Page.astro";
+import YearTable from "../../components/doc/YearTable.astro";
+import RowList from "../../components/doc/RowList.astro";
+import { entities, linesOf, amountIn } from "../../lib/entities";
+import { formatCrore } from "../../lib/format";
+import { linePath } from "../../lib/routes";
+
+export function getStaticPaths() {
+  return entities.ministries.map((ministry) => ({
+    params: { slug: ministry.slug },
+    props: { ministry },
+  }));
+}
+
+const { ministry } = Astro.props;
+const newest = entities.years[0];
+const amount = amountIn(ministry, newest.id);
+const share = newest.unionTotal ? (amount / newest.unionTotal) * 100 : 0;
+const lines = linesOf(ministry.lineIds);
+
+const title = `${ministry.label}: budget and spending, ${newest.label}`;
+const description =
+  `${ministry.label} spent ${formatCrore(amount)} in ${newest.label}, ${share.toFixed(1)}% of ` +
+  `the union government's total. Figures for every year from ` +
+  `${entities.years[entities.years.length - 1].label}, each cited to its Ministry of Finance source.`;
+---
+
+<Page
+  title={title}
+  description={description}
+  path={`/ministry/${ministry.slug}/`}
+  ogImageAlt={`${ministry.label} spending in India's union budget.`}
+  crumbs={[
+    { label: "Home", href: "/" },
+    { label: "Who spent it", href: "/ministry/" },
+    { label: ministry.label },
+  ]}
+>
+  <h1>{ministry.label}</h1>
+  {ministry.description && <p class="lede">{ministry.description}</p>}
+  {
+    ministry.url && (
+      <p>
+        <a href={ministry.url} rel="noopener nofollow">
+          {ministry.url.replace(/^https?:\/\//, "")}
+        </a>{" "}
+        <small>
+          the official site. It is recorded only because the page it serves names itself as this
+          body; an absent link here means "not corroborated", never "has no website".
+        </small>
+      </p>
+    )
+  }
+
+  <div class="card">
+    <p class="figure">{formatCrore(amount)}</p>
+    <p style="margin-top:6px">
+      spent in <a href={`/year/${newest.id}/`}>{newest.label}</a>, {share.toFixed(2)}% of all
+      union government spending. <small>{newest.tag}.</small>
+    </p>
+    <div class="bar">
+      <span style={`width:${Math.max(share, 1)}%;background:${ministry.tone ?? "var(--color-accent-500)"}`}></span>
+    </div>
+  </div>
+
+  <h2>Every year on record</h2>
+  <YearTable amounts={ministry.amounts} shareOfUnion caption={`${ministry.label}, by year`} />
+
+  <h2>Its demands for grants</h2>
+  <p>
+    {lines.length} budget {lines.length === 1 ? "line" : "lines"} sit under this ministry. The
+    total above is their sum, because a group carries no figure of its own anywhere in this
+    dataset.
+  </p>
+  <RowList
+    showBars
+    items={lines.map((line) => ({
+      href: linePath(line.slug),
+      name: line.label,
+      blurb: line.summary,
+      amountRupees: amountIn(line, newest.id),
+      tone: ministry.tone,
+    }))}
+  />
+
+  <p>
+    <small>
+      The ministry structure here is the one the 2026-27 Budget publishes, applied to every year
+      so a demand keeps one place across time. A machinery-of-government change that moved a
+      demand between ministries in an earlier year is therefore not reflected.
+    </small>
+  </p>
+
+  <a class="cta" href="/">Work out your own share</a>
+</Page>
