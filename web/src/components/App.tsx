@@ -64,6 +64,45 @@ async function copyText(text: string) {
   document.body.removeChild(area);
 }
 
+/**
+ * How long a "copied" tick stays lit.
+ */
+const FLASH_MS = 1000;
+
+/**
+ * Copy feedback is a flash, not a state.
+ *
+ * It used to be cleared only by leaving the screen, so the tick stayed lit for
+ * as long as the reader stood there. The copy itself always worked, but a
+ * second press changed nothing on screen, which reads as a dead button. Each
+ * press now restarts the timer, and a pending timer is cleared on unmount so it
+ * cannot fire into a screen that is gone.
+ */
+function useFlash<T>(idle: T): [T, (value: T) => void] {
+  const [value, setValue] = useState<T>(idle);
+  const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const flash = useCallback(
+    (next: T) => {
+      if (timer.current) clearTimeout(timer.current);
+      timer.current = null;
+      setValue(next);
+      if (next === idle) return;
+      timer.current = setTimeout(() => setValue(idle), FLASH_MS);
+    },
+    [idle]
+  );
+
+  useEffect(
+    () => () => {
+      if (timer.current) clearTimeout(timer.current);
+    },
+    []
+  );
+
+  return [value, flash];
+}
+
 export function App({ summary }: { summary: Summary }) {
   const [state, setState] = useState<State>({
     screen: "home",
@@ -79,9 +118,9 @@ export function App({ summary }: { summary: Summary }) {
   });
   const [year, setYear] = useState<YearData | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
-  const [copiedRow, setCopiedRow] = useState<string | null>(null);
-  const [copiedLink, setCopiedLink] = useState(false);
-  const [shared, setShared] = useState(false);
+  const [copiedRow, flashCopiedRow] = useFlash<string | null>(null);
+  const [copiedLink, flashCopiedLink] = useFlash(false);
+  const [shared, flashShared] = useFlash(false);
 
   // A shared link is the only way to arrive anywhere but home.
   useEffect(() => {
@@ -149,10 +188,10 @@ export function App({ summary }: { summary: Summary }) {
       subIndex: subIndex === undefined ? null : subIndex,
       focusId: null,
     }));
-    setCopiedRow(null);
-    setCopiedLink(false);
-    setShared(false);
-  }, []);
+    flashCopiedRow(null);
+    flashCopiedLink(false);
+    flashShared(false);
+  }, [flashCopiedRow, flashCopiedLink, flashShared]);
 
   const built = useMemo(() => {
     if (!year || state.amount <= 0) return null;
@@ -179,9 +218,9 @@ export function App({ summary }: { summary: Summary }) {
   const copyRow = useCallback(
     (rowId: string, target: LinkTarget) => {
       void copyText(currentUrl(state, target));
-      setCopiedRow(rowId);
+      flashCopiedRow(rowId);
     },
-    [state]
+    [state, flashCopiedRow]
   );
 
   const shareNative = useCallback(() => {
@@ -190,12 +229,12 @@ export function App({ summary }: { summary: Summary }) {
     const text = `${built.card.kicker}. ${built.card.big} ${built.card.sub}`;
     const fallback = () => {
       void copyText(`${text} ${url}`);
-      setShared(true);
+      flashShared(true);
     };
     const canShare = typeof navigator.share === "function" && window.isSecureContext;
     if (!canShare) return fallback();
     navigator.share({ title: "Where is my tax money?", text, url }).catch(fallback);
-  }, [built, state]);
+  }, [built, state, flashShared]);
 
   const canShare =
     typeof navigator !== "undefined" &&
@@ -320,7 +359,7 @@ export function App({ summary }: { summary: Summary }) {
             onShare={shareNative}
             onCopyLink={() => {
               void copyText(currentUrl(state));
-              setCopiedLink(true);
+              flashCopiedLink(true);
             }}
           />
         ) : null}
