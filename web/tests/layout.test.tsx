@@ -115,6 +115,7 @@ test("the narrow screens centre rather than clinging to the left edge", () => {
           amountStr="1,20,000"
           amount={120_000}
           surcharge={0}
+          surchargeAuto={false}
           year="2024-25"
           years={[{ id: "2024-25", label: "2024–25", tag: "Latest final figures", status: "actual-final" }]}
           onAmount={noop}
