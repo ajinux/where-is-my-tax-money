@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 
 import { SURCHARGE_RATES } from "../lib/allocate";
 import { formatInr } from "../lib/format";
@@ -6,6 +6,36 @@ import { guessSurcharge } from "../lib/surcharge";
 import type { YearStub } from "../lib/model";
 
 const PRESETS = [25_000, 120_000, 600_000];
+
+/**
+ * Where the caret should land, counted in digits rather than characters.
+ *
+ * The value is regrouped on every keystroke, so the string React writes back is
+ * rarely the one the reader typed into: an inserted digit can push a comma in or
+ * out ahead of the caret. Characters therefore cannot be restored by index. The
+ * digit the caret sits behind survives regrouping unchanged, so that is what we
+ * remember and then find again.
+ */
+export function digitsBefore(value: string, caret: number): number {
+  let n = 0;
+  for (let i = 0; i < caret && i < value.length; i += 1) {
+    if (value[i] >= "0" && value[i] <= "9") n += 1;
+  }
+  return n;
+}
+
+/** The character offset just past the nth digit of a formatted value. */
+export function caretAfterDigits(value: string, digits: number): number {
+  if (digits <= 0) return 0;
+  let n = 0;
+  for (let i = 0; i < value.length; i += 1) {
+    if (value[i] >= "0" && value[i] <= "9") {
+      n += 1;
+      if (n === digits) return i + 1;
+    }
+  }
+  return value.length;
+}
 
 /** A financial year "2025-26" ends 31 March 2026 — known, not guessed. */
 function fyHasEnded(id: string): boolean {
@@ -37,6 +67,31 @@ export function AmountInput({
   const [picked, setPicked] = useState(false);
   const selected = years.find((y) => y.id === year);
 
+  // The caret to restore after the regrouped value comes back down as a prop,
+  // in digits. Null except on the render that answers an edit, so a preset
+  // button or an arrival never drags the caret anywhere.
+  const inputRef = useRef<HTMLInputElement>(null);
+  const caretDigits = useRef<number | null>(null);
+
+  useLayoutEffect(() => {
+    const el = inputRef.current;
+    const want = caretDigits.current;
+    caretDigits.current = null;
+    if (!el || want === null || document.activeElement !== el) return;
+    // An edit React saw no state change in ("1,20,000" plus a stray letter, a
+    // leading zero) leaves the typed text in the DOM for React to put back
+    // after this effect, which would move the caret again. Put it back first.
+    if (el.value !== amountStr) el.value = amountStr;
+    const at = caretAfterDigits(amountStr, want);
+    el.setSelectionRange(at, at);
+  });
+
+  /** Record where the edit left the caret, then hand the raw text up. */
+  const edit = (raw: string, caret: number) => {
+    caretDigits.current = digitsBefore(raw, caret);
+    onAmount(raw);
+  };
+
   // Shown only while the buttons below are still answering for the reader. Once
   // they press one, the question is theirs and the explanation is spent.
   const guess = surchargeAuto ? guessSurcharge(amount) : null;
@@ -67,10 +122,32 @@ export function AmountInput({
             inputMode="numeric"
             placeholder="1,20,000"
             aria-label="Income tax paid, in rupees"
+            ref={inputRef}
             value={amountStr}
-            onChange={(e) => onAmount(e.target.value)}
+            onChange={(e) => edit(e.target.value, e.target.selectionStart ?? e.target.value.length)}
             onKeyDown={(e) => {
-              if (e.key === "Enter" && amount > 0) onSubmit();
+              if (e.key === "Enter" && amount > 0) {
+                onSubmit();
+                return;
+              }
+              // Backspace onto a comma would otherwise do nothing visible: the
+              // separator is regrouped straight back in. Take the digit in
+              // front of it, which is what the reader was aiming at.
+              const el = e.currentTarget;
+              const at = el.selectionStart;
+              if (
+                e.key !== "Backspace" ||
+                at === null ||
+                at !== el.selectionEnd ||
+                at === 0 ||
+                /[0-9]/.test(el.value[at - 1] ?? "")
+              ) {
+                return;
+              }
+              const cut = el.value.slice(0, at).search(/[0-9][^0-9]*$/);
+              if (cut < 0) return;
+              e.preventDefault();
+              edit(el.value.slice(0, cut) + el.value.slice(cut + 1), cut);
             }}
             style={{ flex: 1, minWidth: 0, background: "none", border: 0, outline: "none", fontFamily: "var(--font-heading)", fontSize: 30, lineHeight: 1.1, color: "var(--color-text)", padding: 0, width: "100%" }}
           />
