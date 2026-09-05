@@ -6,6 +6,7 @@ import { parseAmount } from "../lib/format";
 import { linkQuery, parseLink, type LinkTarget } from "../lib/link";
 import { loadYear, type LensName, type Summary, type YearData } from "../lib/model";
 import { rank } from "../lib/rank";
+import { guessSurcharge } from "../lib/surcharge";
 import { SITE_NAME, REPO_URL, hasRepo } from "../lib/site";
 import { AmountInput } from "./AmountInput";
 import { Detail } from "./Detail";
@@ -23,6 +24,11 @@ interface State {
   amountStr: string;
   amount: number;
   surcharge: number;
+  /**
+   * Whether the surcharge above is the reader's own answer rather than one
+   * guessed from the amount. A guess only ever fills a blank.
+   */
+  surchargeSet: boolean;
   year: string;
   lens: LensName;
   headId: string | null;
@@ -109,6 +115,7 @@ export function App({ summary }: { summary: Summary }) {
     amountStr: "",
     amount: 0,
     surcharge: 0,
+    surchargeSet: false,
     year: summary.latestFinal,
     lens: "purpose",
     headId: null,
@@ -125,7 +132,9 @@ export function App({ summary }: { summary: Summary }) {
   // A shared link is the only way to arrive anywhere but home.
   useEffect(() => {
     const fromUrl = readUrl(summary);
-    if (fromUrl) setState((s) => ({ ...s, ...fromUrl }));
+    // A link is the authority on its own surcharge, including when it carries
+    // none. Nothing may be guessed over the top of what someone shared.
+    if (fromUrl) setState((s) => ({ ...s, ...fromUrl, surchargeSet: true }));
   }, [summary]);
 
   // Figures for the selected year, fetched once and cached.
@@ -174,7 +183,9 @@ export function App({ summary }: { summary: Summary }) {
   useEffect(() => {
     const onPop = () => {
       const fromUrl = readUrl(summary);
-      setState((s) => (fromUrl ? { ...s, ...fromUrl } : { ...s, screen: "home" }));
+      setState((s) =>
+        fromUrl ? { ...s, ...fromUrl, surchargeSet: true } : { ...s, screen: "home" }
+      );
     };
     window.addEventListener("popstate", onPop);
     return () => window.removeEventListener("popstate", onPop);
@@ -268,11 +279,19 @@ export function App({ summary }: { summary: Summary }) {
             surcharge={state.surcharge}
             year={state.year}
             years={summary.years}
+            surchargeAuto={!state.surchargeSet}
             onAmount={(raw) => {
               const n = parseAmount(raw);
-              setState((s) => ({ ...s, amount: n, amountStr: n ? n.toLocaleString("en-IN") : "" }));
+              setState((s) => ({
+                ...s,
+                amount: n,
+                amountStr: n ? n.toLocaleString("en-IN") : "",
+                surcharge: s.surchargeSet ? s.surcharge : (guessSurcharge(n)?.rate ?? 0),
+              }));
             }}
-            onSurcharge={(value) => setState((s) => ({ ...s, surcharge: value }))}
+            onSurcharge={(value) =>
+              setState((s) => ({ ...s, surcharge: value, surchargeSet: true }))
+            }
             onYear={(id) => setState((s) => ({ ...s, year: id }))}
             onSubmit={() => state.amount > 0 && go("result", null)}
           />

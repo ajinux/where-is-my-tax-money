@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import { SURCHARGE_RATES } from "../lib/allocate";
 import { formatInr } from "../lib/format";
+import { guessSurcharge } from "../lib/surcharge";
 import type { YearStub } from "../lib/model";
 
 const PRESETS = [25_000, 120_000, 600_000];
@@ -16,6 +17,8 @@ interface Props {
   amountStr: string;
   amount: number;
   surcharge: number;
+  /** True while the surcharge shown is guessed rather than answered. */
+  surchargeAuto: boolean;
   year: string;
   years: YearStub[];
   onAmount: (raw: string) => void;
@@ -25,7 +28,7 @@ interface Props {
 }
 
 export function AmountInput({
-  amountStr, amount, surcharge, year, years,
+  amountStr, amount, surcharge, surchargeAuto, year, years,
   onAmount, onSurcharge, onYear, onSubmit,
 }: Props) {
   // Set only by clicking a year button, never by the initial prop value — so
@@ -33,6 +36,10 @@ export function AmountInput({
   // be the default. It should only answer a click, not greet arrival.
   const [picked, setPicked] = useState(false);
   const selected = years.find((y) => y.id === year);
+
+  // Shown only while the buttons below are still answering for the reader. Once
+  // they press one, the question is theirs and the explanation is spent.
+  const guess = surchargeAuto ? guessSurcharge(amount) : null;
   const selectedNote =
     picked && selected && selected.status !== "actual-final"
       ? fyHasEnded(selected.id)
@@ -113,8 +120,10 @@ export function AmountInput({
           })}
         </div>
         <p style={{ margin: "12px 0 0", fontSize: 13, lineHeight: 1.45, color: "var(--color-neutral-800)" }}>
-          Most people pay none, so leave this alone if you are not sure. It changes how much of your
-          money reaches your state.
+          {guess
+            ? `Tax of ${formatInr(amount)} can only come from an income above ${guess.incomeLabel}, so we have started you at ${Math.round(guess.rate * 100)}%. Change it if that is not what you paid.`
+            : "Most people pay none, so leave this alone if you are not sure."}{" "}
+          It changes how much of your money reaches your state.
         </p>
       </div>
 
