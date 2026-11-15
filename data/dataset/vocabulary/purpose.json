@@ -5,57 +5,57 @@
     {
       "id": "agriculture-and-rural-development",
       "label": "Agriculture and rural development",
-      "description": "Farming, irrigation, fisheries, food processing, and programmes aimed at rural livelihoods."
+      "description": "Farming, irrigation, fisheries, food processing, and schemes for rural jobs and incomes."
     },
     {
       "id": "culture-media-and-sport",
       "label": "Culture, media and sport",
-      "description": "Arts and heritage, broadcasting and information, tourism, youth affairs and sport."
+      "description": "Arts and heritage, public broadcasting, tourism, youth programmes and sport."
     },
     {
       "id": "defence-and-security",
       "label": "Defence and security",
-      "description": "The armed forces, defence pensions and production, home affairs, police and border management."
+      "description": "The army, navy and air force, their pensions and equipment, and the central police and border forces."
     },
     {
       "id": "education-skills-and-research",
       "label": "Education, skills and research",
-      "description": "School and higher education, skill development, and scientific and industrial research."
+      "description": "Schools, colleges and universities, job training, and scientific research."
     },
     {
       "id": "energy-industry-and-the-economy",
       "label": "Energy, industry and the economy",
-      "description": "Power, petroleum, coal, mines, heavy industry, commerce, corporate affairs and financial services."
+      "description": "Power, oil and gas, coal, mining, heavy industry, trade and financial services."
     },
     {
       "id": "environment-and-climate",
       "label": "Environment and climate",
-      "description": "Environment, forests and climate change, earth sciences, and new and renewable energy."
+      "description": "Forests and the environment, climate change, weather and ocean science, and renewable energy."
     },
     {
       "id": "government-and-public-administration",
       "label": "Government and public administration",
-      "description": "The central machinery of government: the legislature, judiciary, tax administration, external affairs and general services."
+      "description": "Running the government itself: Parliament, the courts, tax collection, foreign affairs and central offices."
     },
     {
       "id": "health-and-social-protection",
       "label": "Health and social protection",
-      "description": "Health and family welfare, pharmaceuticals, women and child development, social justice and tribal affairs."
+      "description": "Hospitals and health schemes, medicines, women and children, and support for disadvantaged and tribal communities."
     },
     {
       "id": "interest-and-debt-service",
       "label": "Interest and debt service",
-      "description": "Interest payments and the servicing of public debt from previous borrowing. It is usually the second largest thing the union spends on, and it is a legally committed charge rather than a discretionary programme."
+      "description": "Interest on money the government has already borrowed. It has to be paid in full every year."
     },
     {
       "id": "states-territories-and-transfers",
       "label": "Grants to states and union territories",
-      "description": "Union grants to state governments and the budgets of the union territories — Finance Commission grants, special assistance and territory administration. Not the states’ constitutional share of taxes, which is deducted earlier and sits outside this budget."
+      "description": "Extra money the central government gives to states, and the budgets of union territories such as Ladakh and Chandigarh. This is separate from the states’ own share of taxes, which is set aside earlier."
     },
     {
       "id": "transport-housing-and-infrastructure",
       "label": "Transport, housing and infrastructure",
-      "description": "Railways, roads, ports, civil aviation, telecommunications, housing and urban development."
+      "description": "Railways, highways, ports, airports, telecom, housing and cities."
     }
   ]
 }
