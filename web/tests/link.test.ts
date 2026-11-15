@@ -22,6 +22,7 @@ const summary = {
     { id: "2024-25", label: "2024–25", tag: "Actuals", status: "actual-final" },
     { id: "2025-26", label: "2025–26", tag: "Revised", status: "revised-estimate" },
   ],
+  counts: { ministries: 0, states: 0, documents: 0 },
   strip: [],
 } satisfies Summary;
 

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "datasetVersion": "2026.08.22",
+  "datasetVersion": "2026.11.15",
   "vocabularyVersions": {
     "purpose": "purpose-taxonomy-1",
     "administrative": "administrative-vocabulary-3",
@@ -70,6 +70,24 @@
       "date": "2026-08-22",
       "summary": "Ministries and departments can now carry their own official website, as an optional `url` on the administrative vocabulary's groups and on each line in union-expenditure's section.json. 27 of 56 ministries and 15 of 102 demand lines have one. The coverage is deliberately partial. A URL is the only claim in this dataset that no checksum can protect — a live site moves or dies where a document's bytes do not — so it is held to a different but explicit bar: a candidate is recorded only once the page it serves names itself as that body, either in its own title or as its full name in the page. Anything that merely looked plausible was dropped, which is not a hypothetical safeguard: the first domain tried from recollection, finmin.nic.in for the Ministry of Finance, does not resolve at all and would have shipped as a dead link. An absent url therefore means 'not corroborated', never 'has no website' — and 30 of those 102 demand lines are accounting heads such as Interest Payments or Repayment of Debt, which have no website to find. No figure changed.",
       "affectedIds": []
+    },
+    {
+      "version": "2026.11.15",
+      "date": "2026-11-15",
+      "summary": "The eleven purpose-group descriptions are rewritten in plain words. No figure, id, label or grouping changes. The old ones were written in budget vocabulary (\"a legally committed charge rather than a discretionary programme\", \"the central machinery of government\") and are printed on the site's home page, where the reader is a taxpayer and not an accountant. The interest description also said it is \"usually the second largest thing the union spends on\"; within union spending it is the largest group in five of the six years here (2020-21 is the exception, when health and social protection was larger), and second only if the states' share of taxes is counted, which this dataset keeps outside union spending. That sentence is removed rather than reworded.",
+      "affectedIds": [
+        "agriculture-and-rural-development",
+        "culture-media-and-sport",
+        "defence-and-security",
+        "education-skills-and-research",
+        "energy-industry-and-the-economy",
+        "environment-and-climate",
+        "government-and-public-administration",
+        "health-and-social-protection",
+        "interest-and-debt-service",
+        "states-territories-and-transfers",
+        "transport-housing-and-infrastructure"
+      ]
     }
   ]
 }

@@ -46,6 +46,8 @@ export interface Summary {
   latestFinal: string;
   yearRange: string;
   years: YearStub[];
+  /** Sizes of the reference sections, for the home screen's browse cards. */
+  counts: { ministries: number; states: number; documents: number };
   strip: {
     id: string;
     label: string;

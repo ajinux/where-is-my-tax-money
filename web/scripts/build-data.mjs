@@ -244,7 +244,7 @@ const strip = [
   {
     id: "devolution",
     label: "Sent to state governments",
-    desc: "The states' constitutional share of union tax collections, devolved unconditionally and deducted before the union spends anything.",
+    desc: "The share of central taxes that the Constitution gives to the states. They spend it as they choose, and it is set aside before the central government spends anything.",
     href: "/state/",
     amountRupees: newest.devolutionTotal,
     tone: "var(--color-accent-500)",
@@ -270,6 +270,13 @@ writeFileSync(
     latestFinal,
     yearRange: `${built[built.length - 1].label} to ${built[0].label}`,
     years: built.map((y) => ({ id: y.id, label: y.label, tag: y.tag, status: y.status })),
+    // How much sits behind each "Browse the figures" card on the home screen.
+    // Counted here so the home page never prints a number somebody typed.
+    counts: {
+      ministries: newest.lenses.administrative.length,
+      states: newest.states.length,
+      documents: dataset.sources.length,
+    },
     strip,
   })
 );
