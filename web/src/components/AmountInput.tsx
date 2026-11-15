@@ -43,6 +43,108 @@ function fyHasEnded(id: string): boolean {
   return Date.now() > new Date(startYear + 1, 2, 31, 23, 59, 59).getTime();
 }
 
+interface FieldProps {
+  amountStr: string;
+  amount: number;
+  onAmount: (raw: string) => void;
+  onSubmit: () => void;
+  /** Lets a caller put the caret in the box, as the landing screen's button does. */
+  inputRef?: React.RefObject<HTMLInputElement | null>;
+}
+
+/**
+ * The rupee box and its three presets.
+ *
+ * Its own component because two screens show it. It used to exist only on the
+ * input screen, one press behind the landing page, and 55% of visitors never
+ * made that press while 92% of those who did went on to a result: the box was
+ * not the obstacle, reaching it was. The landing screen now carries the same
+ * box, and the caret handling below is the part that must not be written twice.
+ */
+export function AmountField({ amountStr, amount, onAmount, onSubmit, inputRef: outerRef }: FieldProps) {
+  const ownRef = useRef<HTMLInputElement>(null);
+  const inputRef = outerRef ?? ownRef;
+
+  // The caret to restore after the regrouped value comes back down as a prop,
+  // in digits. Null except on the render that answers an edit, so a preset
+  // button or an arrival never drags the caret anywhere.
+  const caretDigits = useRef<number | null>(null);
+
+  useLayoutEffect(() => {
+    const el = inputRef.current;
+    const want = caretDigits.current;
+    caretDigits.current = null;
+    if (!el || want === null || document.activeElement !== el) return;
+    // An edit React saw no state change in ("1,20,000" plus a stray letter, a
+    // leading zero) leaves the typed text in the DOM for React to put back
+    // after this effect, which would move the caret again. Put it back first.
+    if (el.value !== amountStr) el.value = amountStr;
+    const at = caretAfterDigits(amountStr, want);
+    el.setSelectionRange(at, at);
+  });
+
+  /** Record where the edit left the caret, then hand the raw text up. */
+  const edit = (raw: string, caret: number) => {
+    caretDigits.current = digitsBefore(raw, caret);
+    onAmount(raw);
+  };
+
+  return (
+    <>
+      <div style={{ display: "flex", alignItems: "center", gap: 6, background: "var(--color-neutral-100)", border: "1.5px solid var(--color-neutral-300)", borderRadius: 999, padding: "14px 24px" }}>
+        <span style={{ fontFamily: "var(--font-heading)", fontSize: 30, lineHeight: 1, color: "var(--color-neutral-500)" }}>₹</span>
+        <input
+          type="text"
+          inputMode="numeric"
+          placeholder="1,20,000"
+          aria-label="Income tax paid, in rupees"
+          ref={inputRef}
+          value={amountStr}
+          onChange={(e) => edit(e.target.value, e.target.selectionStart ?? e.target.value.length)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" && amount > 0) {
+              onSubmit();
+              return;
+            }
+            // Backspace onto a comma would otherwise do nothing visible: the
+            // separator is regrouped straight back in. Take the digit in
+            // front of it, which is what the reader was aiming at.
+            const el = e.currentTarget;
+            const at = el.selectionStart;
+            if (
+              e.key !== "Backspace" ||
+              at === null ||
+              at !== el.selectionEnd ||
+              at === 0 ||
+              /[0-9]/.test(el.value[at - 1] ?? "")
+            ) {
+              return;
+            }
+            const cut = el.value.slice(0, at).search(/[0-9][^0-9]*$/);
+            if (cut < 0) return;
+            e.preventDefault();
+            edit(el.value.slice(0, cut) + el.value.slice(cut + 1), cut);
+          }}
+          style={{ flex: 1, minWidth: 0, background: "none", border: 0, outline: "none", fontFamily: "var(--font-heading)", fontSize: 30, lineHeight: 1.1, color: "var(--color-text)", padding: 0, width: "100%" }}
+        />
+      </div>
+      <div style={{ display: "flex", gap: 8, marginTop: 12, flexWrap: "wrap" }}>
+        {PRESETS.map((value) => (
+          <button
+            key={value}
+            type="button"
+            onClick={() => onAmount(String(value))}
+            className="chip"
+            style={{ border: "1px solid var(--color-divider)", background: "none", borderRadius: 999, padding: "12px 18px", minHeight: 44, font: "inherit", fontSize: 13, cursor: "pointer", color: "var(--color-text)" }}
+          >
+            {formatInr(value)}
+          </button>
+        ))}
+      </div>
+    </>
+  );
+}
+
 interface Props {
   amountStr: string;
   amount: number;
@@ -67,31 +169,6 @@ export function AmountInput({
   const [picked, setPicked] = useState(false);
   const selected = years.find((y) => y.id === year);
 
-  // The caret to restore after the regrouped value comes back down as a prop,
-  // in digits. Null except on the render that answers an edit, so a preset
-  // button or an arrival never drags the caret anywhere.
-  const inputRef = useRef<HTMLInputElement>(null);
-  const caretDigits = useRef<number | null>(null);
-
-  useLayoutEffect(() => {
-    const el = inputRef.current;
-    const want = caretDigits.current;
-    caretDigits.current = null;
-    if (!el || want === null || document.activeElement !== el) return;
-    // An edit React saw no state change in ("1,20,000" plus a stray letter, a
-    // leading zero) leaves the typed text in the DOM for React to put back
-    // after this effect, which would move the caret again. Put it back first.
-    if (el.value !== amountStr) el.value = amountStr;
-    const at = caretAfterDigits(amountStr, want);
-    el.setSelectionRange(at, at);
-  });
-
-  /** Record where the edit left the caret, then hand the raw text up. */
-  const edit = (raw: string, caret: number) => {
-    caretDigits.current = digitsBefore(raw, caret);
-    onAmount(raw);
-  };
-
   // Shown only while the buttons below are still answering for the reader. Once
   // they press one, the question is theirs and the explanation is spent.
   const guess = surchargeAuto ? guessSurcharge(amount) : null;
@@ -115,56 +192,7 @@ export function AmountInput({
       </div>
 
       <div style={{ marginTop: 24 }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 6, background: "var(--color-neutral-100)", border: "1.5px solid var(--color-neutral-300)", borderRadius: 999, padding: "14px 24px" }}>
-          <span style={{ fontFamily: "var(--font-heading)", fontSize: 30, lineHeight: 1, color: "var(--color-neutral-500)" }}>₹</span>
-          <input
-            type="text"
-            inputMode="numeric"
-            placeholder="1,20,000"
-            aria-label="Income tax paid, in rupees"
-            ref={inputRef}
-            value={amountStr}
-            onChange={(e) => edit(e.target.value, e.target.selectionStart ?? e.target.value.length)}
-            onKeyDown={(e) => {
-              if (e.key === "Enter" && amount > 0) {
-                onSubmit();
-                return;
-              }
-              // Backspace onto a comma would otherwise do nothing visible: the
-              // separator is regrouped straight back in. Take the digit in
-              // front of it, which is what the reader was aiming at.
-              const el = e.currentTarget;
-              const at = el.selectionStart;
-              if (
-                e.key !== "Backspace" ||
-                at === null ||
-                at !== el.selectionEnd ||
-                at === 0 ||
-                /[0-9]/.test(el.value[at - 1] ?? "")
-              ) {
-                return;
-              }
-              const cut = el.value.slice(0, at).search(/[0-9][^0-9]*$/);
-              if (cut < 0) return;
-              e.preventDefault();
-              edit(el.value.slice(0, cut) + el.value.slice(cut + 1), cut);
-            }}
-            style={{ flex: 1, minWidth: 0, background: "none", border: 0, outline: "none", fontFamily: "var(--font-heading)", fontSize: 30, lineHeight: 1.1, color: "var(--color-text)", padding: 0, width: "100%" }}
-          />
-        </div>
-        <div style={{ display: "flex", gap: 8, marginTop: 12, flexWrap: "wrap" }}>
-          {PRESETS.map((value) => (
-            <button
-              key={value}
-              type="button"
-              onClick={() => onAmount(String(value))}
-              className="chip"
-              style={{ border: "1px solid var(--color-divider)", background: "none", borderRadius: 999, padding: "12px 18px", minHeight: 44, font: "inherit", fontSize: 13, cursor: "pointer", color: "var(--color-text)" }}
-            >
-              {formatInr(value)}
-            </button>
-          ))}
-        </div>
+        <AmountField amountStr={amountStr} amount={amount} onAmount={onAmount} onSubmit={onSubmit} />
       </div>
 
       <div style={{ marginTop: 28 }}>

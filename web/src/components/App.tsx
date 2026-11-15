@@ -157,13 +157,18 @@ export function App({ summary }: { summary: Summary }) {
   // URL is always the thing worth sharing. The comp never did this — it built a
   // share URL on demand and left the address bar at the root — but on a phone,
   // Back leaving the site from three levels down is a real loss.
+  //
+  // Not while the amount is still being typed. The landing screen now carries
+  // the amount box, so writing here on every keystroke would turn the address
+  // into a share link for "₹1", then "₹12", and leave one history entry per
+  // digit for Back to walk through.
   useEffect(() => {
-    if (state.amount <= 0) return;
+    if (state.amount <= 0 || state.screen === "home" || state.screen === "input") return;
     const url = currentUrl(state);
     if (url !== window.location.href) {
       window.history.pushState(null, "", url);
     }
-  }, [state.amount, state.surcharge, state.year, state.lens, state.headId, state.subIndex, state.focusId]);
+  }, [state.screen, state.amount, state.surcharge, state.year, state.lens, state.headId, state.subIndex, state.focusId]);
 
   // The screens are states, not pages, so the pageview in Base.astro cannot see
   // them. "home" is skipped because that pageview already counts it.
@@ -172,13 +177,18 @@ export function App({ summary }: { summary: Summary }) {
   }, [state.screen]);
 
   // Once per amount the reader settles on, not once per keystroke or re-render.
+  // "Settles on" means reaching a result: this used to fire as the amount was
+  // typed, so ₹1,20,000 was counted as "1", "12", "120" and so on, which is why
+  // the under-25k bucket led the report and the buckets summed to more than the
+  // results they belonged to.
   const measured = useRef<number | null>(null);
   useEffect(() => {
+    if (state.screen === "home" || state.screen === "input") return;
     if (state.amount <= 0 || measured.current === state.amount) return;
     measured.current = state.amount;
     track(`amount/${amountBucket(state.amount)}`);
     track(`year/${state.year}`);
-  }, [state.amount, state.year]);
+  }, [state.screen, state.amount, state.year]);
 
   useEffect(() => {
     const onPop = () => {
@@ -203,6 +213,18 @@ export function App({ summary }: { summary: Summary }) {
     flashCopiedLink(false);
     flashShared(false);
   }, [flashCopiedRow, flashCopiedLink, flashShared]);
+
+  // One handler for both screens that carry the amount box.
+  const setAmount = useCallback((raw: string) => {
+    const n = parseAmount(raw);
+    setState((s) => ({
+      ...s,
+      amount: n,
+      amountStr: n ? n.toLocaleString("en-IN") : "",
+      surcharge: s.surchargeSet ? s.surcharge : (guessSurcharge(n)?.rate ?? 0),
+    }));
+  }, []);
+  const submit = () => state.amount > 0 && go("result", null);
 
   const built = useMemo(() => {
     if (!year || state.amount <= 0) return null;
@@ -269,7 +291,14 @@ export function App({ summary }: { summary: Summary }) {
         </div>
 
         {state.screen === "home" ? (
-          <Home summary={summary} onStart={() => go("input", null)} />
+          <Home
+            summary={summary}
+            amountStr={state.amountStr}
+            amount={state.amount}
+            onAmount={setAmount}
+            onSubmit={submit}
+            onOptions={() => go("input", null)}
+          />
         ) : null}
 
         {state.screen === "input" ? (
@@ -280,20 +309,12 @@ export function App({ summary }: { summary: Summary }) {
             year={state.year}
             years={summary.years}
             surchargeAuto={!state.surchargeSet}
-            onAmount={(raw) => {
-              const n = parseAmount(raw);
-              setState((s) => ({
-                ...s,
-                amount: n,
-                amountStr: n ? n.toLocaleString("en-IN") : "",
-                surcharge: s.surchargeSet ? s.surcharge : (guessSurcharge(n)?.rate ?? 0),
-              }));
-            }}
+            onAmount={setAmount}
             onSurcharge={(value) =>
               setState((s) => ({ ...s, surcharge: value, surchargeSet: true }))
             }
             onYear={(id) => setState((s) => ({ ...s, year: id }))}
-            onSubmit={() => state.amount > 0 && go("result", null)}
+            onSubmit={submit}
           />
         ) : null}
 

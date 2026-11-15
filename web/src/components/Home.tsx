@@ -1,5 +1,8 @@
+import { useRef } from "react";
+
 import type { Summary } from "../lib/model";
 import { formatCroreShort } from "../lib/format";
+import { AmountField } from "./AmountInput";
 import { LogoMarkLarge } from "./Logo";
 
 const PRIMARY: React.CSSProperties = {
@@ -16,7 +19,20 @@ const PRIMARY: React.CSSProperties = {
   minHeight: 56,
 };
 
-export function Home({ summary, onStart }: { summary: Summary; onStart: () => void }) {
+interface Props {
+  summary: Summary;
+  amountStr: string;
+  amount: number;
+  onAmount: (raw: string) => void;
+  /** Straight to the result, with the year and surcharge left at their defaults. */
+  onSubmit: () => void;
+  /** The full input screen, for a reader who wants to set the year or surcharge. */
+  onOptions: () => void;
+}
+
+export function Home({ summary, amountStr, amount, onAmount, onSubmit, onOptions }: Props) {
+  const inputRef = useRef<HTMLInputElement>(null);
+
   // The strip is drawn from the newest year's real spending, inlined into the
   // prerendered HTML — so the landing page is complete before any fetch.
   const widest = summary.strip.reduce((m, b) => Math.max(m, b.amountRupees), 0);
@@ -41,12 +57,15 @@ export function Home({ summary, onStart }: { summary: Summary; onStart: () => vo
       }}
     >
       <div style={{ display: "flex", flexDirection: "column", alignSelf: "stretch" }}>
-        <div style={{ paddingTop: "clamp(40px, 8vh, 96px)", maxWidth: 520 }}>
+        <div style={{ paddingTop: "clamp(28px, 5vh, 64px)", maxWidth: 520 }}>
           <h1
             style={{
               margin: 0,
               fontFamily: "var(--font-heading)",
-              fontSize: "clamp(44px, 5.2vw, 68px)",
+              // Capped at 58px so "You never saw" fits the column on one line.
+              // At 68px it wrapped, the heading ran to five lines, and on a
+              // laptop that pushed the amount box below the fold.
+              fontSize: "clamp(44px, 4.4vw, 58px)",
               lineHeight: 1.02,
               letterSpacing: "-0.02em",
               textWrap: "pretty",
@@ -67,11 +86,36 @@ export function Home({ summary, onStart }: { summary: Summary; onStart: () => vo
           </p>
         </div>
 
-        <div style={{ marginTop: "auto", paddingTop: 40, maxWidth: 460 }}>
-          <button type="button" onClick={onStart} className="btn-cta" style={PRIMARY}>
+        <div style={{ marginTop: "auto", paddingTop: 32, maxWidth: 460 }}>
+          <p style={{ margin: "0 0 10px", fontSize: 13, fontWeight: 600, color: "var(--color-neutral-700)" }}>
+            Income tax you paid last year
+          </p>
+          <AmountField
+            amountStr={amountStr}
+            amount={amount}
+            onAmount={onAmount}
+            onSubmit={onSubmit}
+            inputRef={inputRef}
+          />
+          {/* Never disabled. A greyed-out button on a landing page reads as a
+              broken one, so with nothing typed it points at the box instead. */}
+          <button
+            type="button"
+            onClick={() => (amount > 0 ? onSubmit() : inputRef.current?.focus())}
+            className="btn-cta"
+            style={{ ...PRIMARY, marginTop: 16 }}
+          >
             Show me where it went
           </button>
-          <div style={{ marginTop: 22, display: "flex", alignItems: "center", gap: 14 }}>
+          <button
+            type="button"
+            onClick={onOptions}
+            className="link-btn"
+            style={{ display: "block", margin: "6px auto 0", background: "none", border: 0, padding: "10px 4px", minHeight: 44, cursor: "pointer", font: "inherit", fontSize: 13, color: "var(--color-accent-700)", textDecoration: "underline", textUnderlineOffset: 3 }}
+          >
+            Pick another year or add a surcharge
+          </button>
+          <div style={{ marginTop: 14, display: "flex", alignItems: "center", gap: 14 }}>
             <LogoMarkLarge />
             <p style={{ margin: 0, fontSize: 13, lineHeight: 1.45, color: "var(--color-neutral-800)" }}>
               Ministry of Finance figures, {summary.yearRange}.

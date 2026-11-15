@@ -128,6 +128,10 @@ const metaDescription = clampText(description);
          margins. This also covers iOS overscroll, which exposes the body. */
       body { margin: 0; background: var(--color-bg); }
       * { -webkit-tap-highlight-color: transparent; }
+      /* An example, and it has to look like one. The browser default drew it
+         dark enough to pass for a figure already entered, which matters now the
+         box is the first thing on the landing screen. */
+      input::placeholder { color: var(--color-neutral-400); opacity: 1; }
       a { color: var(--color-accent-700); }
       a:hover { color: var(--color-accent-600); }
       input:focus-visible,

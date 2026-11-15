@@ -4,11 +4,15 @@ import summary from "../data/summary.json";
 import { entities } from "../lib/entities";
 import { App } from "../components/App";
 
-const title = "Where Is My Tax Money? See Where Your Income Tax Goes";
+// "India" is in the title on purpose. Without it the page ranked for "where our
+// taxes go" in the United States, 146 impressions and no clicks in its first
+// three months, because nothing in the title said whose taxes these are.
+const title = "Where Does My Income Tax Go in India? | Where Is My Tax Money";
+// Written to fit inside Base.astro's 158-character clamp, year range included.
+// The previous one ran over and reached search results cut off mid-sentence.
 const description =
-  "Enter what you paid in Indian income tax and see exactly where it went, ministry by " +
-  "ministry, scheme by scheme, using the Ministry of Finance's own budget figures for " +
-  `${summary.yearRange}.`;
+  "Enter the income tax you paid in India and see where it went: states, debt interest, " +
+  `defence, every ministry. Ministry of Finance figures, ${summary.yearRange}.`;
 
 const origin = Astro.site ?? new URL("https://whereismytaxmoney.com");
 

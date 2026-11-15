@@ -13,6 +13,7 @@ import RowList from "../../components/doc/RowList.astro";
 import { entities, linesOf, amountIn } from "../../lib/entities";
 import { formatCrore } from "../../lib/format";
 import { linePath } from "../../lib/routes";
+import { ministryTitle } from "../../lib/titles";
 
 export function getStaticPaths() {
   return entities.ministries.map((ministry) => ({
@@ -27,7 +28,7 @@ const amount = amountIn(ministry, newest.id);
 const share = newest.unionTotal ? (amount / newest.unionTotal) * 100 : 0;
 const lines = linesOf(ministry.lineIds);
 
-const title = `${ministry.label}: budget and spending, ${newest.label}`;
+const title = ministryTitle(ministry.label, newest.label, formatCrore(amount));
 const description =
   `${ministry.label} spent ${formatCrore(amount)} in ${newest.label}, ${share.toFixed(1)}% of ` +
   `the union government's total. Figures for every year from ` +
