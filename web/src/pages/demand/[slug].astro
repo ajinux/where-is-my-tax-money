@@ -19,6 +19,7 @@ import Citations from "../../components/doc/Citations.astro";
 import { entities, purposeById, ministryById, amountIn, newestPeriodOf } from "../../lib/entities";
 import { formatCrore } from "../../lib/format";
 import { purposePath, ministryPath } from "../../lib/routes";
+import { lineTitle } from "../../lib/titles";
 
 export function getStaticPaths() {
   return entities.lines.map((line) => ({
@@ -41,7 +42,7 @@ const ministry = line.ministryId ? ministryById.get(line.ministryId) : undefined
 const parts = line.parts[period] ?? [];
 const split = line.split[period];
 
-const title = `${line.label}: budget and spending, ${year.label}`;
+const title = lineTitle(line.label, year.label, formatCrore(amount));
 const description =
   `${line.label} accounted for ${formatCrore(amount)} of union government spending in ` +
   `${year.label}. ${line.summary ?? ""}`.trim();
