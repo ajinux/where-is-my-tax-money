@@ -232,6 +232,78 @@ const metaDescription = clampText(description);
         }
       }
 
+      /* --- the home screen's figures -----------------------------------------
+         The section under the hero. It is server-rendered text that a search
+         engine reads, so it stays real markup: a heading, an ordered list of
+         links, prose. The layout is here rather than inline because it changes
+         shape with the viewport, which an inline style cannot do. */
+      .home-data { width: 100%; max-width: 1060px; margin-inline: auto; padding: 8px clamp(22px, 4vw, 48px) 56px; }
+      .home-data h2 { margin: 56px 0 0; font-size: clamp(26px, 2.6vw, 34px); line-height: 1.1; letter-spacing: -0.02em; text-wrap: balance; }
+      .home-eyebrow { margin: 0; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-neutral-700); }
+      .home-eyebrow + h2 { margin-top: 8px; }
+      .home-lede { margin: 12px 0 0; max-width: 620px; font-size: 15px; line-height: 1.6; color: var(--color-neutral-800); text-wrap: pretty; }
+      .home-note { margin: 14px 0 0; font-size: 12.5px; line-height: 1.5; color: var(--color-neutral-700); }
+
+      .home-totals { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 22px; }
+      .home-totals > * { background: var(--color-surface); border-radius: var(--radius-lg); padding: 22px 24px; color: var(--color-text); text-decoration: none; }
+      .home-totals-aside { background: var(--color-neutral-100) !important; display: block; }
+      .home-figure { margin: 0; font-family: var(--font-heading); font-size: clamp(34px, 4.4vw, 52px); line-height: 1; letter-spacing: -0.02em; }
+      .home-figure-label { margin: 10px 0 0; font-size: 14px; line-height: 1.5; color: var(--color-neutral-800); text-wrap: pretty; }
+      .home-more { display: inline-block; margin-top: 10px; font-size: 13px; font-weight: 600; color: var(--color-accent-700); }
+
+      /* One whole, split to scale. The 2px gaps are the page showing through,
+         which separates neighbours without drawing a line round any of them. */
+      .home-whole { display: flex; gap: 2px; height: 14px; margin-top: 30px; border-radius: 4px; overflow: hidden; }
+      .home-whole span { display: block; min-width: 2px; flex-basis: 0; }
+
+      .home-rows { list-style: none; margin: 10px 0 0; padding: 0; }
+      .home-rows li { border-bottom: 1px solid var(--color-divider); }
+      .home-rows a {
+        display: grid; grid-template-columns: 1fr auto; gap: 8px 16px; align-items: baseline;
+        padding: 16px 0; color: var(--color-text); text-decoration: none;
+      }
+      /* The swatch hangs in the margin, so a name that wraps on a phone keeps
+         its second line under its first rather than under the dot. */
+      .home-row-name { position: relative; padding-left: 20px; font-size: 16px; font-weight: 700; line-height: 1.3; }
+      .home-row-name i { position: absolute; left: 0; top: 0.36em; width: 10px; height: 10px; border-radius: 999px; }
+      .home-row-amount { font-size: 15px; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; text-align: right; }
+      .home-row-amount small { display: block; font-size: 12.5px; font-weight: 500; color: var(--color-neutral-700); }
+      .home-row-bar { grid-column: 1 / -1; display: block; height: 10px; }
+      .home-row-bar span { display: block; height: 100%; min-width: 3px; border-radius: 0 4px 4px 0; }
+      .home-row-desc { grid-column: 1 / -1; font-size: 13.5px; line-height: 1.5; color: var(--color-neutral-700); text-wrap: pretty; }
+
+      .home-cards { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 20px; }
+      .home-card { background: var(--color-surface); border-radius: var(--radius-lg); padding: 20px 22px; }
+      .home-card p { margin: 8px 0 0; font-size: 14px; line-height: 1.5; color: var(--color-neutral-800); text-wrap: pretty; }
+      .home-card .home-card-kicker { margin: 0; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-neutral-700); }
+      .home-card .home-card-title { margin: 6px 0 0; font-family: var(--font-heading); font-size: 21px; line-height: 1.15; color: var(--color-text); }
+
+      .home-links { display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 20px; }
+      .home-links a { display: block; border: 1px solid var(--color-divider); border-radius: var(--radius-lg); padding: 16px 18px; color: var(--color-text); text-decoration: none; }
+      .home-links strong { display: block; font-size: 15px; }
+      .home-links span { display: block; margin-top: 3px; font-size: 13px; color: var(--color-neutral-700); }
+
+      @media (min-width: 620px) {
+        .home-links { grid-template-columns: 1fr 1fr; }
+      }
+      @media (min-width: 860px) {
+        .home-totals { grid-template-columns: 1fr 1fr; }
+        .home-cards, .home-links { grid-template-columns: repeat(3, 1fr); }
+        /* A table in all but markup: name and description, the bar on one shared
+           baseline so the eye can run down it, the figure flush right. */
+        .home-rows a { grid-template-columns: minmax(0, 5fr) minmax(0, 4fr) 132px; gap: 4px 28px; align-items: center; padding: 14px 12px; margin-inline: -12px; border-radius: 12px; }
+        .home-row-name { grid-column: 1; grid-row: 1; }
+        .home-row-desc { grid-column: 1; grid-row: 2; padding-left: 20px; }
+        .home-row-bar { grid-column: 2; grid-row: 1 / span 2; height: 12px; }
+        .home-row-amount { grid-column: 3; grid-row: 1 / span 2; }
+      }
+      @media (hover: hover) {
+        .home-rows a:hover { background: var(--color-neutral-200); }
+        .home-rows a:hover .home-row-name { color: var(--color-accent-700); }
+        .home-links a:hover { background: var(--color-neutral-200); border-color: transparent; }
+        .home-totals-aside:hover .home-more { text-decoration: underline; }
+      }
+
       /* --- the reference pages -------------------------------------------
          Everything above styles the app, which is one React island authored in
          inline styles. The pages under /where, /ministry, /demand, /state and

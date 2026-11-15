@@ -19,6 +19,12 @@ const PRIMARY: React.CSSProperties = {
   minHeight: 56,
 };
 
+/** A share of the whole as the list prints it; the smallest is not rounded to zero. */
+function formatShare(fraction: number): string {
+  const percent = fraction * 100;
+  return percent < 0.05 ? "under 0.1%" : `${percent.toFixed(1)}%`;
+}
+
 interface Props {
   summary: Summary;
   amountStr: string;
@@ -41,6 +47,9 @@ export function Home({ summary, amountStr, amount, onAmount, onSubmit, onOptions
   // before any of it and must not be summed with it.
   const spending = summary.strip.filter((block) => block.id !== "devolution");
   const unionTotal = spending.reduce((total, block) => total + block.amountRupees, 0);
+  const largest = spending.reduce((m, b) => Math.max(m, b.amountRupees), 0);
+  const devolution = summary.strip.find((block) => block.id === "devolution");
+  const newest = summary.years[0];
 
   return (
     <>
@@ -53,6 +62,9 @@ export function Home({ summary, amountStr, amount, onAmount, onSubmit, onOptions
         alignItems: "center",
         width: "100%",
         maxWidth: 1060,
+        // Centred like the section below it. Without this the hero sat hard
+        // left in the 1120px panel and the two left edges were 30px apart.
+        marginInline: "auto",
         padding: "0 clamp(22px, 4vw, 48px) 34px",
       }}
     >
@@ -124,20 +136,24 @@ export function Home({ summary, amountStr, amount, onAmount, onSubmit, onOptions
         </div>
       </div>
 
+      {/* The bars take at most 56% of the row, so the longest label always has
+          room beside the longest bar. They used to scale to the full width and
+          clip the two labels that mattered most: "Sent to state gov…". */}
       <div aria-hidden="true" style={{ display: "flex", flexDirection: "column", gap: 7, padding: "34px 0" }}>
         {summary.strip.map((block) => (
           <div key={block.label} style={{ display: "flex", alignItems: "center", gap: 12 }}>
             <span
               style={{
+                flex: "none",
                 display: "block",
                 height: 26,
                 borderRadius: 999,
                 background: block.tone,
-                width: `${(block.amountRupees / widest) * 100}%`,
+                width: `${(block.amountRupees / widest) * 56}%`,
                 minWidth: 8,
               }}
             />
-            <span style={{ fontSize: 12, color: "var(--color-neutral-700)", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+            <span style={{ fontSize: 12, lineHeight: 1.2, color: "var(--color-neutral-700)" }}>
               {block.label}
             </span>
           </div>
@@ -160,74 +176,126 @@ export function Home({ summary, amountStr, amount, onAmount, onSubmit, onOptions
       hold the rest. Nothing here is written by hand: the labels and blurbs are
       the dataset's own, so they cannot drift from the figures beside them.
     */}
-    <section
-      style={{
-        width: "100%",
-        maxWidth: 1060,
-        marginInline: "auto",
-        padding: "8px clamp(22px, 4vw, 48px) 56px",
-      }}
-    >
-      <h2 style={{ margin: 0, fontSize: "clamp(26px, 2.6vw, 34px)", lineHeight: 1.1, letterSpacing: "-0.02em" }}>
-        Where the union budget actually goes
-      </h2>
-      <p style={{ margin: "12px 0 0", maxWidth: 620, fontSize: 15, lineHeight: 1.6, color: "var(--color-neutral-800)", textWrap: "pretty" }}>
-        The Government of India spent {formatCroreShort(unionTotal)} in {summary.years[0].label},
-        and sent a further {formatCroreShort(summary.strip[0].amountRupees)} to the states as
-        their share of central taxes. Every rupee of it is sorted into these {spending.length}{" "}
-        categories, each figure read from a published Ministry of Finance document.
+    <section className="home-data">
+      <p className="home-eyebrow">
+        Union budget {newest.label} · {newest.tag}
       </p>
+      <h2>Where the union budget actually goes</h2>
 
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(min(290px, 100%), 1fr))",
-          gap: "22px 40px",
-          marginTop: 28,
-        }}
-      >
-        {summary.strip.map((block) => (
-          <article key={block.id}>
-            <h3 style={{ margin: 0, fontSize: 16, lineHeight: 1.3, display: "flex", alignItems: "baseline", gap: 8 }}>
-              <span style={{ flex: "none", width: 10, height: 10, borderRadius: 999, background: block.tone, transform: "translateY(-1px)" }} />
-              <a href={block.href} style={{ textDecoration: "none" }}>
-                {block.label}
-              </a>
-            </h3>
-            <p style={{ margin: "6px 0 0", fontSize: 13.5, lineHeight: 1.5, color: "var(--color-neutral-700)", textWrap: "pretty" }}>
-              <strong style={{ color: "var(--color-neutral-800)" }}>
-                {formatCroreShort(block.amountRupees)}
-              </strong>
-              {block.desc ? `, ${block.desc}` : null}
+      {/* Two figures, kept apart on purpose. The states' share is deducted
+          before the union spends anything, so it is not a twelfth category and
+          is never added to the total beside it. */}
+      <div className="home-totals">
+        <div>
+          <p className="home-figure">{formatCroreShort(unionTotal)}</p>
+          <p className="home-figure-label">
+            spent by the Government of India, sorted below into {spending.length} categories.
+            Each figure is read from a published Ministry of Finance document.
+          </p>
+        </div>
+        {devolution ? (
+          <a href={devolution.href} className="home-totals-aside">
+            <p className="home-figure">{formatCroreShort(devolution.amountRupees)}</p>
+            <p className="home-figure-label">
+              <strong>{devolution.label}</strong> before any of that. {devolution.desc}
             </p>
-          </article>
+            <span className="home-more">What each state received →</span>
+          </a>
+        ) : null}
+      </div>
+
+      {/* The whole, to scale, in one line. No text on it: the list underneath
+          gives every part its name and figure, and its swatches are the legend. */}
+      <div className="home-whole" aria-hidden="true">
+        {spending.map((block) => (
+          <span
+            key={block.id}
+            title={`${block.label}: ${formatShare(block.amountRupees / unionTotal)}`}
+            style={{ flexGrow: block.amountRupees, background: block.tone }}
+          />
         ))}
       </div>
 
-      <h2 style={{ margin: "44px 0 0", fontSize: "clamp(26px, 2.6vw, 34px)", lineHeight: 1.1, letterSpacing: "-0.02em" }}>
-        How your income tax is split
-      </h2>
-      <p style={{ margin: "12px 0 0", maxWidth: 620, fontSize: 15, lineHeight: 1.6, color: "var(--color-neutral-800)", textWrap: "pretty" }}>
-        Your income tax is not one thing. There is the base tax, a 4% health and education cess
-        added on top of it, and above ₹50 lakh of income a surcharge as well. Only the base part
-        is shared with the states; cess and surcharge stay with the union entirely, and cess is
-        locked by law to health and education schemes.
+      <ol className="home-rows">
+        {spending.map((block) => (
+          <li key={block.id}>
+            <a href={block.href}>
+              <span className="home-row-name">
+                <i style={{ background: block.tone }} />
+                {block.label}
+              </span>
+              <span className="home-row-amount">
+                {formatCroreShort(block.amountRupees)}
+                <small>{formatShare(block.amountRupees / unionTotal)}</small>
+              </span>
+              <span className="home-row-bar" aria-hidden="true">
+                <span style={{ width: `${(block.amountRupees / largest) * 100}%`, background: block.tone }} />
+              </span>
+              {block.desc ? <span className="home-row-desc">{block.desc}</span> : null}
+            </a>
+          </li>
+        ))}
+      </ol>
+      <p className="home-note">
+        Percentages are each category's share of union government spending in {newest.label}.
+        Bars are drawn against the largest category.
       </p>
-      <p style={{ margin: "10px 0 0", maxWidth: 620, fontSize: 15, lineHeight: 1.6, color: "var(--color-neutral-800)" }}>
+
+      <h2>How your income tax is split</h2>
+      <p className="home-lede">
+        Your income tax is not one thing. It is up to three, and they do not travel the same way.
+      </p>
+      <div className="home-cards">
+        <div className="home-card">
+          <p className="home-card-kicker">Base tax</p>
+          <p className="home-card-title">Shared with the states</p>
+          <p>The tax itself. This is the only part the states receive a share of.</p>
+        </div>
+        <div className="home-card">
+          <p className="home-card-kicker">Cess · 4% on top</p>
+          <p className="home-card-title">Locked to one purpose</p>
+          <p>
+            A health and education cess added to everyone's tax. It stays with the union and is
+            locked by law to health and education schemes.
+          </p>
+        </div>
+        <div className="home-card">
+          <p className="home-card-kicker">Surcharge · income above ₹50 lakh</p>
+          <p className="home-card-title">Kept by the union</p>
+          <p>An extra percentage on higher incomes. None of it is shared with the states.</p>
+        </div>
+      </div>
+      <p className="home-lede">
         <a href="/method/">How this is calculated, in full</a>
       </p>
 
-      <h2 style={{ margin: "44px 0 0", fontSize: "clamp(26px, 2.6vw, 34px)", lineHeight: 1.1, letterSpacing: "-0.02em" }}>
-        Browse the figures
-      </h2>
-      <ul style={{ margin: "12px 0 0", paddingLeft: 20, fontSize: 15, lineHeight: 1.7, color: "var(--color-neutral-800)" }}>
-        <li><a href="/where/">What the money paid for</a>, in {spending.length} categories</li>
-        <li><a href="/ministry/">Which ministry spent it</a></li>
-        <li><a href="/demand/">Every line in the budget</a>, one page each</li>
-        <li><a href="/state/">What each state received</a></li>
-        <li><a href="/year/">Year by year</a>, {summary.yearRange}</li>
-        <li><a href="/sources/">Every document these figures come from</a></li>
-      </ul>
+      <h2>Browse the figures</h2>
+      <div className="home-links">
+        <a href="/where/">
+          <strong>What the money paid for</strong>
+          <span>{spending.length} categories of spending</span>
+        </a>
+        <a href="/ministry/">
+          <strong>Which ministry spent it</strong>
+          <span>{summary.counts.ministries} ministries</span>
+        </a>
+        <a href="/demand/">
+          <strong>Every line in the budget</strong>
+          <span>One page each, with what it funds</span>
+        </a>
+        <a href="/state/">
+          <strong>What each state received</strong>
+          <span>{summary.counts.states} states' share of central taxes</span>
+        </a>
+        <a href="/year/">
+          <strong>Year by year</strong>
+          <span>{summary.yearRange}</span>
+        </a>
+        <a href="/sources/">
+          <strong>Where the figures come from</strong>
+          <span>{summary.counts.documents} government documents, each linked</span>
+        </a>
+      </div>
     </section>
     </>
   );
